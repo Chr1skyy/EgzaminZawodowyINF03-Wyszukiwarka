@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wyszukiwarka egzaminów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #0001;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #search {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .exam {
+            border-bottom: 1px solid #eee;
+            padding: 12px 0;
+        }
+
+        .exam:last-child {
+            border-bottom: none;
+        }
+
+        .exam-title {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .exam-meta {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 4px;
+        }
+
+        .links a {
+            margin-right: 10px;
+            font-size: 0.95em;
+        }
+
+        .tags {
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Wyszukiwarka egzaminów</h1>
+        <input id="search" type="text"
+            placeholder="Szukaj po formule, roku, skrypcie, nazwie kodowej, tytule, tagach...">
+        <div id="results"></div>
+    </div>
+    <script>
+        let exams = [];
+        let resultsDiv = document.getElementById('results');
+        let searchInput = document.getElementById('search');
+
+        fetch('exams.json')
+            .then(res => res.json())
+            .then(data => {
+                exams = data;
+                showResults(exams);
+            });
+
+        searchInput.addEventListener('input', function () {
+            const q = this.value.trim().toLowerCase();
+            if (!q) return showResults(exams);
+            const qWords = q.split(/\s|,/).filter(Boolean);
+            const filtered = exams.filter(exam => {
+                // Sprawdzanie difficulty na wiele poziomów
+                const difficulty = (exam.difficulty || '').toLowerCase();
+                const matchesDifficulty = qWords.some(word => difficulty.includes(word));
+                // Szukaj po innych polach
+                const otherFields = [
+                    exam.name,
+                    exam.language,
+                    exam.formula,
+                    exam.codeName,
+                    exam.session,
+                    exam.year,
+                    ...(exam.tags || [])
+                ].join(' ').toLowerCase();
+                // Jeśli difficulty pasuje do któregoś słowa lub inne pole pasuje do całości
+                return matchesDifficulty || otherFields.includes(q);
+            });
+            showResults(filtered);
+        });
+
+        function showResults(list) {
+            if (!list.length) {
+                resultsDiv.innerHTML = '<p>Brak wyników.</p>';
+                return;
+            }
+            resultsDiv.innerHTML = list.map(exam => `
+        <div class="exam">
+          <div class="exam-title">${exam.name} <span class="tags">[${exam.language}]</span></div>
+          <div class="exam-meta">
+            ${exam.formula} | ${exam.year} | ${exam.session} | Nazwa kodowa: <b>${exam.codeName || ''}</b>
+          </div>
+          <div class="links">
+            ${exam.links.examSheet ? `<a href="${exam.links.examSheet}" target="_blank">Arkusz</a>` : ''}
+            ${exam.links.baza ? `<a href="${exam.links.baza}" target="_blank">Baza</a>` : ''}
+            ${exam.links['zasady oceny'] ? `<a href="${exam.links['zasady oceny']}" target="_blank">Zasady oceny</a>` : ''}
+            ${exam.links.solution ? `<a href="${exam.links.solution}" target="_blank">Rozwiązanie</a>` : ''}
+            ${exam.links.solutionZIP ? `<a href="${exam.links.solutionZIP}" target="_blank">RozwiązanieZIP</a>` : ''}
+          </div>
+          <div class="tags">${(exam.tags || []).join(', ')}</div>
+        </div>
+      `).join('');
+        }
+    </script>
+</body>
+
+</html>
