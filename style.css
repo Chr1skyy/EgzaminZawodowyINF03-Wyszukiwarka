@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+h1 {
+    text-align: center;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.exam {
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+}
+
+.exam:last-child {
+    border-bottom: none;
+}
+
+.exam-title {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.exam-meta {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 4px;
+}
+
+.links a {
+    margin-right: 10px;
+    font-size: 0.95em;
+}
+
+.tags {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.difficulty-easy {
+    color: rgb(0, 128, 0);
+    font-weight: bold;
+}
+
+.difficulty-medium {
+    color: rgb(255, 192, 0);
+    font-weight: bold;
+}
+
+.difficulty-hard {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
