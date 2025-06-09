@@ -1,5 +1,6 @@
 let exams = [];
 let resultsDiv = document.getElementById('results');
+let searchCountDiv = document.getElementById('searchCount');
 let searchInput = document.getElementById('search');
 
 fetch('exams.json')
@@ -30,6 +31,7 @@ searchInput.addEventListener('input', function () {
 });
 
 function showResults(list) {
+	searchCountDiv.textContent = `Znaleziono ${list.length} arkusz${list.length === 1 ? '' : 'y'}.`;
     if (!list.length) {
         resultsDiv.innerHTML = '<p>Brak wyników.</p>';
         return;
