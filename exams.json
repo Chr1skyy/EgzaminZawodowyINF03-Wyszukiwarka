@@ -128,7 +128,7 @@
       "tworzenie grafiki",
       "przeskalowanie grafiki",
       "modyfikacja grafiki",
-      "formatowanie strony",
+      "formatowanie elementów",
       "formularz"
     ],
     "difficulty": "medium"
@@ -529,7 +529,7 @@
       "kadrowanie grafiki",
       "tworzenie grafiki",
       "formularz",
-      "formatowanie strony"
+      "formatowanie elementów"
     ],
     "difficulty": "easy"
   },
@@ -553,7 +553,7 @@
       "tworzenie grafiki",
       "tekst po ścieżce",
       "formularz",
-      "formatowanie strony"
+      "formatowanie elementów"
     ],
     "difficulty": "easy"
   },
@@ -674,7 +674,7 @@
     "session": "Czerwiec",
     "number": "01",
     "language": "PHP",
-    "name": "Portal dla wędkarzy",
+    "name": "Portal dla wędkarzy / Wędkujemy",
     "codeName": "EE.09-01-19.06",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_01",
@@ -683,8 +683,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_01/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_01/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -701,8 +704,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_02/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_02/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -710,7 +716,7 @@
     "session": "Czerwiec",
     "number": "03",
     "language": "PHP",
-    "name": "Zawody wędkarskie",
+    "name": "Zawody wędkarskie / Wędkowanie - moje hobby",
     "codeName": "EE.09-03-19.06",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_03",
@@ -719,8 +725,12 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_03/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_03/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wstawianie danych do bazy",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -728,7 +738,7 @@
     "session": "Czerwiec",
     "number": "04",
     "language": "JS",
-    "name": "Pomocnik matematyczny",
+    "name": "Pomocnik matematyczny / Działania matematyczne",
     "codeName": "EE.09-04-19.06",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_04",
@@ -737,8 +747,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_04/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_04/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "formularz"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -746,7 +759,7 @@
     "session": "Czerwiec",
     "number": "05",
     "language": "JS",
-    "name": "Ciągi liczbowe",
+    "name": "Poznaj Ciągi Liczbowe",
     "codeName": "EE.09-05-19.06",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_05",
@@ -755,8 +768,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_05/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_05/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "formularz"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -773,8 +789,12 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_06/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_06/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wstawianie danych do bazy",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -782,7 +802,7 @@
     "session": "Styczeń",
     "number": "01",
     "language": "PHP",
-    "name": "Klub wędkowania",
+    "name": "Wędkuj z nami! / Klub wędkowania",
     "codeName": "EE.09-01-20.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_01",
@@ -791,8 +811,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_01/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_01/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -800,7 +823,7 @@
     "session": "Styczeń",
     "number": "02",
     "language": "JS",
-    "name": "Stacja paliw",
+    "name": "Witamy na stacji paliw / Nasza stacja paliw",
     "codeName": "EE.09-02-20.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_02",
@@ -809,8 +832,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_02/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_02/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -818,7 +844,7 @@
     "session": "Styczeń",
     "number": "03",
     "language": "PHP",
-    "name": "Prognoza pogody Poznań",
+    "name": "Prognoza pogody dla Poznania",
     "codeName": "EE.09-03-20.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_03",
@@ -827,8 +853,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_03/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_03/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -836,7 +865,7 @@
     "session": "Czerwiec",
     "number": "01",
     "language": "PHP",
-    "name": "Organizer",
+    "name": "Mój organizer",
     "codeName": "EE.09-01-20.06-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_01",
@@ -845,8 +874,13 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_01/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_01/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "modyfikacja danych w bazie",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -854,7 +888,7 @@
     "session": "Czerwiec",
     "number": "02",
     "language": "PHP",
-    "name": "Biuro podróży",
+    "name": "Biuro podróży / Wycieczki i urlopy",
     "codeName": "EE.09-02-20.06-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_02",
@@ -863,8 +897,10 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_02/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_02/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "wyświetlanie danych z bazy"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -872,7 +908,7 @@
     "session": "Czerwiec",
     "number": "03",
     "language": "PHP",
-    "name": "Kalendarz",
+    "name": "Mój kalendarz",
     "codeName": "EE.09-03-20.06-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_03",
@@ -881,8 +917,13 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_03/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_03/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "modyfikacja danych w bazie",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -890,7 +931,7 @@
     "session": "Czerwiec",
     "number": "04",
     "language": "JS",
-    "name": "Salon kosmetyczny",
+    "name": "Salon kosmetyczny / Usługi kosmetyczne",
     "codeName": "EE.09-04-20.06-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_04",
@@ -899,8 +940,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_04/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_04/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -908,7 +952,7 @@
     "session": "Czerwiec",
     "number": "05",
     "language": "JS",
-    "name": "Salon fryzjerski",
+    "name": "Salon fryzjerski / Usługi fryzjerskie",
     "codeName": "EE.09-05-20.06-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_05",
@@ -917,8 +961,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_05/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_05/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -926,7 +973,7 @@
     "session": "Czerwiec",
     "number": "06",
     "language": "PHP",
-    "name": "Biuro podróży",
+    "name": "Witamy w biurze podróży / Wycieczki krajoznawcze",
     "codeName": "EE.09-06-20.06-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_06",
@@ -935,8 +982,10 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_06/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_06/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "wyświetlanie danych z bazy"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -944,7 +993,7 @@
     "session": "Styczeń",
     "number": "01",
     "language": "PHP",
-    "name": "Piłka nożna",
+    "name": "Światowe Rozgrywki Piłkarskie / Rozgrywki futbolowe",
     "codeName": "EE.09-01-21.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_01",
@@ -954,8 +1003,12 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_01/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_01/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -963,7 +1016,7 @@
     "session": "Styczeń",
     "number": "02",
     "language": "PHP",
-    "name": "Piłka nożna",
+    "name": "Reprezentacja Polski w piłce nożnej / Piłka nożna",
     "codeName": "EE.09-02-21.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_02",
@@ -973,8 +1026,12 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_02/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_02/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -982,7 +1039,7 @@
     "session": "Styczeń",
     "number": "03",
     "language": "PHP",
-    "name": "BMI",
+    "name": "Oblicz swoje BMI / Twoje BMI",
     "codeName": "EE.09-03-21.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_03",
@@ -992,8 +1049,12 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_03/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_03/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "wstawianie danych do bazy"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -1001,7 +1062,7 @@
     "session": "Styczeń",
     "number": "04",
     "language": "PHP",
-    "name": "BMI",
+    "name": "Oblicz Twój wskaźnik BMI",
     "codeName": "EE.09-04-21.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_04",
@@ -1011,8 +1072,12 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_04/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_04/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "wstawianie danych do bazy"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -1020,7 +1085,7 @@
     "session": "Styczeń",
     "number": "05",
     "language": "PHP",
-    "name": "Lotnisko",
+    "name": "Przyloty / Port lotniczy",
     "codeName": "EE.09-05-21.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_05",
@@ -1030,8 +1095,12 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_05/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_05/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "cookies/ciasteczka"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -1039,7 +1108,7 @@
     "session": "Styczeń",
     "number": "06",
     "language": "PHP",
-    "name": "Lotnisko",
+    "name": "Odloty samolotów z lotniska",
     "codeName": "EE.09-06-21.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_06",
@@ -1049,8 +1118,12 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_06/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_06/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "cookies/ciasteczka"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -1058,7 +1131,7 @@
     "session": "Czerwiec",
     "number": "01",
     "language": "PHP",
-    "name": "Portal społecznościowy",
+    "name": "Portal społecznościowy - moje konto / Lista przyjaciół",
     "codeName": "EE.09-01-21.06-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_01",
@@ -1068,8 +1141,12 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_01/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_01/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "kadrowanie grafiki",
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -1077,7 +1154,7 @@
     "session": "Czerwiec",
     "number": "02",
     "language": "PHP",
-    "name": "Warzywniak",
+    "name": "Internetowy sklep z eko-warzywami / Warzywniak",
     "codeName": "EE.09-02-21.06-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_02",
@@ -1087,8 +1164,14 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_02/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_02/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "kadrowanie grafiki",
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "wstawianie danych do bazy",
+      "formularz"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -1096,7 +1179,7 @@
     "session": "Czerwiec",
     "number": "03",
     "language": "PHP",
-    "name": "Wypożyczalnia filmów",
+    "name": "Internetowa wypożyczalnia filmów / Video On Demand",
     "codeName": "EE.09-03-21.06-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_03",
@@ -1106,8 +1189,13 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_03/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_03/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "kadrowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "usuwanie danych z bazy",
+      "formularz"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -1115,7 +1203,7 @@
     "session": "Czerwiec",
     "number": "04",
     "language": "PHP",
-    "name": "Panel administratora",
+    "name": "Portal społecznościowy - panel administratora",
     "codeName": "EE.09-04-21.06-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_04",
@@ -1125,8 +1213,13 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_04/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_04/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "kadrowanie grafiki",
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -1134,7 +1227,7 @@
     "session": "Styczeń",
     "number": "01",
     "language": "PHP",
-    "name": "Karty wędkarskie",
+    "name": "Zgłoszenie na kartę wędkarską / Karty wędkarskie",
     "codeName": "EE.09-01-22.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_01",
@@ -1144,8 +1237,12 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_01/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_01/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wstawianie danych do bazy",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -1153,7 +1250,7 @@
     "session": "Styczeń",
     "number": "02",
     "language": "PHP",
-    "name": "Prognoza pogody Wrocław",
+    "name": "Prognoza pogody dla Wrocławia",
     "codeName": "EE.09-02-22.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_02",
@@ -1163,8 +1260,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_02/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_02/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -1172,7 +1272,7 @@
     "session": "Styczeń",
     "number": "03",
     "language": "PHP",
-    "name": "Zespoły ratownicze",
+    "name": "Dodanie zespołu ratowniczego / Zespoły ratownicze",
     "codeName": "EE.09-03-22.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_03",
@@ -1182,8 +1282,12 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_03/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_03/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wstawianie danych do bazy",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -1191,7 +1295,7 @@
     "session": "Styczeń",
     "number": "04",
     "language": "PHP",
-    "name": "Forum wielbicieli psów",
+    "name": "Forum wielbicieli psów / Forum o psach",
     "codeName": "EE.09-04-22.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_04",
@@ -1201,8 +1305,14 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_04/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_04/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "modyfikacja grafiki",
+      "przeskalowanie grafiki",
+      "wstawianie danych do bazy",
+      "logowanie/rejestracja",
+      "formularz"
+    ],
+    "difficulty": "hard"
   },
   {
     "formula": "EE.09",
@@ -1210,7 +1320,7 @@
     "session": "Styczeń",
     "number": "05",
     "language": "PHP",
-    "name": "Portal społecznościowy",
+    "name": "Nasze osiedle / Portal społecznościowy",
     "codeName": "EE.09-05-22.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_05",
@@ -1220,8 +1330,13 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_05/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_05/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "kadrowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "logowanie/rejestracja",
+      "formularz"
+    ],
+    "difficulty": "hard"
   },
   {
     "formula": "EE.09",
@@ -1229,7 +1344,7 @@
     "session": "Styczeń",
     "number": "06",
     "language": "JS",
-    "name": "Konfigurator stylu CSS",
+    "name": "Konfigurator stylu / Style w JavaScript",
     "codeName": "EE.09-06-22.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_06",
@@ -1239,8 +1354,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_06/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_06/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "formatowanie elementów"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -1248,7 +1366,7 @@
     "session": "Styczeń",
     "number": "07",
     "language": "JS",
-    "name": "Galeria zdjęc",
+    "name": "Galeria miejsc ciekawych",
     "codeName": "EE.09-07-22.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_07",
@@ -1258,8 +1376,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_07/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_07/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "galeria zdjęć"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -1267,7 +1388,7 @@
     "session": "Czerwiec",
     "number": "01",
     "language": "PHP",
-    "name": "Forum o psach",
+    "name": "Forum miłośników psów / Forum o psach",
     "codeName": "EE.09-01-22.06-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_01",
@@ -1277,8 +1398,13 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_01/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_01/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "plik video/wideo/film",
+      "wyświetlanie danych z bazy",
+      "wstawianie danych do bazy",
+      "formularz"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -1296,8 +1422,13 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_02/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_02/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "kadrowanie grafiki",
+      "przeskalowanie grafiki",
+      "formatowanie elementów",
+      "formularz"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -1305,7 +1436,7 @@
     "session": "Czerwiec",
     "number": "03",
     "language": "PHP",
-    "name": "Opinie klientów",
+    "name": "Hurtownia spożywcza / Opinie klientów",
     "codeName": "EE.09-03-22.06-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_03",
@@ -1315,8 +1446,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_03/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_03/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -1324,7 +1458,7 @@
     "session": "Czerwiec",
     "number": "04",
     "language": "JS",
-    "name": "Sieci komputerowe",
+    "name": "Sieci komputerowe / Zamówienia hurtowe",
     "codeName": "EE.09-04-22.06-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_04",
@@ -1334,8 +1468,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_04/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_04/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "modyfikacja danych skryptem"
+    ],
+    "difficulty": "hard"
   },
   {
     "formula": "EE.09",
@@ -1343,7 +1480,7 @@
     "session": "Styczeń",
     "number": "01",
     "language": "PHP",
-    "name": "Sekretariat",
+    "name": "Akta pracownicze / Sekretariat",
     "codeName": "EE.09-01-23.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_01",
@@ -1353,8 +1490,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_01/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_01/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "EE.09",
@@ -1362,7 +1502,7 @@
     "session": "Styczeń",
     "number": "02",
     "language": "JS",
-    "name": "Galeria",
+    "name": "Galeria obrazów",
     "codeName": "EE.09-02-23.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_02",
@@ -1371,8 +1511,12 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_02/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_02/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "kadrowanie grafiki",
+      "galeria zdjęć",
+      "przewijanie zdjęć"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -1380,7 +1524,7 @@
     "session": "Styczeń",
     "number": "03",
     "language": "JS",
-    "name": "Gazeta",
+    "name": "Gazeta codzienna",
     "codeName": "EE.09-03-23.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_03",
@@ -1389,8 +1533,11 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_03/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_03/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "pokazywanie/ukrywanie elementów"
+    ],
+    "difficulty": "medium"
   },
   {
     "formula": "EE.09",
@@ -1398,7 +1545,7 @@
     "session": "Styczeń",
     "number": "04",
     "language": "PHP",
-    "name": "Wizytówki",
+    "name": "Wizytówki pracowników",
     "codeName": "EE.09-04-23.01-SG",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_04",
@@ -1407,8 +1554,12 @@
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_04/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_04/rozwiazanie.zip"
     },
-    "tags": [],
-    "difficulty": null
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "formularz"
+    ],
+    "difficulty": "easy"
   },
   {
     "formula": "INF.03",
