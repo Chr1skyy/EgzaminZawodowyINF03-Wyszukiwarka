@@ -4,6 +4,6 @@ Prosta aplikacja webowa pozwalająca na wyszukiwanie egzaminów po różnych kry
 
 Wyszukiwarka obsługuje filtrowanie wielowyrazowe oraz wyróżnia poziom trudności egzaminów za pomocą kolorów. Dodatkowo, dla każdego egzaminu dostępne są linki do arkusza, rozwiązania i innych materiałów.
 
-Na ten moment dostępne są tylko arkusze INF.03, ocenione według mojego uznania. Jeśli ktoś ma pomysły na dodatkowe tagi lub funkcjonalności, zapraszam do kontaktu lub uzupełniania pliku exams.json.
+Arkusze są ocenione według mojego uznania. Jeśli ktoś ma pomysły na dodatkowe tagi lub funkcjonalności to zapraszam do kontaktu.
 
 [Strona z wyszukiwarką](https://chr1skyy.github.io/EgzaminZawodowyINF03-Wyszukiwarka/)

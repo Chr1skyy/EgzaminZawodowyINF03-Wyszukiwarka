@@ -2561,5 +2561,121 @@
       "formularz"
     ],
     "difficulty": "easy"
+  },
+  {
+    "formula": "INF.03",
+    "year": 2025,
+    "session": "Czerwiec",
+    "number": "01",
+    "language": "PHP",
+    "name": "Ranking gier komputerowych / Gry komputerowe",
+    "codeName": "INF.03-01-25.06-SG",
+    "links": {
+      "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_01",
+      "examSheet": "",
+      "gradingRules": "",
+      "archive": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_01/pliki1.7z",
+      "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_01/rozwiazanie",
+      "solutionZIP": "hhttps://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_01/rozwiazanie.zip"
+    },
+    "tags": [
+      "przeskalowanie grafiki",
+      "wstawianie danych do bazy",
+      "wyświetlanie danych z bazy",
+      "formularz",
+      "responsywność strony (@media query)"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "formula": "INF.03",
+    "year": 2025,
+    "session": "Czerwiec",
+    "number": "02",
+    "language": "JS",
+    "name": "Moje zadania / Planer zadań",
+    "codeName": "INF.03-02-25.06-SG",
+    "links": {
+      "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_02",
+      "examSheet": "",
+      "gradingRules": "",
+      "archive": "",
+      "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_02/rozwiazanie",
+      "solutionZIP": ""
+    },
+    "tags": [
+      "przeskalowanie grafiki",
+      "modyfikacja danych skryptem",
+      "dodawanie elementów",
+      "formularz"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "formula": "INF.03",
+    "year": 2025,
+    "session": "Czerwiec",
+    "number": "03",
+    "language": "?",
+    "name": "?",
+    "codeName": "INF.03-03-25.06-SG",
+    "links": {
+      "mainFolder": "",
+      "examSheet": "",
+      "gradingRules": "",
+      "archive": "",
+      "solution": "",
+      "solutionZIP": ""
+    },
+    "tags": [],
+    "difficulty": null
+  },
+  {
+    "formula": "INF.03",
+    "year": 2025,
+    "session": "Czerwiec",
+    "number": "04",
+    "language": "PHP",
+    "name": "Firma przewozowa Półdarmo",
+    "codeName": "INF.03-04-25.06-SG",
+    "links": {
+      "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_04",
+      "examSheet": "",
+      "gradingRules": "",
+      "archive": "",
+      "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_04/rozwiazanie",
+      "solutionZIP": ""
+    },
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "wstawianie danych do bazy",
+      "usuwanie danych z bazy",
+      "formularz"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "formula": "INF.03",
+    "year": 2025,
+    "session": "Czerwiec",
+    "number": "05",
+    "language": "JS",
+    "name": "Fotografia artystyczna",
+    "codeName": "INF.03-05-25.06-SG",
+    "links": {
+      "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_05",
+      "examSheet": "",
+      "gradingRules": "",
+      "archive": "",
+      "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_05/rozwiazanie",
+      "solutionZIP": ""
+    },
+    "tags": [
+      "przeskalowanie grafiki",
+      "dodawanie elementów",
+      "formularz"
+    ],
+    "difficulty": "medium"
   }
 ]
