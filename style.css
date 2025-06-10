@@ -1,25 +1,28 @@
 body {
     font-family: Arial, sans-serif;
-    transition: background 0.3s, color 0.3s;
     margin: 0;
     padding: 0;
 }
 
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-row h1 {
+    text-align: left;
+}
+
 #themeToggle {
-    float: right;
-    margin: 10px;
-    padding: 6px 16px;
+    padding: 8px 16px;
     border-radius: 6px;
     border: none;
     background: #333;
+    font-weight: 700;
     color: #fff;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
-}
-
-body.light #themeToggle {
-    background: #ddd;
-    color: #222;
 }
 
 body {
@@ -43,24 +46,9 @@ body.light .container {
     color: #181818;
 }
 
-.exam {
-    background: #222;
-    border-radius: 8px;
-    margin: 10px 0;
-    padding: 16px;
-    transition: background 0.3s, color 0.3s;
-}
-
-#search {
-    width: 100%;
-    padding: 10px;
-    font-size: 1.1em;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #fff;
-    color: #181818;
-    transition: background 0.3s, color 0.3s, border 0.3s;
+body.light #themeToggle {
+    background: #ddd;
+    color: #000;
 }
 
 body:not(.light) #search {
@@ -70,12 +58,12 @@ body:not(.light) #search {
 }
 
 body.light .exam {
-    background: #f9f9f9;
+    background: #f1f1f1;
     color: #181818;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 800px;
     margin: 40px auto;
     background: #fff;
     padding: 30px 40px;
@@ -83,26 +71,35 @@ body.light .exam {
     box-shadow: 0 2px 8px #0001;
 }
 
-h1 {
-    text-align: center;
+.exam {
+    background: #161616;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px 10px;
+    transition: background 0.3s, color 0.3s;
 }
 
 #search {
+    box-sizing: border-box;
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px;
     font-size: 1.1em;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background: #fff;
+    color: #181818;
+    transition: background 0.3s, color 0.3s, border 0.3s;
 }
 
-.exam:last-child {
-    border-bottom: none;
+#searchCount {
+    padding: 0px 10px;
 }
 
 .exam-title {
     font-weight: bold;
     font-size: 1.1em;
+    margin-bottom: 4px;
 }
 
 .exam-meta {
@@ -112,9 +109,9 @@ h1 {
 }
 
 .links a {
-    margin-right: 10px;
+    margin-right: 12px;
     font-size: 0.95em;
-    color: rgb(88, 141, 255);
+    color: #588dff;
 }
 
 .tags {
