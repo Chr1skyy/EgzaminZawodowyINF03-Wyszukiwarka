@@ -2677,5 +2677,30 @@
       "formularz"
     ],
     "difficulty": "medium"
+  },
+  {
+    "formula": "INF.03",
+    "year": 2025,
+    "session": "Czerwiec",
+    "number": "06",
+    "language": "JS",
+    "name": "Biblioteka miejska",
+    "codeName": "INF.03-06-25.06-SG",
+    "links": {
+      "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_056",
+      "examSheet": "",
+      "gradingRules": "",
+      "archive": "",
+      "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_06/rozwiazanie",
+      "solutionZIP": ""
+    },
+    "tags": [
+      "przeskalowanie grafiki",
+      "wyświetlanie danych z bazy",
+      "modyfikacja danych w bazie",
+      "formularz",
+      "responsywność strony (@media query)"
+    ],
+    "difficulty": "hard"
   }
 ]
