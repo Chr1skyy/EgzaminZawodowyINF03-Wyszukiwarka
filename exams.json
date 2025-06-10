@@ -2592,9 +2592,33 @@
     "year": 2025,
     "session": "Czerwiec",
     "number": "02",
+    "language": "JS",
+    "name": "Moje zadania / Planer zadań",
+    "codeName": "INF.03-02-25.06-SG",
+    "links": {
+      "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_02",
+      "examSheet": "",
+      "gradingRules": "",
+      "archive": "",
+      "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_02/rozwiazanie",
+      "solutionZIP": ""
+    },
+    "tags": [
+      "przeskalowanie grafiki",
+      "modyfikacja danych skryptem",
+      "dodawanie elementów",
+      "formularz"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "formula": "INF.03",
+    "year": 2025,
+    "session": "Czerwiec",
+    "number": "03",
     "language": "?",
     "name": "?",
-    "codeName": "INF.03-02-25.06-SG",
+    "codeName": "INF.03-03-25.06-SG",
     "links": {
       "mainFolder": "",
       "examSheet": "",
@@ -2605,30 +2629,6 @@
     },
     "tags": [],
     "difficulty": null
-  },
-  {
-    "formula": "INF.03",
-    "year": 2025,
-    "session": "Czerwiec",
-    "number": "03",
-    "language": "JS",
-    "name": "Moje zadania / Planer zadań",
-    "codeName": "INF.03-03-25.06-SG",
-    "links": {
-      "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_03",
-      "examSheet": "",
-      "gradingRules": "",
-      "archive": "",
-      "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_03/rozwiazanie",
-      "solutionZIP": ""
-    },
-    "tags": [
-      "przeskalowanie grafiki",
-      "modyfikacja danych skryptem",
-      "dodawanie elementów",
-      "formularz"
-    ],
-    "difficulty": "medium"
   },
   {
     "formula": "INF.03",
