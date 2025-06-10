@@ -1,8 +1,77 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f7f7f7;
+    transition: background 0.3s, color 0.3s;
     margin: 0;
     padding: 0;
+}
+
+#themeToggle {
+    float: right;
+    margin: 10px;
+    padding: 6px 16px;
+    border-radius: 6px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.light #themeToggle {
+    background: #ddd;
+    color: #222;
+}
+
+body {
+    background: #181818;
+    color: #f1f1f1;
+    transition: background 0.3s, color 0.3s;
+}
+
+body .container {
+    background: #232323;
+    color: #f1f1f1;
+}
+
+body.light {
+    background: #f1f1f1;
+    color: #181818;
+}
+
+body.light .container {
+    background: #fff;
+    color: #181818;
+}
+
+.exam {
+    background: #222;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    color: #181818;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+body:not(.light) #search {
+    background: #232323;
+    color: #f1f1f1;
+    border: 1px solid #444;
+}
+
+body.light .exam {
+    background: #f9f9f9;
+    color: #181818;
 }
 
 .container {
@@ -27,11 +96,6 @@ h1 {
     border-radius: 4px;
 }
 
-.exam {
-    border-bottom: 1px solid #eee;
-    padding: 12px 0;
-}
-
 .exam:last-child {
     border-bottom: none;
 }
@@ -42,7 +106,7 @@ h1 {
 }
 
 .exam-meta {
-    color: #666;
+    color: #6b6b6b;
     font-size: 0.95em;
     margin-bottom: 4px;
 }
@@ -50,24 +114,29 @@ h1 {
 .links a {
     margin-right: 10px;
     font-size: 0.95em;
+    color: rgb(88, 141, 255);
 }
 
 .tags {
     color: #888;
     font-size: 0.9em;
+    padding-top: 0.25em;
+}
+
+.difficulty,
+.codeName,
+.formula {
+    font-weight: 700;
 }
 
 .difficulty-easy {
     color: rgb(0, 128, 0);
-    font-weight: bold;
 }
 
 .difficulty-medium {
     color: rgb(255, 192, 0);
-    font-weight: bold;
 }
 
 .difficulty-hard {
     color: rgb(255, 0, 0);
-    font-weight: bold;
 }

@@ -31,7 +31,7 @@ searchInput.addEventListener('input', function () {
 });
 
 function showResults(list) {
-	searchCountDiv.textContent = `Znaleziono ${list.length} arkusz${list.length === 1 ? '' : 'y'}.`;
+    searchCountDiv.textContent = `Znaleziono ${list.length} arkusz${list.length === 1 ? '' : 'y'}.`;
     if (!list.length) {
         resultsDiv.innerHTML = '<p>Brak wyników.</p>';
         return;
@@ -53,7 +53,7 @@ function showResults(list) {
             ${exam.name} <span class="tags">[${exam.language}]</span>
           </div>
           <div class="exam-meta">
-            <b>${exam.formula}</b> | ${exam.year} | ${exam.session} | ${exam.number} | Nazwa kodowa: <b>${exam.codeName}</b> | Trudność: <b class="${difficultyClass}">${exam.difficulty || 'N/A'}</b>
+            <span class="formula">${exam.formula}</span> | ${exam.year} | ${exam.session} | ${exam.number} | Nazwa kodowa: <span class="codeName">${exam.codeName}</span> | Trudność: <span class="difficulty ${difficultyClass}">${exam.difficulty || 'N/A'}</span>
           </div>
           <div class="links">
             ${exam.links.examSheet ? `<a href="${exam.links.examSheet}" target="_blank">Arkusz</a>` : ''}
@@ -66,3 +66,19 @@ function showResults(list) {
         </div>
       `}).join('');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const body = document.body;
+    const btn = document.getElementById('themeToggle');
+    body.classList.remove('light');
+    btn.textContent = '🌙 Tryb jasny';
+
+    btn.addEventListener('click', () => {
+        body.classList.toggle('light');
+        if (body.classList.contains('light')) {
+            btn.textContent = '🌞 Tryb ciemny';
+        } else {
+            btn.textContent = '🌙 Tryb jasny';
+        }
+    });
+});
