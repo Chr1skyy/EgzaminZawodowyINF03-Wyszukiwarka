@@ -2726,5 +2726,30 @@
       "formularz"
     ],
     "difficulty": "easy"
+  },
+  {
+    "formula": "INF.03",
+    "year": 2025,
+    "session": "Czerwiec",
+    "number": "08",
+    "language": "JS+PHP",
+    "name": "Poznaj smoki!",
+    "codeName": "INF.03-08-25.06-SG",
+    "links": {
+      "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_08",
+      "examSheet": "",
+      "gradingRules": "",
+      "archive": "",
+      "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_08/rozwiazanie",
+      "solutionZIP": ""
+    },
+    "tags": [
+      "przeskalowanie grafiki",
+      "kwerenda z podwójną relacją",
+      "wyświetlanie danych z bazy",
+      "formularz",
+      "pokazywanie/ukrywanie elementów"
+    ],
+    "difficulty": "medium"
   }
 ]
