@@ -2683,7 +2683,7 @@
     "year": 2025,
     "session": "Czerwiec",
     "number": "06",
-    "language": "JS",
+    "language": "PHP",
     "name": "Biblioteka miejska",
     "codeName": "INF.03-06-25.06-SG",
     "links": {
@@ -2721,7 +2721,7 @@
     },
     "tags": [
       "przeskalowanie grafiki",
-	  "modyfikacja grafiki",
+      "modyfikacja grafiki",
       "wyświetlanie danych z bazy",
       "formularz",
     ],
