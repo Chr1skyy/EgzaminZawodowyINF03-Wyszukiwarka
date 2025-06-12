@@ -1,7 +1,30 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const body = document.body;
+    const btn = document.getElementById('themeToggle');
+    body.classList.remove('light');
+    btn.textContent = '🌙 Tryb jasny';
+
+    btn.addEventListener('click', () => {
+        body.classList.toggle('light');
+        if (body.classList.contains('light')) {
+            btn.textContent = '🌞 Tryb ciemny';
+        } else {
+            btn.textContent = '🌙 Tryb jasny';
+        }
+    });
+});
+
 let exams = [];
 let resultsDiv = document.getElementById('results');
 let searchCountDiv = document.getElementById('searchCount');
 let searchInput = document.getElementById('search');
+
+searchInput.addEventListener('input', filterExams);
+
+document.querySelectorAll('.difficulty-filter, .lang-filter, .formula-filter').forEach(cb => {
+    cb.addEventListener('change', filterExams);
+});
+
 
 fetch('exams.json')
     .then(res => res.json())
@@ -9,26 +32,6 @@ fetch('exams.json')
         exams = data;
         showResults(exams);
     });
-
-searchInput.addEventListener('input', function () {
-    const query = this.value.trim().toLowerCase();
-    if (!query) return showResults(exams);
-    const queryWords = query.split(/[\s,]+/);
-    const filtered = exams.filter(exam => {
-        const fields = [
-            exam.name,
-            exam.language,
-            exam.formula,
-            exam.codeName,
-            exam.session,
-            exam.year,
-            ...(exam.tags || []),
-            exam.difficulty
-        ].join(' ').toLowerCase();
-        return queryWords.every(word => fields.includes(word));
-    });
-    showResults(filtered);
-});
 
 function showResults(list) {
     searchCountDiv.textContent = `Znaleziono ${list.length} arkusz${list.length === 1 ? '' : 'y'}.`;
@@ -67,18 +70,35 @@ function showResults(list) {
       `}).join('');
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const body = document.body;
-    const btn = document.getElementById('themeToggle');
-    body.classList.remove('light');
-    btn.textContent = '🌙 Tryb jasny';
+function getCheckedValues(selector) {
+    return Array.from(document.querySelectorAll(selector + ':checked')).map(cb => cb.value);
+}
 
-    btn.addEventListener('click', () => {
-        body.classList.toggle('light');
-        if (body.classList.contains('light')) {
-            btn.textContent = '🌞 Tryb ciemny';
-        } else {
-            btn.textContent = '🌙 Tryb jasny';
-        }
+function filterExams() {
+    const query = searchInput.value.trim().toLowerCase();
+    const queryWords = query.split(/[\s,]+/).filter(Boolean);
+    const selectedDifficulties = getCheckedValues('.difficulty-filter').map(v => v.toLowerCase());
+    const selectedLangs = getCheckedValues('.lang-filter').map(v => v.toLowerCase());
+    const selectedFormulas = getCheckedValues('.formula-filter').map(v => v.toLowerCase());
+    const filtered = exams.filter(exam => {
+        if (selectedDifficulties.length && !selectedDifficulties.includes((exam.difficulty || '').toLowerCase())) return false;
+        if (selectedLangs.length && !selectedLangs.includes((exam.language || '').toLowerCase())) return false;
+        if (selectedFormulas.length && !selectedFormulas.includes((exam.formula || '').toLowerCase())) return false;
+        if (!query) return true;
+        const fields = [
+            exam.name,
+            exam.codeName,
+            exam.session,
+            exam.year,
+            ...(exam.tags || [])
+        ].join(' ').toLowerCase();
+        return queryWords.every(word => fields.includes(word));
     });
-});
+    showResults(filtered);
+}
+
+
+
+
+
+

@@ -7,6 +7,7 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 
+/* Header */
 .header-row {
     display: flex;
     align-items: center;
@@ -28,19 +29,7 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 
-#search {
-    background: #232323;
-    color: #f1f1f1;
-    border: 1px solid #444;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10px 10px;
-    font-size: 1.1em;
-    margin-bottom: 1em;
-    border-radius: 4px;
-    transition: background 0.3s, color 0.3s, border 0.3s;
-}
-
+/* Container */
 .container {
     background: #232323;
     color: #f1f1f1;
@@ -51,22 +40,87 @@ body {
     box-shadow: 0 2px 8px #0001;
 }
 
-.exam {
-    background: #161616;
-    border-radius: 8px;
-    margin: 10px 0;
-    padding: 10px 10px;
-    transition: background 0.3s, color 0.3s;
+/* Search */
+#search {
+    background: #232323;
+    color: #f1f1f1;
+    border: 1px solid #444;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+    outline: none;
 }
 
+#search:focus {
+    border-color: #588dff;
+    background: #222;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-bottom: 0.5em;
+    background: #232e3a;
+    border-radius: 8px;
+    padding: 16px 12px;
+    box-shadow: 0 2px 12px #0004;
+}
+
+.filters>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.filters strong {
+    margin-right: 0.5em;
+    font-size: 1em;
+    color: #588dff;
+}
+
+.filters label {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 1em;
+    user-select: none;
+}
+
+.filters input[type="checkbox"] {
+    accent-color: #588dff;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px 0 0;
+    cursor: pointer;
+}
+
+/* Results */
 #searchCount {
-    padding: 0px 10px;
+    padding: 10px 10px;
+}
+
+.exam {
+    background: #181818;
+    border-radius: 10px;
+    margin: 14px 0;
+    padding: 18px 18px 18px 18px;
+    box-shadow: 0 2px 8px #0002;
+    transition: background 0.3s, color 0.3s;
 }
 
 .exam-title {
     font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 4px;
+    font-size: 1.15em;
+    margin-bottom: 6px;
 }
 
 .exam-lang {
@@ -76,21 +130,30 @@ body {
 
 .exam-meta {
     color: #6b6b6b;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    font-size: 0.98em;
 }
 
 .exam-links a {
-    margin-right: 12px;
+    margin-right: 14px;
     color: #588dff;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.exam-links a:hover {
+    color: #1a4fb8;
+    text-decoration: underline;
 }
 
 .exam-tags {
     color: #888;
-    font-size: 0.9em;
-    padding-top: 0.25em;
+    font-size: 0.95em;
+    padding-top: 0.3em;
 }
 
+/* Difficulty colors */
 .difficulty,
 .codeName,
 .formula,
@@ -110,6 +173,7 @@ body {
     color: rgb(255, 0, 0);
 }
 
+/* Light theme */
 body.light {
     background: #f6f6f6;
     color: #181818;
@@ -126,14 +190,29 @@ body.light #search {
     border: 1px solid #bbb;
 }
 
+body.light #search:focus {
+    border-color: #1a4fb8;
+    background: #f6faff;
+}
+
 body.light #themeToggle {
     background: #e0e0e0;
     color: #222;
 }
 
+body.light .filters {
+    background: #f3f6ff;
+    box-shadow: 0 1px 4px #0001;
+}
+
+body.light .filters strong {
+    color: #1a4fb8;
+}
+
 body.light .exam {
-    background: #f4f4f4;
+    background: #f9f9f9;
     color: #181818;
+    box-shadow: 0 2px 8px #0001;
 }
 
 body.light .exam-meta {
@@ -146,6 +225,10 @@ body.light .exam-tags {
 }
 
 body.light .exam-links a {
+    color: #1a4fb8;
+}
+
+body.light .exam-links a:hover {
     color: #588dff;
 }
 
