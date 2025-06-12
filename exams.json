@@ -2751,5 +2751,49 @@
       "pokazywanie/ukrywanie elementów"
     ],
     "difficulty": "medium"
+  },
+  {
+    "formula": "INF.03",
+    "year": 2025,
+    "session": "Czerwiec",
+    "number": "09",
+    "language": "?",
+    "name": "?",
+    "codeName": "INF.03-09-25.06-SG",
+    "links": {
+      "mainFolder": "",
+      "examSheet": "",
+      "gradingRules": "",
+      "archive": "",
+      "solution": "",
+      "solutionZIP": ""
+    },
+    "tags": [],
+    "difficulty": null
+  },
+  {
+    "formula": "INF.03",
+    "year": 2025,
+    "session": "Czerwiec",
+    "number": "10",
+    "language": "PHP",
+    "name": "Szkolenia i kursy",
+    "codeName": "INF.03-10-25.06-SG",
+    "links": {
+      "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_10",
+      "examSheet": "",
+      "gradingRules": "",
+      "archive": "",
+      "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_06_10/rozwiazanie",
+      "solutionZIP": ""
+    },
+    "tags": [
+      "przeskalowanie grafiki",
+      "kwerenda z relacją LEFT",
+      "wyświetlanie danych z bazy",
+      "wstawianie danych do bazy",
+      "formularz"
+    ],
+    "difficulty": "medium"
   }
 ]
