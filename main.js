@@ -50,19 +50,19 @@ function showResults(list) {
         return `
         <div class="exam">
           <div class="exam-title">
-            ${exam.name} <span class="tags">[${exam.language}]</span>
+            ${exam.name} <span class="exam-lang">[${exam.language}]</span>
           </div>
           <div class="exam-meta">
             <span class="formula">${exam.formula}</span> | ${exam.year} | ${exam.session} | ${exam.number} | Nazwa kodowa: <span class="codeName">${exam.codeName}</span> | Trudność: <span class="difficulty ${difficultyClass}">${exam.difficulty || 'N/A'}</span>
           </div>
-          <div class="links">
+          <div class="exam-links">
             ${exam.links.examSheet ? `<a href="${exam.links.examSheet}" target="_blank">Arkusz</a>` : ''}
             ${exam.links.archive ? `<a href="${exam.links.archive}" target="_blank">Baza</a>` : ''}
             ${exam.links.gradingRules ? `<a href="${exam.links.gradingRules}" target="_blank">Zasady oceny</a>` : ''}
             ${exam.links.solution ? `<a href="${exam.links.solution}" target="_blank">Rozwiązanie</a>` : ''}
             ${exam.links.solutionZIP ? `<a href="${exam.links.solutionZIP}" target="_blank">RozwiązanieZIP</a>` : ''}
           </div>
-          <div class="tags">${exam.tags.join(', ')}</div>
+          <div class="exam-tags">${exam.tags.join(', ')}</div>
         </div>
       `}).join('');
 }

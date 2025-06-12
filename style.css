@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: #161616;
+    color: #f1f1f1;
+    transition: background 0.3s, color 0.3s;
 }
 
 .header-row {
@@ -25,47 +28,24 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 
-body {
-    background: #181818;
-    color: #f1f1f1;
-    transition: background 0.3s, color 0.3s;
-}
-
-body .container {
-    background: #232323;
-    color: #f1f1f1;
-}
-
-body.light {
-    background: #f1f1f1;
-    color: #181818;
-}
-
-body.light .container {
-    background: #fff;
-    color: #181818;
-}
-
-body.light #themeToggle {
-    background: #ddd;
-    color: #000;
-}
-
-body:not(.light) #search {
+#search {
     background: #232323;
     color: #f1f1f1;
     border: 1px solid #444;
-}
-
-body.light .exam {
-    background: #f1f1f1;
-    color: #181818;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s, border 0.3s;
 }
 
 .container {
+    background: #232323;
+    color: #f1f1f1;
     max-width: 800px;
     margin: 40px auto;
-    background: #fff;
     padding: 30px 40px;
     border-radius: 8px;
     box-shadow: 0 2px 8px #0001;
@@ -79,19 +59,6 @@ body.light .exam {
     transition: background 0.3s, color 0.3s;
 }
 
-#search {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10px 10px;
-    font-size: 1.1em;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #fff;
-    color: #181818;
-    transition: background 0.3s, color 0.3s, border 0.3s;
-}
-
 #searchCount {
     padding: 0px 10px;
 }
@@ -102,19 +69,23 @@ body.light .exam {
     margin-bottom: 4px;
 }
 
+.exam-lang {
+    color: #888;
+    font-size: 1.1em;
+}
+
 .exam-meta {
     color: #6b6b6b;
-    font-size: 0.95em;
     margin-bottom: 4px;
 }
 
-.links a {
+.exam-links a {
     margin-right: 12px;
-    font-size: 0.95em;
     color: #588dff;
+    text-decoration: none;
 }
 
-.tags {
+.exam-tags {
     color: #888;
     font-size: 0.9em;
     padding-top: 0.25em;
@@ -122,7 +93,8 @@ body.light .exam {
 
 .difficulty,
 .codeName,
-.formula {
+.formula,
+.lang {
     font-weight: 700;
 }
 
@@ -136,4 +108,47 @@ body.light .exam {
 
 .difficulty-hard {
     color: rgb(255, 0, 0);
+}
+
+body.light {
+    background: #f6f6f6;
+    color: #181818;
+}
+
+body.light .container {
+    background: #fff;
+    color: #181818;
+}
+
+body.light #search {
+    background: #fff;
+    color: #181818;
+    border: 1px solid #bbb;
+}
+
+body.light #themeToggle {
+    background: #e0e0e0;
+    color: #222;
+}
+
+body.light .exam {
+    background: #f4f4f4;
+    color: #181818;
+}
+
+body.light .exam-meta {
+    color: #555;
+}
+
+body.light .exam-lang,
+body.light .exam-tags {
+    color: #888;
+}
+
+body.light .exam-links a {
+    color: #588dff;
+}
+
+body.light #searchCount {
+    color: #222;
 }
