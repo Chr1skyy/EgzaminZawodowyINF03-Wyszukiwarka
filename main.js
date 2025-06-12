@@ -18,13 +18,11 @@ let exams = [];
 let resultsDiv = document.getElementById('results');
 let searchCountDiv = document.getElementById('searchCount');
 let searchInput = document.getElementById('search');
-
 searchInput.addEventListener('input', filterExams);
-
-document.querySelectorAll('.difficulty-filter, .lang-filter, .formula-filter').forEach(cb => {
+let filtersCheckboxes = document.querySelectorAll('.difficulty-filter, .lang-filter, .formula-filter, .hideDone-filter');
+filtersCheckboxes.forEach(cb => {
     cb.addEventListener('change', filterExams);
 });
-
 
 fetch('exams.json')
     .then(res => res.json())
@@ -34,24 +32,22 @@ fetch('exams.json')
     });
 
 function showResults(list) {
-    searchCountDiv.textContent = `Znaleziono ${list.length} arkusz${list.length === 1 ? '' : 'y'}.`;
-    if (!list.length) {
+    const doneSet = getDoneSet();
+    const filteredList = list;
+    searchCountDiv.textContent = `Znaleziono ${filteredList.length} arkusz${filteredList.length === 1 ? '' : 'y'}.`;
+    if (!filteredList.length) {
         resultsDiv.innerHTML = '<p>Brak wyników.</p>';
         return;
     }
-    resultsDiv.innerHTML = list.map(exam => {
+    resultsDiv.innerHTML = filteredList.map(exam => {
         let difficultyClass = '';
-        if (exam.difficulty === 'easy') {
-            difficultyClass = 'difficulty-easy';
-        }
-        if (exam.difficulty === 'medium') {
-            difficultyClass = 'difficulty-medium';
-        }
-        if (exam.difficulty === 'hard') {
-            difficultyClass = 'difficulty-hard';
-        }
+        if (exam.difficulty === 'Easy') difficultyClass = 'difficulty-easy';
+        if (exam.difficulty === 'Medium') difficultyClass = 'difficulty-medium';
+        if (exam.difficulty === 'Hard') difficultyClass = 'difficulty-hard';
+        const checked = doneSet.has(exam.codeName) ? 'checked' : '';
         return `
         <div class="exam">
+          <label style="float:right"><input type="checkbox" class="done-checkbox" data-codename="${exam.codeName}" ${checked}> Wykonane</label>
           <div class="exam-title">
             ${exam.name} <span class="exam-lang">[${exam.language}]</span>
           </div>
@@ -67,7 +63,19 @@ function showResults(list) {
           </div>
           <div class="exam-tags">${exam.tags.join(', ')}</div>
         </div>
-      `}).join('');
+      `;
+    }).join('');
+    // Obsługa checkboxów wykonania
+    document.querySelectorAll('.done-checkbox').forEach(cb => {
+        cb.addEventListener('change', function () {
+            const codeName = this.getAttribute('data-codename');
+            const doneSet = getDoneSet();
+            if (this.checked) doneSet.add(codeName);
+            else doneSet.delete(codeName);
+            setDoneSet(doneSet);
+            if (document.getElementById('hideDone')?.checked) filterExams();
+        });
+    });
 }
 
 function getCheckedValues(selector) {
@@ -77,13 +85,17 @@ function getCheckedValues(selector) {
 function filterExams() {
     const query = searchInput.value.trim().toLowerCase();
     const queryWords = query.split(/[\s,]+/).filter(Boolean);
-    const selectedDifficulties = getCheckedValues('.difficulty-filter').map(v => v.toLowerCase());
-    const selectedLangs = getCheckedValues('.lang-filter').map(v => v.toLowerCase());
-    const selectedFormulas = getCheckedValues('.formula-filter').map(v => v.toLowerCase());
-    const filtered = exams.filter(exam => {
-        if (selectedDifficulties.length && !selectedDifficulties.includes((exam.difficulty || '').toLowerCase())) return false;
-        if (selectedLangs.length && !selectedLangs.includes((exam.language || '').toLowerCase())) return false;
-        if (selectedFormulas.length && !selectedFormulas.includes((exam.formula || '').toLowerCase())) return false;
+    const selectedDifficulties = getCheckedValues('.difficulty-filter');
+    const selectedLangs = getCheckedValues('.lang-filter');
+    const selectedFormulas = getCheckedValues('.formula-filter');
+    const hideDone = document.getElementById('hideDone')?.checked;
+    const doneSet = getDoneSet();
+
+    let filtered = exams.filter(exam => {
+        if (selectedDifficulties.length > 0 && !selectedDifficulties.includes(exam.difficulty || '')) return false;
+        if (selectedLangs.length > 0 && !selectedLangs.includes(exam.language || '')) return false;
+        if (selectedFormulas.length > 0 && !selectedFormulas.includes(exam.formula || '')) return false;
+        if (hideDone && doneSet.has(exam.codeName)) return false;
         if (!query) return true;
         const fields = [
             exam.name,
@@ -94,11 +106,13 @@ function filterExams() {
         ].join(' ').toLowerCase();
         return queryWords.every(word => fields.includes(word));
     });
+
     showResults(filtered);
 }
 
-
-
-
-
-
+function getDoneSet() {
+    return new Set(JSON.parse(localStorage.getItem('doneExams') || '[]'));
+}
+function setDoneSet(doneSet) {
+    localStorage.setItem('doneExams', JSON.stringify(Array.from(doneSet)));
+}

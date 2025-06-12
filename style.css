@@ -8,13 +8,13 @@ body {
 }
 
 /* Header */
-.header-row {
+.container-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header-row h1 {
+.container-row h1 {
     text-align: left;
 }
 
@@ -129,7 +129,7 @@ body {
 }
 
 .exam-meta {
-    color: #6b6b6b;
+    color: #a1a1a1;
     margin-bottom: 6px;
     font-size: 0.98em;
 }
@@ -153,7 +153,6 @@ body {
     padding-top: 0.3em;
 }
 
-/* Difficulty colors */
 .difficulty,
 .codeName,
 .formula,
@@ -161,6 +160,7 @@ body {
     font-weight: 700;
 }
 
+/* Difficulty colors */
 .difficulty-easy {
     color: rgb(0, 128, 0);
 }

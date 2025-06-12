@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-        <div class="header-row">
+        <div class="container-row">
             <h1>Wyszukiwarka egzaminów</h1>
             <button id="themeToggle">🌙 Tryb jasny</button>
         </div>
@@ -26,9 +26,9 @@
             </div>
             <div>
                 <strong>Trudność:</strong>
-                <label><input type="checkbox" class="difficulty-filter" value="easy" checked>Easy</label>
-                <label><input type="checkbox" class="difficulty-filter" value="medium" checked>Medium</label>
-                <label><input type="checkbox" class="difficulty-filter" value="hard" checked>Hard</label>
+                <label><input type="checkbox" class="difficulty-filter" value="Easy" checked>Easy</label>
+                <label><input type="checkbox" class="difficulty-filter" value="Medium" checked>Medium</label>
+                <label><input type="checkbox" class="difficulty-filter" value="Hard" checked>Hard</label>
             </div>
             <div>
                 <strong>Język skryptu:</strong>
@@ -37,7 +37,12 @@
                 <label><input type="checkbox" class="lang-filter" value="PHP" checked>PHP</label>
             </div>
         </div>
-        <div id="searchCount"></div>
+        <div class="container-row">
+            <div id="searchCount"></div>
+            <div id="hideDone">
+                <label><input class="hideDone-filter" type="checkbox" id="hideDone"> Ukryj wykonane egzaminy</label>
+            </div>
+        </div>
         <div id="results"></div>
     </div>
     <script src="main.js"></script>
