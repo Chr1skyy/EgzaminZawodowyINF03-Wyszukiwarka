@@ -1668,6 +1668,7 @@
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_01_01/rozwiazanie.zip"
     },
     "tags": [
+      "kwerenda tworząca widok / perspektywę",
       "przeskalowanie grafiki",
       "modyfikacja grafiki",
       "formularz"
@@ -2817,5 +2818,24 @@
       "wyświetlanie danych z bazy"
     ],
     "difficulty": "Easy"
+  },
+  {
+    "formula": "INF.03",
+    "year": 2025,
+    "session": "Czerwiec",
+    "number": "12",
+    "language": "?",
+    "name": "?",
+    "codeName": "INF.03-12-25.06-SG",
+    "links": {
+      "mainFolder": "",
+      "examSheet": "",
+      "gradingRules": "",
+      "archive": "",
+      "solution": "",
+      "solutionZIP": ""
+    },
+    "tags": [],
+    "difficulty": null
   }
 ]
