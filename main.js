@@ -148,9 +148,7 @@ function showBigThumbnail(src) {
 function setupCodeNameCopy() {
     document.querySelectorAll('.codeName').forEach(e => {
         e.addEventListener('click', () => {
-            navigator.clipboard.writeText(e.textContent)
-                .then(() => alert('Skopiowano: ' + e.textContent))
-                .catch(err => alert('Nie udało się skopiować: ' + err));
+            navigator.clipboard.writeText(e.textContent);
         });
     });
 }

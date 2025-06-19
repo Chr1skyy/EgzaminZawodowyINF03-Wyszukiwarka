@@ -37,7 +37,7 @@ body {
     margin: 40px auto;
     padding: 30px 40px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px #0001;
+    box-shadow: 0 4px 8px #0001;
 }
 
 /* Search */
@@ -48,7 +48,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     padding: 12px 14px;
-    font-size: 1.1em;
+    font-size: 1em;
     margin-bottom: 0.5em;
     border-radius: 6px;
     transition: background 0.3s, color 0.3s, border 0.3s;
@@ -69,7 +69,7 @@ body {
     background: #232e3a;
     border-radius: 8px;
     padding: 16px 12px;
-    box-shadow: 0 2px 12px #0004;
+    box-shadow: 0 4px 12px #0004;
 }
 
 .filters>div {
@@ -138,7 +138,6 @@ body {
 .exam-meta {
     color: #a1a1a1;
     margin-bottom: 6px;
-    font-size: 0.98em;
 }
 
 .exam-links a {
@@ -156,7 +155,7 @@ body {
 
 .exam-tags {
     color: #888;
-    font-size: 0.95em;
+    font-size: 0.9em;
     padding-top: 0.3em;
 }
 
@@ -213,7 +212,7 @@ body.light #themeToggle {
 
 body.light .filters {
     background: #f3f6ff;
-    box-shadow: 0 1px 4px #0001;
+    box-shadow: 0 4px 8px #0001;
 }
 
 body.light .filters strong {
@@ -223,7 +222,7 @@ body.light .filters strong {
 body.light .exam {
     background: #f9f9f9;
     color: #181818;
-    box-shadow: 0 2px 8px #0001;
+    box-shadow: 0 4px 8px #0001;
 }
 
 body.light .exam-meta {
@@ -269,7 +268,8 @@ body.light #searchCount {
 
 .exam-thumbnail-img:hover {
     box-shadow: 0 4px 16px #0006;
-    outline: 2px solid #588dff;
+    outline: 3px solid #588dff;
+    transition: outline 0.2s, box-shadow 0.2s;
 }
 
 #big-thumbnail {
