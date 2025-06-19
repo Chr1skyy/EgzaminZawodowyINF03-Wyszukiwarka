@@ -112,15 +112,22 @@ body {
     background: #181818;
     border-radius: 10px;
     margin: 14px 0;
-    padding: 18px 18px 18px 18px;
+    padding: 16px;
     box-shadow: 0 2px 8px #0002;
     transition: background 0.3s, color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .exam-title {
     font-weight: bold;
     font-size: 1.15em;
     margin-bottom: 6px;
+}
+
+.exam-content {
+    flex: 1;
 }
 
 .exam-lang {
@@ -151,6 +158,10 @@ body {
     color: #888;
     font-size: 0.95em;
     padding-top: 0.3em;
+}
+
+.exam-done {
+    margin-top: 10px;
 }
 
 .difficulty,
@@ -234,4 +245,63 @@ body.light .exam-links a:hover {
 
 body.light #searchCount {
     color: #222;
+}
+
+/* Thumbnails */
+.exam-thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exam-thumbnail-img {
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px #0003;
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s;
+    width: 140px;
+    height: auto;
+    margin-left: 15px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.exam-thumbnail-img:hover {
+    box-shadow: 0 4px 16px #0006;
+    outline: 2px solid #588dff;
+}
+
+#big-thumbnail {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+}
+
+
+#big-thumbnail img {
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 32px #000a;
+    background: #fff;
+    padding: 5px;
+}
+
+#big-thumbnail-close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10001;
 }

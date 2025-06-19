@@ -7,6 +7,7 @@
     "language": "PHP",
     "name": "Restauracja \"Wszystkie Smaki\"",
     "codeName": "E.14-01-18.06",
+    "thumbnail": "img/thumbnail/E.14-01-18.06.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2018_06_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2018_06_01/e14_2018_06_01.pdf",
@@ -28,6 +29,7 @@
     "language": "PHP",
     "name": "Restauracja \"Kulinaria.pl\"",
     "codeName": "E.14-04-18.06",
+    "thumbnail": "img/thumbnail/E.14-04-18.06.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2018_06_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2018_06_04/e14_2018_06_04.pdf",
@@ -49,6 +51,7 @@
     "language": "JS",
     "name": "Dom weselny",
     "codeName": "E.14-05-18.06",
+    "thumbnail": "img/thumbnail/E.14-05-18.06.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2018_06_05",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2018_06_05/e14_2018_06_05.pdf",
@@ -72,6 +75,7 @@
     "language": "JS",
     "name": "Pizzeria",
     "codeName": "E.14-06-18.06",
+    "thumbnail": "img/thumbnail/E.14-06-18.06.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2018_06_06",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2018_06_06/e14_2018_06_06.pdf",
@@ -95,6 +99,7 @@
     "language": "PHP",
     "name": "Filmoteka",
     "codeName": "E.14-01-19.01",
+    "thumbnail": "img/thumbnail/E.14-01-19.01.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_01/e14_2019_01_01.pdf",
@@ -117,6 +122,7 @@
     "language": "JS",
     "name": "Formatowanie dokumentów HTML",
     "codeName": "E.14-02-19.01",
+    "thumbnail": "img/thumbnail/E.14-02-19.01.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_02/e14_2019_01_02.pdf",
@@ -139,8 +145,9 @@
     "session": "Styczeń",
     "number": "03",
     "language": "PHP",
-    "name": "Baza filmów / Filmoteka",
+    "name": "Baza filmów",
     "codeName": "E.14-03-19.01",
+    "thumbnail": "img/thumbnail/E.14-03-19.01.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_03/e14_2019_01_03.pdf",
@@ -163,6 +170,7 @@
     "language": "JS",
     "name": "Hurtownia kawy",
     "codeName": "E.14-04-19.01",
+    "thumbnail": "img/thumbnail/E.14-04-19.01.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_04/e14_2019_01_04.pdf",
@@ -185,8 +193,9 @@
     "session": "Styczeń",
     "number": "05",
     "language": "PHP",
-    "name": "Idziemy na grzyby / Grzybobranie",
+    "name": "Idziemy na grzyby",
     "codeName": "E.14-05-19.01",
+    "thumbnail": "img/thumbnail/E.14-05-19.01.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_05",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_05/e14_2019_01_05.pdf",
@@ -206,8 +215,9 @@
     "session": "Styczeń",
     "number": "06",
     "language": "PHP",
-    "name": "Biuro podróży \"Wesoła Wyprawa\" / Podróże dalekie i bliskie",
+    "name": "Biuro podróży \"WESOŁA WYPRAWA\"",
     "codeName": "E.14-06-19.01",
+    "thumbnail": "img/thumbnail/E.14-06-19.01.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_06",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_06/e14_2019_01_06.pdf",
@@ -231,6 +241,7 @@
     "language": "PHP",
     "name": "Hurtownia komputerowa - podzespoły",
     "codeName": "E.14-07-19.01",
+    "thumbnail": "img/thumbnail/E.14-07-19.01.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_07",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_07/e14_2019_01_07.pdf",
@@ -253,6 +264,7 @@
     "language": "PHP",
     "name": "Hurtownia komputerowa - podzespoły",
     "codeName": "E.14-08-19.01",
+    "thumbnail": "img/thumbnail/E.14-08-19.01.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_08",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_08/e14_2019_01_08.pdf",
@@ -275,6 +287,7 @@
     "language": "PHP",
     "name": "Atlas zwierząt",
     "codeName": "E.14-09-19.01",
+    "thumbnail": "img/thumbnail/E.14-09-19.01.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_09",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_09/e14_2019_01_09.pdf",
@@ -296,6 +309,7 @@
     "language": "PHP",
     "name": "Drapieżniki i inne",
     "codeName": "E.14-10-19.01",
+    "thumbnail": "img/thumbnail/E.14-10-19.01.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_10",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_10/e14_2019_01_10.pdf",
@@ -315,8 +329,9 @@
     "session": "Styczeń",
     "number": "11",
     "language": "JS",
-    "name": "Zdjęcia naszych pupilów / Galeria zdjęć",
+    "name": "Zdjęcia psów",
     "codeName": "E.14-11-19.01",
+    "thumbnail": "img/thumbnail/E.14-11-19.01.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_11",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_11/e14_2019_01_11.pdf",
@@ -337,8 +352,9 @@
     "session": "Styczeń",
     "number": "12",
     "language": "JS",
-    "name": "Zdjęcia naszych pupilów / Galeria zdjęć",
+    "name": "Fotografie zwierząt",
     "codeName": "E.14-12-19.01",
+    "thumbnail": "img/thumbnail/E.14-12-19.01.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_12",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_01_12/e14_2019_01_12.pdf",
@@ -361,6 +377,7 @@
     "language": "PHP",
     "name": "Sklep papierniczy",
     "codeName": "E.14-01-19.06",
+    "thumbnail": "img/thumbnail/E.14-01-19.06.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_06_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_06_01/e14_2019_06_01.pdf",
@@ -383,6 +400,7 @@
     "language": "PHP",
     "name": "Hurtownia papiernicza",
     "codeName": "E.14-02-19.06",
+    "thumbnail": "img/thumbnail/E.14-02-19.06.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_06_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_06_02/e14_2019_06_02.pdf",
@@ -403,8 +421,9 @@
     "session": "Czerwiec",
     "number": "03",
     "language": "PHP",
-    "name": "Miejska Biblioteka Publiczna w Książkowicach",
+    "name": "Biblioteka Publiczna w Książkowicach",
     "codeName": "E.14-03-19.06",
+    "thumbnail": "img/thumbnail/E.14-03-19.06.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_06_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_06_03/e14_2019_06_03.pdf",
@@ -425,8 +444,9 @@
     "session": "Czerwiec",
     "number": "04",
     "language": "PHP",
-    "name": "Miejska Biblioteka Publiczna w Książkowicach",
+    "name": "Biblioteka Publiczna w Książkowicach",
     "codeName": "E.14-04-19.06",
+    "thumbnail": "img/thumbnail/E.14-04-19.06.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_06_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_06_04/e14_2019_06_04.pdf",
@@ -447,8 +467,9 @@
     "session": "Czerwiec",
     "number": "05",
     "language": "JS",
-    "name": "Firma IT / Usługi informatyczne",
+    "name": "Usługi informatyczne",
     "codeName": "E.14-05-19.06",
+    "thumbnail": "img/thumbnail/E.14-05-19.06.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_06_05",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_06_05/e14_2019_06_05.pdf",
@@ -473,6 +494,7 @@
     "language": "JS",
     "name": "Pogotowie komputerowe",
     "codeName": "E.14-06-19.06",
+    "thumbnail": "img/thumbnail/E.14-06-19.06.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_06_06",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2019_06_06/e14_2019_06_06.pdf",
@@ -495,8 +517,9 @@
     "session": "Styczeń",
     "number": "01",
     "language": "PHP",
-    "name": "Podzespoły komputerowe / Nasz sklep komputerowy",
+    "name": "Podzespoły komputerowe",
     "codeName": "E.14-01-20.01-SG",
+    "thumbnail": "img/thumbnail/E.14-01-20.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_01_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_01_01/e14_2020_01_01.pdf",
@@ -518,6 +541,7 @@
     "language": "JS",
     "name": "Fabryka żelków",
     "codeName": "E.14-02-20.01-SG",
+    "thumbnail": "img/thumbnail/E.14-02-20.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_01_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_01_02/e14_2020_01_02.pdf",
@@ -541,6 +565,7 @@
     "language": "JS",
     "name": "Fabryka cukierków",
     "codeName": "E.14-03-20.01-SG",
+    "thumbnail": "img/thumbnail/E.14-03-20.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_01_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_01_03/e14_2020_01_03.pdf",
@@ -565,6 +590,7 @@
     "language": "PHP",
     "name": "Gromady kręgowców",
     "codeName": "E.14-04-20.01-SG",
+    "thumbnail": "img/thumbnail/E.14-04-20.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_01_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_01_04/e14_2020_01_04.pdf",
@@ -583,8 +609,9 @@
     "session": "Czerwiec",
     "number": "01",
     "language": "JS",
-    "name": "Malarz / Koszty farby",
+    "name": "Malarz",
     "codeName": "E.14-01-20.06-SG",
+    "thumbnail": "img/thumbnail/E.14-01-20.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_06_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_06_01/e14_2020_06_01.pdf",
@@ -607,6 +634,7 @@
     "language": "PHP",
     "name": "Wynajem pokoi",
     "codeName": "E.14-02-20.06-SG",
+    "thumbnail": "img/thumbnail/E.14-02-20.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_06_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_06_02/e14_2020_06_02.pdf",
@@ -629,6 +657,7 @@
     "language": "PHP",
     "name": "Moje kwiaty",
     "codeName": "E.14-03-20.06-SG",
+    "thumbnail": "img/thumbnail/E.14-03-20.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_06_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_06_03/e14_2020_06_03.pdf",
@@ -652,6 +681,7 @@
     "language": "JS+PHP",
     "name": "Ozdoby - sklep",
     "codeName": "E.14-04-20.06-SG",
+    "thumbnail": "img/thumbnail/E.14-04-20.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_06_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/e14/e14_2020_06_04/e14_2020_06_04.pdf",
@@ -674,8 +704,9 @@
     "session": "Czerwiec",
     "number": "01",
     "language": "PHP",
-    "name": "Portal dla wędkarzy / Wędkujemy",
+    "name": "Portal dla wędkarzy",
     "codeName": "EE.09-01-19.06",
+    "thumbnail": "img/thumbnail/EE.09-01-19.06.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_01/ee09_2019_06_01.pdf",
@@ -697,6 +728,7 @@
     "language": "JS",
     "name": "Stacja paliw",
     "codeName": "EE.09-02-19.06",
+    "thumbnail": "img/thumbnail/EE.09-02-19.06.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_02/ee09_2019_06_02.pdf",
@@ -716,8 +748,9 @@
     "session": "Czerwiec",
     "number": "03",
     "language": "PHP",
-    "name": "Zawody wędkarskie / Wędkowanie - moje hobby",
+    "name": "Zawody wędkarskie",
     "codeName": "EE.09-03-19.06",
+    "thumbnail": "img/thumbnail/EE.09-03-19.06.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_03/ee09_2019_06_03.pdf",
@@ -738,8 +771,9 @@
     "session": "Czerwiec",
     "number": "04",
     "language": "JS",
-    "name": "Pomocnik matematyczny / Działania matematyczne",
+    "name": "Pomocnik matematyczny",
     "codeName": "EE.09-04-19.06",
+    "thumbnail": "img/thumbnail/EE.09-04-19.06.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_04/ee09_2019_06_04.pdf",
@@ -761,6 +795,7 @@
     "language": "JS",
     "name": "Poznaj Ciągi Liczbowe",
     "codeName": "EE.09-05-19.06",
+    "thumbnail": "img/thumbnail/EE.09-05-19.06.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_05",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_05/ee09_2019_06_05.pdf",
@@ -781,7 +816,8 @@
     "number": "06",
     "language": "PHP",
     "name": "Pogotowie Ratunkowe",
-    "codeName": "EE.09-05-19.06",
+    "codeName": "EE.09-06-19.06",
+    "thumbnail": "img/thumbnail/EE.09-06-19.06.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_06",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2019_06_06/ee09_2019_06_06.pdf",
@@ -802,8 +838,9 @@
     "session": "Styczeń",
     "number": "01",
     "language": "PHP",
-    "name": "Wędkuj z nami! / Klub wędkowania",
+    "name": "Wędkuj z nami!",
     "codeName": "EE.09-01-20.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-01-20.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_01/ee09_2020_01_01_SG.pdf",
@@ -823,8 +860,9 @@
     "session": "Styczeń",
     "number": "02",
     "language": "JS",
-    "name": "Witamy na stacji paliw / Nasza stacja paliw",
+    "name": "Witamy na stacji paliw",
     "codeName": "EE.09-02-20.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-02-20.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_02/ee09_2020_01_02_SG.pdf",
@@ -846,6 +884,7 @@
     "language": "PHP",
     "name": "Prognoza pogody dla Poznania",
     "codeName": "EE.09-03-20.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-03-20.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_01_03/ee09_2020_01_03_SG.pdf",
@@ -867,6 +906,7 @@
     "language": "PHP",
     "name": "Mój organizer",
     "codeName": "EE.09-01-20.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-01-20.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_01/ee09_2020_06_01_SG.pdf",
@@ -888,8 +928,9 @@
     "session": "Czerwiec",
     "number": "02",
     "language": "PHP",
-    "name": "Biuro podróży / Wycieczki i urlopy",
+    "name": "Biuro podróży",
     "codeName": "EE.09-02-20.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-02-20.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_02/ee09_2020_06_02_SG.pdf",
@@ -910,6 +951,7 @@
     "language": "PHP",
     "name": "Mój kalendarz",
     "codeName": "EE.09-03-20.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-03-20.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_03/ee09_2020_06_03_SG.pdf",
@@ -931,8 +973,9 @@
     "session": "Czerwiec",
     "number": "04",
     "language": "JS",
-    "name": "Salon kosmetyczny / Usługi kosmetyczne",
+    "name": "Salon kosmetyczny",
     "codeName": "EE.09-04-20.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-04-20.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_04/ee09_2020_06_04_SG.pdf",
@@ -952,8 +995,9 @@
     "session": "Czerwiec",
     "number": "05",
     "language": "JS",
-    "name": "Salon fryzjerski / Usługi fryzjerskie",
+    "name": "Salon fryzjerski",
     "codeName": "EE.09-05-20.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-05-20.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_05",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_05/ee09_2020_06_05_SG.pdf",
@@ -973,8 +1017,9 @@
     "session": "Czerwiec",
     "number": "06",
     "language": "PHP",
-    "name": "Witamy w biurze podróży / Wycieczki krajoznawcze",
+    "name": "Witamy w biurze podróży",
     "codeName": "EE.09-06-20.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-06-20.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_06",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2020_06_06/ee09_2020_06_06_SG.pdf",
@@ -993,8 +1038,9 @@
     "session": "Styczeń",
     "number": "01",
     "language": "PHP",
-    "name": "Światowe Rozgrywki Piłkarskie / Rozgrywki futbolowe",
+    "name": "Światowe Rozgrywki Piłkarskie",
     "codeName": "EE.09-01-21.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-01-21.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_01/ee_09_2021_01_01_SG.pdf",
@@ -1016,8 +1062,9 @@
     "session": "Styczeń",
     "number": "02",
     "language": "PHP",
-    "name": "Reprezentacja Polski w piłce nożnej / Piłka nożna",
+    "name": "Reprezentacja Polski w Piłce Nożnej",
     "codeName": "EE.09-02-21.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-02-21.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_02/ee_09_2021_01_02_SG.pdf",
@@ -1039,8 +1086,9 @@
     "session": "Styczeń",
     "number": "03",
     "language": "PHP",
-    "name": "Oblicz swoje BMI / Twoje BMI",
+    "name": "Oblicz swoje BMI",
     "codeName": "EE.09-03-21.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-03-21.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_03/ee_09_2021_01_03_SG.pdf",
@@ -1064,6 +1112,7 @@
     "language": "PHP",
     "name": "Oblicz Twój wskaźnik BMI",
     "codeName": "EE.09-04-21.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-04-21.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_04/ee_09_2021_01_04_SG.pdf",
@@ -1085,8 +1134,9 @@
     "session": "Styczeń",
     "number": "05",
     "language": "PHP",
-    "name": "Przyloty / Port lotniczy",
+    "name": "Przyloty",
     "codeName": "EE.09-05-21.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-05-21.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_05",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_05/ee_09_2021_01_05_SG.pdf",
@@ -1108,8 +1158,9 @@
     "session": "Styczeń",
     "number": "06",
     "language": "PHP",
-    "name": "Odloty samolotów z lotniska",
+    "name": "Odloty z lotniska",
     "codeName": "EE.09-06-21.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-06-21.01-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_06",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_01_06/ee_09_2021_01_06_SG.pdf",
@@ -1131,8 +1182,9 @@
     "session": "Czerwiec",
     "number": "01",
     "language": "PHP",
-    "name": "Portal społecznościowy - moje konto / Lista przyjaciół",
+    "name": "Portal społecznościowy - moje konto",
     "codeName": "EE.09-01-21.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-01-21.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_01/ee_09_2021_06_01_SG.pdf",
@@ -1154,8 +1206,9 @@
     "session": "Czerwiec",
     "number": "02",
     "language": "PHP",
-    "name": "Internetowy sklep z eko-warzywami / Warzywniak",
+    "name": "Internetowy sklep z eko-warzywami",
     "codeName": "EE.09-02-21.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-02-21.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_02/ee_09_2021_06_02_SG.pdf",
@@ -1179,8 +1232,9 @@
     "session": "Czerwiec",
     "number": "03",
     "language": "PHP",
-    "name": "Internetowa wypożyczalnia filmów / Video On Demand",
+    "name": "Internetowa wypożyczalnia filmów",
     "codeName": "EE.09-03-21.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-03-21.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_03/ee_09_2021_06_03_SG.pdf",
@@ -1205,6 +1259,7 @@
     "language": "PHP",
     "name": "Portal społecznościowy - panel administratora",
     "codeName": "EE.09-04-21.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-04-21.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2021_06_04/ee_09_2021_06_04_SG.pdf",
@@ -1227,8 +1282,9 @@
     "session": "Styczeń",
     "number": "01",
     "language": "PHP",
-    "name": "Zgłoszenie na kartę wędkarską / Karty wędkarskie",
+    "name": "Zgłoszenie na kartę wędkarską",
     "codeName": "EE.09-01-22.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-01-22.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_01/ee_09_2022_01_01_SG.pdf",
@@ -1252,6 +1308,7 @@
     "language": "PHP",
     "name": "Prognoza pogody dla Wrocławia",
     "codeName": "EE.09-02-22.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-02-22.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_02/ee_09_2022_01_02_SG.pdf",
@@ -1272,8 +1329,9 @@
     "session": "Styczeń",
     "number": "03",
     "language": "PHP",
-    "name": "Dodanie zespołu ratowniczego / Zespoły ratownicze",
+    "name": "Dodanie zespołu ratowniczego",
     "codeName": "EE.09-03-22.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-03-22.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_03/ee_09_2022_01_03_SG.pdf",
@@ -1295,8 +1353,9 @@
     "session": "Styczeń",
     "number": "04",
     "language": "PHP",
-    "name": "Forum wielbicieli psów / Forum o psach",
+    "name": "Forum wielbicieli psów",
     "codeName": "EE.09-04-22.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-04-22.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_04/ee_09_2022_01_04_SG.pdf",
@@ -1320,8 +1379,9 @@
     "session": "Styczeń",
     "number": "05",
     "language": "PHP",
-    "name": "Nasze osiedle / Portal społecznościowy",
+    "name": "Nasze osiedle",
     "codeName": "EE.09-05-22.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-05-22.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_05",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_05/ee_09_2022_01_05_SG.pdf",
@@ -1344,8 +1404,9 @@
     "session": "Styczeń",
     "number": "06",
     "language": "JS",
-    "name": "Konfigurator stylu / Style w JavaScript",
+    "name": "Konfigurator stylu",
     "codeName": "EE.09-06-22.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-06-22.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_06",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_06/ee_09_2022_01_06_SG.pdf",
@@ -1368,6 +1429,7 @@
     "language": "JS",
     "name": "Galeria miejsc ciekawych",
     "codeName": "EE.09-07-22.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-07-22.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_07",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_01_07/ee_09_2022_01_07_SG.pdf",
@@ -1388,8 +1450,9 @@
     "session": "Czerwiec",
     "number": "01",
     "language": "PHP",
-    "name": "Forum miłośników psów / Forum o psach",
+    "name": "Forum miłośników psów",
     "codeName": "EE.09-01-22.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-01-22.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_01/ee_09_2022_06_01_SG.pdf",
@@ -1414,6 +1477,7 @@
     "language": "JS",
     "name": "Pomocnik CSS",
     "codeName": "EE.09-02-22.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-02-22.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_02/ee_09_2022_06_02_SG.pdf",
@@ -1436,8 +1500,9 @@
     "session": "Czerwiec",
     "number": "03",
     "language": "PHP",
-    "name": "Hurtownia spożywcza / Opinie klientów",
+    "name": "Hurtownia spożywcza - opinie klientów",
     "codeName": "EE.09-03-22.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-03-22.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_03/ee_09_2022_06_03_SG.pdf",
@@ -1458,8 +1523,9 @@
     "session": "Czerwiec",
     "number": "04",
     "language": "JS",
-    "name": "Sieci komputerowe / Zamówienia hurtowe",
+    "name": "Sieci komputerowe",
     "codeName": "EE.09-04-22.06-SG",
+    "thumbnail": "img/thumbnail/EE.09-04-22.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2022_06_04/ee_09_2022_06_04_SG.pdf",
@@ -1480,8 +1546,9 @@
     "session": "Styczeń",
     "number": "01",
     "language": "PHP",
-    "name": "Akta pracownicze / Sekretariat",
+    "name": "Akta pracownicze",
     "codeName": "EE.09-01-23.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-01-23.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_01/ee_09_2023_01_01_SG.pdf",
@@ -1504,6 +1571,7 @@
     "language": "JS",
     "name": "Galeria obrazów",
     "codeName": "EE.09-02-23.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-02-23.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_02/ee_09_2023_01_02_SG.pdf",
@@ -1526,6 +1594,7 @@
     "language": "JS",
     "name": "Gazeta codzienna",
     "codeName": "EE.09-03-23.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-03-23.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_03/ee_09_2023_01_03_SG.pdf",
@@ -1547,6 +1616,7 @@
     "language": "PHP",
     "name": "Wizytówki pracowników",
     "codeName": "EE.09-04-23.01-SG",
+    "thumbnail": "img/thumbnail/EE.09-04-23.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/ee09/ee09_2023_01_04/ee_09_2023_01_04_SG.pdf",
@@ -1569,6 +1639,7 @@
     "language": "PHP",
     "name": "Restauracja \"Wszystkie Smaki\"",
     "codeName": "INF.03-01-22.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-01-22.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2022_01_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2022_01_01/inf_03_2022_01_01_SG.pdf",
@@ -1589,8 +1660,9 @@
     "session": "Czerwiec",
     "number": "01",
     "language": "PHP",
-    "name": "Portal dla wędkarzy / Wędkowanie",
+    "name": "Portal dla wędkarzy",
     "codeName": "INF.03-01-22.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-01-22.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2022_06_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2022_06_01/inf_03_2022_06_01_SG.pdf",
@@ -1613,6 +1685,7 @@
     "language": "JS",
     "name": "Całodobowa stacja paliw",
     "codeName": "INF.03-02-22.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-02-22.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2022_06_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2022_06_02/inf_03_2022_06_02_SG.pdf",
@@ -1633,8 +1706,9 @@
     "session": "Czerwiec",
     "number": "03",
     "language": "PHP",
-    "name": "Zawody polskich wędkarzy / Zawody wędkarskie",
-    "codeName": "INF.03-02-22.06-SG",
+    "name": "Zawody polskich wędkarzy",
+    "codeName": "INF.03-03-22.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-03-22.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2022_06_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2022_06_03/inf_03_2022_06_03_SG.pdf",
@@ -1657,8 +1731,9 @@
     "session": "Styczeń",
     "number": "01",
     "language": "JS",
-    "name": "Malowanie pokoi i biur / Malarz",
+    "name": "Malowanie pokoi i biur",
     "codeName": "INF.03-01-23.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-01-23.01-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_01_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_01_01/inf_03_2023_01_01_SG.pdf",
@@ -1668,7 +1743,7 @@
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_01_01/rozwiazanie.zip"
     },
     "tags": [
-      "kwerenda tworząca widok / perspektywę",
+      "kwerenda tworząca widok (perspektywę)",
       "przeskalowanie grafiki",
       "modyfikacja grafiki",
       "formularz"
@@ -1681,8 +1756,9 @@
     "session": "Styczeń",
     "number": "02",
     "language": "PHP",
-    "name": "Pensjonat pod dobrym humorem / Wynajem pokoi",
+    "name": "Pensjonat pod dobrym humorem",
     "codeName": "INF.03-02-23.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-02-23.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_01_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_01_02/inf_03_2023_01_02_SG.pdf",
@@ -1703,8 +1779,9 @@
     "session": "Styczeń",
     "number": "03",
     "language": "PHP",
-    "name": "Grupa Polskich Kwiaciarni / Kwiaty",
+    "name": "Grupa Polskich Kwiaciarni",
     "codeName": "INF.03-03-23.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-03-23.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_01_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_01_03/inf_03_2023_01_03_SG.pdf",
@@ -1726,8 +1803,9 @@
     "session": "Styczeń",
     "number": "04",
     "language": "PHP",
-    "name": "Biuro turystyczne / Wycieczki po Europie",
+    "name": "Biuro turystyczne",
     "codeName": "INF.03-04-23.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-04-23.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_01_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_01_04/inf_03_2023_01_04_SG.pdf",
@@ -1747,8 +1825,9 @@
     "session": "Styczeń",
     "number": "05",
     "language": "PHP",
-    "name": "Organizer: Sierpnień / Sierpniowy kalendarz",
+    "name": "Organizer: Sierpnień",
     "codeName": "INF.03-05-23.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-05-23.01-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_01_05",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_01_05/inf_03_2023_01_05_SG.pdf",
@@ -1772,7 +1851,8 @@
     "number": "01",
     "language": "PHP",
     "name": "Dzisiejsze promocje naszego sklepu dla uczniów",
-    "codeName": "INF.03-01-23.06",
+    "codeName": "INF.03-01-23.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-01-23.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_06_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_06_01/inf_03_2023_06_01_SG.pdf",
@@ -1795,7 +1875,8 @@
     "number": "02",
     "language": "PHP",
     "name": "Hurtownia szkolna z najlepszymi cenami",
-    "codeName": "INF.03-02-23.06",
+    "codeName": "INF.03-02-23.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-02-23.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_06_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_06_02/inf_03_2023_06_02_SG.pdf",
@@ -1819,7 +1900,8 @@
     "number": "04",
     "language": "PHP",
     "name": "Biblioteka w Książkowicach Wielkich",
-    "codeName": "INF.03-04-23.06",
+    "codeName": "INF.03-04-23.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-04-23.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_06_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_06_04/inf_03_2023_06_04_SG.pdf",
@@ -1844,7 +1926,8 @@
     "number": "07",
     "language": "PHP",
     "name": "Biblioteka w Książkowicach Małych",
-    "codeName": "INF.03-07-23.06",
+    "codeName": "INF.03-07-23.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-07-23.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_06_07",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2023_06_07/inf_03_2023_06_07_SG.pdf",
@@ -1868,8 +1951,9 @@
     "session": "Styczeń",
     "number": "01",
     "language": "JS",
-    "name": "Firma IT / Usługi informatyczne",
+    "name": "Usługi informatyczne",
     "codeName": "INF.03-01-24.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-01-24.01-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_01/inf_03_2024_01_01_SG.pdf",
@@ -1895,6 +1979,7 @@
     "language": "JS",
     "name": "Pogotowie komputerowe",
     "codeName": "INF.03-02-24.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-02-24.01-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_02/inf_03_2024_01_02_SG.pdf",
@@ -1918,8 +2003,9 @@
     "session": "Styczeń",
     "number": "04",
     "language": "PHP",
-    "name": "Terminarz / Zadania na lipiec",
+    "name": "Terminarz",
     "codeName": "INF.03-04-24.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-04-24.01-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_04/inf_03_2024_01_04_SG.pdf",
@@ -1940,8 +2026,9 @@
     "session": "Styczeń",
     "number": "05",
     "language": "JS",
-    "name": "Usługi kosmetyczne / Salon kosmetyczny",
+    "name": "Usługi kosmetyczne",
     "codeName": "INF.03-05-24.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-05-24.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_05",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_05/inf_03_2024_01_05_SG.pdf",
@@ -1962,8 +2049,9 @@
     "session": "Styczeń",
     "number": "06",
     "language": "PHP",
-    "name": "Biuro podróży / Poznaj Europę",
+    "name": "Biuro podróży",
     "codeName": "INF.03-06-24.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-06-24.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_06",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_06/inf_03_2024_01_06_SG.pdf",
@@ -1983,8 +2071,9 @@
     "session": "Styczeń",
     "number": "08",
     "language": "JS",
-    "name": "Salon fryzjerski / Fryzjerstwo",
+    "name": "Salon fryzjerski",
     "codeName": "INF.03-08-24.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-08-24.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_08",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_08/inf_03_2024_01_08_SG.pdf",
@@ -2007,6 +2096,7 @@
     "language": "PHP",
     "name": "Motocykle - moja pasja",
     "codeName": "INF.03-01-24.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-01-24.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_01/inf_03_2024_06_01_SG.pdf",
@@ -2029,6 +2119,7 @@
     "language": "JS",
     "name": "Chat",
     "codeName": "INF.03-02-24.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-02-24.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_02/inf_03_2024_06_02_SG.pdf",
@@ -2054,6 +2145,7 @@
     "language": "PHP",
     "name": "Poziomy rzek w województwie dolnośląskim",
     "codeName": "INF.03-03-24.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-03-24.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_03/inf_03_2024_06_03_SG.pdf",
@@ -2075,8 +2167,9 @@
     "session": "Czerwiec",
     "number": "04",
     "language": "PHP",
-    "name": "Zdjęcia / Galeria",
+    "name": "Zdjęcia",
     "codeName": "INF.03-04-24.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-04-24.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_04/inf_03_2024_06_04_SG.pdf",
@@ -2100,8 +2193,9 @@
     "session": "Czerwiec",
     "number": "05",
     "language": "PHP",
-    "name": "KupAuto! Internetowy komis samochodowy / Komis aut",
+    "name": "KupAuto! Internetowy komis samochodowy",
     "codeName": "INF.03-05-24.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-05-24.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_05",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_05/inf_03_2024_06_05_SG.pdf",
@@ -2125,6 +2219,7 @@
     "language": "JS",
     "name": "Formualrz rejestracyjny konferencji \"Nasze Kwiaty\"",
     "codeName": "INF.03-06-24.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-06-24.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_06",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_06/inf_03_2024_06_06_SG.pdf",
@@ -2149,6 +2244,7 @@
     "language": "PHP",
     "name": "Ważenie pojazdów ciężarowych we Wrocławiu",
     "codeName": "INF.03-07-24.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-07-24.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_07",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_07/inf_03_2024_06_07_SG.pdf",
@@ -2172,8 +2268,9 @@
     "session": "Czerwiec",
     "number": "08",
     "language": "JS",
-    "name": "Zarejestruj się w sklepie / Sklep - rejestracja",
+    "name": "Zarejestruj się w sklepie",
     "codeName": "INF.03-08-24.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-08-24.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_08",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_08/inf_03_2024_06_08_SG.pdf",
@@ -2196,8 +2293,9 @@
     "session": "Czerwiec",
     "number": "09",
     "language": "JS",
-    "name": "Zwiedzamy Polskę / Biuro turystyczne",
+    "name": "Zwiedzamy Polskę",
     "codeName": "INF.03-09-24.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-09-24.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_09",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_09/inf_03_2024_06_09_SG.pdf",
@@ -2221,6 +2319,7 @@
     "language": "JS",
     "name": "Nasz zespół",
     "codeName": "INF.03-10-24.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-10-24.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_10",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_10/inf_03_2024_06_10_SG.pdf",
@@ -2244,6 +2343,7 @@
     "language": "PHP",
     "name": "Hodowla świnek morskich",
     "codeName": "INF.03-11-24.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-11-24.06-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_11",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_11/inf_03_2024_06_11_SG.pdf",
@@ -2266,6 +2366,7 @@
     "language": "JS",
     "name": "Efekty na obrazach",
     "codeName": "INF.03-12-24.06-SG",
+    "thumbnail": "img/thumbnail/INF.03-12-24.06-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_12",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_06_12/inf_03_2024_06_12_SG.pdf",
@@ -2288,6 +2389,7 @@
     "language": "JS",
     "name": "Kursy komputerowe",
     "codeName": "INF.03-01-25.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-01-25.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_01/inf_03_2025_01_01_SG.pdf",
@@ -2311,6 +2413,7 @@
     "language": "JS",
     "name": "Montaż paneli podłogowych",
     "codeName": "INF.03-02-25.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-02-25.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_02/inf_03_2025_01_02_SG.pdf",
@@ -2334,6 +2437,7 @@
     "language": "PHP",
     "name": "Kalendarz",
     "codeName": "INF.03-03-25.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-03-25.01-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_03",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_03/inf_03_2025_01_03_SG.pdf",
@@ -2357,6 +2461,7 @@
     "language": "PHP",
     "name": "Obuwie męskie",
     "codeName": "INF.03-04-25.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-04-25.01-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_04/inf_03_2025_01_04_SG.pdf",
@@ -2379,6 +2484,7 @@
     "language": "PHP",
     "name": "Firma szkoleniowa",
     "codeName": "INF.03-05-25.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-05-25.01-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_05",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_05/inf_03_2025_01_05_SG.pdf",
@@ -2403,6 +2509,7 @@
     "language": "JS",
     "name": "Pozycyjne systemy liczbowe",
     "codeName": "INF.03-06-25.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-06-25.01-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_06",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_06/inf_03_2025_01_06_SG.pdf",
@@ -2426,6 +2533,7 @@
     "language": "PHP",
     "name": "Wyszukiwarka miast",
     "codeName": "INF.03-07-25.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-07-25.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_07",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_07/inf_03_2025_01_07_SG.pdf",
@@ -2450,6 +2558,7 @@
     "language": "PHP",
     "name": "Mieszalnia farb",
     "codeName": "INF.03-08-25.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-08-25.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_08",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_08/inf_03_2025_01_08_SG.pdf",
@@ -2474,6 +2583,7 @@
     "language": "PHP",
     "name": "Klub zdobywców gór polskich",
     "codeName": "INF.03-09-25.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-09-25.01-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_09",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_09/inf_03_2025_01_09_SG.pdf",
@@ -2499,6 +2609,7 @@
     "language": "PHP",
     "name": "Koło szachowe gambit piona",
     "codeName": "INF.03-10-25.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-10-25.01-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_10",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_10/inf_03_2025_01_10_SG.pdf",
@@ -2523,6 +2634,7 @@
     "language": "PHP",
     "name": "Konkurs - wolontariat szkolny",
     "codeName": "INF.03-11-25.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-11-25.01-SG.png",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_11",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_11/inf_03_2025_01_11_SG.pdf",
@@ -2547,6 +2659,7 @@
     "language": "PHP",
     "name": "Piekarnia",
     "codeName": "INF.03-12-25.01-SG",
+    "thumbnail": "img/thumbnail/INF.03-12-25.01-SG.jpeg",
     "links": {
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_12",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2025_01_12/inf_03_2025_01_12_SG.pdf",
