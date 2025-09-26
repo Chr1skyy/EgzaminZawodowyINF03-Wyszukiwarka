@@ -1,53 +1,196 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
-    <title>Wyszukiwarka egzaminów</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyszukiwarka egzaminów INF.03/EE.09/E.14 </title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/components.css">
+    <link rel="stylesheet" href="src/styles/themes.css">
     <meta name="description"
-        content="Wyszukiwarka egzaminów E.14, EE.09 INF.03 – szybkie i wygodne wyszukiwanie arkuszy egzaminacyjnych według roku, formuły, trudności, języka i tagów. Przeglądaj, filtruj i pobieraj materiały do egzaminów zawodowych technika informatyka i technika programisty.">
+        content="Wyszukiwarka egzaminów E.14, EE.09, INF.03 – ponad 120 arkuszy z lat 2018-2025, szybkie i wygodne wyszukiwanie według roku, formuły, trudności, języka, tagów. Przeglądaj, filtruj, pobieraj arkusze i rozwiązania. Idealne narzędzie dla uczniów technikum przygotowujących się do egzaminu zawodowego.">
     <meta name="keywords"
-        content="egzamin zawodowy, INF.03, E.14, EE.09, arkusze egzaminacyjne, wyszukiwarka egzaminów, arkusze, rozwiązania, technik informatyk, technik programista, egzamin praktyczny, zadania, edukacja, szkoła, technikum, informatyka, PHP, JavaScript, JS, arkusze E.14, arkusze EE.09, arkusze INF.03, chriskyy, chr1skyy">
-    <link rel="stylesheet" href="style.css">
+        content="egzamin zawodowy, INF.03, E.14, EE.09, arkusze egzaminacyjne, wyszukiwarka egzaminów, arkusze, rozwiązania, technik informatyk, technik programista, egzamin praktyczny, zadania, edukacja, szkoła, technikum, informatyka, PHP, JavaScript, JS, arkusze E.14, arkusze EE.09, arkusze INF.03, arkusze PDF, baza arkuszy, rozwiązania egzaminów, przygotowanie do egzaminu, egzamin INF.03 2025, zadania egzaminacyjne, chriskyy, chr1skyy">
 </head>
 
 <body>
-    <div class="container">
-        <div class="container-row">
-            <h1>Wyszukiwarka egzaminów by Chr1skyy</h1>
-            <button id="themeToggle">🌙 Tryb jasny</button>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-container">
+                <div class="header-brand">
+                    <div class="brand-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" />
+                        </svg>
+                    </div>
+                    <div class="brand-text">
+                        <h1>Wyszukiwarka egzaminów</h1>
+                        <p>E.14 • EE.09 • INF.03</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <a href="https://github.com/Chr1skyy" target="_blank" rel="noopener" class="header-btn github-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="vertical-align:middle;margin-right:6px;">
+                            <path
+                                d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.41-1.07-1-1.36-1-1.36-.82-.57.06-.56.06-.56.91.07 1.39.95 1.39.95.81 1.41 2.13 1 2.65.77.08-.59.32-1 .58-1.23-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.38-2.04 1-2.76-.1-.26-.44-1.3.09-2.7 0 0 .83-.27 2.73 1.05a9.13 9.13 0 0 1 2.49-.34c.85 0 1.71.12 2.49.34 1.9-1.32 2.73-1.05 2.73-1.05.53 1.4.19 2.44.09 2.7.62.72 1 1.64 1 2.76 0 3.94-2.34 4.81-4.57 5.07.33.29.62.86.62 1.73 0 1.25-.01 2.26-.01 2.57 0 .26.18.57.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2z" />
+                        </svg>
+                        Przejdź na GitHuba
+                    </a>
+                    <a href="https://tipply.pl/@chriskyy" target="_blank" rel="noopener" class="header-btn support-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="vertical-align:middle;margin-right:6px;">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                        Wesprzyj mnie
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="search-section">
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" />
+                        </svg>
+                        <input type="text" id="search-input" placeholder="Szukaj po roku, tytule, tagach..."
+                            class="search-input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-layout">
+                <aside class="filter-panel">
+                    <div class="filter-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46" />
+                        </svg>
+                        <h3>Filtry</h3>
+                        <button id="clear-filters-btn" class="reset-filters" aria-label="Resetuj filtry">
+                            <svg class="reset-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="1 4 1 10 7 10" />
+                                <path d="M3.51 15a9 9 0 1 0 .49-7.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="filters">
+                        <div class="filter-section">
+                            <h4>Formuła</h4>
+                            <div class="filter-buttons" id="formula-filters">
+                                <button class="filter-btn" data-filter="formula" data-value="E.14">E.14</button>
+                                <button class="filter-btn" data-filter="formula" data-value="EE.09">EE.09</button>
+                                <button class="filter-btn" data-filter="formula" data-value="INF.03">INF.03</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-section">
+                            <h4>Trudność</h4>
+                            <div class="filter-buttons" id="difficulty-filters">
+                                <button class="filter-btn difficulty-easy" data-filter="difficulty"
+                                    data-value="Easy">Easy</button>
+                                <button class="filter-btn difficulty-medium" data-filter="difficulty"
+                                    data-value="Medium">Medium</button>
+                                <button class="filter-btn difficulty-hard" data-filter="difficulty"
+                                    data-value="Hard">Hard</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-section">
+                            <h4>Język</h4>
+                            <div class="filter-buttons" id="language-filters">
+                                <button class="filter-btn language-php" data-filter="language"
+                                    data-value="PHP">PHP</button>
+                                <button class="filter-btn language-js" data-filter="language"
+                                    data-value="JS">JS</button>
+                                <button class="filter-btn language-jsphp" data-filter="language"
+                                    data-value="JS+PHP">JS+PHP</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="filter-section hide-completed-section">
+                        <button id="hide-completed-toggle" class="hide-completed-btn">
+                            <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                            <svg class="eye-off-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24" />
+                                <path
+                                    d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 11 8 11 8a13.16 13.16 0 0 1-1.67 2.68" />
+                                <path d="M6.61 6.61A13.526 13.526 0 0 0 1 12s4 8 11 8a9.74 9.74 0 0 0 5.39-1.61" />
+                                <line x1="2" y1="2" x2="22" y2="22" />
+                            </svg>
+                            <span>Ukryj ukończone egzaminy</span>
+                        </button>
+                    </div>
+                </aside>
+
+                <div class="results-section">
+                    <div class="results-header">
+                        <h2>Wyniki wyszukiwania</h2>
+                        <span id="results-count" class="results-count">0 z 0 egzaminów</span>
+                    </div>
+                    <div id="results-grid" class="results-grid">
+                    </div>
+                    <div id="no-results" class="no-results" style="display: none;">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" />
+                        </svg>
+                        <h3>Nie znaleziono egzaminów</h3>
+                        <p>Spróbuj dostosować kryteria wyszukiwania lub filtry.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="exam-modal" class="modal" style="display: none;">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <h2 id="modal-exam-name"></h2>
+                        <p id="modal-exam-code"></p>
+                    </div>
+                    <button id="modal-close" class="modal-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-image">
+                    <img id="modal-image" src="" alt="">
+                </div>
+            </div>
         </div>
-        <input id="search" type="text" placeholder="Szukaj po roku, miesiącu, kodzie, tytule, tagach...">
-        <div class="filters">
-            <div>
-                <strong>Formuła:</strong>
-                <label><input type="checkbox" class="formula-filter" value="E.14" checked>E.14 (2012)</label>
-                <label><input type="checkbox" class="formula-filter" value="EE.09" checked>EE.09 (2017)</label>
-                <label><input type="checkbox" class="formula-filter" value="INF.03" checked>INF.03 (2019)</label>
-            </div>
-            <div>
-                <strong>Poziom:</strong>
-                <label><input type="checkbox" class="difficulty-filter" value="Easy" checked>Easy</label>
-                <label><input type="checkbox" class="difficulty-filter" value="Medium" checked>Medium</label>
-                <label><input type="checkbox" class="difficulty-filter" value="Hard" checked>Hard</label>
-            </div>
-            <div>
-                <strong>Skrypt:</strong>
-                <label><input type="checkbox" class="lang-filter" value="JS" checked>JS</label>
-                <label><input type="checkbox" class="lang-filter" value="JS+PHP" checked>JS+PHP</label>
-                <label><input type="checkbox" class="lang-filter" value="PHP" checked>PHP</label>
-            </div>
-        </div>
-        <div class="container-row">
-            <div id="searchCount"></div>
-            <div id="hideDoneDiv">
-                <label><input class="hideDone-filter" type="checkbox" id="hideDone"> Ukryj wykonane egzaminy</label>
-            </div>
-        </div>
-        <div id="results"></div>
+
     </div>
-    <script src="main.js"></script>
+
+    <script src="src/js/data.js"></script>
+    <script src="src/js/storage.js"></script>
+    <script src="src/js/filters.js"></script>
+    <script src="src/js/search.js"></script>
+    <script src="src/js/modal.js"></script>
+    <script src="src/js/app.js"></script>
 </body>
 
 </html>
