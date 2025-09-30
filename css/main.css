@@ -67,25 +67,6 @@ body {
     margin: 0;
 }
 
-.theme-toggle {
-    padding: 0.5rem;
-    border-radius: var(--radius-lg);
-    background-color: var(--bg-tertiary);
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.theme-toggle:hover {
-    background-color: var(--border-secondary);
-}
-
-.theme-icon {
-    color: var(--text-secondary);
-}
-
 .reset-filters {
     padding: 0.5rem;
     border-radius: var(--radius-lg);
