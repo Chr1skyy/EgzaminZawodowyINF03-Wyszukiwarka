@@ -9,6 +9,104 @@
     --radius-md: 0.5rem;
     --radius-lg: 0.75rem;
     --radius-xl: 1rem;
+
+    /* Single Dark Theme Colors */
+    --bg-primary: #1f2937;
+    --bg-secondary: #111827;
+    --bg-tertiary: #374151;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --text-tertiary: #9ca3af;
+    --border-primary: #374151;
+    --border-secondary: #4b5563;
+    --accent-primary: #3b82f6;
+    --accent-secondary: #60a5fa;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --error: #ef4444;
+
+    /* Badge Colors */
+    --badge-easy-bg: rgba(34, 197, 94, 0.2);
+    --badge-easy-text: #4ade80;
+    --badge-easy-border: rgba(34, 197, 94, 0.3);
+    --badge-easy-hover-bg: rgba(34, 197, 94, 0.3);
+    --badge-easy-hover-border: rgba(34, 197, 94, 0.4);
+    --badge-easy-active-bg: #16a34a;
+    --badge-easy-active-text: #ffffff;
+    --badge-easy-active-border: #16a34a;
+
+    --badge-medium-bg: rgba(245, 158, 11, 0.2);
+    --badge-medium-text: #fbbf24;
+    --badge-medium-border: rgba(245, 158, 11, 0.3);
+    --badge-medium-hover-bg: rgba(245, 158, 11, 0.3);
+    --badge-medium-hover-border: rgba(245, 158, 11, 0.4);
+    --badge-medium-active-bg: #d97706;
+    --badge-medium-active-text: #ffffff;
+    --badge-medium-active-border: #d97706;
+
+    --badge-hard-bg: rgba(239, 68, 68, 0.2);
+    --badge-hard-text: #f87171;
+    --badge-hard-border: rgba(239, 68, 68, 0.3);
+    --badge-hard-hover-bg: rgba(239, 68, 68, 0.3);
+    --badge-hard-hover-border: rgba(239, 68, 68, 0.4);
+    --badge-hard-active-bg: #dc2626;
+    --badge-hard-active-text: #ffffff;
+    --badge-hard-active-border: #dc2626;
+
+    --badge-php-bg: rgba(139, 92, 246, 0.2);
+    --badge-php-text: #a78bfa;
+    --badge-php-border: rgba(139, 92, 246, 0.3);
+    --badge-php-hover-bg: rgba(139, 92, 246, 0.3);
+    --badge-php-hover-border: rgba(139, 92, 246, 0.4);
+    --badge-php-active-bg: #8b5cf6;
+    --badge-php-active-text: #ffffff;
+    --badge-php-active-border: #8b5cf6;
+
+    --badge-js-bg: rgba(247, 224, 24, 0.2);
+    --badge-js-text: #ffe066;
+    --badge-js-border: rgba(247, 224, 24, 0.3);
+    --badge-js-hover-bg: rgba(247, 224, 24, 0.3);
+    --badge-js-hover-border: rgba(247, 224, 24, 0.4);
+    --badge-js-active-bg: #ffd60a;
+    --badge-js-active-text: #ffffff;
+    --badge-js-active-border: #ffd60a;
+
+    --badge-jsphp-bg-start: rgba(247, 224, 24, 0.3);
+    --badge-jsphp-bg-end: rgba(139, 92, 246, 0.3);
+    --badge-jsphp-text: #ffe066;
+    --badge-jsphp-border: #a78bfa;
+    --badge-jsphp-hover-bg-start: rgba(247, 224, 24, 0.4);
+    --badge-jsphp-hover-bg-end: rgba(139, 92, 246, 0.4);
+    --badge-jsphp-hover-border: #c4b5fd;
+    --badge-jsphp-active-bg-start: #ffd60a;
+    --badge-jsphp-active-bg-end: #8b5cf6;
+    --badge-jsphp-active-text: #ffffff;
+    --badge-jsphp-active-border: #8b5cf6;
+
+    /* Link Colors */
+    --link-exam-bg: rgba(59, 130, 246, 0.2);
+    --link-exam-text: #60a5fa;
+    --link-exam-hover-bg: rgba(59, 130, 246, 0.3);
+
+    --link-solutions-bg: rgba(16, 185, 129, 0.2);
+    --link-solutions-text: #34d399;
+    --link-solutions-hover-bg: rgba(16, 185, 129, 0.3);
+
+    --link-zip-bg: rgba(245, 158, 11, 0.2);
+    --link-zip-text: #fbbf24;
+    --link-zip-hover-bg: rgba(245, 158, 11, 0.3);
+
+    --link-resources-bg: rgba(139, 92, 246, 0.2);
+    --link-resources-text: #a78bfa;
+    --link-resources-hover-bg: rgba(139, 92, 246, 0.3);
+
+    --link-grading-bg: rgba(239, 68, 68, 0.2);
+    --link-grading-text: #f87171;
+    --link-grading-hover-bg: rgba(239, 68, 68, 0.3);
+
+    --link-files-bg: rgba(99, 102, 241, 0.2);
+    --link-files-text: #818cf8;
+    --link-files-hover-bg: rgba(99, 102, 241, 0.3);
 }
 
 body {
@@ -24,7 +122,7 @@ body {
     top: 0;
     z-index: 40;
     backdrop-filter: blur(12px);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(31, 41, 55, 0.8);
     border-bottom: 1px solid var(--border-primary);
 }
 
@@ -36,6 +134,32 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 4rem;
+}
+
+@media (max-width: 640px) {
+    .header-container {
+        padding: 0 0.75rem;
+    }
+    
+    .brand-text h1 {
+        font-size: 1.125rem;
+    }
+    
+    .brand-text p {
+        display: none;
+    }
+    
+    .header-actions .header-btn span {
+        display: none;
+    }
+    
+    .header-actions .header-btn {
+        padding: 7px;
+    }
+    
+    .header-actions .header-btn svg {
+        margin-right: 0;
+    }
 }
 
 .header-brand {
@@ -89,13 +213,20 @@ body {
     padding: 2rem 1rem;
 }
 
+@media (max-width: 640px) {
+    .main-content {
+        padding: 1.5rem 0.75rem;
+    }
+}
+
 .search-section {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .search-container {
     max-width: 32rem;
     margin: 0 auto;
+    width: 100%;
 }
 
 .search-input-wrapper {
