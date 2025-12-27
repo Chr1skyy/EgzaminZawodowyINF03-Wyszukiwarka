@@ -1,0 +1,184 @@
+/* Dark Theme */
+[data-theme="dark"] {
+    --bg-primary: #1f2937;
+    --bg-secondary: #111827;
+    --bg-tertiary: #374151;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --text-tertiary: #9ca3af;
+    --border-primary: #374151;
+    --border-secondary: #4b5563;
+    --accent-primary: #3b82f6;
+    --accent-secondary: #60a5fa;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --error: #ef4444;
+}
+
+[data-theme="dark"] .header {
+    background-color: rgba(31, 41, 55, 0.8);
+}
+
+[data-theme="dark"] .theme-icon-light {
+    display: none;
+}
+
+[data-theme="dark"] .theme-icon-dark {
+    display: block;
+}
+
+[data-theme="dark"] .difficulty-easy {
+    background-color: rgba(34, 197, 94, 0.2);
+    color: #4ade80;
+    border-color: rgba(34, 197, 94, 0.3);
+}
+
+[data-theme="dark"] .difficulty-easy:hover {
+    background-color: rgba(34, 197, 94, 0.3);
+    border-color: rgba(34, 197, 94, 0.4);
+}
+
+[data-theme="dark"] .difficulty-easy.active {
+    background-color: #16a34a;
+    color: white;
+    border-color: #16a34a;
+}
+
+[data-theme="dark"] .difficulty-medium {
+    background-color: rgba(245, 158, 11, 0.2);
+    color: #fbbf24;
+    border-color: rgba(245, 158, 11, 0.3);
+}
+
+[data-theme="dark"] .difficulty-medium:hover {
+    background-color: rgba(245, 158, 11, 0.3);
+    border-color: rgba(245, 158, 11, 0.4);
+}
+
+[data-theme="dark"] .difficulty-medium.active {
+    background-color: #d97706;
+    color: white;
+    border-color: #d97706;
+}
+
+[data-theme="dark"] .difficulty-hard {
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+    border-color: rgba(239, 68, 68, 0.3);
+}
+
+[data-theme="dark"] .difficulty-hard:hover {
+    background-color: rgba(239, 68, 68, 0.3);
+    border-color: rgba(239, 68, 68, 0.4);
+}
+
+[data-theme="dark"] .difficulty-hard.active {
+    background-color: #dc2626;
+    color: white;
+    border-color: #dc2626;
+}
+
+[data-theme="dark"] .language-php {
+    background-color: rgba(139, 92, 246, 0.2);
+    color: #a78bfa;
+    border-color: rgba(139, 92, 246, 0.3);
+}
+
+[data-theme="dark"] .language-php:hover {
+    background-color: rgba(139, 92, 246, 0.3);
+    border-color: rgba(139, 92, 246, 0.4);
+}
+
+[data-theme="dark"] .language-php.active {
+    background-color: #8b5cf6;
+    color: white;
+    border-color: #8b5cf6;
+}
+
+[data-theme="dark"] .language-js {
+    background-color: rgba(247, 224, 24, 0.2);
+    color: #ffe066;
+    border-color: rgba(247, 224, 24, 0.3);
+}
+
+[data-theme="dark"] .language-js:hover {
+    background-color: rgba(247, 224, 24, 0.3);
+    border-color: rgba(247, 224, 24, 0.4);
+}
+
+[data-theme="dark"] .language-js.active {
+    background-color: #ffd60a;
+    color: white;
+    border-color: #ffd60a;
+}
+
+[data-theme="dark"] .language-jsphp {
+    background: linear-gradient(90deg, rgba(247, 224, 24, 0.3) 30%, rgba(139, 92, 246, 0.3) 70%);
+    color: #ffe066;
+    border-color: #a78bfa;
+}
+
+[data-theme="dark"] .language-jsphp:hover {
+    background: linear-gradient(90deg, rgba(247, 224, 24, 0.4) 30%, rgba(139, 92, 246, 0.4) 70%);
+    border-color: #c4b5fd;
+}
+
+[data-theme="dark"] .language-jsphp.active {
+    background: linear-gradient(90deg, #ffd60a 30%, #8b5cf6 70%);
+    color: white;
+    border-color: #8b5cf6;
+}
+
+[data-theme="dark"] .exam-link-exam {
+    background-color: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .exam-link-exam:hover {
+    background-color: rgba(59, 130, 246, 0.3);
+}
+
+[data-theme="dark"] .exam-link-solutions {
+    background-color: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+}
+
+[data-theme="dark"] .exam-link-solutions:hover {
+    background-color: rgba(16, 185, 129, 0.3);
+}
+
+[data-theme="dark"] .exam-link-zip {
+    background-color: rgba(245, 158, 11, 0.2);
+    color: #fbbf24;
+}
+
+[data-theme="dark"] .exam-link-zip:hover {
+    background-color: rgba(245, 158, 11, 0.3);
+}
+
+[data-theme="dark"] .exam-link-resources {
+    background-color: rgba(139, 92, 246, 0.2);
+    color: #a78bfa;
+}
+
+[data-theme="dark"] .exam-link-resources:hover {
+    background-color: rgba(139, 92, 246, 0.3);
+}
+
+[data-theme="dark"] .exam-link-grading {
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+}
+
+[data-theme="dark"] .exam-link-grading:hover {
+    background-color: rgba(239, 68, 68, 0.3);
+}
+
+[data-theme="dark"] .exam-link-files {
+    background-color: rgba(99, 102, 241, 0.2);
+    color: #818cf8;
+}
+
+[data-theme="dark"] .exam-link-files:hover {
+    background-color: rgba(99, 102, 241, 0.3);
+}

@@ -2,7 +2,7 @@
     background-color: var(--bg-primary);
     border-radius: var(--radius-xl);
     border: 1px solid var(--border-primary);
-    padding: 1rem;
+    padding: 1.5rem;
     height: fit-content
 }
 
@@ -26,11 +26,11 @@
 .filters {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 1rem
 }
 
 .filter-section {
-    margin-bottom: 1rem
+    margin-bottom: 1.5rem
 }
 
 .filter-section:last-child {
@@ -60,14 +60,8 @@
     border: none;
     cursor: pointer;
     background-color: var(--bg-tertiary);
-    color: var(--text-secondary);
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    color: var(--text-secondary)
 }
-
-
 
 .filter-btn:hover {
     background-color: var(--border-secondary);
@@ -85,111 +79,116 @@
 }
 
 .difficulty-easy {
-    background-color: var(--badge-easy-bg);
-    color: var(--badge-easy-text);
-    border: 1px solid var(--badge-easy-border)
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0
 }
 
 .difficulty-easy:hover {
-    background-color: var(--badge-easy-hover-bg);
-    border-color: var(--badge-easy-hover-border);
+    background-color: #bbf7d0;
+    border-color: #86efac;
     transform: translateY(-1px)
 }
 
 .difficulty-easy.active {
-    background-color: var(--badge-easy-active-bg);
-    color: var(--badge-easy-active-text);
-    border-color: var(--badge-easy-active-border)
+    background-color: #16a34a;
+    color: #fff;
+    border-color: #16a34a
 }
 
 .difficulty-medium {
-    background-color: var(--badge-medium-bg);
-    color: var(--badge-medium-text);
-    border: 1px solid var(--badge-medium-border)
+    background-color: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fde68a
 }
 
 .difficulty-medium:hover {
-    background-color: var(--badge-medium-hover-bg);
-    border-color: var(--badge-medium-hover-border);
+    background-color: #fde68a;
+    border-color: #fcd34d;
     transform: translateY(-1px)
 }
 
 .difficulty-medium.active {
-    background-color: var(--badge-medium-active-bg);
-    color: var(--badge-medium-active-text);
-    border-color: var(--badge-medium-active-border)
+    background-color: #d97706;
+    color: #fff;
+    border-color: #d97706
 }
 
 .difficulty-hard {
-    background-color: var(--badge-hard-bg);
-    color: var(--badge-hard-text);
-    border: 1px solid var(--badge-hard-border)
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca
 }
 
 .difficulty-hard:hover {
-    background-color: var(--badge-hard-hover-bg);
-    border-color: var(--badge-hard-hover-border);
+    background-color: #fecaca;
+    border-color: #fca5a5;
     transform: translateY(-1px)
 }
 
 .difficulty-hard.active {
-    background-color: var(--badge-hard-active-bg);
-    color: var(--badge-hard-active-text);
-    border-color: var(--badge-hard-active-border)
+    background-color: #dc2626;
+    color: #fff;
+    border-color: #dc2626
 }
 
 .language-php {
-    background-color: var(--badge-php-bg);
-    color: var(--badge-php-text);
-    border: 1px solid var(--badge-php-border)
+    background-color: #f3e8ff;
+    color: #7c3aed;
+    border: 1px solid #e9d5ff
 }
 
 .language-php:hover {
-    background-color: var(--badge-php-hover-bg);
-    border-color: var(--badge-php-hover-border);
+    background-color: #e9d5ff;
+    border-color: #ddd6fe;
     transform: translateY(-1px)
 }
 
 .language-php.active {
-    background-color: var(--badge-php-active-bg);
-    color: var(--badge-php-active-text);
-    border-color: var(--badge-php-active-border)
+    background-color: #8b5cf6;
+    color: #fff;
+    border-color: #8b5cf6
 }
 
 .language-js {
-    background-color: var(--badge-js-bg);
-    color: var(--badge-js-text);
-    border: 1px solid var(--badge-js-border)
+    background-color: #fef9c3;
+    color: #b45309;
+    border: 1px solid #fde68a
 }
 
 .language-js:hover {
-    background-color: var(--badge-js-hover-bg);
-    border-color: var(--badge-js-hover-border);
+    background-color: #fde68a;
+    border-color: #fcd34d;
     transform: translateY(-1px)
 }
 
 .language-js.active {
-    background-color: var(--badge-js-active-bg);
-    color: var(--badge-js-active-text);
-    border-color: var(--badge-js-active-border)
+    background-color: #fbbf24;
+    color: #fff;
+    border-color: #fbbf24
 }
 
 .language-jsphp {
-    background: linear-gradient(90deg, var(--badge-jsphp-bg-start) 30%, var(--badge-jsphp-bg-end) 70%);
-    color: var(--badge-jsphp-text);
-    border: 1px solid var(--badge-jsphp-border)
+    background: linear-gradient(90deg, #fef9c3 30%, #f3e8ff 70%);
+    color: #7c3aed;
+    border: 1px solid #bdb2ff
 }
 
 .language-jsphp:hover {
-    background: linear-gradient(90deg, var(--badge-jsphp-hover-bg-start) 30%, var(--badge-jsphp-hover-bg-end) 70%);
-    border-color: var(--badge-jsphp-hover-border);
+    background: linear-gradient(90deg, #fde68a 30%, #e9d5ff 70%);
+    border-color: #a78bfa;
     transform: translateY(-1px)
 }
 
 .language-jsphp.active {
-    background: linear-gradient(90deg, var(--badge-jsphp-active-bg-start) 30%, var(--badge-jsphp-active-bg-end) 70%);
-    color: var(--badge-jsphp-active-text);
-    border-color: var(--badge-jsphp-active-border)
+    background: linear-gradient(90deg, #fbbf24 30%, #8b5cf6 70%);
+    color: #fff;
+    border-color: #8b5cf6
+}
+
+.hide-completed-section {
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-primary)
 }
 
 .hide-completed-btn {
@@ -316,13 +315,7 @@
 }
 
 .exam-content {
-    padding: 1rem
-}
-
-@media (max-width: 640px) {
-    .exam-content {
-        padding: 1rem;
-    }
+    padding: 1.5rem
 }
 
 .exam-header {
@@ -469,62 +462,62 @@
 }
 
 .exam-link-exam {
-    background-color: var(--link-exam-bg);
-    color: var(--link-exam-text)
+    background-color: #dbeafe;
+    color: #1d4ed8
 }
 
 .exam-link-exam:hover {
-    background-color: var(--link-exam-hover-bg);
+    background-color: #bfdbfe;
     transform: translateY(-1px)
 }
 
 .exam-link-solutions {
-    background-color: var(--link-solutions-bg);
-    color: var(--link-solutions-text)
+    background-color: #dcfce7;
+    color: #166534
 }
 
 .exam-link-solutions:hover {
-    background-color: var(--link-solutions-hover-bg);
+    background-color: #bbf7d0;
     transform: translateY(-1px)
 }
 
 .exam-link-zip {
-    background-color: var(--link-zip-bg);
-    color: var(--link-zip-text)
+    background-color: #fef3c7;
+    color: #92400e
 }
 
 .exam-link-zip:hover {
-    background-color: var(--link-zip-hover-bg);
+    background-color: #fde68a;
     transform: translateY(-1px)
 }
 
 .exam-link-resources {
-    background-color: var(--link-resources-bg);
-    color: var(--link-resources-text)
+    background-color: #f3e8ff;
+    color: #7c3aed
 }
 
 .exam-link-resources:hover {
-    background-color: var(--link-resources-hover-bg);
+    background-color: #e9d5ff;
     transform: translateY(-1px)
 }
 
 .exam-link-grading {
-    background-color: var(--link-grading-bg);
-    color: var(--link-grading-text)
+    background-color: #fee2e2;
+    color: #991b1b
 }
 
 .exam-link-grading:hover {
-    background-color: var(--link-grading-hover-bg);
+    background-color: #fecaca;
     transform: translateY(-1px)
 }
 
 .exam-link-files {
-    background-color: var(--link-files-bg);
-    color: var(--link-files-text)
+    background-color: #e0e7ff;
+    color: #4338ca
 }
 
 .exam-link-files:hover {
-    background-color: var(--link-files-hover-bg);
+    background-color: #c7d2fe;
     transform: translateY(-1px)
 }
 
@@ -548,110 +541,56 @@
 .modal-content {
     position: relative;
     max-width: 64rem;
-    width: 100%;
     max-height: 90vh;
     background-color: var(--bg-primary);
     border-radius: var(--radius-xl);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
+    overflow: hidden
 }
 
-.modal-content::-webkit-scrollbar {
-    width: 8px;
-}
-
-.modal-content::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.modal-content::-webkit-scrollbar-thumb {
-    background-color: var(--border-secondary);
-    border-radius: 4px;
-}
-
-@media (max-width: 640px) {
-    .modal-content {
-        max-height: 95vh;
-        border-radius: var(--radius-lg);
-    }
-}
-
-
-
-.modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 10;
-    padding: .5rem;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-    color: #fff;
+.modal-header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-primary)
+}
+
+.modal-title h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0
+}
+
+.modal-title p {
+    font-size: .875rem;
+    color: var(--text-secondary);
+    margin: 0
+}
+
+.modal-close {
+    padding: .5rem;
+    border-radius: var(--radius-lg);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-tertiary)
 }
 
 .modal-close:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--bg-tertiary);
+    color: var(--text-secondary)
 }
 
 .modal-image {
-    width: 100%;
-    background-color: var(--bg-tertiary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 200px;
+    overflow: auto;
+    max-height: 70vh
 }
 
 .modal-image img {
     width: 100%;
     height: auto;
-    max-height: 60vh;
-    object-fit: contain;
-}
-
-.modal-details {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.load-more-container {
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0;
-    width: 100%;
-}
-
-#load-more-btn {
-    min-width: 200px;
-}
-
-.modal-header-section {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.modal-title-group {
-    flex: 1;
-}
-
-.modal-title-group h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
+    object-fit: contain
 }
 
 .no-thumbnail {
@@ -670,6 +609,7 @@
 }
 
 .header-actions {
+    margin-top: 10px;
     display: flex;
     gap: 12px;
 }
