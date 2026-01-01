@@ -1976,7 +1976,7 @@ const examData = [
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_01",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_01/inf_03_2024_01_01_SG.pdf",
       "gradingRules": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_01/INF_03_2024_01_01_SG_zo.pdf",
-      "archive": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_01/materialy1.zip",
+      "archive": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_01/materialy1.7z",
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_01/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_01/rozwiazanie.zip"
     },
@@ -2002,7 +2002,7 @@ const examData = [
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_02",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_02/inf_03_2024_01_02_SG.pdf",
       "gradingRules": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_02/INF_03_2024_01_02_SG_zo.pdf",
-      "archive": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_02/materialy2.zip",
+      "archive": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_02/materialy2.7z",
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_02/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_02/rozwiazanie.zip"
     },
@@ -2028,7 +2028,7 @@ const examData = [
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_04",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_04/inf_03_2024_01_04_SG.pdf",
       "gradingRules": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_04/INF_03_2024_01_04_SG_zo.pdf",
-      "archive": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_04/materialy4.zip",
+      "archive": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_04/materialy4.7z",
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_04/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_04/rozwiazanie.zip"
     },
@@ -2051,7 +2051,7 @@ const examData = [
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_05",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_05/inf_03_2024_01_05_SG.pdf",
       "gradingRules": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_05/INF_03_2024_01_05_SG_zo.pdf",
-      "archive": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_05/materialy5.zip",
+      "archive": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_05/materialy5.7z",
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_05/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_05/rozwiazanie.zip"
     },
@@ -2074,7 +2074,7 @@ const examData = [
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_06",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_06/inf_03_2024_01_06_SG.pdf",
       "gradingRules": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_06/INF_03_2024_01_06_SG_zo.pdf",
-      "archive": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_06/materialy6.zip",
+      "archive": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_06/materialy6.7z",
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_06/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_06/rozwiazanie.zip"
     },
@@ -2096,7 +2096,7 @@ const examData = [
       "mainFolder": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_08",
       "examSheet": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_08/inf_03_2024_01_08_SG.pdf",
       "gradingRules": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_08/INF_03_2024_01_08_SG_zo.pdf",
-      "archive": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_08/materialy8.zip",
+      "archive": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_08/materialy8.7z",
       "solution": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_08/rozwiazanie",
       "solutionZIP": "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main/inf03/inf03_2024_01_08/rozwiazanie.zip"
     },
