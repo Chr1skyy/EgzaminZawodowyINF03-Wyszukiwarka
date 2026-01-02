@@ -91,9 +91,9 @@ function createExamCard(exam) {
 function createLinksHtml(links) {
     const linkConfigs = [
         { key: 'examSheet', label: 'Arkusz', class: 'exam-link-exam' },
+        { key: 'archive', label: 'Załącznik', class: 'exam-link-resources' },
         { key: 'solution', label: 'Rozwiązanie', class: 'exam-link-solutions' },
         { key: 'solutionZIP', label: 'Rozwiązanie ZIP', class: 'exam-link-zip' },
-        { key: 'archive', label: 'Załącznik', class: 'exam-link-resources' },
         { key: 'gradingRules', label: 'Zasady oceniania', class: 'exam-link-grading' }
     ];
     return linkConfigs.filter(cfg => links[cfg.key] && links[cfg.key].trim() !== '').map(cfg => `

@@ -45,13 +45,14 @@ body {
 }
 
 .brand-icon {
-    padding: 0.5rem;
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-    border-radius: var(--radius-lg);
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.brand-icon img {
+    width: 48px;
+    height: 48px;
 }
 
 .brand-text h1 {
@@ -62,9 +63,17 @@ body {
 }
 
 .brand-text p {
-    font-size: 0.875rem;
-    color: var(--text-secondary);
-    margin: 0;
+    display: none;
+}
+
+@media (min-width: 512px) {
+    .brand-text p {
+        display: block;
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+        margin: 0;
+    }
+
 }
 
 .reset-filters {
@@ -86,11 +95,20 @@ body {
 .main-content {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .search-section {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 10px;
+    z-index: 50;
+}
+
+@media (max-width: 1200px) {
+    .search-section {
+        top: 4.75rem;
+    }
 }
 
 .search-container {
@@ -173,7 +191,7 @@ body {
 .results-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 @media (min-width: 560px) {
