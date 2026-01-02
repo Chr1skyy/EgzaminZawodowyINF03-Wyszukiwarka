@@ -18,7 +18,7 @@ function triggerChange() {
 
 function clearFilters() {
     filters = { query: '', formulas: [], difficulties: [], languages: [], hideCompleted: false };
-    document.querySelectorAll('.filter-btn.active').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.active').forEach(btn => btn.classList.remove('active'));
     const searchInput = document.getElementById('search-input');
     if (searchInput) searchInput.value = '';
     updateHideCompletedBtnText && updateHideCompletedBtnText();
