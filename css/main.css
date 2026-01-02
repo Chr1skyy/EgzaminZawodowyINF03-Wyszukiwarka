@@ -164,6 +164,11 @@ body {
         width: 20rem;
         flex-shrink: 0;
     }
+
+    .popular-tags {
+        width: 20rem;
+        flex-shrink: 0;
+    }
 }
 
 .results-section {
@@ -271,4 +276,44 @@ body {
 
 .zoom-in {
     animation: zoomIn 0.2s ease-out;
+}
+
+.content-layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+/* Dynamic Tags */
+.popular-tags {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.filter-pill {
+    width: fit-content;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-primary);
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-pill:hover {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-secondary);
+    color: var(--text-primary);
+}
+
+.filter-pill.active {
+    background-color: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: #ffffff;
 }

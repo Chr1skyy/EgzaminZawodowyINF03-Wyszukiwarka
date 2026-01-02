@@ -61,79 +61,86 @@
                         <input type="text" id="search-input" placeholder="Szukaj po roku, tytule, tagach..."
                             class="search-input">
                     </div>
+
                 </div>
             </div>
 
             <div class="content-layout">
-                <aside class="filter-panel">
-                    <div class="filter-header">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46" />
-                        </svg>
-                        <h3>Filtry</h3>
-                        <button id="clear-filters-btn" class="reset-filters" aria-label="Resetuj filtry">
-                            <svg class="reset-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="1 4 1 10 7 10" />
-                                <path d="M3.51 15a9 9 0 1 0 .49-7.5" />
+                <div class="content-layout-wrapper">
+                    <aside class="filter-panel">
+                        <div class="filter-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46" />
                             </svg>
-                        </button>
-                    </div>
-                    <div class="filters">
-                        <div class="filter-section">
-                            <h4>Formuła</h4>
-                            <div class="filter-buttons" id="formula-filters">
-                                <button class="filter-btn" data-filter="formula" data-value="E.14">E.14</button>
-                                <button class="filter-btn" data-filter="formula" data-value="EE.09">EE.09</button>
-                                <button class="filter-btn" data-filter="formula" data-value="INF.03">INF.03</button>
-                            </div>
+                            <h3>Filtry</h3>
+                            <button id="clear-filters-btn" class="reset-filters" aria-label="Resetuj filtry">
+                                <svg class="reset-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="1 4 1 10 7 10" />
+                                    <path d="M3.51 15a9 9 0 1 0 .49-7.5" />
+                                </svg>
+                            </button>
                         </div>
-
-                        <div class="filter-section">
-                            <h4>Trudność</h4>
-                            <div class="filter-buttons" id="difficulty-filters">
-                                <button class="filter-btn difficulty-easy" data-filter="difficulty"
-                                    data-value="Easy">Easy</button>
-                                <button class="filter-btn difficulty-medium" data-filter="difficulty"
-                                    data-value="Medium">Medium</button>
-                                <button class="filter-btn difficulty-hard" data-filter="difficulty"
-                                    data-value="Hard">Hard</button>
+                        <div class="filters">
+                            <div class="filter-section">
+                                <h4>Formuła</h4>
+                                <div class="filter-buttons" id="formula-filters">
+                                    <button class="filter-btn" data-filter="formula" data-value="E.14">E.14</button>
+                                    <button class="filter-btn" data-filter="formula" data-value="EE.09">EE.09</button>
+                                    <button class="filter-btn" data-filter="formula" data-value="INF.03">INF.03</button>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="filter-section">
-                            <h4>Język</h4>
-                            <div class="filter-buttons" id="language-filters">
-                                <button class="filter-btn language-php" data-filter="language"
-                                    data-value="PHP">PHP</button>
-                                <button class="filter-btn language-js" data-filter="language"
-                                    data-value="JS">JS</button>
-                                <button class="filter-btn language-jsphp" data-filter="language"
-                                    data-value="JS+PHP">JS+PHP</button>
+                            <div class="filter-section">
+                                <h4>Trudność</h4>
+                                <div class="filter-buttons" id="difficulty-filters">
+                                    <button class="filter-btn difficulty-easy" data-filter="difficulty"
+                                        data-value="Easy">Easy</button>
+                                    <button class="filter-btn difficulty-medium" data-filter="difficulty"
+                                        data-value="Medium">Medium</button>
+                                    <button class="filter-btn difficulty-hard" data-filter="difficulty"
+                                        data-value="Hard">Hard</button>
+                                </div>
                             </div>
-                        </div>
 
-                    </div>
-                    <div class="filter-section hide-completed-section">
-                        <button id="hide-completed-toggle" class="hide-completed-btn">
-                            <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-                                <circle cx="12" cy="12" r="3" />
-                            </svg>
-                            <svg class="eye-off-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24" />
-                                <path
-                                    d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 11 8 11 8a13.16 13.16 0 0 1-1.67 2.68" />
-                                <path d="M6.61 6.61A13.526 13.526 0 0 0 1 12s4 8 11 8a9.74 9.74 0 0 0 5.39-1.61" />
-                                <line x1="2" y1="2" x2="22" y2="22" />
-                            </svg>
-                            <span>Ukryj ukończone egzaminy</span>
-                        </button>
-                    </div>
-                </aside>
+                            <div class="filter-section">
+                                <h4>Język</h4>
+                                <div class="filter-buttons" id="language-filters">
+                                    <button class="filter-btn language-php" data-filter="language"
+                                        data-value="PHP">PHP</button>
+                                    <button class="filter-btn language-js" data-filter="language"
+                                        data-value="JS">JS</button>
+                                    <button class="filter-btn language-jsphp" data-filter="language"
+                                        data-value="JS+PHP">JS+PHP</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="filter-section hide-completed-section">
+                            <button id="hide-completed-toggle" class="hide-completed-btn">
+                                <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                <svg class="eye-off-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24" />
+                                    <path
+                                        d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 11 8 11 8a13.16 13.16 0 0 1-1.67 2.68" />
+                                    <path d="M6.61 6.61A13.526 13.526 0 0 0 1 12s4 8 11 8a9.74 9.74 0 0 0 5.39-1.61" />
+                                    <line x1="2" y1="2" x2="22" y2="22" />
+                                </svg>
+                                <span>Ukryj ukończone egzaminy</span>
+                            </button>
+                        </div>
+                    </aside>
+                    <div id="popular-tags" class="popular-tags"></div>
+                </div>
 
                 <div class="results-section">
                     <div class="results-header">
@@ -179,12 +186,18 @@
 
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.basic.min.js"></script>
     <script src="js/data.js"></script>
     <script src="js/storage.js"></script>
     <script src="js/filters.js"></script>
     <script src="js/search.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
 </body>
 
 </html>

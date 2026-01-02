@@ -186,12 +186,75 @@ function handleFiltersChange(filts) {
 }
 
 setOnFiltersChangeCallback(handleFiltersChange);
+
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Tagi wybrane ręcznie do wyświetlania
+const TAGS_LIST = [
+    "cookies/ciasteczka",
+    "animacja",
+    "favicon",
+    "logowanie/rejestracja",
+    "galeria zdjęć",
+    "plik video/wideo/film",
+    "odświeżanie strony",
+    "pokazywanie/ukrywanie elementów",
+    "responsywność strony (@media query)",
+    "efekty przejścia CSS"
+];
+
+function renderPopularTags() {
+    const tagsContainer = document.getElementById('popular-tags');
+    if (!tagsContainer) return;
+
+    tagsContainer.innerHTML = TAGS_LIST.map(tag => `
+        <button class="filter-pill" data-tag="${tag}">
+            ${tag}
+        </button>
+    `).join('');
+
+    tagsContainer.querySelectorAll('.filter-pill').forEach(btn => {
+        btn.onclick = () => {
+            const tag = btn.dataset.tag;
+            const currentQuery = document.getElementById('search-input').value;
+            if (currentQuery.includes(tag)) {
+                 const newQuery = currentQuery.replace(tag, '').trim();
+                 setQuery(newQuery);
+                 document.getElementById('search-input').value = newQuery;
+                 btn.classList.remove('active');
+            } else {
+                 const newQuery = currentQuery ? `${currentQuery} ${tag}` : tag;
+                 setQuery(newQuery);
+                 document.getElementById('search-input').value = newQuery;
+                 btn.classList.add('active');
+            }
+        };
+    });
+}
+
+const debouncedSearch = debounce((value) => setQuery(value), 200);
+
 const searchInput = document.getElementById('search-input');
-if (searchInput) searchInput.oninput = e => setQuery(e.target.value);
+if (searchInput) {
+    searchInput.oninput = e => debouncedSearch(e.target.value);
+}
+
 const hideBtn = document.getElementById('hide-completed-toggle');
 if (hideBtn) hideBtn.onclick = () => {
     hideCompleted = !hideCompleted;
     hideBtn.classList.toggle('active', hideCompleted);
     handleFiltersChange(getFilters());
 };
+
+renderPopularTags();
 handleFiltersChange(getFilters());

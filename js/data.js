@@ -2327,7 +2327,7 @@ const examData = [
       "galeria zdjęć",
       "przewijanie zdjęć"
     ],
-    "difficulty": "Hard"
+    "difficulty": "Medium"
   },
   {
     "formula": "INF.03",
@@ -2886,7 +2886,7 @@ const examData = [
     },
     "tags": [
       "przeskalowanie grafiki",
-      "kwerenda z podwójną relacją",
+      "podwójna relacja",
       "wyświetlanie danych z bazy",
       "formularz",
       "pokazywanie/ukrywanie elementów"
