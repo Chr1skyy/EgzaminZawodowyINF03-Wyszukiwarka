@@ -1,3 +1,4 @@
+const GITHUB_BASE = "https://github.com/Chr1skyy/Egzamin-Zawodowy-E14-EE09-INF03/tree/main";
 let completedExams = getCompletedExams();
 let filteredExams = [];
 let expandedTags = new Set();
@@ -96,12 +97,14 @@ function createLinksHtml(links) {
         { key: 'solutionZIP', label: 'Rozwiązanie ZIP', class: 'exam-link-zip' },
         { key: 'gradingRules', label: 'Zasady oceniania', class: 'exam-link-grading' }
     ];
-    return linkConfigs.filter(cfg => links[cfg.key] && links[cfg.key].trim() !== '').map(cfg => `
-        <a href="${links[cfg.key]}" class="exam-link ${cfg.class}" target="_blank" rel="noopener noreferrer">
+    return linkConfigs.filter(cfg => links[cfg.key] && links[cfg.key].trim() !== '').map(cfg => {
+        let url = GITHUB_BASE + links.mainFolder + '/' + links[cfg.key];
+        return `
+        <a href="${url}" class="exam-link ${cfg.class}" target="_blank" rel="noopener noreferrer">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             <span>${cfg.label}</span>
         </a>
-    `).join('');
+    `}).join('');
 }
 
 function bindCardEvents() {
