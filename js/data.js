@@ -7,7 +7,7 @@ const examData = [
         "language": "PHP",
         "name": "Restauracja \"Wszystkie Smaki\"",
         "codeName": "E.14-01-18.06",
-        "thumbnail": "img/e14/E.14-01-18.06.jpg",
+        "thumbnail": "img/e14/E.14-01-18.06.webp",
         "links": {
             "mainFolder": "/e14/e14_2018_06_01",
             "examSheet": "e14_2018_06_01.pdf",
@@ -29,7 +29,7 @@ const examData = [
         "language": "PHP",
         "name": "Restauracja \"Kulinaria.pl\"",
         "codeName": "E.14-04-18.06",
-        "thumbnail": "img/e14/E.14-04-18.06.jpg",
+        "thumbnail": "img/e14/E.14-04-18.06.webp",
         "links": {
             "mainFolder": "/e14/e14_2018_06_04",
             "examSheet": "e14_2018_06_04.pdf",
@@ -51,7 +51,7 @@ const examData = [
         "language": "JS",
         "name": "Dom weselny",
         "codeName": "E.14-05-18.06",
-        "thumbnail": "img/e14/E.14-05-18.06.jpg",
+        "thumbnail": "img/e14/E.14-05-18.06.webp",
         "links": {
             "mainFolder": "/e14/e14_2018_06_05",
             "examSheet": "e14_2018_06_05.pdf",
@@ -75,7 +75,7 @@ const examData = [
         "language": "JS",
         "name": "Pizzeria",
         "codeName": "E.14-06-18.06",
-        "thumbnail": "img/e14/E.14-06-18.06.jpg",
+        "thumbnail": "img/e14/E.14-06-18.06.webp",
         "links": {
             "mainFolder": "/e14/e14_2018_06_06",
             "examSheet": "e14_2018_06_06.pdf",
@@ -99,7 +99,7 @@ const examData = [
         "language": "PHP",
         "name": "Filmoteka",
         "codeName": "E.14-01-19.01",
-        "thumbnail": "img/e14/E.14-01-19.01.jpg",
+        "thumbnail": "img/e14/E.14-01-19.01.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_01_01",
             "examSheet": "e14_2019_01_01.pdf",
@@ -122,7 +122,7 @@ const examData = [
         "language": "JS",
         "name": "Formatowanie dokumentów HTML",
         "codeName": "E.14-02-19.01",
-        "thumbnail": "img/e14/E.14-02-19.01.jpg",
+        "thumbnail": "img/e14/E.14-02-19.01.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_01_02",
             "examSheet": "e14_2019_01_02.pdf",
@@ -147,7 +147,7 @@ const examData = [
         "language": "PHP",
         "name": "Baza filmów",
         "codeName": "E.14-03-19.01",
-        "thumbnail": "img/e14/E.14-03-19.01.jpg",
+        "thumbnail": "img/e14/E.14-03-19.01.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_01_03",
             "examSheet": "e14_2019_01_03.pdf",
@@ -170,7 +170,7 @@ const examData = [
         "language": "JS",
         "name": "Hurtownia kawy",
         "codeName": "E.14-04-19.01",
-        "thumbnail": "img/e14/E.14-04-19.01.jpg",
+        "thumbnail": "img/e14/E.14-04-19.01.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_01_04",
             "examSheet": "e14_2019_01_04.pdf",
@@ -195,7 +195,7 @@ const examData = [
         "language": "PHP",
         "name": "Idziemy na grzyby",
         "codeName": "E.14-05-19.01",
-        "thumbnail": "img/e14/E.14-05-19.01.jpg",
+        "thumbnail": "img/e14/E.14-05-19.01.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_01_05",
             "examSheet": "e14_2019_01_05.pdf",
@@ -217,7 +217,7 @@ const examData = [
         "language": "PHP",
         "name": "Biuro podróży \"WESOŁA WYPRAWA\"",
         "codeName": "E.14-06-19.01",
-        "thumbnail": "img/e14/E.14-06-19.01.jpg",
+        "thumbnail": "img/e14/E.14-06-19.01.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_01_06",
             "examSheet": "e14_2019_01_06.pdf",
@@ -241,7 +241,7 @@ const examData = [
         "language": "PHP",
         "name": "Hurtownia komputerowa - podzespoły",
         "codeName": "E.14-07-19.01",
-        "thumbnail": "img/e14/E.14-07-19.01.jpg",
+        "thumbnail": "img/e14/E.14-07-19.01.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_01_07",
             "examSheet": "e14_2019_01_07.pdf",
@@ -264,7 +264,7 @@ const examData = [
         "language": "PHP",
         "name": "Hurtownia komputerowa - podzespoły",
         "codeName": "E.14-08-19.01",
-        "thumbnail": "img/e14/E.14-08-19.01.jpg",
+        "thumbnail": "img/e14/E.14-08-19.01.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_01_08",
             "examSheet": "e14_2019_01_08.pdf",
@@ -287,7 +287,7 @@ const examData = [
         "language": "PHP",
         "name": "Atlas zwierząt",
         "codeName": "E.14-09-19.01",
-        "thumbnail": "img/e14/E.14-09-19.01.jpg",
+        "thumbnail": "img/e14/E.14-09-19.01.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_01_09",
             "examSheet": "e14_2019_01_09.pdf",
@@ -309,7 +309,7 @@ const examData = [
         "language": "PHP",
         "name": "Drapieżniki i inne",
         "codeName": "E.14-10-19.01",
-        "thumbnail": "img/e14/E.14-10-19.01.jpg",
+        "thumbnail": "img/e14/E.14-10-19.01.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_01_10",
             "examSheet": "e14_2019_01_10.pdf",
@@ -331,7 +331,7 @@ const examData = [
         "language": "JS",
         "name": "Zdjęcia psów",
         "codeName": "E.14-11-19.01",
-        "thumbnail": "img/e14/E.14-11-19.01.jpg",
+        "thumbnail": "img/e14/E.14-11-19.01.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_01_11",
             "examSheet": "e14_2019_01_11.pdf",
@@ -354,7 +354,7 @@ const examData = [
         "language": "JS",
         "name": "Fotografie zwierząt",
         "codeName": "E.14-12-19.01",
-        "thumbnail": "img/e14/E.14-12-19.01.jpg",
+        "thumbnail": "img/e14/E.14-12-19.01.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_01_12",
             "examSheet": "e14_2019_01_12.pdf",
@@ -377,7 +377,7 @@ const examData = [
         "language": "PHP",
         "name": "Sklep papierniczy",
         "codeName": "E.14-01-19.06",
-        "thumbnail": "img/e14/E.14-01-19.06.jpg",
+        "thumbnail": "img/e14/E.14-01-19.06.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_06_01",
             "examSheet": "e14_2019_06_01.pdf",
@@ -400,7 +400,7 @@ const examData = [
         "language": "PHP",
         "name": "Hurtownia papiernicza",
         "codeName": "E.14-02-19.06",
-        "thumbnail": "img/e14/E.14-02-19.06.jpg",
+        "thumbnail": "img/e14/E.14-02-19.06.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_06_02",
             "examSheet": "e14_2019_06_02.pdf",
@@ -423,7 +423,7 @@ const examData = [
         "language": "PHP",
         "name": "Biblioteka Publiczna w Książkowicach",
         "codeName": "E.14-03-19.06",
-        "thumbnail": "img/e14/E.14-03-19.06.jpg",
+        "thumbnail": "img/e14/E.14-03-19.06.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_06_03",
             "examSheet": "e14_2019_06_03.pdf",
@@ -446,7 +446,7 @@ const examData = [
         "language": "PHP",
         "name": "Biblioteka Publiczna w Książkowicach",
         "codeName": "E.14-04-19.06",
-        "thumbnail": "img/e14/E.14-04-19.06.jpg",
+        "thumbnail": "img/e14/E.14-04-19.06.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_06_04",
             "examSheet": "e14_2019_06_04.pdf",
@@ -469,7 +469,7 @@ const examData = [
         "language": "JS",
         "name": "Usługi informatyczne",
         "codeName": "E.14-05-19.06",
-        "thumbnail": "img/e14/E.14-05-19.06.jpg",
+        "thumbnail": "img/e14/E.14-05-19.06.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_06_05",
             "examSheet": "e14_2019_06_05.pdf",
@@ -494,7 +494,7 @@ const examData = [
         "language": "JS",
         "name": "Pogotowie komputerowe",
         "codeName": "E.14-06-19.06",
-        "thumbnail": "img/e14/E.14-06-19.06.jpg",
+        "thumbnail": "img/e14/E.14-06-19.06.webp",
         "links": {
             "mainFolder": "/e14/e14_2019_06_06",
             "examSheet": "e14_2019_06_06.pdf",
@@ -519,7 +519,7 @@ const examData = [
         "language": "PHP",
         "name": "Podzespoły komputerowe",
         "codeName": "E.14-01-20.01-SG",
-        "thumbnail": "img/e14/E.14-01-20.01-SG.jpg",
+        "thumbnail": "img/e14/E.14-01-20.01-SG.webp",
         "links": {
             "mainFolder": "/e14/e14_2020_01_01",
             "examSheet": "e14_2020_01_01.pdf",
@@ -541,7 +541,7 @@ const examData = [
         "language": "JS",
         "name": "Fabryka żelków",
         "codeName": "E.14-02-20.01-SG",
-        "thumbnail": "img/e14/E.14-02-20.01-SG.jpg",
+        "thumbnail": "img/e14/E.14-02-20.01-SG.webp",
         "links": {
             "mainFolder": "/e14/e14_2020_01_02",
             "examSheet": "e14_2020_01_02.pdf",
@@ -565,7 +565,7 @@ const examData = [
         "language": "JS",
         "name": "Fabryka cukierków",
         "codeName": "E.14-03-20.01-SG",
-        "thumbnail": "img/e14/E.14-03-20.01-SG.jpg",
+        "thumbnail": "img/e14/E.14-03-20.01-SG.webp",
         "links": {
             "mainFolder": "/e14/e14_2020_01_03",
             "examSheet": "e14_2020_01_03.pdf",
@@ -590,7 +590,7 @@ const examData = [
         "language": "PHP",
         "name": "Gromady kręgowców",
         "codeName": "E.14-04-20.01-SG",
-        "thumbnail": "img/e14/E.14-04-20.01-SG.jpg",
+        "thumbnail": "img/e14/E.14-04-20.01-SG.webp",
         "links": {
             "mainFolder": "/e14/e14_2020_01_04",
             "examSheet": "e14_2020_01_04.pdf",
@@ -611,7 +611,7 @@ const examData = [
         "language": "JS",
         "name": "Malarz",
         "codeName": "E.14-01-20.06-SG",
-        "thumbnail": "img/e14/E.14-01-20.06-SG.jpg",
+        "thumbnail": "img/e14/E.14-01-20.06-SG.webp",
         "links": {
             "mainFolder": "/e14/e14_2020_06_01",
             "examSheet": "e14_2020_06_01.pdf",
@@ -634,7 +634,7 @@ const examData = [
         "language": "PHP",
         "name": "Wynajem pokoi",
         "codeName": "E.14-02-20.06-SG",
-        "thumbnail": "img/e14/E.14-02-20.06-SG.jpg",
+        "thumbnail": "img/e14/E.14-02-20.06-SG.webp",
         "links": {
             "mainFolder": "/e14/e14_2020_06_02",
             "examSheet": "e14_2020_06_02.pdf",
@@ -657,7 +657,7 @@ const examData = [
         "language": "PHP",
         "name": "Moje kwiaty",
         "codeName": "E.14-03-20.06-SG",
-        "thumbnail": "img/e14/E.14-03-20.06-SG.jpg",
+        "thumbnail": "img/e14/E.14-03-20.06-SG.webp",
         "links": {
             "mainFolder": "/e14/e14_2020_06_03",
             "examSheet": "e14_2020_06_03.pdf",
@@ -681,7 +681,7 @@ const examData = [
         "language": "JS+PHP",
         "name": "Ozdoby - sklep",
         "codeName": "E.14-04-20.06-SG",
-        "thumbnail": "img/e14/E.14-04-20.06-SG.jpg",
+        "thumbnail": "img/e14/E.14-04-20.06-SG.webp",
         "links": {
             "mainFolder": "/e14/e14_2020_06_04",
             "examSheet": "e14_2020_06_04.pdf",
@@ -706,7 +706,7 @@ const examData = [
         "language": "PHP",
         "name": "Portal dla wędkarzy",
         "codeName": "EE.09-01-19.06",
-        "thumbnail": "img/ee09/EE.09-01-19.06.jpg",
+        "thumbnail": "img/ee09/EE.09-01-19.06.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_01",
             "examSheet": "ee09_2019_06_01.pdf",
@@ -729,7 +729,7 @@ const examData = [
         "language": "JS",
         "name": "Stacja paliw",
         "codeName": "EE.09-02-19.06",
-        "thumbnail": "img/ee09/EE.09-02-19.06.jpg",
+        "thumbnail": "img/ee09/EE.09-02-19.06.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_02",
             "examSheet": "ee09_2019_06_02.pdf",
@@ -752,7 +752,7 @@ const examData = [
         "language": "PHP",
         "name": "Zawody wędkarskie",
         "codeName": "EE.09-03-19.06",
-        "thumbnail": "img/ee09/EE.09-03-19.06.jpg",
+        "thumbnail": "img/ee09/EE.09-03-19.06.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_03",
             "examSheet": "ee09_2019_06_03.pdf",
@@ -776,7 +776,7 @@ const examData = [
         "language": "JS",
         "name": "Pomocnik matematyczny",
         "codeName": "EE.09-04-19.06",
-        "thumbnail": "img/ee09/EE.09-04-19.06.jpg",
+        "thumbnail": "img/ee09/EE.09-04-19.06.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_04",
             "examSheet": "ee09_2019_06_04.pdf",
@@ -799,7 +799,7 @@ const examData = [
         "language": "JS",
         "name": "Poznaj Ciągi Liczbowe",
         "codeName": "EE.09-05-19.06",
-        "thumbnail": "img/ee09/EE.09-05-19.06.jpg",
+        "thumbnail": "img/ee09/EE.09-05-19.06.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_05",
             "examSheet": "ee09_2019_06_05.pdf",
@@ -822,7 +822,7 @@ const examData = [
         "language": "PHP",
         "name": "Pogotowie Ratunkowe",
         "codeName": "EE.09-06-19.06",
-        "thumbnail": "img/ee09/EE.09-06-19.06.jpg",
+        "thumbnail": "img/ee09/EE.09-06-19.06.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_06",
             "examSheet": "ee09_2019_06_06.pdf",
@@ -846,7 +846,7 @@ const examData = [
         "language": "PHP",
         "name": "Wędkuj z nami!",
         "codeName": "EE.09-01-20.01-SG",
-        "thumbnail": "img/ee09/EE.09-01-20.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-01-20.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_01_01",
             "examSheet": "ee09_2020_01_01_SG.pdf",
@@ -869,7 +869,7 @@ const examData = [
         "language": "JS",
         "name": "Witamy na stacji paliw",
         "codeName": "EE.09-02-20.01-SG",
-        "thumbnail": "img/ee09/EE.09-02-20.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-02-20.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_01_02",
             "examSheet": "ee09_2020_01_02_SG.pdf",
@@ -892,7 +892,7 @@ const examData = [
         "language": "PHP",
         "name": "Prognoza pogody dla Poznania",
         "codeName": "EE.09-03-20.01-SG",
-        "thumbnail": "img/ee09/EE.09-03-20.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-03-20.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_01_03",
             "examSheet": "ee09_2020_01_03_SG.pdf",
@@ -915,7 +915,7 @@ const examData = [
         "language": "PHP",
         "name": "Mój organizer",
         "codeName": "EE.09-01-20.06-SG",
-        "thumbnail": "img/ee09/EE.09-01-20.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-01-20.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_01",
             "examSheet": "ee09_2020_06_01_SG.pdf",
@@ -940,7 +940,7 @@ const examData = [
         "language": "PHP",
         "name": "Biuro podróży",
         "codeName": "EE.09-02-20.06-SG",
-        "thumbnail": "img/ee09/EE.09-02-20.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-02-20.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_02",
             "examSheet": "ee09_2020_06_02_SG.pdf",
@@ -962,7 +962,7 @@ const examData = [
         "language": "PHP",
         "name": "Mój kalendarz",
         "codeName": "EE.09-03-20.06-SG",
-        "thumbnail": "img/ee09/EE.09-03-20.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-03-20.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_03",
             "examSheet": "ee09_2020_06_03_SG.pdf",
@@ -987,7 +987,7 @@ const examData = [
         "language": "JS",
         "name": "Salon kosmetyczny",
         "codeName": "EE.09-04-20.06-SG",
-        "thumbnail": "img/ee09/EE.09-04-20.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-04-20.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_04",
             "examSheet": "ee09_2020_06_04_SG.pdf",
@@ -1010,7 +1010,7 @@ const examData = [
         "language": "JS",
         "name": "Salon fryzjerski",
         "codeName": "EE.09-05-20.06-SG",
-        "thumbnail": "img/ee09/EE.09-05-20.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-05-20.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_05",
             "examSheet": "ee09_2020_06_05_SG.pdf",
@@ -1033,7 +1033,7 @@ const examData = [
         "language": "PHP",
         "name": "Witamy w biurze podróży",
         "codeName": "EE.09-06-20.06-SG",
-        "thumbnail": "img/ee09/EE.09-06-20.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-06-20.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_06",
             "examSheet": "ee09_2020_06_06_SG.pdf",
@@ -1055,7 +1055,7 @@ const examData = [
         "language": "PHP",
         "name": "Światowe Rozgrywki Piłkarskie",
         "codeName": "EE.09-01-21.01-SG",
-        "thumbnail": "img/ee09/EE.09-01-21.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-01-21.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_01",
             "examSheet": "ee_09_2021_01_01_SG.pdf",
@@ -1079,7 +1079,7 @@ const examData = [
         "language": "PHP",
         "name": "Reprezentacja Polski w Piłce Nożnej",
         "codeName": "EE.09-02-21.01-SG",
-        "thumbnail": "img/ee09/EE.09-02-21.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-02-21.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_02",
             "examSheet": "ee_09_2021_01_02_SG.pdf",
@@ -1103,7 +1103,7 @@ const examData = [
         "language": "PHP",
         "name": "Oblicz swoje BMI",
         "codeName": "EE.09-03-21.01-SG",
-        "thumbnail": "img/ee09/EE.09-03-21.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-03-21.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_03",
             "examSheet": "ee_09_2021_01_03_SG.pdf",
@@ -1127,7 +1127,7 @@ const examData = [
         "language": "PHP",
         "name": "Oblicz Twój wskaźnik BMI",
         "codeName": "EE.09-04-21.01-SG",
-        "thumbnail": "img/ee09/EE.09-04-21.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-04-21.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_04",
             "examSheet": "ee_09_2021_01_04_SG.pdf",
@@ -1151,7 +1151,7 @@ const examData = [
         "language": "PHP",
         "name": "Przyloty",
         "codeName": "EE.09-05-21.01-SG",
-        "thumbnail": "img/ee09/EE.09-05-21.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-05-21.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_05",
             "examSheet": "ee_09_2021_01_05_SG.pdf",
@@ -1175,7 +1175,7 @@ const examData = [
         "language": "PHP",
         "name": "Odloty z lotniska",
         "codeName": "EE.09-06-21.01-SG",
-        "thumbnail": "img/ee09/EE.09-06-21.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-06-21.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_06",
             "examSheet": "ee_09_2021_01_06_SG.pdf",
@@ -1199,7 +1199,7 @@ const examData = [
         "language": "PHP",
         "name": "Portal społecznościowy - moje konto",
         "codeName": "EE.09-01-21.06-SG",
-        "thumbnail": "img/ee09/EE.09-01-21.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-01-21.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2021_06_01",
             "examSheet": "ee_09_2021_06_01_SG.pdf",
@@ -1223,7 +1223,7 @@ const examData = [
         "language": "PHP",
         "name": "Internetowy sklep z eko-warzywami",
         "codeName": "EE.09-02-21.06-SG",
-        "thumbnail": "img/ee09/EE.09-02-21.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-02-21.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2021_06_02",
             "examSheet": "ee_09_2021_06_02_SG.pdf",
@@ -1249,7 +1249,7 @@ const examData = [
         "language": "PHP",
         "name": "Internetowa wypożyczalnia filmów",
         "codeName": "EE.09-03-21.06-SG",
-        "thumbnail": "img/ee09/EE.09-03-21.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-03-21.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2021_06_03",
             "examSheet": "ee_09_2021_06_03_SG.pdf",
@@ -1274,7 +1274,7 @@ const examData = [
         "language": "PHP",
         "name": "Portal społecznościowy - panel administratora",
         "codeName": "EE.09-04-21.06-SG",
-        "thumbnail": "img/ee09/EE.09-04-21.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-04-21.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2021_06_04",
             "examSheet": "ee_09_2021_06_04_SG.pdf",
@@ -1299,7 +1299,7 @@ const examData = [
         "language": "PHP",
         "name": "Zgłoszenie na kartę wędkarską",
         "codeName": "EE.09-01-22.01-SG",
-        "thumbnail": "img/ee09/EE.09-01-22.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-01-22.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_01",
             "examSheet": "ee_09_2022_01_01_SG.pdf",
@@ -1323,7 +1323,7 @@ const examData = [
         "language": "PHP",
         "name": "Prognoza pogody dla Wrocławia",
         "codeName": "EE.09-02-22.01-SG",
-        "thumbnail": "img/ee09/EE.09-02-22.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-02-22.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_02",
             "examSheet": "ee_09_2022_01_02_SG.pdf",
@@ -1346,7 +1346,7 @@ const examData = [
         "language": "PHP",
         "name": "Dodanie zespołu ratowniczego",
         "codeName": "EE.09-03-22.01-SG",
-        "thumbnail": "img/ee09/EE.09-03-22.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-03-22.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_03",
             "examSheet": "ee_09_2022_01_03_SG.pdf",
@@ -1370,7 +1370,7 @@ const examData = [
         "language": "PHP",
         "name": "Forum wielbicieli psów",
         "codeName": "EE.09-04-22.01-SG",
-        "thumbnail": "img/ee09/EE.09-04-22.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-04-22.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_04",
             "examSheet": "ee_09_2022_01_04_SG.pdf",
@@ -1396,7 +1396,7 @@ const examData = [
         "language": "PHP",
         "name": "Nasze osiedle",
         "codeName": "EE.09-05-22.01-SG",
-        "thumbnail": "img/ee09/EE.09-05-22.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-05-22.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_05",
             "examSheet": "ee_09_2022_01_05_SG.pdf",
@@ -1421,7 +1421,7 @@ const examData = [
         "language": "JS",
         "name": "Konfigurator stylu",
         "codeName": "EE.09-06-22.01-SG",
-        "thumbnail": "img/ee09/EE.09-06-22.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-06-22.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_06",
             "examSheet": "ee_09_2022_01_06_SG.pdf",
@@ -1444,7 +1444,7 @@ const examData = [
         "language": "JS",
         "name": "Galeria miejsc ciekawych",
         "codeName": "EE.09-07-22.01-SG",
-        "thumbnail": "img/ee09/EE.09-07-22.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-07-22.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_07",
             "examSheet": "ee_09_2022_01_07_SG.pdf",
@@ -1467,7 +1467,7 @@ const examData = [
         "language": "PHP",
         "name": "Forum miłośników psów",
         "codeName": "EE.09-01-22.06-SG",
-        "thumbnail": "img/ee09/EE.09-01-22.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-01-22.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2022_06_01",
             "examSheet": "ee_09_2022_06_01_SG.pdf",
@@ -1492,7 +1492,7 @@ const examData = [
         "language": "JS",
         "name": "Pomocnik CSS",
         "codeName": "EE.09-02-22.06-SG",
-        "thumbnail": "img/ee09/EE.09-02-22.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-02-22.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2022_06_02",
             "examSheet": "ee_09_2022_06_02_SG.pdf",
@@ -1517,7 +1517,7 @@ const examData = [
         "language": "PHP",
         "name": "Hurtownia spożywcza - opinie klientów",
         "codeName": "EE.09-03-22.06-SG",
-        "thumbnail": "img/ee09/EE.09-03-22.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-03-22.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2022_06_03",
             "examSheet": "ee_09_2022_06_03_SG.pdf",
@@ -1540,7 +1540,7 @@ const examData = [
         "language": "JS",
         "name": "Sieci komputerowe",
         "codeName": "EE.09-04-22.06-SG",
-        "thumbnail": "img/ee09/EE.09-04-22.06-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-04-22.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2022_06_04",
             "examSheet": "ee_09_2022_06_04_SG.pdf",
@@ -1563,7 +1563,7 @@ const examData = [
         "language": "PHP",
         "name": "Akta pracownicze",
         "codeName": "EE.09-01-23.01-SG",
-        "thumbnail": "img/ee09/EE.09-01-23.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-01-23.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2023_01_01",
             "examSheet": "ee_09_2023_01_01_SG.pdf",
@@ -1586,7 +1586,7 @@ const examData = [
         "language": "JS",
         "name": "Galeria obrazów",
         "codeName": "EE.09-02-23.01-SG",
-        "thumbnail": "img/ee09/EE.09-02-23.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-02-23.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2023_01_02",
             "examSheet": "ee_09_2023_01_02_SG.pdf",
@@ -1610,7 +1610,7 @@ const examData = [
         "language": "JS",
         "name": "Gazeta codzienna",
         "codeName": "EE.09-03-23.01-SG",
-        "thumbnail": "img/ee09/EE.09-03-23.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-03-23.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2023_01_03",
             "examSheet": "ee_09_2023_01_03_SG.pdf",
@@ -1633,7 +1633,7 @@ const examData = [
         "language": "PHP",
         "name": "Wizytówki pracowników",
         "codeName": "EE.09-04-23.01-SG",
-        "thumbnail": "img/ee09/EE.09-04-23.01-SG.jpg",
+        "thumbnail": "img/ee09/EE.09-04-23.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2023_01_04",
             "examSheet": "ee_09_2023_01_04_SG.pdf",
@@ -1657,7 +1657,7 @@ const examData = [
         "language": "PHP",
         "name": "Restauracja \"Wszystkie Smaki\"",
         "codeName": "INF.03-01-22.01-SG",
-        "thumbnail": "img/inf03/INF.03-01-22.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-01-22.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2022_01_01",
             "examSheet": "inf_03_2022_01_01_SG.pdf",
@@ -1680,7 +1680,7 @@ const examData = [
         "language": "PHP",
         "name": "Portal dla wędkarzy",
         "codeName": "INF.03-01-22.06-SG",
-        "thumbnail": "img/inf03/INF.03-01-22.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-01-22.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2022_06_01",
             "examSheet": "inf_03_2022_06_01_SG.pdf",
@@ -1703,7 +1703,7 @@ const examData = [
         "language": "JS",
         "name": "Całodobowa stacja paliw",
         "codeName": "INF.03-02-22.06-SG",
-        "thumbnail": "img/inf03/INF.03-02-22.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-02-22.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2022_06_02",
             "examSheet": "inf_03_2022_06_02_SG.pdf",
@@ -1726,7 +1726,7 @@ const examData = [
         "language": "PHP",
         "name": "Zawody polskich wędkarzy",
         "codeName": "INF.03-03-22.06-SG",
-        "thumbnail": "img/inf03/INF.03-03-22.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-03-22.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2022_06_03",
             "examSheet": "inf_03_2022_06_03_SG.pdf",
@@ -1751,7 +1751,7 @@ const examData = [
         "language": "JS",
         "name": "Malowanie pokoi i biur",
         "codeName": "INF.03-01-23.01-SG",
-        "thumbnail": "img/inf03/INF.03-01-23.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-01-23.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_01",
             "examSheet": "inf_03_2023_01_01_SG.pdf",
@@ -1776,7 +1776,7 @@ const examData = [
         "language": "PHP",
         "name": "Pensjonat pod dobrym humorem",
         "codeName": "INF.03-02-23.01-SG",
-        "thumbnail": "img/inf03/INF.03-02-23.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-02-23.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_02",
             "examSheet": "inf_03_2023_01_02_SG.pdf",
@@ -1799,7 +1799,7 @@ const examData = [
         "language": "PHP",
         "name": "Grupa Polskich Kwiaciarni",
         "codeName": "INF.03-03-23.01-SG",
-        "thumbnail": "img/inf03/INF.03-03-23.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-03-23.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_03",
             "examSheet": "inf_03_2023_01_03_SG.pdf",
@@ -1823,7 +1823,7 @@ const examData = [
         "language": "PHP",
         "name": "Biuro turystyczne",
         "codeName": "INF.03-04-23.01-SG",
-        "thumbnail": "img/inf03/INF.03-04-23.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-04-23.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_04",
             "examSheet": "inf_03_2023_01_04_SG.pdf",
@@ -1845,7 +1845,7 @@ const examData = [
         "language": "PHP",
         "name": "Organizer: Sierpnień",
         "codeName": "INF.03-05-23.01-SG",
-        "thumbnail": "img/inf03/INF.03-05-23.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-05-23.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_05",
             "examSheet": "inf_03_2023_01_05_SG.pdf",
@@ -1870,7 +1870,7 @@ const examData = [
         "language": "PHP",
         "name": "Dzisiejsze promocje naszego sklepu dla uczniów",
         "codeName": "INF.03-01-23.06-SG",
-        "thumbnail": "img/inf03/INF.03-01-23.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-01-23.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2023_06_01",
             "examSheet": "inf_03_2023_06_01_SG.pdf",
@@ -1894,7 +1894,7 @@ const examData = [
         "language": "PHP",
         "name": "Hurtownia szkolna z najlepszymi cenami",
         "codeName": "INF.03-02-23.06-SG",
-        "thumbnail": "img/inf03/INF.03-02-23.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-02-23.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2023_06_02",
             "examSheet": "inf_03_2023_06_02_SG.pdf",
@@ -1919,7 +1919,7 @@ const examData = [
         "language": "PHP",
         "name": "Biblioteka w Książkowicach Wielkich",
         "codeName": "INF.03-04-23.06-SG",
-        "thumbnail": "img/inf03/INF.03-04-23.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-04-23.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2023_06_04",
             "examSheet": "inf_03_2023_06_04_SG.pdf",
@@ -1945,7 +1945,7 @@ const examData = [
         "language": "PHP",
         "name": "Biblioteka w Książkowicach Małych",
         "codeName": "INF.03-07-23.06-SG",
-        "thumbnail": "img/inf03/INF.03-07-23.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-07-23.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2023_06_07",
             "examSheet": "inf_03_2023_06_07_SG.pdf",
@@ -1971,7 +1971,7 @@ const examData = [
         "language": "JS",
         "name": "Usługi informatyczne",
         "codeName": "INF.03-01-24.01-SG",
-        "thumbnail": "img/inf03/INF.03-01-24.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-01-24.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_01",
             "examSheet": "inf_03_2024_01_01_SG.pdf",
@@ -1997,7 +1997,7 @@ const examData = [
         "language": "JS",
         "name": "Pogotowie komputerowe",
         "codeName": "INF.03-02-24.01-SG",
-        "thumbnail": "img/inf03/INF.03-02-24.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-02-24.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_02",
             "examSheet": "inf_03_2024_01_02_SG.pdf",
@@ -2023,7 +2023,7 @@ const examData = [
         "language": "PHP",
         "name": "Terminarz",
         "codeName": "INF.03-04-24.01-SG",
-        "thumbnail": "img/inf03/INF.03-04-24.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-04-24.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_04",
             "examSheet": "inf_03_2024_01_04_SG.pdf",
@@ -2046,7 +2046,7 @@ const examData = [
         "language": "JS",
         "name": "Usługi kosmetyczne",
         "codeName": "INF.03-05-24.01-SG",
-        "thumbnail": "img/inf03/INF.03-05-24.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-05-24.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_05",
             "examSheet": "inf_03_2024_01_05_SG.pdf",
@@ -2069,7 +2069,7 @@ const examData = [
         "language": "PHP",
         "name": "Biuro podróży",
         "codeName": "INF.03-06-24.01-SG",
-        "thumbnail": "img/inf03/INF.03-06-24.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-06-24.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_06",
             "examSheet": "inf_03_2024_01_06_SG.pdf",
@@ -2091,7 +2091,7 @@ const examData = [
         "language": "JS",
         "name": "Salon fryzjerski",
         "codeName": "INF.03-08-24.01-SG",
-        "thumbnail": "img/inf03/INF.03-08-24.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-08-24.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_08",
             "examSheet": "inf_03_2024_01_08_SG.pdf",
@@ -2114,7 +2114,7 @@ const examData = [
         "language": "PHP",
         "name": "Motocykle - moja pasja",
         "codeName": "INF.03-01-24.06-SG",
-        "thumbnail": "img/inf03/INF.03-01-24.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-01-24.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_01",
             "examSheet": "inf_03_2024_06_01_SG.pdf",
@@ -2137,7 +2137,7 @@ const examData = [
         "language": "JS",
         "name": "Chat",
         "codeName": "INF.03-02-24.06-SG",
-        "thumbnail": "img/inf03/INF.03-02-24.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-02-24.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_02",
             "examSheet": "inf_03_2024_06_02_SG.pdf",
@@ -2163,7 +2163,7 @@ const examData = [
         "language": "PHP",
         "name": "Poziomy rzek w województwie dolnośląskim",
         "codeName": "INF.03-03-24.06-SG",
-        "thumbnail": "img/inf03/INF.03-03-24.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-03-24.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_03",
             "examSheet": "inf_03_2024_06_03_SG.pdf",
@@ -2187,7 +2187,7 @@ const examData = [
         "language": "PHP",
         "name": "Zdjęcia",
         "codeName": "INF.03-04-24.06-SG",
-        "thumbnail": "img/inf03/INF.03-04-24.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-04-24.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_04",
             "examSheet": "inf_03_2024_06_04_SG.pdf",
@@ -2213,7 +2213,7 @@ const examData = [
         "language": "PHP",
         "name": "KupAuto! Internetowy komis samochodowy",
         "codeName": "INF.03-05-24.06-SG",
-        "thumbnail": "img/inf03/INF.03-05-24.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-05-24.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_05",
             "examSheet": "inf_03_2024_06_05_SG.pdf",
@@ -2237,7 +2237,7 @@ const examData = [
         "language": "JS",
         "name": "Formualrz rejestracyjny konferencji \"Nasze Kwiaty\"",
         "codeName": "INF.03-06-24.06-SG",
-        "thumbnail": "img/inf03/INF.03-06-24.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-06-24.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_06",
             "examSheet": "inf_03_2024_06_06_SG.pdf",
@@ -2262,7 +2262,7 @@ const examData = [
         "language": "PHP",
         "name": "Ważenie pojazdów ciężarowych we Wrocławiu",
         "codeName": "INF.03-07-24.06-SG",
-        "thumbnail": "img/inf03/INF.03-07-24.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-07-24.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_07",
             "examSheet": "inf_03_2024_06_07_SG.pdf",
@@ -2288,7 +2288,7 @@ const examData = [
         "language": "JS",
         "name": "Zarejestruj się w sklepie",
         "codeName": "INF.03-08-24.06-SG",
-        "thumbnail": "img/inf03/INF.03-08-24.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-08-24.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_08",
             "examSheet": "inf_03_2024_06_08_SG.pdf",
@@ -2313,7 +2313,7 @@ const examData = [
         "language": "JS",
         "name": "Zwiedzamy Polskę",
         "codeName": "INF.03-09-24.06-SG",
-        "thumbnail": "img/inf03/INF.03-09-24.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-09-24.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_09",
             "examSheet": "inf_03_2024_06_09_SG.pdf",
@@ -2337,7 +2337,7 @@ const examData = [
         "language": "JS",
         "name": "Nasz zespół",
         "codeName": "INF.03-10-24.06-SG",
-        "thumbnail": "img/inf03/INF.03-10-24.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-10-24.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_10",
             "examSheet": "inf_03_2024_06_10_SG.pdf",
@@ -2361,7 +2361,7 @@ const examData = [
         "language": "PHP",
         "name": "Hodowla świnek morskich",
         "codeName": "INF.03-11-24.06-SG",
-        "thumbnail": "img/inf03/INF.03-11-24.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-11-24.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_11",
             "examSheet": "inf_03_2024_06_11_SG.pdf",
@@ -2384,7 +2384,7 @@ const examData = [
         "language": "JS",
         "name": "Efekty na obrazach",
         "codeName": "INF.03-12-24.06-SG",
-        "thumbnail": "img/inf03/INF.03-12-24.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-12-24.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_12",
             "examSheet": "inf_03_2024_06_12_SG.pdf",
@@ -2407,7 +2407,7 @@ const examData = [
         "language": "JS",
         "name": "Kursy komputerowe",
         "codeName": "INF.03-01-25.01-SG",
-        "thumbnail": "img/inf03/INF.03-01-25.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-01-25.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_01",
             "examSheet": "inf_03_2025_01_01_SG.pdf",
@@ -2431,7 +2431,7 @@ const examData = [
         "language": "JS",
         "name": "Montaż paneli podłogowych",
         "codeName": "INF.03-02-25.01-SG",
-        "thumbnail": "img/inf03/INF.03-02-25.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-02-25.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_02",
             "examSheet": "inf_03_2025_01_02_SG.pdf",
@@ -2455,7 +2455,7 @@ const examData = [
         "language": "PHP",
         "name": "Kalendarz",
         "codeName": "INF.03-03-25.01-SG",
-        "thumbnail": "img/inf03/INF.03-03-25.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-03-25.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_03",
             "examSheet": "inf_03_2025_01_03_SG.pdf",
@@ -2479,7 +2479,7 @@ const examData = [
         "language": "PHP",
         "name": "Obuwie męskie",
         "codeName": "INF.03-04-25.01-SG",
-        "thumbnail": "img/inf03/INF.03-04-25.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-04-25.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_04",
             "examSheet": "inf_03_2025_01_04_SG.pdf",
@@ -2502,7 +2502,7 @@ const examData = [
         "language": "PHP",
         "name": "Firma szkoleniowa",
         "codeName": "INF.03-05-25.01-SG",
-        "thumbnail": "img/inf03/INF.03-05-25.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-05-25.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_05",
             "examSheet": "inf_03_2025_01_05_SG.pdf",
@@ -2527,7 +2527,7 @@ const examData = [
         "language": "JS",
         "name": "Pozycyjne systemy liczbowe",
         "codeName": "INF.03-06-25.01-SG",
-        "thumbnail": "img/inf03/INF.03-06-25.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-06-25.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_06",
             "examSheet": "inf_03_2025_01_06_SG.pdf",
@@ -2551,7 +2551,7 @@ const examData = [
         "language": "PHP",
         "name": "Wyszukiwarka miast",
         "codeName": "INF.03-07-25.01-SG",
-        "thumbnail": "img/inf03/INF.03-07-25.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-07-25.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_07",
             "examSheet": "inf_03_2025_01_07_SG.pdf",
@@ -2576,7 +2576,7 @@ const examData = [
         "language": "PHP",
         "name": "Mieszalnia farb",
         "codeName": "INF.03-08-25.01-SG",
-        "thumbnail": "img/inf03/INF.03-08-25.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-08-25.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_08",
             "examSheet": "inf_03_2025_01_08_SG.pdf",
@@ -2601,7 +2601,7 @@ const examData = [
         "language": "PHP",
         "name": "Klub zdobywców gór polskich",
         "codeName": "INF.03-09-25.01-SG",
-        "thumbnail": "img/inf03/INF.03-09-25.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-09-25.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_09",
             "examSheet": "inf_03_2025_01_09_SG.pdf",
@@ -2627,7 +2627,7 @@ const examData = [
         "language": "PHP",
         "name": "Koło szachowe gambit piona",
         "codeName": "INF.03-10-25.01-SG",
-        "thumbnail": "img/inf03/INF.03-10-25.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-10-25.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_10",
             "examSheet": "inf_03_2025_01_10_SG.pdf",
@@ -2652,7 +2652,7 @@ const examData = [
         "language": "PHP",
         "name": "Konkurs - wolontariat szkolny",
         "codeName": "INF.03-11-25.01-SG",
-        "thumbnail": "img/inf03/INF.03-11-25.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-11-25.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_11",
             "examSheet": "inf_03_2025_01_11_SG.pdf",
@@ -2677,7 +2677,7 @@ const examData = [
         "language": "PHP",
         "name": "Piekarnia",
         "codeName": "INF.03-12-25.01-SG",
-        "thumbnail": "img/inf03/INF.03-12-25.01-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-12-25.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_12",
             "examSheet": "inf_03_2025_01_12_SG.pdf",
@@ -2702,7 +2702,7 @@ const examData = [
         "language": "PHP",
         "name": "Ranking gier komputerowych / Gry komputerowe",
         "codeName": "INF.03-01-25.06-SG",
-        "thumbnail": "img/inf03/INF.03-01-25.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-01-25.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_01",
             "examSheet": "inf_03_2025_06_01_SG.pdf",
@@ -2728,7 +2728,7 @@ const examData = [
         "language": "JS",
         "name": "Moje zadania / Planer zadań",
         "codeName": "INF.03-02-25.06-SG",
-        "thumbnail": "img/inf03/INF.03-02-25.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-02-25.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_02",
             "examSheet": "inf_03_2025_06_02_SG.pdf",
@@ -2754,7 +2754,7 @@ const examData = [
         "language": "PHP",
         "name": "Biblioteka szkolna \"Wiedzamin\"",
         "codeName": "INF.03-03-25.06-SG",
-        "thumbnail": "img/inf03/INF.03-03-25.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-03-25.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_03",
             "examSheet": "inf_03_2025_06_03_SG.pdf",
@@ -2779,7 +2779,7 @@ const examData = [
         "language": "PHP",
         "name": "Firma przewozowa Półdarmo",
         "codeName": "INF.03-04-25.06-SG",
-        "thumbnail": "img/inf03/INF.03-04-25.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-04-25.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_04",
             "examSheet": "inf_03_2025_06_04_SG.pdf",
@@ -2805,7 +2805,7 @@ const examData = [
         "language": "JS",
         "name": "Fotografia artystyczna",
         "codeName": "INF.03-05-25.06-SG",
-        "thumbnail": "img/inf03/INF.03-05-25.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-05-25.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_05",
             "examSheet": "inf_03_2025_06_05_SG.pdf",
@@ -2829,7 +2829,7 @@ const examData = [
         "language": "PHP",
         "name": "Biblioteka miejska",
         "codeName": "INF.03-06-25.06-SG",
-        "thumbnail": "img/inf03/INF.03-06-25.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-06-25.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_06",
             "examSheet": "inf_03_2025_06_06_SG.pdf",
@@ -2855,7 +2855,7 @@ const examData = [
         "language": "PHP",
         "name": "Biuro turystyczne",
         "codeName": "INF.03-07-25.06-SG",
-        "thumbnail": "img/inf03/INF.03-07-25.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-07-25.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_07",
             "examSheet": "inf_03_2025_06_07_SG.pdf",
@@ -2880,7 +2880,7 @@ const examData = [
         "language": "JS+PHP",
         "name": "Poznaj smoki!",
         "codeName": "INF.03-08-25.06-SG",
-        "thumbnail": "img/inf03/INF.03-08-25.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-08-25.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_08",
             "examSheet": "inf_03_2025_06_08_SG.pdf",
@@ -2906,7 +2906,7 @@ const examData = [
         "language": "PHP",
         "name": "Malowanie i gipsowanie / Remonty",
         "codeName": "INF.03-09-25.06-SG",
-        "thumbnail": "img/inf03/INF.03-09-25.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-09-25.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_09",
             "examSheet": "inf_03_2025_06_09_SG.pdf",
@@ -2932,7 +2932,7 @@ const examData = [
         "language": "PHP",
         "name": "Szkolenia i kursy",
         "codeName": "INF.03-10-25.06-SG",
-        "thumbnail": "img/inf03/INF.03-10-25.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-10-25.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_10",
             "examSheet": "inf_03_2025_06_10_SG.pdf",
@@ -2957,7 +2957,7 @@ const examData = [
         "language": "PHP",
         "name": "Opony",
         "codeName": "INF.03-11-25.06-SG",
-        "thumbnail": "img/inf03/INF.03-11-25.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-11-25.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_11",
             "examSheet": "inf_03_2025_06_11_SG.pdf",
@@ -2980,7 +2980,7 @@ const examData = [
         "language": "PHP",
         "name": "Przychodnia Medica",
         "codeName": "INF.03-12-25.06-SG",
-        "thumbnail": "img/inf03/INF.03-12-25.06-SG.jpg",
+        "thumbnail": "img/inf03/INF.03-12-25.06-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_12",
             "examSheet": "inf_03_2025_06_12_SG.pdf",
