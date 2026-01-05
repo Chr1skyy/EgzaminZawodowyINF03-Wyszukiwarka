@@ -160,6 +160,13 @@ function toggleTagsExpansion(examId) {
 
 function toggleExamCompletedHandler(examId) {
     completedExams = toggleExamCompleted(examId);
+    const isNowCompleted = completedExams.includes(examId);
+    if (typeof gtag === 'function') {
+        gtag('event', 'toggle_exam_status', {
+            'exam_id': examId,
+            'completed': isNowCompleted ? 'yes' : 'no'
+        });
+    }
     if (hideCompleted) handleFiltersChange(getFilters());
     else {
         const card = document.querySelector(`.exam-card [data-exam-id='${examId}']`).closest('.exam-card');
