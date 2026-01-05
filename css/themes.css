@@ -19,14 +19,6 @@
     background-color: rgba(31, 41, 55, 0.8);
 }
 
-[data-theme="dark"] .theme-icon-light {
-    display: none;
-}
-
-[data-theme="dark"] .theme-icon-dark {
-    display: block;
-}
-
 [data-theme="dark"] .difficulty-easy {
     background-color: rgba(34, 197, 94, 0.2);
     color: #4ade80;

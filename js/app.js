@@ -29,8 +29,8 @@ function getTagsHtml(exam, isExpanded) {
     const visibleTags = isExpanded ? exam.tags : exam.tags.slice(0, maxVisibleTags);
     const remainingTags = exam.tags.length - maxVisibleTags;
     return `
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
         <div class="exam-tags-list">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
             ${visibleTags.map(tag => `<span class="exam-tag">${tag}</span>`).join('')}
             ${!isExpanded && remainingTags > 0 ? `<button class="exam-tag exam-tag-expand" data-exam-id="${exam.codeName}">+${remainingTags}</button>` : ''}
             ${isExpanded && exam.tags.length > maxVisibleTags ? `<button class="exam-tag exam-tag-collapse" data-exam-id="${exam.codeName}">Ukryj</button>` : ''}
@@ -48,13 +48,13 @@ function createExamCard(exam) {
         <div class="exam-card${isCompleted ? ' completed' : ''}">
             <div class="exam-thumbnail">
                 ${exam.thumbnail
-            ? `<img src="${exam.thumbnail}" alt="${examName}" data-exam-id="${exam.codeName}">`
+            ? `<img src="${exam.thumbnail}" alt="${examName}" data-exam-id="${exam.codeName}" loading="lazy">`
             : `<div class="no-thumbnail" data-exam-id="${exam.codeName}">No official picture</div>`}
                 <div class="thumbnail-overlay" data-exam-id="${exam.codeName}">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
                 </div>
-                <button class="completion-checkbox${isCompleted ? ' completed' : ''}" data-exam-id="${exam.codeName}">
-                    ${isCompleted ? '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg>' : ''}
+                <button class="completion-checkbox${isCompleted ? ' completed' : ''}" data-exam-id="${exam.codeName}" aria-label="Oznacz jako ukończone">
+                    ${isCompleted ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg>' : ''}
                 </button>
             </div>
             <div class="exam-content">
@@ -63,10 +63,10 @@ function createExamCard(exam) {
                         <h3>${examName}</h3>
                         <button class="exam-code" data-code="${exam.codeName}">
                             <span>${exam.codeName}</span>
-                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                         </button>
                     </div>
-                    <span class="exam-formula">${exam.formula}</span>
+                    <div class="exam-formula">${exam.formula}</div>
                 </div>
                 <div class="exam-metadata">
                     <div class="exam-metadata-item">
@@ -129,7 +129,7 @@ function bindCardEvents() {
             try {
                 await navigator.clipboard.writeText(code);
                 const orig = btn.innerHTML;
-                btn.innerHTML = `<span>${code}</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg>`;
+                btn.innerHTML = `<span>${code}</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg>`;
                 setTimeout(() => { btn.innerHTML = orig; }, 2000);
             } catch { }
         };
@@ -176,7 +176,7 @@ function toggleExamCompletedHandler(examId) {
             if (checkbox) {
                 const isCompleted = completedExams.includes(examId);
                 checkbox.classList.toggle('completed', isCompleted);
-                checkbox.innerHTML = isCompleted ? '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg>' : '';
+                checkbox.innerHTML = isCompleted ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg>' : '';
             }
         }
         updateResultsCount();
@@ -238,15 +238,15 @@ function renderPopularTags() {
             const tag = btn.dataset.tag;
             const currentQuery = document.getElementById('search-input').value;
             if (currentQuery.includes(tag)) {
-                 const newQuery = currentQuery.replace(tag, '').trim();
-                 setQuery(newQuery);
-                 document.getElementById('search-input').value = newQuery;
-                 btn.classList.remove('active');
+                const newQuery = currentQuery.replace(tag, '').trim();
+                setQuery(newQuery);
+                document.getElementById('search-input').value = newQuery;
+                btn.classList.remove('active');
             } else {
-                 const newQuery = currentQuery ? `${currentQuery} ${tag}` : tag;
-                 setQuery(newQuery);
-                 document.getElementById('search-input').value = newQuery;
-                 btn.classList.add('active');
+                const newQuery = currentQuery ? `${currentQuery} ${tag}` : tag;
+                setQuery(newQuery);
+                document.getElementById('search-input').value = newQuery;
+                btn.classList.add('active');
             }
         };
     });

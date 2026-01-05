@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arkusze INF.03, EE.09, E.14 - Wyszukiwarka i rozwiązania</title>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/themes.css">
-    <link rel="shortcut icon" type="image/png"
-        href="https://chr1skyy.github.io/EgzaminZawodowyINF03-Wyszukiwarka/favicon.png">
-    <link rel="shortcut icon" type="image/x-icon" sizes="16x16 24x24 32x32 48x48 64x64 128x128"
-        href="https://chr1skyy.github.io/EgzaminZawodowyINF03-Wyszukiwarka/favicon.ico">
+
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" sizes="16x16 24x24 32x32 48x48 64x64 128x128" href="favicon.ico">
+
     <meta property="og:title" content="Wyszukiwarka egzaminów zawodowych INF.03, EE.09 i E.14">
     <meta property="og:description"
         content="Ponad 120 oficjalnych arkuszy egzaminacyjnych z lat 2018-2025. Wygodna wyszukiwarka, sprawdzone rozwiązania zadań i załączniki. Sprawdź swoją wiedzę już teraz!">
@@ -21,12 +25,15 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/png">
+
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="theme-color" content="#F24B00">
+
     <meta name="description"
         content="Pobierz oficjalne arkusze egzaminacyjne INF.03, EE.09 i E.14. Sprawdź rozwiązania zadań, pobierz załączniki i zdaj egzamin zawodowy z informatyki!">
     <meta name="keywords"
-        content="egzamin zawodowy, INF.03, E.14, EE.09, arkusze egzaminacyjne, wyszukiwarka egzaminów, arkusze, rozwiązania, technik informatyk, technik programista, egzamin praktyczny, zadania, edukacja, szkoła, technikum, informatyka, PHP, JavaScript, JS, arkusze E.14, arkusze EE.09, arkusze INF.03, arkusze PDF, baza arkuszy, rozwiązania egzaminów, przygotowanie do egzaminu, egzamin INF.03 2025, zadania egzaminacyjne, chriskyy, chr1skyy">
+        content="egzamin zawodowy, INF.03, inf03, E.14, e14, EE.09, ee09, arkusze egzaminacyjne, wyszukiwarka egzaminów, egzamin praktyczny, PHP, JavaScript, JS, arkusze E.14, arkusze EE.09, arkusze INF.03, rozwiązania egzaminów, egzamin INF.03, chriskyy, chr1skyy">
+    <meta name="theme-color" content="#F24B00">
+    <meta name="author" content="Chr1skyy">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-60H782QTH0"></script>
     <script>
@@ -44,15 +51,16 @@
             <div class="header-container">
                 <div class="header-brand">
                     <div class="brand-icon">
-                        <img src="favicon.png" alt="logo">
+                        <img src="favicon.png" alt="Logo wyszukiwarki egzaminów" fetchpriority="high">
                     </div>
                     <div class="brand-text">
                         <h1>Wyszukiwarka egzaminów</h1>
-                        <p>E.14 • EE.09 • INF.03</p>
+                        <p>INF.03 • EE.09 • E.14</p>
                     </div>
                 </div>
                 <div class="header-actions">
-                    <a href="https://github.com/Chr1skyy" target="_blank" rel="noopener" class="header-btn github-btn">
+                    <a href="https://github.com/Chr1skyy" target="_blank" rel="noopener" class="header-btn github-btn"
+                        aria-label="Profil autora na GitHub">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path
@@ -60,7 +68,8 @@
                         </svg>
                         <span>Chr1skyy</span>
                     </a>
-                    <a href="https://tipply.pl/@chriskyy" target="_blank" rel="noopener" class="header-btn support-btn">
+                    <a href="https://tipply.pl/@chriskyy" target="_blank" rel="noopener" class="header-btn support-btn"
+                        aria-label="Wesprzyj autora na Tipply">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path
@@ -96,7 +105,7 @@
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46" />
                             </svg>
-                            <h3>Filtry</h3>
+                            <h2>Filtry</h2>
                             <button id="clear-filters-btn" class="reset-filters" aria-label="Resetuj filtry">
                                 <svg class="reset-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -108,7 +117,7 @@
                         </div>
                         <div class="filters">
                             <div class="filter-section">
-                                <h4>Formuła</h4>
+                                <h3>Formuła</h3>
                                 <div class="filter-buttons" id="formula-filters">
                                     <button class="filter-btn" data-filter="formula" data-value="E.14">E.14</button>
                                     <button class="filter-btn" data-filter="formula" data-value="EE.09">EE.09</button>
@@ -117,7 +126,7 @@
                             </div>
 
                             <div class="filter-section">
-                                <h4>Trudność</h4>
+                                <h3>Trudność</h3>
                                 <div class="filter-buttons" id="difficulty-filters">
                                     <button class="filter-btn difficulty-easy" data-filter="difficulty"
                                         data-value="Easy">Easy</button>
@@ -129,7 +138,7 @@
                             </div>
 
                             <div class="filter-section">
-                                <h4>Język</h4>
+                                <h3>Język</h3>
                                 <div class="filter-buttons" id="language-filters">
                                     <button class="filter-btn language-php" data-filter="language"
                                         data-value="PHP">PHP</button>
@@ -193,7 +202,7 @@
                         <h2 id="modal-exam-name"></h2>
                         <p id="modal-exam-code"></p>
                     </div>
-                    <button id="modal-close" class="modal-close">
+                    <button id="modal-close" class="modal-close" aria-label="Zamknij podgląd">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="18" y1="6" x2="6" y2="18" />
@@ -202,20 +211,18 @@
                     </button>
                 </div>
                 <div class="modal-image">
-                    <img id="modal-image" src="" alt="">
+                    <img id="modal-image" src="" alt="" loading="lazy">
                 </div>
             </div>
         </div>
-
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.basic.min.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/storage.js"></script>
-    <script src="js/filters.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/app.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.basic.min.js"></script>
+    <script defer src="js/storage.js"></script>
+    <script defer src="js/data.js"></script>
+    <script defer src="js/filters.js"></script>
+    <script defer src="js/search.js"></script>
+    <script defer src="js/app.js"></script>
+    <script defer src="js/modal.js"></script>
 </body>
 
 </html>

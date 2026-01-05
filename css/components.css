@@ -17,7 +17,7 @@
     color: var(--text-secondary)
 }
 
-.filter-header h3 {
+.filter-header h2 {
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--text-primary)
@@ -37,7 +37,7 @@
     margin-bottom: 0
 }
 
-.filter-section h4 {
+.filter-section h3 {
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-secondary);
@@ -283,8 +283,8 @@
     position: absolute;
     top: .75rem;
     right: .75rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, .8);
     background-color: rgba(255, 255, 255, .8);
@@ -303,11 +303,6 @@
     background-color: var(--success);
     border-color: var(--success);
     color: #fff
-}
-
-.completion-checkbox svg {
-    width: .75rem;
-    height: .75rem
 }
 
 .exam-content {
@@ -359,12 +354,11 @@
 }
 
 .exam-code svg {
-    margin-left: .25rem;
-    width: .75rem;
-    height: .75rem;
+    margin-left: .5rem;
 }
 
 .exam-formula {
+    margin: 8px;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--accent-primary)
@@ -415,6 +409,7 @@
 
 .exam-tags-list {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     gap: .25rem
 }

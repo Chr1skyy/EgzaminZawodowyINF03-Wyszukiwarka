@@ -6,28 +6,43 @@ function initFuse(data) {
         threshold: 0.3,
         ignoreLocation: true,
         keys: [
-            { name: 'name', weight: 0.4 },
-            { name: 'codeName', weight: 0.3 },
-            { name: 'tags', weight: 0.2 },
-            'year',
-            'session',
-            'formula',
-            'language'
+            { name: 'name', weight: 0.6 },
+            { name: 'codeName', weight: 0.6 },
+            { name: 'tags', weight: 0.1 }
         ]
     };
     fuse = new Fuse(data, options);
 }
 
 function searchExams(data, filters, completedExams = []) {
-    if (!fuse) {
-        initFuse(data);
-    }
-
+    if (!fuse) initFuse(data);
     let results = data;
 
     if (filters.query && filters.query.trim() !== '') {
-        const fuseResults = fuse.search(filters.query);
-        results = fuseResults.map(result => result.item);
+        const words = filters.query.trim().split(/\s+/);
+        let filteredResults = data;
+
+        const normalize = (str) => str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ł/g, "l");
+
+        words.forEach(word => {
+            const normWord = normalize(word);
+            const sessions = ['styczen', 'czerwiec'];
+            const isYear = /^\d{4}$/.test(word);
+            const isSession = sessions.includes(normWord);
+
+            if (isYear || isSession) {
+                filteredResults = filteredResults.filter(item => {
+                    if (isYear) return item.year.toString() === word;
+                    if (isSession) return normalize(item.session).includes(normWord);
+                    return false;
+                });
+            } else {
+                const wordResults = fuse.search(word);
+                const wordItems = wordResults.map(r => r.item);
+                filteredResults = filteredResults.filter(item => wordItems.includes(item));
+            }
+        });
+        results = filteredResults;
     }
     return results.filter(exam => {
         if (filters.hideCompleted && completedExams.includes(exam.codeName)) return false;
