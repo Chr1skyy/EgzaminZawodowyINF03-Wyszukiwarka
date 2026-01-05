@@ -709,8 +709,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-01-19.06.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_01",
-            "examSheet": "ee09_2019_06_01.pdf",
-            "gradingRules": "ee09_2019_06_01_zo.pdf",
+            "examSheet": "ee_09_2019_06_01.pdf",
+            "gradingRules": "ee_09_2019_06_01_zo.pdf",
             "archive": "pliki1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -732,8 +732,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-02-19.06.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_02",
-            "examSheet": "ee09_2019_06_02.pdf",
-            "gradingRules": "ee09_2019_06_02_zo.pdf",
+            "examSheet": "ee_09_2019_06_02.pdf",
+            "gradingRules": "ee_09_2019_06_02_zo.pdf",
             "archive": "pliki2.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -755,8 +755,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-03-19.06.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_03",
-            "examSheet": "ee09_2019_06_03.pdf",
-            "gradingRules": "ee09_2019_06_03_zo.pdf",
+            "examSheet": "ee_09_2019_06_03.pdf",
+            "gradingRules": "ee_09_2019_06_03_zo.pdf",
             "archive": "pliki3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -779,8 +779,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-04-19.06.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_04",
-            "examSheet": "ee09_2019_06_04.pdf",
-            "gradingRules": "ee09_2019_06_04_zo.pdf",
+            "examSheet": "ee_09_2019_06_04.pdf",
+            "gradingRules": "ee_09_2019_06_04_zo.pdf",
             "archive": "pliki4.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -802,8 +802,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-05-19.06.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_05",
-            "examSheet": "ee09_2019_06_05.pdf",
-            "gradingRules": "ee09_2019_06_05_zo.pdf",
+            "examSheet": "ee_09_2019_06_05.pdf",
+            "gradingRules": "ee_09_2019_06_05_zo.pdf",
             "archive": "pliki5.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -825,8 +825,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-06-19.06.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_06",
-            "examSheet": "ee09_2019_06_06.pdf",
-            "gradingRules": "ee09_2019_06_06_zo.pdf",
+            "examSheet": "ee_09_2019_06_06.pdf",
+            "gradingRules": "ee_09_2019_06_06_zo.pdf",
             "archive": "pliki6.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -849,8 +849,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-01-20.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_01_01",
-            "examSheet": "ee09_2020_01_01_SG.pdf",
-            "gradingRules": "ee09_2020_01_01_SG_zo.pdf",
+            "examSheet": "ee_09_2020_01_01_SG.pdf",
+            "gradingRules": "ee_09_2020_01_01_SG_zo.pdf",
             "archive": "pliki1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -872,8 +872,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-02-20.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_01_02",
-            "examSheet": "ee09_2020_01_02_SG.pdf",
-            "gradingRules": "ee09_2020_01_02_SG_zo.pdf",
+            "examSheet": "ee_09_2020_01_02_SG.pdf",
+            "gradingRules": "ee_09_2020_01_02_SG_zo.pdf",
             "archive": "pliki2.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -895,8 +895,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-03-20.01-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_01_03",
-            "examSheet": "ee09_2020_01_03_SG.pdf",
-            "gradingRules": "ee09_2020_01_03_SG_zo.pdf",
+            "examSheet": "ee_09_2020_01_03_SG.pdf",
+            "gradingRules": "ee_09_2020_01_03_SG_zo.pdf",
             "archive": "pliki3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -918,8 +918,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-01-20.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_01",
-            "examSheet": "ee09_2020_06_01_SG.pdf",
-            "gradingRules": "ee09_2020_06_01_SG_zo.pdf",
+            "examSheet": "ee_09_2020_06_01_SG.pdf",
+            "gradingRules": "ee_09_2020_06_01_SG_zo.pdf",
             "archive": "egzamin5.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -943,8 +943,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-02-20.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_02",
-            "examSheet": "ee09_2020_06_02_SG.pdf",
-            "gradingRules": "ee09_2020_06_02_SG_zo.pdf",
+            "examSheet": "ee_09_2020_06_02_SG.pdf",
+            "gradingRules": "ee_09_2020_06_02_SG_zo.pdf",
             "archive": "egzamin3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -965,8 +965,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-03-20.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_03",
-            "examSheet": "ee09_2020_06_03_SG.pdf",
-            "gradingRules": "ee09_2020_06_03_SG_zo.pdf",
+            "examSheet": "ee_09_2020_06_03_SG.pdf",
+            "gradingRules": "ee_09_2020_06_03_SG_zo.pdf",
             "archive": "egzamin5.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -990,8 +990,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-04-20.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_04",
-            "examSheet": "ee09_2020_06_04_SG.pdf",
-            "gradingRules": "ee09_2020_06_04_SG_zo.pdf",
+            "examSheet": "ee_09_2020_06_04_SG.pdf",
+            "gradingRules": "ee_09_2020_06_04_SG_zo.pdf",
             "archive": "egzamin1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -1013,8 +1013,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-05-20.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_05",
-            "examSheet": "ee09_2020_06_05_SG.pdf",
-            "gradingRules": "ee09_2020_06_05_SG_zo.pdf",
+            "examSheet": "ee_09_2020_06_05_SG.pdf",
+            "gradingRules": "ee_09_2020_06_05_SG_zo.pdf",
             "archive": "egzamin2.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -1036,8 +1036,8 @@ const examData = [
         "thumbnail": "img/ee09/EE.09-06-20.06-SG.webp",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_06",
-            "examSheet": "ee09_2020_06_06_SG.pdf",
-            "gradingRules": "ee09_2020_06_06_SG_zo.pdf",
+            "examSheet": "ee_09_2020_06_06_SG.pdf",
+            "gradingRules": "ee_09_2020_06_06_SG_zo.pdf",
             "archive": "egzamin4.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
