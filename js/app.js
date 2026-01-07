@@ -100,7 +100,7 @@ function createLinksHtml(links) {
     ];
     return linkConfigs.filter(cfg => links[cfg.key] && links[cfg.key].trim() !== '').map(cfg => {
         let url;
-        if (cfg.key === 'examSheet' || cfg.key === 'gradingRules' || cfg.key === 'solutionZIP') {
+        if (cfg.key != 'solution') {
             url = GITHUB_BASE_PDF + links.mainFolder + '/' + links[cfg.key];
         } else {
             url = GITHUB_BASE + links.mainFolder + '/' + links[cfg.key];
