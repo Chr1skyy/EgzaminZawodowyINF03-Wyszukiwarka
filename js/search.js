@@ -7,7 +7,6 @@ function initFuse(data) {
         ignoreLocation: true,
         keys: [
             { name: 'name', weight: 0.6 },
-            { name: 'codeName', weight: 0.6 },
             { name: 'tags', weight: 0.1 }
         ]
     };
@@ -37,8 +36,17 @@ function searchExams(data, filters, completedExams = []) {
                     return false;
                 });
             } else {
-                const wordResults = fuse.search(word);
-                const wordItems = wordResults.map(r => r.item);
+                const normWord = word.toLowerCase();
+                const exactMatches = data.filter(item =>
+                    item.codeName.toLowerCase() === normWord
+                );
+                let wordItems;
+                if (exactMatches.length > 0) {
+                    wordItems = exactMatches;
+                } else {
+                    const wordResults = fuse.search(word);
+                    wordItems = wordResults.map(r => r.item);
+                }
                 filteredResults = filteredResults.filter(item => wordItems.includes(item));
             }
         });
