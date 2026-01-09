@@ -2325,7 +2325,8 @@ const examData = [
         "tags": [
             "kadrowanie grafiki",
             "galeria zdjęć",
-            "przewijanie zdjęć"
+            "przewijanie zdjęć",
+            "animacja CSS (@keyframes)"
         ],
         "difficulty": "Medium"
     },
