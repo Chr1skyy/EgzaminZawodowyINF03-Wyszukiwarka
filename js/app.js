@@ -27,7 +27,7 @@ function renderResults() {
 
 function getTagsHtml(exam, isExpanded) {
     const maxVisibleTags = 3;
-    const visibleTags = isExpanded ? exam.tags : exam.tags.slice(0, maxVisibleTags);
+    const visibleTags = isExpanded ? exam.tags.reverse() : exam.tags.slice(0, maxVisibleTags).reverse();
     const remainingTags = exam.tags.length - maxVisibleTags;
     return `
         <div class="exam-tags-list">

@@ -743,7 +743,7 @@ body {
 
 .exam-thumbnail {
     position: relative;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/10;
     background-color: var(--bg-tertiary);
     overflow: hidden
 }
