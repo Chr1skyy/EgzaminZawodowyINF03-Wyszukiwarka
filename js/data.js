@@ -2997,5 +2997,131 @@ const examData = [
             "favicon"
         ],
         "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "01",
+        "language": "PHP",
+        "name": "Konfigurator samochodów",
+        "codeName": "INF.03-01-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-01-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_01",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki1.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "02",
+        "language": "PHP",
+        "name": "Zdrowy bazarek",
+        "codeName": "INF.03-02-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-02-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_02",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki2.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "03",
+        "language": "JS",
+        "name": "",
+        "codeName": "INF.03-03-26.01-SG",
+        "thumbnail": "",
+        "links": {
+            "mainFolder": "",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+        ],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "04",
+        "language": "PHP",
+        "name": "System informacji dla maturzystów / Matura",
+        "codeName": "INF.03-04-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-04-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_04",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki4.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "05",
+        "language": "PHP",
+        "name": "Zgłoszenia wydarzeń",
+        "codeName": "INF.03-05-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-05-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_05",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki5.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "06",
+        "language": "PHP",
+        "name": "",
+        "codeName": "INF.03-06-26.01-SG",
+        "thumbnail": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_06",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+        ],
+        "difficulty": ""
     }
 ];
