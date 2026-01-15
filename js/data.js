@@ -3172,20 +3172,20 @@ const examData = [
         "session": "Styczeń",
         "number": "09",
         "language": "",
-        "name": "",
+        "name": "Stylizacja paznokci / Twoje wymarzone paznokcie",
         "codeName": "INF.03-09-26.01-SG",
-        "thumbnail": "",
+        "thumbnail": "img/inf03/INF.03-09-26.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_09",
             "examSheet": "",
             "gradingRules": "",
             "archive": "",
-            "solution": "",
-            "solutionZIP": ""
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
         ],
-        "difficulty": ""
+        "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
