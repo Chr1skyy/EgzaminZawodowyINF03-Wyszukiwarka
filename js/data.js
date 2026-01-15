@@ -3074,7 +3074,7 @@ const examData = [
             "mainFolder": "/inf03/inf03_2026_01_04",
             "examSheet": "",
             "gradingRules": "",
-            "archive": "pliki4.zip",
+            "archive": "pliki3-2.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
@@ -3095,7 +3095,7 @@ const examData = [
             "mainFolder": "/inf03/inf03_2026_01_05",
             "examSheet": "",
             "gradingRules": "",
-            "archive": "pliki5.zip",
+            "archive": "pliki7.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
@@ -3114,6 +3114,132 @@ const examData = [
         "thumbnail": "",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_06",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+        ],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "07",
+        "language": "PHP",
+        "name": "Pogoda w Europie",
+        "codeName": "INF.03-07-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-07-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_07",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki9-2.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "08",
+        "language": "",
+        "name": "",
+        "codeName": "INF.03-08-26.01-SG",
+        "thumbnail": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_08",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+        ],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "09",
+        "language": "",
+        "name": "",
+        "codeName": "INF.03-09-26.01-SG",
+        "thumbnail": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_09",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+        ],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "10",
+        "language": "",
+        "name": "",
+        "codeName": "INF.03-10-26.01-SG",
+        "thumbnail": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_10",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+        ],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "11",
+        "language": "",
+        "name": "",
+        "codeName": "INF.03-11-26.01-SG",
+        "thumbnail": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_11",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+        ],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "12",
+        "language": "",
+        "name": "",
+        "codeName": "INF.03-12-26.01-SG",
+        "thumbnail": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_12",
             "examSheet": "",
             "gradingRules": "",
             "archive": "",
