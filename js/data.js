@@ -3150,21 +3150,21 @@ const examData = [
         "year": 2026,
         "session": "Styczeń",
         "number": "08",
-        "language": "",
-        "name": "",
+        "language": "PHP",
+        "name": "Korona gór polskich",
         "codeName": "INF.03-08-26.01-SG",
-        "thumbnail": "",
+        "thumbnail": "img/inf03/INF.03-08-26.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_08",
             "examSheet": "",
             "gradingRules": "",
-            "archive": "",
-            "solution": "",
-            "solutionZIP": ""
+            "archive": "pliki13.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
         ],
-        "difficulty": ""
+        "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
