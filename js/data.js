@@ -3171,7 +3171,7 @@ const examData = [
         "year": 2026,
         "session": "Styczeń",
         "number": "09",
-        "language": "",
+        "language": "JS",
         "name": "Stylizacja paznokci / Twoje wymarzone paznokcie",
         "codeName": "INF.03-09-26.01-SG",
         "thumbnail": "img/inf03/INF.03-09-26.01-SG.webp",
