@@ -3016,6 +3016,9 @@ const examData = [
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
+            "losowanie rekordów z bazy",
+            "wyświetlanie danych z bazy",
+            "łączenie komórek tabeli"
         ],
         "difficulty": "Easy"
     },
@@ -3037,6 +3040,11 @@ const examData = [
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
+            "modyfikacja grafiki",
+            "przeskalowanie grafiki",
+            "wyświetlanie danych z bazy",
+            "wstawianie danych do bazy",
+            "formularz"
         ],
         "difficulty": "Easy"
     },
@@ -3079,6 +3087,8 @@ const examData = [
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
+            "wyświetlanie danych z bazy",
+            "przekazywanie argumentu w pasku adresu $_GET"
         ],
         "difficulty": "Medium"
     },
@@ -3100,6 +3110,10 @@ const examData = [
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
+            "wyświetlanie danych z bazy",
+            "wstawianie danych do bazy",
+            "kwerenda z relacją LEFT JOIN",
+            "formularz"
         ],
         "difficulty": "Easy"
     },
@@ -3142,6 +3156,10 @@ const examData = [
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
+            "kadrowanie grafiki",
+            "przeskalowanie grafiki",
+            "wyświetlanie danych z bazy",
+            "przekazywanie argumentu w pasku adresu $_GET"
         ],
         "difficulty": "Medium"
     },
@@ -3163,6 +3181,12 @@ const examData = [
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
+            "modyfikacja grafiki",
+            "kadrowanie grafiki",
+            "przeskalowanie grafiki",
+            "wyświetlanie danych z bazy",
+            "zewnetrzna czcionka CSS",
+            "przekazywanie argumentu w pasku adresu $_GET"
         ],
         "difficulty": "Medium"
     },
@@ -3184,6 +3208,10 @@ const examData = [
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
+            "kadrowanie grafiki",
+            "przeskalowanie grafiki",
+            "pokazywanie/ukrywanie elementów",
+            "opcjonalny PHP"
         ],
         "difficulty": "Medium"
     },
@@ -3205,6 +3233,9 @@ const examData = [
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
+            "kadrowanie grafiki",
+            "wyświetlanie danych z bazy",
+            "przekazywanie argumentu w pasku adresu $_GET"
         ],
         "difficulty": "Medium"
     },
@@ -3214,20 +3245,22 @@ const examData = [
         "session": "Styczeń",
         "number": "11",
         "language": "",
-        "name": "",
+        "name": "Lista aktorów | KinoTEKA",
         "codeName": "INF.03-11-26.01-SG",
-        "thumbnail": "",
+        "thumbnail": "img/inf03/INF.03-11-26.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_11",
             "examSheet": "",
             "gradingRules": "",
             "archive": "",
-            "solution": "",
-            "solutionZIP": ""
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
+            "wyświetlanie danych z bazy",
+            "przekazywanie argumentu w pasku adresu $_GET"
         ],
-        "difficulty": ""
+        "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
