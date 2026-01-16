@@ -3192,21 +3192,21 @@ const examData = [
         "year": 2026,
         "session": "Styczeń",
         "number": "10",
-        "language": "",
-        "name": "",
+        "language": "PHP",
+        "name": "Blog kulinarny",
         "codeName": "INF.03-10-26.01-SG",
-        "thumbnail": "",
+        "thumbnail": "img/inf03/INF.03-10-26.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_10",
             "examSheet": "",
             "gradingRules": "",
-            "archive": "",
-            "solution": "",
-            "solutionZIP": ""
+            "archive": "pliki14.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
         ],
-        "difficulty": ""
+        "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
