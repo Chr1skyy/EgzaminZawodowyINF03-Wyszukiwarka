@@ -3244,7 +3244,7 @@ const examData = [
         "year": 2026,
         "session": "Styczeń",
         "number": "11",
-        "language": "",
+        "language": "PHP",
         "name": "Lista aktorów | KinoTEKA",
         "codeName": "INF.03-11-26.01-SG",
         "thumbnail": "img/inf03/INF.03-11-26.01-SG.webp",
