@@ -3267,7 +3267,7 @@ const examData = [
         "year": 2026,
         "session": "Styczeń",
         "number": "12",
-        "language": "",
+        "language": "JS",
         "name": "",
         "codeName": "INF.03-12-26.01-SG",
         "thumbnail": "",
