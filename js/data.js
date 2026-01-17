@@ -2997,5 +2997,290 @@ const examData = [
             "favicon"
         ],
         "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "01",
+        "language": "PHP",
+        "name": "Konfigurator samochodów",
+        "codeName": "INF.03-01-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-01-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_01",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki1.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "losowanie rekordów z bazy",
+            "wyświetlanie danych z bazy",
+            "łączenie komórek tabeli"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "02",
+        "language": "PHP",
+        "name": "Zdrowy bazarek",
+        "codeName": "INF.03-02-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-02-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_02",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki2.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "modyfikacja grafiki",
+            "przeskalowanie grafiki",
+            "wyświetlanie danych z bazy",
+            "wstawianie danych do bazy",
+            "formularz"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "03",
+        "language": "JS",
+        "name": "",
+        "codeName": "INF.03-03-26.01-SG",
+        "thumbnail": "",
+        "links": {
+            "mainFolder": "",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+        ],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "04",
+        "language": "PHP",
+        "name": "System informacji dla maturzystów / Matura",
+        "codeName": "INF.03-04-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-04-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_04",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki3-2.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "wyświetlanie danych z bazy",
+            "przekazywanie argumentu w pasku adresu $_GET"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "05",
+        "language": "PHP",
+        "name": "Zgłoszenia wydarzeń",
+        "codeName": "INF.03-05-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-05-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_05",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki7.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "wyświetlanie danych z bazy",
+            "wstawianie danych do bazy",
+            "kwerenda z relacją LEFT JOIN",
+            "formularz"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "06",
+        "language": "PHP",
+        "name": "",
+        "codeName": "INF.03-06-26.01-SG",
+        "thumbnail": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_06",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+        ],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "07",
+        "language": "PHP",
+        "name": "Pogoda w Europie",
+        "codeName": "INF.03-07-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-07-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_07",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki9-2.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "kadrowanie grafiki",
+            "przeskalowanie grafiki",
+            "wyświetlanie danych z bazy",
+            "przekazywanie argumentu w pasku adresu $_GET"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "08",
+        "language": "PHP",
+        "name": "Korona gór polskich",
+        "codeName": "INF.03-08-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-08-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_08",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki13.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "modyfikacja grafiki",
+            "kadrowanie grafiki",
+            "przeskalowanie grafiki",
+            "wyświetlanie danych z bazy",
+            "zewnetrzna czcionka CSS",
+            "przekazywanie argumentu w pasku adresu $_GET"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "09",
+        "language": "JS",
+        "name": "Stylizacja paznokci / Twoje wymarzone paznokcie",
+        "codeName": "INF.03-09-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-09-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_09",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "kadrowanie grafiki",
+            "przeskalowanie grafiki",
+            "pokazywanie/ukrywanie elementów",
+            "opcjonalny PHP"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "10",
+        "language": "PHP",
+        "name": "Blog kulinarny",
+        "codeName": "INF.03-10-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-10-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_10",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki14.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "kadrowanie grafiki",
+            "wyświetlanie danych z bazy",
+            "przekazywanie argumentu w pasku adresu $_GET"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "11",
+        "language": "PHP",
+        "name": "Lista aktorów | KinoTEKA",
+        "codeName": "INF.03-11-26.01-SG",
+        "thumbnail": "img/inf03/INF.03-11-26.01-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_11",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "wyświetlanie danych z bazy",
+            "przekazywanie argumentu w pasku adresu $_GET"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Styczeń",
+        "number": "12",
+        "language": "JS",
+        "name": "",
+        "codeName": "INF.03-12-26.01-SG",
+        "thumbnail": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_01_12",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+        ],
+        "difficulty": ""
     }
 ];
