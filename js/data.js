@@ -3054,20 +3054,21 @@ const examData = [
         "session": "Styczeń",
         "number": "03",
         "language": "JS",
-        "name": "",
+        "name": "Pola Figur Geometrycznych",
         "codeName": "INF.03-03-26.01-SG",
         "thumbnail": "",
         "links": {
-            "mainFolder": "",
-            "examSheet": "",
+            "mainFolder": "/inf03/inf03_2026_01_03",
+            "examSheet": "inf_03_2026_01_03_SG.pdf",
             "gradingRules": "",
-            "archive": "",
-            "solution": "",
-            "solutionZIP": ""
+            "archive": "pliki2.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
+            "animacja"
         ],
-        "difficulty": ""
+        "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
