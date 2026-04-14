@@ -3011,7 +3011,7 @@ const examData = [
             "mainFolder": "/inf03/inf03_2026_01_01",
             "examSheet": "inf_03_2026_01_01_SG.pdf",
             "gradingRules": "",
-            "archive": "pliki1.zip",
+            "archive": "pliki1.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
@@ -3035,7 +3035,7 @@ const examData = [
             "mainFolder": "/inf03/inf03_2026_01_02",
             "examSheet": "inf_03_2026_01_02_SG.pdf",
             "gradingRules": "",
-            "archive": "pliki2.zip",
+            "archive": "pliki3-1.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
@@ -3054,14 +3054,14 @@ const examData = [
         "session": "Styczeń",
         "number": "03",
         "language": "JS",
-        "name": "Pola Figur Geometrycznych",
+        "name": "Pola figur płaskich",
         "codeName": "INF.03-03-26.01-SG",
-        "thumbnail": "",
+        "thumbnail": "img/inf03/INF.03-03-26.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_03",
             "examSheet": "inf_03_2026_01_03_SG.pdf",
             "gradingRules": "",
-            "archive": "pliki2.zip",
+            "archive": "pliki2.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
@@ -3124,16 +3124,16 @@ const examData = [
         "session": "Styczeń",
         "number": "06",
         "language": "PHP",
-        "name": "",
+        "name": "Informacja o chorobach w Polsce",
         "codeName": "INF.03-06-26.01-SG",
-        "thumbnail": "",
+        "thumbnail": "img/inf03/INF.03-06-26.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_06",
             "examSheet": "inf_03_2026_01_06_SG.pdf",
             "gradingRules": "",
-            "archive": "",
-            "solution": "",
-            "solutionZIP": ""
+            "archive": "pliki9-1.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
         ],
@@ -3204,7 +3204,7 @@ const examData = [
             "mainFolder": "/inf03/inf03_2026_01_09",
             "examSheet": "inf_03_2026_01_09_SG.pdf",
             "gradingRules": "",
-            "archive": "",
+            "archive": "pliki15.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
@@ -3229,7 +3229,7 @@ const examData = [
             "mainFolder": "/inf03/inf03_2026_01_10",
             "examSheet": "inf_03_2026_01_10_SG.pdf",
             "gradingRules": "",
-            "archive": "pliki14.zip",
+            "archive": "pliki14.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
@@ -3253,7 +3253,7 @@ const examData = [
             "mainFolder": "/inf03/inf03_2026_01_11",
             "examSheet": "inf_03_2026_01_11_SG.pdf",
             "gradingRules": "",
-            "archive": "",
+            "archive": "pliki17.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
@@ -3269,16 +3269,16 @@ const examData = [
         "session": "Styczeń",
         "number": "12",
         "language": "JS",
-        "name": "",
+        "name": "Studio tatuażu",
         "codeName": "INF.03-12-26.01-SG",
-        "thumbnail": "",
+        "thumbnail": "img/inf03/INF.03-11-26.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_12",
             "examSheet": "inf_03_2026_01_12_SG.pdf",
             "gradingRules": "",
-            "archive": "",
-            "solution": "",
-            "solutionZIP": ""
+            "archive": "pliki16.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
         ],
