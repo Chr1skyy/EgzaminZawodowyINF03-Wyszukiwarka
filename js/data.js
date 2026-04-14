@@ -3271,7 +3271,7 @@ const examData = [
         "language": "JS",
         "name": "Studio tatuażu",
         "codeName": "INF.03-12-26.01-SG",
-        "thumbnail": "img/inf03/INF.03-11-26.01-SG.webp",
+        "thumbnail": "img/inf03/INF.03-12-26.01-SG.webp",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_12",
             "examSheet": "inf_03_2026_01_12_SG.pdf",
