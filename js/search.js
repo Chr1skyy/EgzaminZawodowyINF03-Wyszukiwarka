@@ -52,11 +52,22 @@ function searchExams(data, filters, completedExams = []) {
         });
         results = filteredResults;
     }
-    return results.filter(exam => {
+    const filtered = results.filter(exam => {
         if (filters.hideCompleted && completedExams.includes(exam.codeName)) return false;
         if (filters.formulas.length && !filters.formulas.includes(exam.formula)) return false;
         if (filters.difficulties.length && !filters.difficulties.includes(exam.difficulty)) return false;
         if (filters.languages.length && !filters.languages.includes(exam.language)) return false;
         return true;
+    });
+
+    return filtered.sort((a, b) => {
+        if (b.year !== a.year) {
+            return b.year - a.year;
+        }
+        if (a.session !== b.session) {
+            const sessionPriority = { "Czerwiec": 0, "Styczeń": 1 };
+            return (sessionPriority[a.session] ?? 2) - (sessionPriority[b.session] ?? 2);
+        }
+        return parseInt(a.number) - parseInt(b.number);
     });
 }
