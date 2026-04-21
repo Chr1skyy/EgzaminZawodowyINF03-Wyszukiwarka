@@ -850,7 +850,7 @@ const examData = [
         "links": {
             "mainFolder": "/ee09/ee09_2020_01_01",
             "examSheet": "ee_09_2020_01_01_SG.pdf",
-            "gradingRules": "ee_09_2020_01_01_SG_zo.pdf",
+            "gradingRules": "EE_09_2020_01_01_SG_zo.pdf",
             "archive": "pliki1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -873,7 +873,7 @@ const examData = [
         "links": {
             "mainFolder": "/ee09/ee09_2020_01_02",
             "examSheet": "ee_09_2020_01_02_SG.pdf",
-            "gradingRules": "ee_09_2020_01_02_SG_zo.pdf",
+            "gradingRules": "EE_09_2020_01_02_SG_zo.pdf",
             "archive": "pliki2.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -896,7 +896,7 @@ const examData = [
         "links": {
             "mainFolder": "/ee09/ee09_2020_01_03",
             "examSheet": "ee_09_2020_01_03_SG.pdf",
-            "gradingRules": "ee_09_2020_01_03_SG_zo.pdf",
+            "gradingRules": "EE_09_2020_01_03_SG_zo.pdf",
             "archive": "pliki3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -1059,7 +1059,7 @@ const examData = [
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_01",
             "examSheet": "ee_09_2021_01_01_SG.pdf",
-            "gradingRules": "ee_09_2021_01_01_SG_zo.pdf",
+            "gradingRules": "ee_09_2021_01_01_SG_ZO.pdf",
             "archive": "z1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -1083,7 +1083,7 @@ const examData = [
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_02",
             "examSheet": "ee_09_2021_01_02_SG.pdf",
-            "gradingRules": "ee_09_2021_01_02_SG_zo.pdf",
+            "gradingRules": "ee_09_2021_01_02_SG_ZO.pdf",
             "archive": "z2.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -1107,7 +1107,7 @@ const examData = [
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_03",
             "examSheet": "ee_09_2021_01_03_SG.pdf",
-            "gradingRules": "ee_09_2021_01_03_SG_zo.pdf",
+            "gradingRules": "ee_09_2021_01_03_SG_ZO.pdf",
             "archive": "z3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -1131,7 +1131,7 @@ const examData = [
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_04",
             "examSheet": "ee_09_2021_01_04_SG.pdf",
-            "gradingRules": "ee_09_2021_01_04_SG_zo.pdf",
+            "gradingRules": "ee_09_2021_01_04_SG_ZO.pdf",
             "archive": "z4.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -1155,7 +1155,7 @@ const examData = [
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_05",
             "examSheet": "ee_09_2021_01_05_SG.pdf",
-            "gradingRules": "ee_09_2021_01_05_SG_zo.pdf",
+            "gradingRules": "ee_09_2021_01_05_SG_ZO.pdf",
             "archive": "z5.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -1179,7 +1179,7 @@ const examData = [
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_06",
             "examSheet": "ee_09_2021_01_06_SG.pdf",
-            "gradingRules": "ee_09_2021_01_06_SG_zo.pdf",
+            "gradingRules": "ee_09_2021_01_06_SG_ZO.pdf",
             "archive": "z6.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -1615,7 +1615,7 @@ const examData = [
             "mainFolder": "/ee09/ee09_2023_01_03",
             "examSheet": "ee_09_2023_01_03_SG.pdf",
             "gradingRules": "ee_09_2023_01_03_SG_zo.pdf",
-            "archive": ".",
+            "archive": "zad3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
@@ -1645,6 +1645,29 @@ const examData = [
         "tags": [
             "przeskalowanie grafiki",
             "wyświetlanie danych z bazy",
+            "formularz"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2021,
+        "session": "Czerwiec",
+        "number": "01",
+        "language": "PHP",
+        "name": "Restauracja \"Wszystkie Smaki\"",
+        "codeName": "INF.03-01-21.06-SG",
+        "thumbnail": "img/inf03/INF.03-01-21.06-SG.webp",
+        "links": {
+            "mainFolder": "/inf03/inf03_2021_06_01",
+            "examSheet": "inf_03_2021_06_01_SG.pdf",
+            "gradingRules": "inf_03_2021_06_01_SG_zo.pdf",
+            "archive": "zad1.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "wstawianie danych do bazy",
             "formularz"
         ],
         "difficulty": "Easy"
@@ -3010,7 +3033,7 @@ const examData = [
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_01",
             "examSheet": "inf_03_2026_01_01_SG.pdf",
-            "gradingRules": "",
+            "gradingRules": "INF_03_2026_01_01_SG_zo.pdf",
             "archive": "pliki1.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -3034,7 +3057,7 @@ const examData = [
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_02",
             "examSheet": "inf_03_2026_01_02_SG.pdf",
-            "gradingRules": "",
+            "gradingRules": "INF_03_2026_01_02_SG_zo.pdf",
             "archive": "pliki3-1.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -3060,7 +3083,7 @@ const examData = [
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_03",
             "examSheet": "inf_03_2026_01_03_SG.pdf",
-            "gradingRules": "",
+            "gradingRules": "INF_03_2026_01_03_SG_zo.pdf",
             "archive": "pliki2.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -3082,7 +3105,7 @@ const examData = [
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_04",
             "examSheet": "inf_03_2026_01_04_SG.pdf",
-            "gradingRules": "",
+            "gradingRules": "INF_03_2026_01_04_SG_zo.pdf",
             "archive": "pliki3-2.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -3105,7 +3128,7 @@ const examData = [
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_05",
             "examSheet": "inf_03_2026_01_05_SG.pdf",
-            "gradingRules": "",
+            "gradingRules": "INF_03_2026_01_05_SG_zo.pdf",
             "archive": "pliki7.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -3130,7 +3153,7 @@ const examData = [
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_06",
             "examSheet": "inf_03_2026_01_06_SG.pdf",
-            "gradingRules": "",
+            "gradingRules": "INF_03_2026_01_06_SG_zo.pdf",
             "archive": "pliki9-1.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -3151,7 +3174,7 @@ const examData = [
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_07",
             "examSheet": "inf_03_2026_01_07_SG.pdf",
-            "gradingRules": "",
+            "gradingRules": "INF_03_2026_01_07_SG_zo.pdf",
             "archive": "pliki9-2.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -3176,7 +3199,7 @@ const examData = [
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_08",
             "examSheet": "inf_03_2026_01_08_SG.pdf",
-            "gradingRules": "",
+            "gradingRules": "INF_03_2026_01_08_SG_zo.pdf",
             "archive": "pliki13.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -3203,7 +3226,7 @@ const examData = [
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_09",
             "examSheet": "inf_03_2026_01_09_SG.pdf",
-            "gradingRules": "",
+            "gradingRules": "INF_03_2026_01_09_SG_zo.pdf",
             "archive": "pliki15.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -3228,7 +3251,7 @@ const examData = [
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_10",
             "examSheet": "inf_03_2026_01_10_SG.pdf",
-            "gradingRules": "",
+            "gradingRules": "INF_03_2026_01_10_SG_zo.pdf",
             "archive": "pliki14.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -3252,7 +3275,7 @@ const examData = [
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_11",
             "examSheet": "inf_03_2026_01_11_SG.pdf",
-            "gradingRules": "",
+            "gradingRules": "INF_03_2026_01_11_SG_zo.pdf",
             "archive": "pliki17.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -3275,7 +3298,7 @@ const examData = [
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_12",
             "examSheet": "inf_03_2026_01_12_SG.pdf",
-            "gradingRules": "",
+            "gradingRules": "INF_03_2026_01_12_SG_zo.pdf",
             "archive": "pliki16.7z",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
