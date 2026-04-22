@@ -3159,8 +3159,11 @@ const examData = [
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
+            "tworzenie grafiki",
+            "formularz",
+            "wyświetlanie danych z bazy"
         ],
-        "difficulty": ""
+        "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
@@ -3304,7 +3307,13 @@ const examData = [
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
+            "kadrowanie grafiki",
+            "modyfikacja grafiki",
+            "przeskalowanie grafiki",
+            "zewnętrzna czcionka CSS",
+            "formularz",
+            "tworzenie elementów skryptem"
         ],
-        "difficulty": ""
+        "difficulty": "Medium"
     }
 ];
