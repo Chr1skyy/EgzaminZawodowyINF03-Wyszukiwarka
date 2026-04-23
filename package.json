@@ -1,0 +1,11 @@
+{
+  "name": "egzamin-wyszukiwarka",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wyszukiwarka egzaminów zawodowych INF.03, EE.09, E.14",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "npx -y serve ."
+  },
+  "devDependencies": {}
+}

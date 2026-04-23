@@ -5,9 +5,6 @@ function storageGet(key, def) {
 function storageSet(key, val) {
     localStorage.setItem(key, JSON.stringify(val));
 }
-function storageRemove(key) {
-    localStorage.removeItem(key);
-}
 
 const STORAGE_COMPLETED = 'completed-exams';
 

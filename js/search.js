@@ -13,21 +13,20 @@ function initFuse(data) {
     fuse = new Fuse(data, options);
 }
 
+const normalize = (str) => str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ł/g, "l");
+const SESSIONS = ['styczen', 'czerwiec'];
+
 function searchExams(data, filters, completedExams = []) {
-    if (!fuse) initFuse(data);
     let results = data;
 
     if (filters.query && filters.query.trim() !== '') {
         const words = filters.query.trim().split(/\s+/);
         let filteredResults = data;
 
-        const normalize = (str) => str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ł/g, "l");
-
         words.forEach(word => {
             const normWord = normalize(word);
-            const sessions = ['styczen', 'czerwiec'];
             const isYear = /^\d{4}$/.test(word);
-            const isSession = sessions.includes(normWord);
+            const isSession = SESSIONS.includes(normWord);
 
             if (isYear || isSession) {
                 filteredResults = filteredResults.filter(item => {
