@@ -23,10 +23,11 @@ function renderResults() {
     noResults.style.display = 'none';
 
     const toRender = filteredExams.slice(0, visibleCount);
-    resultsGrid.innerHTML = toRender.map(exam => {
+    resultsGrid.innerHTML = toRender.map((exam, index) => {
         const isCompleted = completedExams.includes(exam.codeName);
         const isExpanded = expandedTags.has(exam.codeName);
-        return window.uiComponents.createExamCard(exam, isCompleted, isExpanded);
+        const delay = index < 12 ? (index % CARDS_PER_PAGE) * 0.05 : 0;
+        return window.uiComponents.createExamCard(exam, isCompleted, isExpanded, delay);
     }).join('');
 
     renderLoadMoreBtn();

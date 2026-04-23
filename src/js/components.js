@@ -68,13 +68,15 @@ const components = {
     /**
      * Karta egzaminu
      */
-    createExamCard: (exam, isCompleted, isExpanded) => {
+    createExamCard: (exam, isCompleted, isExpanded, animationDelay = 0) => {
         const thumbUrl = window.appUtils.getThumbnailUrl(exam);
         const badgesHtml = components.createBadge('difficulty', exam.difficulty) +
             components.createBadge('language', exam.language);
 
+        const style = animationDelay ? ` style="animation-delay: ${animationDelay}s"` : '';
+
         return `
-            <article class="exam-card${isCompleted ? ' completed' : ''}" data-exam-id="${exam.codeName}">
+            <article class="exam-card${isCompleted ? ' completed' : ''}" data-exam-id="${exam.codeName}"${style}>
                 <div class="exam-thumbnail">
                     <img src="${thumbUrl}" alt="${exam.name}" data-action="open-modal" loading="lazy" width="320" height="200" onerror="this.onerror=null;this.parentElement.replaceChild(Object.assign(document.createElement('div'),{className:'no-thumbnail',textContent:'Brak miniatury'}),this)">
                     <div class="thumbnail-overlay" data-action="open-modal" role="button" tabindex="0" aria-label="Powiększ miniaturę">
