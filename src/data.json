@@ -2671,7 +2671,7 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wybieranie losowych rekordów z bazy",
+            "losowanie rekordów z bazy",
             "modyfikacja grafiki",
             "tworzenie grafiki",
             "wyświetlanie danych z bazy"

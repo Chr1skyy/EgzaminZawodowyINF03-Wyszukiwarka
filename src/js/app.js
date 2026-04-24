@@ -7,7 +7,7 @@ const CARDS_PER_PAGE = 24;
 let visibleCount = CARDS_PER_PAGE;
 let loadMoreObserver;
 
-function renderResults() {
+function renderResults(options = {}) {
     const resultsGrid = document.getElementById('results-grid');
     const noResults = document.getElementById('no-results');
     if (!resultsGrid || !noResults) return;
@@ -22,12 +22,31 @@ function renderResults() {
     resultsGrid.style.display = 'grid';
     noResults.style.display = 'none';
 
+    if (options.onlyCardId) {
+        const card = document.querySelector(`.exam-card[data-exam-id="${options.onlyCardId}"]`);
+        if (card) {
+            const exam = examData.find(ex => ex.codeName === options.onlyCardId);
+            if (exam) {
+                const isCompleted = completedExams.includes(exam.codeName);
+                const isExpanded = expandedTags.has(exam.codeName);
+                const newHtml = window.uiComponents.createExamCard(exam, isCompleted, isExpanded, 0, true);
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = newHtml;
+                const newCard = tempDiv.firstElementChild;
+                card.replaceWith(newCard);
+                return;
+            }
+        }
+    }
+
     const toRender = filteredExams.slice(0, visibleCount);
+    const noAnimation = options.noAnimation || false;
+
     resultsGrid.innerHTML = toRender.map((exam, index) => {
         const isCompleted = completedExams.includes(exam.codeName);
         const isExpanded = expandedTags.has(exam.codeName);
-        const delay = index < 12 ? (index % CARDS_PER_PAGE) * 0.05 : 0;
-        return window.uiComponents.createExamCard(exam, isCompleted, isExpanded, delay);
+        const delay = (index < 12 && !noAnimation) ? (index % CARDS_PER_PAGE) * 0.05 : 0;
+        return window.uiComponents.createExamCard(exam, isCompleted, isExpanded, delay, noAnimation);
     }).join('');
 
     renderLoadMoreBtn();
@@ -136,16 +155,18 @@ function setupEventDelegation() {
         const expandTagsEl = target.closest('.exam-tag-expand');
         if (expandTagsEl) {
             const card = expandTagsEl.closest('[data-exam-id]');
-            expandedTags.add(card.dataset.examId);
-            renderResults();
+            const examId = card.dataset.examId;
+            expandedTags.add(examId);
+            renderResults({ onlyCardId: examId });
             return;
         }
 
         const collapseTagsEl = target.closest('.exam-tag-collapse');
         if (collapseTagsEl) {
             const card = collapseTagsEl.closest('[data-exam-id]');
-            expandedTags.delete(card.dataset.examId);
-            renderResults();
+            const examId = card.dataset.examId;
+            expandedTags.delete(examId);
+            renderResults({ onlyCardId: examId });
             return;
         }
     };

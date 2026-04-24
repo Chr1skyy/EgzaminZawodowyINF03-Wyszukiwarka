@@ -870,22 +870,26 @@ body {
     border-radius: var(--radius-xl);
     border: 1px solid var(--border-primary);
     overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     display: flex;
     flex-direction: column;
     position: relative;
-    animation: cardEntrance 0.4s ease-out backwards;
+    animation: cardEntrance 0.5s cubic-bezier(0.25, 1, 0.5, 1) backwards;
+}
+
+.exam-card.no-entrance {
+    animation: none !important;
 }
 
 @keyframes cardEntrance {
     from {
         opacity: 0;
-        transform: translateY(15px);
+        transform: translateY(24px) scale(0.96);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
 }
 
