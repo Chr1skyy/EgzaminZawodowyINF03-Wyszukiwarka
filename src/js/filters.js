@@ -5,7 +5,8 @@ function setOnFiltersChangeCallback(cb) { onFiltersChange = cb; }
 function getFilters() { return { ...filters }; }
 function setQuery(q) { filters.query = q; triggerChange(); }
 function toggleFilter(type, value) {
-    const key = type === 'difficulty' ? 'difficulties' : type === 'language' ? 'languages' : type === 'formula' ? 'formulas' : type;
+    const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas' };
+    const key = keyMap[type] || type;
     const arr = filters[key];
     const idx = arr.indexOf(value);
     if (idx > -1) arr.splice(idx, 1); else arr.push(value);
@@ -18,10 +19,11 @@ function triggerChange() {
 
 function clearFilters() {
     filters = { query: '', formulas: [], difficulties: [], languages: [], hideCompleted: false };
-    document.querySelectorAll('.active').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.filter-btn.active, .hide-completed-btn.active').forEach(btn => btn.classList.remove('active'));
     const searchInput = document.getElementById('search-input');
     if (searchInput) searchInput.value = '';
-    updateHideCompletedBtnText && updateHideCompletedBtnText();
+    if (typeof updateHideCompletedBtnText === 'function') updateHideCompletedBtnText();
+    if (typeof updateSearchClearBtnVisibility === 'function') updateSearchClearBtnVisibility();
     triggerChange();
 }
 
@@ -35,6 +37,14 @@ function updateHideCompletedBtnText() {
     }
 }
 
+function setHideCompleted(val) {
+    filters.hideCompleted = !!val;
+    const btn = document.getElementById('hide-completed-toggle');
+    if (btn) btn.classList.toggle('active', filters.hideCompleted);
+    updateHideCompletedBtnText();
+    triggerChange();
+}
+
 function bindFilterEvents() {
     document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.onclick = e => {
@@ -43,17 +53,17 @@ function bindFilterEvents() {
             btn.classList.toggle('active');
         };
     });
-    const hideBtn = document.getElementById('hide-completed-toggle');
-    if (hideBtn) {
-        hideBtn.addEventListener('click', () => {
+    updateHideCompletedBtnText();
+    const hideCompletedBtn = document.getElementById('hide-completed-toggle');
+    if (hideCompletedBtn) {
+        hideCompletedBtn.onclick = () => {
             filters.hideCompleted = !filters.hideCompleted;
-            hideBtn.classList.toggle('active', filters.hideCompleted);
+            hideCompletedBtn.classList.toggle('active');
             updateHideCompletedBtnText();
             triggerChange();
-        });
-        updateHideCompletedBtnText();
+        };
     }
     const clearBtn = document.getElementById('clear-filters-btn');
     if (clearBtn) clearBtn.onclick = clearFilters;
 }
-bindFilterEvents();
+
