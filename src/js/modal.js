@@ -1,11 +1,19 @@
 function bindModalEvents() {
     const modal = document.getElementById('exam-modal');
     if (!modal) return;
+
     const closeBtn = document.getElementById('modal-close');
-    if (closeBtn) closeBtn.onclick = closeModal;
-    const backdrop = modal.querySelector('.modal-backdrop');
-    if (backdrop) backdrop.onclick = closeModal;
-    document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.style.display === 'flex') closeModal(); });
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+
+    modal.addEventListener('close', () => {
+        document.body.style.overflow = '';
+    });
 }
 function openModal(exam) {
     const modal = document.getElementById('exam-modal');
@@ -14,19 +22,20 @@ function openModal(exam) {
     const dynamicContent = document.getElementById('modal-dynamic-content');
     dynamicContent.innerHTML = window.uiComponents.createModalContent(exam);
 
-    const img = document.getElementById('modal-image');
-    if (img) {
-        img.src = window.appUtils.getThumbnailUrl(exam);
-        img.alt = exam.name;
+    const imageContainer = modal.querySelector('.modal-image');
+    if (imageContainer) {
+        const thumbUrl = window.appUtils.getThumbnailUrl(exam);
+        imageContainer.innerHTML = `
+            <img id="modal-image" src="${thumbUrl}" alt="${exam.name}" loading="lazy" onerror="this.onerror=null;this.parentElement.replaceChild(Object.assign(document.createElement('div'),{className:'no-thumbnail',textContent:'Brak miniatury'}),this)">
+        `;
     }
-    modal.style.display = 'flex';
+
+    modal.showModal();
     document.body.style.overflow = 'hidden';
 }
 function closeModal() {
     const modal = document.getElementById('exam-modal');
-    if (!modal) return;
-    modal.style.display = 'none';
-    document.body.style.overflow = '';
+    if (modal) modal.close();
 }
 
 bindModalEvents();

@@ -13,7 +13,7 @@ function initFuse(data) {
     fuse = new Fuse(data, options);
 }
 
-const normalize = (str) => str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ł/g, "l");
+const normalizeString = (str) => str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ł/g, "l");
 const SESSIONS = ['styczen', 'czerwiec'];
 
 function searchExams(data, filters, completedExams = []) {
@@ -24,14 +24,14 @@ function searchExams(data, filters, completedExams = []) {
         let filteredResults = data;
 
         words.forEach(word => {
-            const normWord = normalize(word);
+            const normWord = normalizeString(word);
             const isYear = /^\d{4}$/.test(word);
             const isSession = SESSIONS.includes(normWord);
 
             if (isYear || isSession) {
                 filteredResults = filteredResults.filter(item => {
                     if (isYear) return item.year.toString() === word;
-                    if (isSession) return normalize(item.session).includes(normWord);
+                    if (isSession) return normalizeString(item.session).includes(normWord);
                     return false;
                 });
             } else {

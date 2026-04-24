@@ -15,12 +15,39 @@ const components = {
     },
 
     /**
+     * Zbiorcze generowanie odznak
+     */
+    createAllBadges: (exam) => {
+        return components.createBadge('difficulty', exam.difficulty) +
+            components.createBadge('language', exam.language);
+    },
+
+    /**
+     * Nagłówek egzaminu
+     */
+    createExamHeader: (exam, options = {}) => {
+        return `
+            <div class="exam-header">
+                <div class="exam-title">
+                    <h3>${exam.name}</h3>
+                </div>
+                ${options.showCode ? `
+                <span class="exam-code" data-action="copy-code" data-code="${exam.codeName}" title="Kliknij aby skopiować kod">
+                    ${exam.codeName}
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </span>` : ''}
+            </div>
+        `;
+    },
+
+
+    /**
      * Lista tagów z logiką zwijania
      */
-    createTagList: (exam, isExpanded) => {
+    createTagList: (exam, isExpanded, hideControls = false) => {
         if (!exam.tags || exam.tags.length === 0) return '';
-        const visibleTags = isExpanded ? exam.tags : exam.tags.slice(0, 4);
-        const hasMore = exam.tags.length > 4;
+        const visibleTags = (isExpanded || hideControls) ? exam.tags : exam.tags.slice(0, 4);
+        const hasMore = exam.tags.length > 4 && !hideControls;
 
         return `
             <div class="exam-tags">
@@ -70,8 +97,7 @@ const components = {
      */
     createExamCard: (exam, isCompleted, isExpanded, animationDelay = 0, noAnimation = false) => {
         const thumbUrl = window.appUtils.getThumbnailUrl(exam);
-        const badgesHtml = components.createBadge('difficulty', exam.difficulty) +
-            components.createBadge('language', exam.language);
+        const badgesHtml = components.createAllBadges(exam);
 
         const style = animationDelay ? ` style="animation-delay: ${animationDelay}s"` : '';
 
@@ -89,15 +115,7 @@ const components = {
                 </div>
 
                 <div class="exam-content">
-                    <div class="exam-header">
-                        <div class="exam-title">
-                            <h3>${exam.name}</h3>
-                        </div>
-                        <span class="exam-code" data-action="copy-code" data-code="${exam.codeName}" title="Kliknij aby skopiować kod">
-                            ${exam.codeName}
-                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                        </span>
-                    </div>
+                    ${components.createExamHeader(exam, { showCode: true })}
 
                     <div class="exam-metadata">
                         <div class="exam-metadata-item">
@@ -122,33 +140,50 @@ const components = {
      * Zawartość modalu
      */
     createModalContent: (exam) => {
-        const badgesHtml = components.createBadge('difficulty', exam.difficulty) +
-            components.createBadge('language', exam.language);
+        const badgesHtml = components.createAllBadges(exam);
 
         return `
-            <div class="exam-header">
-                <div class="exam-title">
-                    <h3>${exam.name}</h3>
-                </div>
-                <span class="exam-code" title="Kliknij aby skopiować kod" data-action="copy-code" data-code="${exam.codeName}">
-                    ${exam.codeName}
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                </span>
-            </div>
+            ${components.createExamHeader(exam, { showCode: false })}
 
             <div class="exam-metadata">
                 <div class="exam-metadata-item">
                     <span>📅 Nr ${exam.number} | ${exam.session} ${exam.year}</span>
                 </div>
                 <div class="exam-metadata-item">
+                    <span class="exam-code" title="Kliknij aby skopiować kod" data-action="copy-code" data-code="${exam.codeName}">
+                    ${exam.codeName}
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </span>
+                </div>
+                <div class="exam-metadata-item">
                     ${badgesHtml}
                 </div>
             </div>
 
-            ${components.createTagList(exam, true)}
+            ${components.createTagList(exam, true, true)}
 
             <div class="modal-links">
                 ${components.createLinkButtons(exam.links)}
+            </div>
+        `;
+    },
+    /**
+     * Karta skeleton (placeholder)
+     */
+    createSkeletonCard: () => {
+        return `
+            <div class="exam-card skeleton">
+                <div class="exam-thumbnail skeleton-shimmer"></div>
+                <div class="exam-content">
+                    <div class="skeleton-line skeleton-title skeleton-shimmer"></div>
+                    <div class="skeleton-line skeleton-meta skeleton-shimmer"></div>
+                    <div class="skeleton-line skeleton-tags skeleton-shimmer"></div>
+                    <div class="skeleton-links">
+                        <div class="skeleton-link skeleton-shimmer"></div>
+                        <div class="skeleton-link skeleton-shimmer"></div>
+                        <div class="skeleton-link skeleton-shimmer"></div>
+                    </div>
+                </div>
             </div>
         `;
     }

@@ -7,50 +7,112 @@ const CARDS_PER_PAGE = 24;
 let visibleCount = CARDS_PER_PAGE;
 let loadMoreObserver;
 
-function renderResults(options = {}) {
-    const resultsGrid = document.getElementById('results-grid');
-    const noResults = document.getElementById('no-results');
-    if (!resultsGrid || !noResults) return;
-
-    if (filteredExams.length === 0) {
-        resultsGrid.style.display = 'none';
-        noResults.style.display = 'block';
-        removeLoadMoreBtn();
-        return;
+class ResultsRenderer {
+    constructor(state) {
+        this.state = state;
+        this.elements = {
+            grid: document.getElementById('results-grid'),
+            noResults: document.getElementById('no-results'),
+        };
     }
 
-    resultsGrid.style.display = 'grid';
-    noResults.style.display = 'none';
+    render(options = {}) {
+        if (!this.elements.grid || !this.elements.noResults) return;
 
-    if (options.onlyCardId) {
-        const card = document.querySelector(`.exam-card[data-exam-id="${options.onlyCardId}"]`);
-        if (card) {
-            const exam = examData.find(ex => ex.codeName === options.onlyCardId);
-            if (exam) {
-                const isCompleted = completedExams.includes(exam.codeName);
-                const isExpanded = expandedTags.has(exam.codeName);
-                const newHtml = window.uiComponents.createExamCard(exam, isCompleted, isExpanded, 0, true);
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = newHtml;
-                const newCard = tempDiv.firstElementChild;
-                card.replaceWith(newCard);
-                return;
-            }
+        if (options.loading) return this.renderSkeleton();
+        if (this.state.filteredExams.length === 0) return this.renderEmpty();
+        if (options.onlyCardId) return this.updateCard(options.onlyCardId);
+        return this.renderGrid(options);
+    }
+
+    renderSkeleton() {
+        this.showElement('grid');
+        this.hideElement('noResults');
+        this.elements.grid.innerHTML = Array(6)
+            .fill(0)
+            .map(() => window.uiComponents.createSkeletonCard())
+            .join('');
+    }
+
+    renderEmpty() {
+        this.hideElement('grid');
+        this.showElement('noResults');
+        removeLoadMoreBtn();
+    }
+
+    renderGrid(options = {}) {
+        this.showElement('grid');
+        this.hideElement('noResults');
+
+        const exams = this.state.filteredExams.slice(0, this.state.visibleCount);
+        const cardsHtml = this.createCardsHtml(exams, options.noAnimation);
+
+        this.elements.grid.innerHTML = cardsHtml;
+        renderLoadMoreBtn();
+    }
+
+    updateCard(examId) {
+        const card = this.elements.grid.querySelector(`[data-exam-id="${examId}"]`);
+        const exam = examData.find(e => e.codeName === examId);
+
+        if (card && exam) {
+            const html = this.createCardHtml(exam, examId);
+            card.replaceWith(this.htmlToElement(html));
         }
     }
 
-    const toRender = filteredExams.slice(0, visibleCount);
-    const noAnimation = options.noAnimation || false;
+    createCardsHtml(exams, noAnimation = false) {
+        return exams
+            .map((exam, idx) => this.createCardHtml(exam, exam.codeName, idx, noAnimation))
+            .join('');
+    }
 
-    resultsGrid.innerHTML = toRender.map((exam, index) => {
-        const isCompleted = completedExams.includes(exam.codeName);
-        const isExpanded = expandedTags.has(exam.codeName);
-        const delay = (index < 12 && !noAnimation) ? (index % CARDS_PER_PAGE) * 0.05 : 0;
-        return window.uiComponents.createExamCard(exam, isCompleted, isExpanded, delay, noAnimation);
-    }).join('');
+    createCardHtml(exam, examId, index = 0, noAnimation = false) {
+        const isCompleted = this.state.completedExams.includes(examId);
+        const isExpanded = this.state.expandedTags.has(examId);
+        const delay = this.calculateAnimationDelay(index, noAnimation);
 
-    renderLoadMoreBtn();
+        return window.uiComponents.createExamCard(
+            exam,
+            isCompleted,
+            isExpanded,
+            delay,
+            noAnimation
+        );
+    }
+
+    calculateAnimationDelay(index, noAnimation) {
+        if (noAnimation || index >= 12) return 0;
+        return (index % CARDS_PER_PAGE) * 0.05;
+    }
+
+    showElement(key) {
+        if (this.elements[key]) {
+            this.elements[key].style.display = key === 'grid' ? 'grid' : 'block';
+        }
+    }
+
+    hideElement(key) {
+        if (this.elements[key]) {
+            this.elements[key].style.display = 'none';
+        }
+    }
+
+    htmlToElement(html) {
+        const div = document.createElement('div');
+        div.innerHTML = html;
+        return div.firstElementChild;
+    }
 }
+
+const appState = {
+    get filteredExams() { return filteredExams; },
+    get completedExams() { return completedExams; },
+    get expandedTags() { return expandedTags; },
+    get visibleCount() { return visibleCount; }
+};
+
+const renderer = new ResultsRenderer(appState);
 
 function renderLoadMoreBtn() {
     removeLoadMoreBtn();
@@ -63,7 +125,7 @@ function renderLoadMoreBtn() {
     btn.textContent = `Załaduj więcej (${remaining} pozostałych)`;
     btn.onclick = () => {
         visibleCount += CARDS_PER_PAGE;
-        renderResults();
+        renderer.render();
         updateResultsCount();
     };
 
@@ -157,7 +219,7 @@ function setupEventDelegation() {
             const card = expandTagsEl.closest('[data-exam-id]');
             const examId = card.dataset.examId;
             expandedTags.add(examId);
-            renderResults({ onlyCardId: examId });
+            renderer.render({ onlyCardId: examId });
             return;
         }
 
@@ -166,7 +228,7 @@ function setupEventDelegation() {
             const card = collapseTagsEl.closest('[data-exam-id]');
             const examId = card.dataset.examId;
             expandedTags.delete(examId);
-            renderResults({ onlyCardId: examId });
+            renderer.render({ onlyCardId: examId });
             return;
         }
     };
@@ -208,7 +270,7 @@ function updateResultsCount() {
 function handleFiltersChange(filts) {
     filteredExams = searchExams(examData, filts, completedExams);
     visibleCount = CARDS_PER_PAGE;
-    renderResults();
+    renderer.render();
     updateResultsCount();
     updateUrlFromFilters(filts);
 
@@ -365,6 +427,7 @@ function loadFiltersFromUrl() {
 }
 
 async function initApp() {
+    renderer.render({ loading: true });
     try {
         const response = await fetch('data.json');
         examData = await response.json();
