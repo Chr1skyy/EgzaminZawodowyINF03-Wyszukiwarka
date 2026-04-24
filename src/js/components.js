@@ -10,7 +10,7 @@ const components = {
         if (!value) return '';
         const className = type === 'difficulty'
             ? `difficulty-${value.toLowerCase()}`
-            : `language-${value.toLowerCase().replace('+', '-')}`;
+            : `language-${value.toLowerCase().replace('+', '')}`;
         return `<span class="exam-badge ${className}">${value}</span>`;
     },
 
