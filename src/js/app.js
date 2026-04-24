@@ -175,6 +175,23 @@ function setupBackToTop() {
     });
 }
 
+function toggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute('data-theme') || 'dark';
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+}
+
+function setupThemeToggle() {
+    const btn = document.getElementById('toggle-theme');
+    if (!btn) return;
+    btn.addEventListener('click', toggleTheme);
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+}
 
 function handleKeyboardActivation(el, callback) {
     el.addEventListener('keydown', e => {
@@ -442,6 +459,7 @@ async function initApp() {
     loadFiltersFromUrl();
     setupInfiniteScroll();
     setupBackToTop();
+    setupThemeToggle();
     setupEventDelegation();
     handleFiltersChange(getFilters());
 }
