@@ -506,27 +506,104 @@ body {
 
 .filter-btn {
     min-width: 5rem;
-    padding: 0.375rem 0.75rem;
+    --btn-bg: var(--bg-tertiary);
+    --btn-text: var(--text-secondary);
+    --btn-border: var(--border-primary);
+    --btn-active: var(--accent-primary);
+    --btn-hover-bg: var(--bg-secondary);
+
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    border: 1px solid;
+    border-color: var(--btn-border);
+    transition: all 0.2s ease;
     border-radius: var(--radius-lg);
+    padding: 0.375rem 0.75rem;
+    cursor: pointer;
     font-size: 0.875rem;
     font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border: 1px solid currentColor;
-    background-color: var(--bg-tertiary);
-    color: var(--text-secondary);
 }
 
-.filter-btn:hover {
+.filter-btn:hover:not(.active) {
+    background: var(--btn-hover-bg);
+    border-color: var(--btn-active);
     transform: translateY(-1px);
-    background-color: var(--border-secondary);
+    filter: brightness(1.2);
 }
 
 .filter-btn.active {
-    background-color: var(--accent-primary);
+    background: var(--btn-active);
     color: #fff;
-    border-color: var(--accent-primary);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid;
+    border-color: var(--btn-active);
+}
+
+.filter-btn[data-filter="formula"] {
+    --btn-bg: var(--bg-tertiary);
+    --btn-text: var(--text-primary);
+    --btn-border: var(--border-secondary);
+    --btn-active: var(--accent-primary);
+}
+
+.filter-btn[data-filter="difficulty"],
+.filter-btn[data-filter="language"],
+.filter-btn[data-filter="formula"],
+.exam-badge[data-filter="difficulty"],
+.exam-badge[data-filter="language"] {
+    --btn-hover-bg: var(--btn-border);
+}
+
+.filter-btn[data-filter="difficulty"][data-value="Easy"],
+.exam-badge[data-filter="difficulty"][data-value="Easy"] {
+    --btn-bg: var(--diff-easy-bg);
+    --btn-text: var(--diff-easy-text);
+    --btn-border: var(--diff-easy-border);
+    --btn-active: var(--diff-easy-active);
+}
+
+.filter-btn[data-filter="difficulty"][data-value="Medium"],
+.exam-badge[data-filter="difficulty"][data-value="Medium"] {
+    --btn-bg: var(--diff-medium-bg);
+    --btn-text: var(--diff-medium-text);
+    --btn-border: var(--diff-medium-border);
+    --btn-active: var(--diff-medium-active);
+}
+
+.filter-btn[data-filter="difficulty"][data-value="Hard"],
+.exam-badge[data-filter="difficulty"][data-value="Hard"] {
+    --btn-bg: var(--diff-hard-bg);
+    --btn-text: var(--diff-hard-text);
+    --btn-border: var(--diff-hard-border);
+    --btn-active: var(--diff-hard-active);
+}
+
+.filter-btn[data-filter="language"][data-value="PHP"],
+.exam-badge[data-filter="language"][data-value="PHP"] {
+    --btn-bg: var(--lang-php-bg);
+    --btn-text: var(--lang-php-text);
+    --btn-border: var(--lang-php-border);
+    --btn-active: var(--lang-php-active);
+}
+
+.filter-btn[data-filter="language"][data-value="JS"],
+.exam-badge[data-filter="language"][data-value="JS"] {
+    --btn-bg: var(--lang-js-bg);
+    --btn-text: var(--lang-js-text);
+    --btn-border: var(--lang-js-border);
+    --btn-active: var(--lang-js-active);
+}
+
+.filter-btn[data-filter="language"][data-value="JS+PHP"],
+.exam-badge[data-filter="language"][data-value="JS+PHP"] {
+    --btn-bg: var(--lang-jsphp-bg);
+    --btn-text: var(--lang-jsphp-text);
+    --btn-border: var(--lang-jsphp-border);
+    --btn-active: var(--lang-jsphp-active);
+}
+
+.filter-btn[data-filter="language"][data-value="JS+PHP"].active {
+    background: var(--btn-active);
+    border-color: var(--lang-php-active);
 }
 
 .hide-completed-btn {
@@ -654,123 +731,6 @@ body {
     padding: 0.125rem 0.625rem;
     border-radius: 999px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-
-/* Difficulty & Language Tags */
-/* Easy */
-.difficulty-easy {
-    background-color: var(--diff-easy-bg);
-    color: var(--diff-easy-text);
-    border-color: var(--diff-easy-border);
-}
-
-.difficulty-easy.active {
-    background-color: var(--diff-easy-active);
-    color: #fff;
-    border-color: var(--diff-easy-active);
-}
-
-.difficulty-easy:not(.active):hover {
-    background-color: var(--diff-easy-border);
-    border-color: var(--diff-easy-active);
-}
-
-/* Medium */
-.difficulty-medium {
-    background-color: var(--diff-medium-bg);
-    color: var(--diff-medium-text);
-    border-color: var(--diff-medium-border);
-}
-
-.difficulty-medium.active {
-    background-color: var(--diff-medium-active);
-    color: #fff;
-    border-color: var(--diff-medium-active);
-}
-
-.difficulty-medium:not(.active):hover {
-    background-color: var(--diff-medium-border);
-    border-color: var(--diff-medium-active);
-}
-
-/* Hard */
-.difficulty-hard {
-    background-color: var(--diff-hard-bg);
-    color: var(--diff-hard-text);
-    border-color: var(--diff-hard-border);
-}
-
-.difficulty-hard.active {
-    background-color: var(--diff-hard-active);
-    color: #fff;
-    border-color: var(--diff-hard-active);
-}
-
-.difficulty-hard:not(.active):hover {
-    background-color: var(--diff-hard-border);
-    border-color: var(--diff-hard-active);
-}
-
-/* PHP */
-.language-php {
-    background: var(--lang-php-bg);
-    color: var(--lang-php-text);
-    border-color: var(--lang-php-border);
-}
-
-.language-php.active {
-    background: var(--lang-php-active);
-    border-color: var(--lang-php-active)
-}
-
-.language-php:not(.active):hover {
-    background: var(--lang-php-border);
-    border-color: var(--lang-php-active);
-}
-
-/* JS */
-.language-js {
-    background-color: var(--lang-js-bg);
-    color: var(--lang-js-text);
-    border-color: var(--lang-js-border);
-}
-
-.language-js.active {
-    background-color: var(--lang-js-active);
-    border-color: var(--lang-js-active)
-}
-
-.language-js:not(.active):hover {
-    background-color: var(--lang-js-border);
-    border-color: var(--lang-js-active);
-}
-
-/* JS + PHP (Gradient) */
-.language-jsphp {
-    background: var(--lang-jsphp-bg);
-    color: var(--lang-jsphp-text);
-    border-color: var(--lang-jsphp-border);
-}
-
-.language-jsphp.active {
-    background: var(--lang-jsphp-active);
-    border-color: transparent;
-    color: #fff;
-}
-
-.language-jsphp:not(.active):hover {
-    background: var(--lang-jsphp-border);
-    border-color: var(--lang-js-active);
-}
-
-/* Hover Effects */
-.difficulty-easy:not(.active):hover,
-.difficulty-hard:not(.active):hover,
-.language-php:not(.active):hover,
-.language-js:not(.active):hover,
-.language-jsphp:not(.active):hover {
-    filter: brightness(1.2);
 }
 
 /* =========================================
@@ -1068,11 +1028,26 @@ body {
 }
 
 .exam-badge {
-    padding: .25rem .5rem;
-    border-radius: 9999px;
-    font-size: .75rem;
-    font-weight: 500;
+    --btn-bg: var(--bg-tertiary);
+    --btn-text: var(--text-secondary);
+    --btn-border: var(--border-primary);
+
+    background: var(--btn-bg);
+    color: var(--btn-text);
     border: 1px solid currentColor;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-lg);
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.exam-badge:hover {
+    background: var(--btn-hover-bg);
+    border-color: var(--btn-active);
+    transform: translateY(-1px);
+    filter: brightness(1.2);
 }
 
 .exam-tags {

@@ -8,7 +8,15 @@ function bindModalEvents() {
     }
 
     modal.addEventListener('click', (e) => {
-        if (e.target === modal) closeModal();
+        if (e.target === modal) {
+            closeModal();
+            return;
+        }
+
+        const copyBtn = e.target.closest('[data-action="copy-code"]');
+        if (copyBtn) {
+            window.appUtils.copyToClipboard(copyBtn.dataset.code, copyBtn);
+        }
     });
 
     modal.addEventListener('close', () => {
@@ -16,20 +24,10 @@ function bindModalEvents() {
     });
 }
 function openModal(exam) {
+    if (!exam) return;
     const modal = document.getElementById('exam-modal');
-    if (!modal || !exam) return;
-
-    const dynamicContent = document.getElementById('modal-dynamic-content');
-    dynamicContent.innerHTML = window.uiComponents.createModalContent(exam);
-
-    const imageContainer = modal.querySelector('.modal-image');
-    if (imageContainer) {
-        const thumbUrl = window.appUtils.getThumbnailUrl(exam);
-        imageContainer.innerHTML = `
-            <img id="modal-image" src="${thumbUrl}" alt="${exam.name}" loading="lazy" onerror="this.onerror=null;this.parentElement.replaceChild(Object.assign(document.createElement('div'),{className:'no-thumbnail',textContent:'Brak miniatury'}),this)">
-        `;
-    }
-
+    modal.querySelector('#modal-dynamic-content').innerHTML = window.uiComponents.createModalContent(exam);
+    modal.querySelector('#modal-image').src = window.appUtils.getThumbnailUrl(exam, true);
     modal.showModal();
     document.body.style.overflow = 'hidden';
 }

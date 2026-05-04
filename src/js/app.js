@@ -1,151 +1,71 @@
-let examData = [];
-let completedExams = getCompletedExams();
-let filteredExams = [];
-let expandedTags = new Set();
+/**
+ * Główna logika aplikacji
+ */
 
 const CARDS_PER_PAGE = 24;
-let visibleCount = CARDS_PER_PAGE;
-let loadMoreObserver;
 
-class ResultsRenderer {
-    constructor(state) {
-        this.state = state;
-        this.elements = {
-            grid: document.getElementById('results-grid'),
-            noResults: document.getElementById('no-results'),
-        };
-    }
-
-    render(options = {}) {
-        if (!this.elements.grid || !this.elements.noResults) return;
-
-        if (options.loading) return this.renderSkeleton();
-        if (this.state.filteredExams.length === 0) return this.renderEmpty();
-        if (options.onlyCardId) return this.updateCard(options.onlyCardId);
-        return this.renderGrid(options);
-    }
-
-    renderSkeleton() {
-        this.showElement('grid');
-        this.hideElement('noResults');
-        this.elements.grid.innerHTML = Array(6)
-            .fill(0)
-            .map(() => window.uiComponents.createSkeletonCard())
-            .join('');
-    }
-
-    renderEmpty() {
-        this.hideElement('grid');
-        this.showElement('noResults');
-        removeLoadMoreBtn();
-    }
-
-    renderGrid(options = {}) {
-        this.showElement('grid');
-        this.hideElement('noResults');
-
-        const exams = this.state.filteredExams.slice(0, this.state.visibleCount);
-        const cardsHtml = this.createCardsHtml(exams, options.noAnimation);
-
-        this.elements.grid.innerHTML = cardsHtml;
-        renderLoadMoreBtn();
-    }
-
-    updateCard(examId) {
-        const card = this.elements.grid.querySelector(`[data-exam-id="${examId}"]`);
-        const exam = examData.find(e => e.codeName === examId);
-
-        if (card && exam) {
-            const html = this.createCardHtml(exam, examId);
-            card.replaceWith(this.htmlToElement(html));
-        }
-    }
-
-    createCardsHtml(exams, noAnimation = false) {
-        return exams
-            .map((exam, idx) => this.createCardHtml(exam, exam.codeName, idx, noAnimation))
-            .join('');
-    }
-
-    createCardHtml(exam, examId, index = 0, noAnimation = false) {
-        const isCompleted = this.state.completedExams.includes(examId);
-        const isExpanded = this.state.expandedTags.has(examId);
-        const delay = this.calculateAnimationDelay(index, noAnimation);
-
-        return window.uiComponents.createExamCard(
-            exam,
-            isCompleted,
-            isExpanded,
-            delay,
-            noAnimation
-        );
-    }
-
-    calculateAnimationDelay(index, noAnimation) {
-        if (noAnimation || index >= 12) return 0;
-        return (index % CARDS_PER_PAGE) * 0.05;
-    }
-
-    showElement(key) {
-        if (this.elements[key]) {
-            this.elements[key].style.display = key === 'grid' ? 'grid' : 'block';
-        }
-    }
-
-    hideElement(key) {
-        if (this.elements[key]) {
-            this.elements[key].style.display = 'none';
-        }
-    }
-
-    htmlToElement(html) {
-        const div = document.createElement('div');
-        div.innerHTML = html;
-        return div.firstElementChild;
-    }
+const app = {
+    exams: [],
+    filtered: [],
+    completed: getCompletedExams(),
+    visible: CARDS_PER_PAGE,
+    tags: new Set(),
+    loadMoreObserver: null
 }
 
-const appState = {
-    get filteredExams() { return filteredExams; },
-    get completedExams() { return completedExams; },
-    get expandedTags() { return expandedTags; },
-    get visibleCount() { return visibleCount; }
-};
+function renderResults(skipAnimation = false) {
+    const grid = document.getElementById('results-grid');
+    const noResults = document.getElementById('no-results');
 
-const renderer = new ResultsRenderer(appState);
+    if (app.filtered.length === 0) {
+        grid.style.display = 'none';
+        noResults.style.display = 'block';
+        return;
+    }
+
+    grid.style.display = 'grid';
+    noResults.style.display = 'none';
+
+    grid.innerHTML = app.filtered
+        .slice(0, app.visible)
+        .map((exam, i) => window.uiComponents.createExamCard(exam, i, { skipAnimation }))
+        .join('');
+
+    renderLoadMoreBtn();
+}
 
 function renderLoadMoreBtn() {
     removeLoadMoreBtn();
-    if (visibleCount >= filteredExams.length) return;
+    if (app.visible >= app.filtered.length) return;
 
-    const remaining = filteredExams.length - visibleCount;
+    const remaining = app.filtered.length - app.visible;
     const btn = document.createElement('button');
     btn.id = 'load-more-btn';
     btn.className = 'load-more-btn';
     btn.textContent = `Załaduj więcej (${remaining} pozostałych)`;
     btn.onclick = () => {
-        visibleCount += CARDS_PER_PAGE;
-        renderer.render();
+        app.visible += CARDS_PER_PAGE;
+        renderResults(true); // Przy doczytywaniu zawsze pomijamy animację wejścia
         updateResultsCount();
     };
 
     const resultsSection = document.querySelector('.results-section');
     if (resultsSection) {
         resultsSection.appendChild(btn);
-        if (loadMoreObserver) loadMoreObserver.observe(btn);
+        if (app.loadMoreObserver) app.loadMoreObserver.observe(btn);
     }
 }
 
 function removeLoadMoreBtn() {
     const existing = document.getElementById('load-more-btn');
     if (existing) {
-        if (loadMoreObserver) loadMoreObserver.unobserve(existing);
+        if (app.loadMoreObserver) app.loadMoreObserver.unobserve(existing);
         existing.remove();
     }
 }
 
 function setupInfiniteScroll() {
-    loadMoreObserver = new IntersectionObserver((entries) => {
+    app.loadMoreObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const btn = entry.target;
@@ -175,122 +95,103 @@ function setupBackToTop() {
     });
 }
 
-function toggleTheme() {
-    const html = document.documentElement;
-    const currentTheme = html.getAttribute('data-theme') || 'dark';
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-}
-
 function setupThemeToggle() {
     const btn = document.getElementById('toggle-theme');
     if (!btn) return;
-    btn.addEventListener('click', toggleTheme);
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-    }
+
+    const setTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+    };
+
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    setTheme(savedTheme);
+
+    btn.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        setTheme(current === 'dark' ? 'light' : 'dark');
+    });
 }
 
-function handleKeyboardActivation(el, callback) {
-    el.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            callback(e);
+function setupResultsGridHandlers() {
+    const grid = document.getElementById('results-grid');
+    if (!grid) return;
+
+    grid.addEventListener('click', (e) => {
+        const target = e.target;
+
+        // Podgląd (Modal)
+        if (target.closest('[data-action="open-modal"]')) {
+            const card = target.closest('.exam-card');
+            const examId = card.dataset.examId;
+            const exam = app.exams.find(x => x.codeName === examId);
+            if (window.openModal) window.openModal(exam);
+            return;
+        }
+
+        // Checkbox ukończenia
+        if (target.closest('[data-action="toggle-completed"]')) {
+            const card = target.closest('.exam-card');
+            const examId = card.dataset.examId;
+            toggleCompleted(examId);
+            return;
+        }
+
+        // Kopiowanie kodu
+        if (target.closest('[data-action="copy-code"]')) {
+            const btn = target.closest('[data-action="copy-code"]');
+            window.appUtils.copyToClipboard(btn.dataset.code, btn);
+            return;
+        }
+
+        // Rozwijanie tagów
+        if (target.closest('.exam-tag-expand')) {
+            const btn = target.closest('.exam-tag-expand');
+            const examId = btn.dataset.examId;
+            app.tags.add(examId);
+            renderResults(true); // Pomiń animację przy rozwijaniu tagów
+            return;
+        }
+
+        // Zwijanie tagów
+        if (target.closest('.exam-tag-collapse')) {
+            const btn = target.closest('.exam-tag-collapse');
+            const examId = btn.dataset.examId;
+            app.tags.delete(examId);
+            renderResults(true); // Pomiń animację przy zwijaniu tagów
+            return;
         }
     });
 }
 
-function setupEventDelegation() {
-    const grid = document.getElementById('results-grid');
-    if (!grid) return;
-
-    grid.onclick = (e) => {
-        const target = e.target;
-
-        const openModalEl = target.closest('[data-action="open-modal"]');
-        if (openModalEl) {
-            const card = openModalEl.closest('[data-exam-id]');
-            const examId = card.dataset.examId;
-            const exam = examData.find(ex => ex.codeName === examId);
-            if (exam) window.openModal(exam);
-            return;
-        }
-
-        const toggleCompletedEl = target.closest('[data-action="toggle-completed"]');
-        if (toggleCompletedEl) {
-            const card = toggleCompletedEl.closest('[data-exam-id]');
-            toggleExamCompletedHandler(card.dataset.examId);
-            return;
-        }
-
-        const copyCodeEl = target.closest('[data-action="copy-code"]');
-        if (copyCodeEl) {
-            window.appUtils.copyToClipboard(copyCodeEl.dataset.code, copyCodeEl);
-            return;
-        }
-
-        const expandTagsEl = target.closest('.exam-tag-expand');
-        if (expandTagsEl) {
-            const card = expandTagsEl.closest('[data-exam-id]');
-            const examId = card.dataset.examId;
-            expandedTags.add(examId);
-            renderer.render({ onlyCardId: examId });
-            return;
-        }
-
-        const collapseTagsEl = target.closest('.exam-tag-collapse');
-        if (collapseTagsEl) {
-            const card = collapseTagsEl.closest('[data-exam-id]');
-            const examId = card.dataset.examId;
-            expandedTags.delete(examId);
-            renderer.render({ onlyCardId: examId });
-            return;
-        }
-    };
-}
-
-function toggleExamCompletedHandler(examId) {
-    completedExams = toggleExamCompleted(examId);
-    const isNowCompleted = completedExams.includes(examId);
-
-    if (typeof gtag === 'function') {
-        gtag('event', 'toggle_exam_status', { 'exam_id': examId, 'completed': isNowCompleted ? 'yes' : 'no' });
-    }
-
+function toggleCompleted(examId) {
+    app.completed = toggleExamCompleted(examId);
+    
     if (getFilters().hideCompleted) {
-        handleFiltersChange(getFilters());
+        handleFiltersChange(getFilters(), true);
     } else {
-        const card = document.querySelector(`.exam-card[data-exam-id="${examId}"]`);
-        if (card) {
-            card.classList.toggle('completed', isNowCompleted);
-            const btn = card.querySelector('.completion-checkbox');
-            if (btn) btn.classList.toggle('completed', isNowCompleted);
-        }
-        updateResultsCount();
+        renderResults(true);
     }
 }
 
 function updateResultsCount() {
     const resultsCount = document.getElementById('results-count');
-    const showing = Math.min(visibleCount, filteredExams.length);
-    if (resultsCount) {
-        if (showing < filteredExams.length) {
-            resultsCount.textContent = `Wyświetlono ${showing} z ${filteredExams.length} egzaminów (${examData.length} łącznie)`;
-        } else {
-            resultsCount.textContent = `${filteredExams.length} z ${examData.length} egzaminów`;
-        }
-    }
+    if (!resultsCount) return;
+
+    const showing = Math.min(app.visible, app.filtered.length);
+    resultsCount.textContent = showing < app.filtered.length 
+        ? `Wyświetlono ${showing} z ${app.filtered.length} egzaminów (${app.exams.length} łącznie)`
+        : `${app.filtered.length} z ${app.exams.length} egzaminów`;
 }
 
-function handleFiltersChange(filts) {
-    filteredExams = searchExams(examData, filts, completedExams);
-    visibleCount = CARDS_PER_PAGE;
-    renderer.render();
+function handleFiltersChange(filts, skipAnimation = false) {
+    app.filtered = searchExams(app.exams, filts, app.completed);
+    app.visible = CARDS_PER_PAGE;
+    renderResults(skipAnimation);
     updateResultsCount();
     updateUrlFromFilters(filts);
 
+    // Reset tag select if query was cleared
     if (!filts.query) {
         const customBtnText = document.querySelector('#custom-tag-select .custom-select-text');
         if (customBtnText) customBtnText.textContent = 'Wszystkie tagi';
@@ -300,76 +201,59 @@ function handleFiltersChange(filts) {
     }
 }
 
-setOnFiltersChangeCallback(handleFiltersChange);
-
-
 function initTagFilter() {
     const customSelectWrapper = document.getElementById('custom-tag-select');
     if (!customSelectWrapper) return;
 
     const button = customSelectWrapper.querySelector('.custom-select-button');
-    const buttonText = button.querySelector('.custom-select-text');
     const dropdown = customSelectWrapper.querySelector('.custom-select-dropdown');
 
     const tagCounts = {};
-    examData.forEach(exam => {
-        if (exam.tags && Array.isArray(exam.tags)) {
-            exam.tags.forEach(tag => {
-                tagCounts[tag] = (tagCounts[tag] || 0) + 1;
-            });
-        }
+    app.exams.forEach(exam => {
+        exam.tags?.forEach(tag => {
+            tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+        });
     });
 
     const sortedTags = Object.keys(tagCounts).sort((a, b) => {
-        const countDiff = tagCounts[b] - tagCounts[a];
-        return countDiff !== 0 ? countDiff : a.localeCompare(b, 'pl');
+        if (tagCounts[b] !== tagCounts[a]) return tagCounts[b] - tagCounts[a];
+        return a.localeCompare(b, 'pl');
     });
 
-    let optionsHtml = `<div class="custom-select-option selected" data-value="">Wszystkie tagi</div>`;
-    optionsHtml += sortedTags.map(tag => `
-        <div class="custom-select-option" data-value="${tag}">
-            <span>${tag}</span>
-            <span class="custom-select-tag-count">${tagCounts[tag]}</span>
-        </div>
-    `).join('');
-    dropdown.innerHTML = optionsHtml;
+    dropdown.innerHTML = `<div class="custom-select-option selected" role="option" aria-selected="true" data-value="">Wszystkie tagi</div>` + 
+        sortedTags.map(tag => `
+            <div class="custom-select-option" role="option" aria-selected="false" data-value="${tag}">
+                <span>${tag}</span>
+                <span class="custom-select-tag-count">${tagCounts[tag]}</span>
+            </div>
+        `).join('');
 
-    button.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-        button.setAttribute('aria-expanded', !expanded);
-        button.classList.toggle('active');
+    button.onclick = () => {
         dropdown.classList.toggle('show');
-    });
+        button.classList.toggle('active');
+    };
 
-    document.addEventListener('click', (e) => {
-        if (!customSelectWrapper.contains(e.target)) {
-            button.setAttribute('aria-expanded', 'false');
-            button.classList.remove('active');
-            dropdown.classList.remove('show');
-        }
-    });
+    dropdown.onclick = (e) => {
+        const option = e.target.closest('.custom-select-option');
+        if (!option) return;
 
-    const options = dropdown.querySelectorAll('.custom-select-option');
-    options.forEach(opt => {
-        opt.addEventListener('click', () => {
-            const val = opt.dataset.value;
-            options.forEach(o => o.classList.remove('selected'));
-            opt.classList.add('selected');
-            buttonText.textContent = val ? val : 'Wszystkie';
-
-            button.setAttribute('aria-expanded', 'false');
-            button.classList.remove('active');
-            dropdown.classList.remove('show');
-            const searchInput = document.getElementById('search-input');
-            if (searchInput) {
-                setQuery(val);
-                searchInput.value = val;
-                updateSearchClearBtnVisibility();
-            }
+        const value = option.dataset.value;
+        dropdown.querySelectorAll('.custom-select-option').forEach(o => {
+            const isSelected = o === option;
+            o.classList.toggle('selected', isSelected);
+            o.setAttribute('aria-selected', isSelected);
         });
-    });
+        button.querySelector('.custom-select-text').textContent = value || 'Wszystkie tagi';
+        dropdown.classList.remove('show');
+        button.classList.remove('active');
+
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) {
+            setQuery(value);
+            searchInput.value = value;
+            updateSearchClearBtnVisibility();
+        }
+    };
 }
 
 const debouncedSearch = window.appUtils.debounce((value) => {
@@ -444,23 +328,22 @@ function loadFiltersFromUrl() {
 }
 
 async function initApp() {
-    renderer.render({ loading: true });
+    setupThemeToggle();
     try {
         const response = await fetch('data.json');
-        examData = await response.json();
+        app.exams = await response.json();
+        initFuse(app.exams);
     } catch (error) {
         console.error('Error loading exam data:', error);
     }
 
-    if (typeof initFuse === 'function') initFuse(examData);
-    if (typeof bindFilterEvents === 'function') bindFilterEvents();
-
+    setOnFiltersChangeCallback(handleFiltersChange);
+    bindFilterEvents();
     initTagFilter();
     loadFiltersFromUrl();
     setupInfiniteScroll();
     setupBackToTop();
-    setupThemeToggle();
-    setupEventDelegation();
+    setupResultsGridHandlers();
     handleFiltersChange(getFilters());
 }
 

@@ -16,7 +16,7 @@ const utils = {
         return (...args) => {
             clearTimeout(timeout);
             timeout = setTimeout(() => fn(...args), delay);
-        };
+        }
     },
 
     /**
@@ -53,12 +53,11 @@ const utils = {
     /**
      * Generuje URL miniatury dla egzaminu
      */
-    getThumbnailUrl: (exam) => {
-        if (exam.image) return exam.image;
-        if (!exam.formula) return '';
-        const formulaDir = exam.formula.toLowerCase().replace('.', '');
-        return `${utils.CDN_BASE}/thumbnails/${formulaDir}/${exam.codeName}.webp`;
-    }
+    getThumbnailUrl: (exam, large = false) => {
+        const formulaPath = exam.formula.toLowerCase().replace('.', '');
+        const suffix = large ? '' : '-300px';
+        return `${utils.CDN_BASE}/thumbnails/${formulaPath}/${exam.codeName}${suffix}.webp`;
+    },
 };
 
 window.appUtils = utils;
