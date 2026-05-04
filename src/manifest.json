@@ -1,0 +1,16 @@
+{
+  "name": "Wyszukiwarka Egzaminów Zawodowych",
+  "short_name": "EZINF",
+  "description": "Wyszukiwarka arkuszy egzaminacyjnych INF.03, EE.09, E.14",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}

@@ -18,6 +18,7 @@
     </noscript>
 
     <link rel="preload" href="data.json" as="fetch" crossorigin>
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="css/styles.css">
 
     <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png">
@@ -147,6 +148,7 @@
                                 </svg>
                             </button>
                         </div>
+
                         <div class="filters">
                             <div class="filter-section">
                                 <h3>Formuła</h3>
@@ -257,6 +259,17 @@
                 </div>
             </div>
         </dialog>
+        <section id="seo-links" class="visually-hidden" aria-hidden="true">
+            <!-- Ta sekcja służy wyłącznie do indeksowania przez roboty wyszukiwarek -->
+            <h2>Lista arkuszy egzaminacyjnych INF.03, EE.09, E.14</h2>
+            <nav>
+                <ul>
+                    <li><a href="?formula=INF.03" tabindex="-1">Arkusze INF.03</a></li>
+                    <li><a href="?formula=EE.09" tabindex="-1">Arkusze EE.09</a></li>
+                    <li><a href="?formula=E.14" tabindex="-1">Arkusze E.14</a></li>
+                </ul>
+            </nav>
+        </section>
     </div>
     <script defer src="js/lib/fuse.basic.min.js"></script>
     <script>window.Fuse || document.write('<script defer src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.basic.min.js"><\/script>')</script>
@@ -279,6 +292,13 @@
                 fill="currentcolor" />
         </svg>
     </button>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js').catch(err => console.log('SW registration failed: ', err));
+            });
+        }
+    </script>
 </body>
 
 </html>

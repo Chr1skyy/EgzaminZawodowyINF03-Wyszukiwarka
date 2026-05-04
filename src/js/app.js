@@ -327,8 +327,17 @@ function loadFiltersFromUrl() {
     updateSearchClearBtnVisibility();
 }
 
+function renderSkeletons() {
+    const grid = document.getElementById('results-grid');
+    if (grid) {
+        grid.innerHTML = Array(12).fill(window.uiComponents.createSkeletonCard()).join('');
+        grid.style.display = 'grid';
+    }
+}
+
 async function initApp() {
     setupThemeToggle();
+    renderSkeletons();
     try {
         const response = await fetch('data.json');
         app.exams = await response.json();

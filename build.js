@@ -96,14 +96,39 @@ const runBuild = () => {
     }
 
     // 5. Kopiowanie statycznych assetów (favicon itp.)
-    const assetsToCopy = ['favicon.ico', 'favicon.png', 'og-image.png'];
+    const assetsToCopy = ['favicon.ico', 'favicon.png', 'og-image.png', 'manifest.json'];
     assetsToCopy.forEach(asset => {
         if (fs.existsSync(path.join(SRC, asset))) {
             fs.copyFileSync(path.join(SRC, asset), path.join(DIST, asset));
         }
     });
 
-    // 5a. Kopiowanie CNAME (jeśli istnieje)
+    // 5a. Kopiowanie i modyfikacja Service Workera
+    try {
+        const swPath = path.join(SRC, 'sw.js');
+        if (fs.existsSync(swPath)) {
+            let swContent = fs.readFileSync(swPath, 'utf-8');
+            
+            // Zmiana listy assetów na wersje zminifikowane/zbuforowane
+            const devAssetsBlock = /const ASSETS = \[[\s\S]*?\];/;
+            const prodAssets = `const ASSETS = [
+  './',
+  './index.html',
+  './styles.min.css',
+  './app.bundle.min.js',
+  './data.json',
+  './favicon.png'
+];`;
+            swContent = swContent.replace(devAssetsBlock, prodAssets);
+            
+            fs.writeFileSync(path.join(DIST, 'sw.js'), swContent, 'utf-8');
+            console.log('✅ Service Worker optimized for production');
+        }
+    } catch (e) {
+        console.log('⚠️ Service Worker build error:', e.message);
+    }
+
+    // 5b. Kopiowanie CNAME (jeśli istnieje)
     if (fs.existsSync(path.join(__dirname, 'CNAME'))) {
         fs.copyFileSync(path.join(__dirname, 'CNAME'), path.join(DIST, 'CNAME'));
     }

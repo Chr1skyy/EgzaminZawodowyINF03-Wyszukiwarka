@@ -29,13 +29,16 @@ html {
     color-scheme: light;
     --bg-primary: #ffffff;
     --bg-secondary: #f9fafb;
+    --bg-tertiary: #f3f4f6;
     --text-primary: #111827;
     --text-secondary: #4b5563;
+    --text-tertiary: #6b7280;
     --border-primary: #e5e7eb;
+    --border-secondary: #d1d5db;
 
     /* Poziomy trudności */
     --diff-easy-bg: hsl(var(--h-easy), 80%, 93%);
-    --diff-easy-text: hsl(var(--h-easy), 45%, 15%);
+    --diff-easy-text: hsl(var(--h-easy), 50%, 15%);
     --diff-easy-border: hsl(var(--h-easy), 70%, 85%);
     --diff-easy-active: hsl(var(--h-easy), 70%, 40%);
 
@@ -45,41 +48,43 @@ html {
     --diff-medium-active: hsl(var(--h-medium), 90%, 45%);
 
     --diff-hard-bg: hsl(var(--h-hard), 100%, 95%);
-    --diff-hard-text: hsl(var(--h-hard), 70%, 35%);
+    --diff-hard-text: hsl(var(--h-hard), 75%, 30%);
     --diff-hard-border: hsl(var(--h-hard), 90%, 88%);
     --diff-hard-active: hsl(var(--h-hard), 75%, 50%);
 
     /* Języki */
-    --lang-php-bg: hsl(var(--h-php), 70%, 95%);
-    --lang-php-text: hsl(var(--h-php), 60%, 45%);
-    --lang-php-border: hsl(var(--h-php), 60%, 90%);
+    --lang-php-bg: hsl(var(--h-php), 75%, 94%);
+    --lang-php-text: hsl(var(--h-php), 70%, 35%);
+    --lang-php-border: hsl(var(--h-php), 70%, 86%);
     --lang-php-active: hsl(var(--h-php), 60%, 50%);
 
     --lang-js-bg: hsl(var(--h-js), 90%, 90%);
-    --lang-js-text: hsl(var(--h-js), 90%, 25%);
+    --lang-js-text: hsl(var(--h-js), 95%, 20%);
     --lang-js-border: hsl(var(--h-js), 80%, 80%);
     --lang-js-active: hsl(var(--h-js), 80%, 45%);
 
     /* Linki */
-    --link-exam-bg: #eff6ff;
-    --link-exam-text: #1d4ed8;
-    --link-exam-border: #dbeafe;
+    --link-exam-bg: #dbeafe;
+    --link-exam-text: #1e40af;
+    --link-exam-border: #bfdbfe;
 
-    --link-sol-bg: #f0fdf4;
+    --link-sol-bg: #dcfce7;
     --link-sol-text: #166534;
-    --link-sol-border: #dcfce7;
+    --link-sol-border: #bbf7d0;
 
-    --link-zip-bg: #fffbeb;
+    --link-zip-bg: #fef3c7;
     --link-zip-text: #92400e;
-    --link-zip-border: #fef3c7;
+    --link-zip-border: #fde68a;
 
-    --link-res-bg: #f5f3ff;
-    --link-res-text: #6d28d9;
-    --link-res-border: #ede9fe;
+    --link-res-bg: #ede9fe;
+    --link-res-text: #5b21b6;
+    --link-res-border: #ddd6fe;
 
-    --link-grad-bg: #fef2f2;
+    --link-grad-bg: #fee2e2;
     --link-grad-text: #991b1b;
-    --link-grad-border: #fee2e2;
+    --link-grad-border: #fecaca;
+
+    --hover-brightness: 0.95;
 }
 
 [data-theme="dark"] {
@@ -145,6 +150,8 @@ html {
     --link-grad-text: #f87171;
     --link-grad-border: rgba(248, 113, 113, 0.2);
     --link-grad-hover-bg: rgba(153, 27, 27, 0.3);
+
+    --hover-brightness: 1.2;
 }
 
 [data-theme="dark"] .header {
@@ -183,6 +190,18 @@ html {
 
 .skip-link:focus {
     top: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 body {
@@ -987,18 +1006,18 @@ body {
     width: fit-content;
     color: var(--link-exam-text);
     background-color: var(--link-exam-bg);
-    border-color: var(--link-exam-border);
+    border: 1px solid var(--link-exam-border);
     border-radius: var(--radius-md);
     padding: .25rem .5rem;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .exam-code:hover {
-    color: #93c5fd;
-    background-color: rgba(30, 58, 138, 0.5);
-    border: 1px solid #60a5fa
+    filter: brightness(var(--hover-brightness));
+    transform: translateY(-1px);
 }
 
 .exam-code svg {
@@ -1047,7 +1066,7 @@ body {
     background: var(--btn-hover-bg);
     border-color: var(--btn-active);
     transform: translateY(-1px);
-    filter: brightness(1.2);
+    filter: brightness(var(--hover-brightness));
 }
 
 .exam-tags {
@@ -1078,8 +1097,8 @@ body {
     color: var(--text-primary);
     font-size: .75rem;
     border-radius: var(--radius-md);
-    border: none;
-    cursor: default
+    border: 1px solid var(--border-primary);
+    cursor: default;
 }
 
 .exam-tag-expand,
@@ -1154,7 +1173,7 @@ body {
 }
 
 .exam-link:hover {
-    filter: brightness(1.5) saturate(1.1);
+    filter: brightness(var(--hover-brightness)) saturate(1.1);
     transform: translateY(-2px);
 }
 
