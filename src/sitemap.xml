@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://chr1skyy.github.io/EgzaminZawodowyINF03-Wyszukiwarka/</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://chr1skyy.github.io/EgzaminZawodowyINF03-Wyszukiwarka/?formula=INF.03</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://chr1skyy.github.io/EgzaminZawodowyINF03-Wyszukiwarka/?formula=EE.09</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://chr1skyy.github.io/EgzaminZawodowyINF03-Wyszukiwarka/?formula=E.14</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>

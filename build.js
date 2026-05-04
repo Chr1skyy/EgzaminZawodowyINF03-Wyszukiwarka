@@ -96,7 +96,7 @@ const runBuild = () => {
     }
 
     // 5. Kopiowanie statycznych assetów (favicon itp.)
-    const assetsToCopy = ['favicon.ico', 'favicon.png', 'og-image.png', 'manifest.json'];
+    const assetsToCopy = ['favicon.ico', 'favicon.png', 'og-image.png', 'manifest.json', 'sitemap.xml', 'robots.txt'];
     assetsToCopy.forEach(asset => {
         if (fs.existsSync(path.join(SRC, asset))) {
             fs.copyFileSync(path.join(SRC, asset), path.join(DIST, asset));
