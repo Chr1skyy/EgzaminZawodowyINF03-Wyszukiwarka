@@ -7,7 +7,7 @@ function initFuse(data) {
         ignoreLocation: true,
         keys: [
             { name: 'name', weight: 0.6 },
-            { name: 'tags', weight: 0.1 }
+            { name: 'tags', weight: 0.4 }
         ]
     };
     fuse = new Fuse(data, options);

@@ -71,7 +71,15 @@ const components = {
 
         return linkConfigs.map(config => {
             const fileName = l[config.key];
-            if (!fileName) return '';
+            
+            if (!fileName) {
+                return `
+                    <div class="exam-link disabled ${config.class}" title="Brak ${config.label.toLowerCase()}">
+                        <span aria-hidden="true">${config.icon}</span>
+                        <span>${config.label}</span>
+                    </div>
+                `;
+            }
 
             const url = `${config.base}${l.mainFolder}/${fileName}`;
 

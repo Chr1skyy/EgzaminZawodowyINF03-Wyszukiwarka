@@ -1165,6 +1165,14 @@ body {
     transform: translateY(-2px);
 }
 
+.exam-link.disabled {
+    opacity: 0.4;
+    filter: grayscale(0.8);
+    pointer-events: none;
+    cursor: not-allowed;
+    border-style: dashed;
+}
+
 .exam-link:nth-child(1),
 .exam-link:nth-child(2),
 .exam-link:nth-child(3) {
