@@ -183,7 +183,7 @@ html {
     background: #2563eb;
     color: #fff;
     z-index: 100;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     border-radius: 0 0 var(--radius-md) 0;
 }
@@ -193,7 +193,7 @@ html {
 }
 
 body {
-    font-family: 'Outfit', system-ui, sans-serif;
+    font-family: system-ui, sans-serif;
     line-height: 1.6;
     background-color: var(--bg-secondary);
     color: var(--text-primary);
@@ -465,7 +465,7 @@ body {
 
 .filter-header h2 {
     font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text-primary)
 }
 
@@ -727,7 +727,7 @@ body {
 }
 
 .custom-select-option.selected {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .custom-select-tag-count {
@@ -756,7 +756,7 @@ body {
 
 .results-header h2 {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text-primary);
 }
 
@@ -801,7 +801,7 @@ body {
     border: none;
     border-radius: var(--radius-xl);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     transition: background-color 0.2s, transform 0.2s;
 }
@@ -981,7 +981,7 @@ body {
 
 .exam-title h3 {
     font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text-primary);
     line-height: 1.4;
     display: -webkit-box;
@@ -990,7 +990,7 @@ body {
 }
 
 .exam-code {
-    font-family: 'Cascadia Code', 'SF Mono', 'Roboto Mono', monospace;
+    font-family: 'Cascadia Code', monospace;
     width: fit-content;
     color: var(--link-exam-text);
     background-color: var(--link-exam-bg);
@@ -1152,7 +1152,7 @@ body {
     padding: 0.5rem;
     border-radius: var(--radius-md);
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     border: 1px solid transparent;
     transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),

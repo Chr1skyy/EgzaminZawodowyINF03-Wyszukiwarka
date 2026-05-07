@@ -45,7 +45,7 @@ function renderLoadMoreBtn() {
     btn.textContent = `Załaduj więcej (${remaining} pozostałych)`;
     btn.onclick = () => {
         app.visible += CARDS_PER_PAGE;
-        renderResults(true); // Przy doczytywaniu zawsze pomijamy animację wejścia
+        renderResults(true);
         updateResultsCount();
     };
 
@@ -338,22 +338,34 @@ function renderSkeletons() {
 async function initApp() {
     setupThemeToggle();
     renderSkeletons();
+
     try {
         const response = await fetch('data.json');
         app.exams = await response.json();
-        initFuse(app.exams);
+
+        setOnFiltersChangeCallback(handleFiltersChange);
+        loadFiltersFromUrl();
+        handleFiltersChange(getFilters());
+        const runIdle = (fn) => {
+            if ('requestIdleCallback' in window) {
+                window.requestIdleCallback(fn, { timeout: 2000 });
+            } else {
+                setTimeout(fn, 1);
+            }
+        };
+
+        runIdle(() => {
+            initFuse(app.exams);
+            initTagFilter();
+            bindFilterEvents();
+            setupInfiniteScroll();
+            setupBackToTop();
+            setupResultsGridHandlers();
+        });
+
     } catch (error) {
         console.error('Error loading exam data:', error);
     }
-
-    setOnFiltersChangeCallback(handleFiltersChange);
-    bindFilterEvents();
-    initTagFilter();
-    loadFiltersFromUrl();
-    setupInfiniteScroll();
-    setupBackToTop();
-    setupResultsGridHandlers();
-    handleFiltersChange(getFilters());
 }
 
 initApp();
