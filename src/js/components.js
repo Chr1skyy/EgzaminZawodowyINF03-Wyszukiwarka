@@ -13,7 +13,7 @@ const components = {
 
     createAllBadges: (exam) => {
         return components.createBadge('difficulty', exam.difficulty) +
-               components.createBadge('language', exam.language);
+            components.createBadge('language', exam.language);
     },
 
     /**
@@ -26,7 +26,10 @@ const components = {
                     <h3>${exam.name}</h3>
                 </div>
                 ${options.showCode ? `
-                <span class="exam-code" data-action="copy-code" data-code="${exam.codeName}" title="Kliknij aby skopiować kod">
+                <span class="exam-code" data-action="copy-code" data-code="${exam.codeName}" title="Kliknij aby skopiować kod" 
+                    data-umami-event="Copy exam code" 
+                    data-umami-event-exam="${exam.codeName}"
+                    data-umami-event-context="examCard">
                     ${exam.codeName}
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 </span>` : ''}
@@ -56,7 +59,8 @@ const components = {
     /**
      * Grupa linków do pobrania/podglądu
      */
-    createLinkButtons: (l) => {
+    createLinkButtons: (exam) => {
+        const l = exam.links;
         if (!l) return '';
 
         const { GITHUB_BASE, GITHUB_BASE_PDF } = window.appUtils;
@@ -71,7 +75,7 @@ const components = {
 
         return linkConfigs.map(config => {
             const fileName = l[config.key];
-            
+
             if (!fileName) {
                 return `
                     <div class="exam-link disabled ${config.class}" title="Brak ${config.label.toLowerCase()}">
@@ -84,7 +88,12 @@ const components = {
             const url = `${config.base}${l.mainFolder}/${fileName}`;
 
             return `
-                <a href="${url}" class="exam-link ${config.class}" target="_blank" rel="noopener" aria-label="${config.aria}">
+                <a href="${url}" class="exam-link ${config.class}" target="_blank" rel="noopener" aria-label="${config.aria}" 
+                    data-exam-id="${exam.codeName}" data-link-type="${config.key}"
+                    data-umami-event="Resource link"
+                    data-umami-event-click="${config.key} | ${exam.codeName}"
+                    data-umami-event-type="${config.key}"
+                    data-umami-event-exam="${exam.codeName}">
                     <span aria-hidden="true">${config.icon}</span>
                     <span>${config.label}</span>
                 </a>
@@ -102,10 +111,15 @@ const components = {
             <article class="exam-card${isCompleted ? ' completed' : ''}${skipAnimation ? ' no-entrance' : ''}" data-exam-id="${exam.codeName}" style="${skipAnimation ? '' : `animation-delay: ${delay}s`}">
                 <div class="exam-thumbnail">
                     <img src="${window.appUtils.getThumbnailUrl(exam)}" alt="${exam.name}" data-action="open-modal" loading="lazy" ${priority} width="320" height="200" onerror="this.onerror=null;this.parentElement.replaceChild(Object.assign(document.createElement('div'),{className:'no-thumbnail',textContent:'Brak miniatury'}),this)">
-                    <div class="thumbnail-overlay" data-action="open-modal" role="button" tabindex="0" aria-label="Pokaż szczegóły i obrazek egzaminu">
+                    <div class="thumbnail-overlay" data-action="open-modal" role="button" tabindex="0" aria-label="Pokaż szczegóły i obrazek egzaminu"
+                        data-umami-event="View exam modal" 
+                        data-umami-event-exam="${exam.codeName}">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="9" x2="11" y2="13"/><line x1="9" y1="11" x2="13" y2="11"/></svg>
                     </div>
-                    <div class="completion-checkbox${isCompleted ? ' completed' : ''}" data-action="toggle-completed" role="checkbox" aria-checked="${isCompleted}" aria-label="Oznacz egzamin jako ukończony" title="Oznacz egzamin jako ukończony">
+                    <div class="completion-checkbox${isCompleted ? ' completed' : ''}" data-action="toggle-completed" role="checkbox" aria-checked="${isCompleted}" aria-label="Oznacz egzamin jako ukończony" title="Oznacz egzamin jako ukończony"
+                        data-umami-event="Completion status change" 
+                        data-umami-event-action="${isCompleted ? 'Unmark' : 'Mark'} | ${exam.codeName}"
+                        data-umami-event-exam="${exam.codeName}">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg>
                     </div>
                 </div>
@@ -122,7 +136,7 @@ const components = {
                     </div>
                     ${components.createTagList(exam)}
                     <div class="exam-links">
-                        ${components.createLinkButtons(exam.links)}
+                        ${components.createLinkButtons(exam)}
                     </div>
                 </div>
             </article>
@@ -140,7 +154,8 @@ const components = {
                     <span>📅 Nr ${exam.number} | ${exam.session} ${exam.year}</span>
                 </div>
                 <div class="exam-metadata-item">
-                    <span class="exam-code" title="Kliknij aby skopiować kod" data-action="copy-code" data-code="${exam.codeName}">
+                    <span class="exam-code" title="Kliknij aby skopiować kod" data-action="copy-code" data-code="${exam.codeName}"
+                        data-umami-event="Copy exam code" data-umami-event-exam="${exam.codeName}" data-umami-event-context="modal">
                         ${exam.codeName}
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                     </span>
@@ -151,7 +166,7 @@ const components = {
             </div>
             ${components.createTagList(exam, true)}
             <div class="modal-links">
-                ${components.createLinkButtons(exam.links)}
+                ${components.createLinkButtons(exam)}
             </div>
         `;
     },

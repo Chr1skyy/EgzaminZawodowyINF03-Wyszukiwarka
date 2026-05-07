@@ -109,7 +109,9 @@ function setupThemeToggle() {
 
     btn.addEventListener('click', () => {
         const current = document.documentElement.getAttribute('data-theme');
-        setTheme(current === 'dark' ? 'light' : 'dark');
+        const nextTheme = current === 'dark' ? 'light' : 'dark';
+        setTheme(nextTheme);
+        if (window.umami) window.umami.track('Toggle Theme', { theme: nextTheme });
     });
 }
 
@@ -166,7 +168,6 @@ function setupResultsGridHandlers() {
 
 function toggleCompleted(examId) {
     app.completed = toggleExamCompleted(examId);
-    
     if (getFilters().hideCompleted) {
         handleFiltersChange(getFilters(), true);
     } else {
@@ -258,6 +259,9 @@ function initTagFilter() {
 
 const debouncedSearch = window.appUtils.debounce((value) => {
     setQuery(value);
+    if (value && value.length > 2 && window.umami) {
+        window.umami.track('Search', { query: value });
+    }
 }, 200);
 
 const searchInput = document.getElementById('search-input');
