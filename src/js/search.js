@@ -39,10 +39,10 @@ function searchExams(data, filters, completedExams = []) {
                 const exactMatches = data.filter(item =>
                     item.codeName.toLowerCase() === normWord
                 );
-                let wordItems;
+                let wordItems = [];
                 if (exactMatches.length > 0) {
                     wordItems = exactMatches;
-                } else {
+                } else if (fuse) {
                     const wordResults = fuse.search(word);
                     wordItems = wordResults.map(r => r.item);
                 }

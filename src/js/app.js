@@ -347,8 +347,9 @@ async function initApp() {
         const response = await fetch('data.json');
         app.exams = await response.json();
 
-        setOnFiltersChangeCallback(handleFiltersChange);
+        initFuse(app.exams);
         loadFiltersFromUrl();
+        setOnFiltersChangeCallback(handleFiltersChange);
         handleFiltersChange(getFilters());
         const runIdle = (fn) => {
             if ('requestIdleCallback' in window) {
@@ -359,7 +360,6 @@ async function initApp() {
         };
 
         runIdle(() => {
-            initFuse(app.exams);
             initTagFilter();
             bindFilterEvents();
             setupInfiniteScroll();
