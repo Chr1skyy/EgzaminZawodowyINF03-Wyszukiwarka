@@ -4,6 +4,9 @@ let onFiltersChange = null;
 function setOnFiltersChangeCallback(cb) { onFiltersChange = cb; }
 function getFilters() { return { ...filters }; }
 function setQuery(q) { filters.query = q; triggerChange(); }
+function setFilters(newFilters) {
+    filters = { ...newFilters, formulas: [...newFilters.formulas], difficulties: [...newFilters.difficulties], languages: [...newFilters.languages] };
+}
 function toggleFilter(type, value) {
     const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas' };
     const key = keyMap[type] || type;

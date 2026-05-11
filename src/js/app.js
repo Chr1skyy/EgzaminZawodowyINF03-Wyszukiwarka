@@ -23,7 +23,7 @@ function renderResults(skipAnimation = false) {
         return;
     }
 
-    grid.style.display = 'grid';
+    grid.style.display = '';
     noResults.style.display = 'none';
 
     grid.innerHTML = app.filtered
@@ -179,10 +179,18 @@ function updateResultsCount() {
     const resultsCount = document.getElementById('results-count');
     if (!resultsCount) return;
 
-    const showing = Math.min(app.visible, app.filtered.length);
-    resultsCount.textContent = showing < app.filtered.length 
-        ? `Wyświetlono ${showing} z ${app.filtered.length} egzaminów (${app.exams.length} łącznie)`
-        : `${app.filtered.length} z ${app.exams.length} egzaminów`;
+    const total = app.exams.length;
+    const matched = app.filtered.length;
+    const showing = Math.min(app.visible, matched);
+    const hasFilters = matched !== total;
+
+    if (showing < matched) {
+        resultsCount.textContent = `Wyświetlono ${showing} z ${matched} znalezionych`;
+    } else if (hasFilters) {
+        resultsCount.textContent = `Znaleziono ${matched} z ${total} egzaminów`;
+    } else {
+        resultsCount.textContent = `${total} egzaminów`;
+    }
 }
 
 function handleFiltersChange(filts, skipAnimation = false) {
@@ -257,6 +265,109 @@ function initTagFilter() {
     };
 }
 
+let activeSuggestionIndex = -1;
+
+function renderSuggestions(query) {
+    const container = document.getElementById('search-suggestions');
+    if (!container) return;
+
+    if (!query || query.length < 1) {
+        container.style.display = 'none';
+        activeSuggestionIndex = -1;
+        return;
+    }
+
+    const suggestions = [];
+    const maxSuggestions = 15;
+
+    app.exams.forEach(exam => {
+        const queryLower = query.toLowerCase();
+        if (exam.codeName.toLowerCase().includes(queryLower) || 
+            exam.name.toLowerCase().includes(queryLower)) {
+            suggestions.push({
+                type: 'exam',
+                title: exam.name,
+                subtitle: exam.codeName,
+                value: exam.codeName,
+                thumb: window.appUtils.getThumbnailUrl(exam),
+                badges: window.uiComponents.createAllBadges(exam)
+            });
+        }
+    });
+
+    const allTags = new Set();
+    app.exams.forEach(ex => ex.tags?.forEach(t => allTags.add(t)));
+    allTags.forEach(tag => {
+        if (tag.toLowerCase().includes(query.toLowerCase())) {
+            suggestions.push({
+                type: 'tag',
+                title: tag,
+                subtitle: 'Tag',
+                value: tag,
+                badges: ''
+            });
+        }
+    });
+
+    const uniqueSuggestions = [];
+    const seen = new Set();
+    for (const s of suggestions) {
+        const key = `${s.type}-${s.value}`;
+        if (!seen.has(key)) {
+            seen.add(key);
+            uniqueSuggestions.push(s);
+        }
+        if (uniqueSuggestions.length >= maxSuggestions) break;
+    }
+
+    if (uniqueSuggestions.length === 0) {
+        container.style.display = 'none';
+        return;
+    }
+
+    container.innerHTML = uniqueSuggestions.map((s, i) => `
+        <div class="suggestion-item" data-index="${i}" data-value="${s.value}">
+            <div class="suggestion-icon">
+                ${s.thumb ? `<img src="${s.thumb}" alt="" class="suggestion-thumb">` : (s.type === 'exam' ? '📄' : '🏷️')}
+            </div>
+            <div class="suggestion-content">
+                <div class="suggestion-header-row">
+                    <span class="suggestion-title">${highlightText(s.title, query)}</span>
+                    <div class="suggestion-badges">${s.badges}</div>
+                </div>
+                <span class="suggestion-meta">${s.subtitle}</span>
+            </div>
+        </div>
+    `).join('');
+
+    container.style.display = 'block';
+    activeSuggestionIndex = -1;
+}
+
+function highlightText(text, query) {
+    if (!query) return text;
+    const regex = new RegExp(`(${query})`, 'gi');
+    return text.replace(regex, '<span class="suggestion-highlight">$1</span>');
+}
+
+function selectSuggestion(value) {
+    const input = document.getElementById('search-input');
+    if (input) {
+        input.value = value;
+        setQuery(value);
+        updateSearchClearBtnVisibility();
+        hideSuggestions();
+    }
+}
+
+function hideSuggestions() {
+    const container = document.getElementById('search-suggestions');
+    if (container) {
+        container.style.display = 'none';
+        activeSuggestionIndex = -1;
+    }
+}
+
 const debouncedSearch = window.appUtils.debounce((value) => {
     setQuery(value);
     if (value && value.length > 2 && window.umami) {
@@ -275,9 +386,58 @@ function updateSearchClearBtnVisibility() {
 
 if (searchInput) {
     searchInput.oninput = e => {
-        debouncedSearch(e.target.value);
+        const val = e.target.value;
+        debouncedSearch(val);
         updateSearchClearBtnVisibility();
+        renderSuggestions(val);
     };
+
+    searchInput.onkeydown = e => {
+        const suggestions = document.querySelectorAll('.suggestion-item');
+        if (suggestions.length === 0) return;
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            activeSuggestionIndex = (activeSuggestionIndex + 1) % suggestions.length;
+            updateActiveSuggestion(suggestions);
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            activeSuggestionIndex = (activeSuggestionIndex - 1 + suggestions.length) % suggestions.length;
+            updateActiveSuggestion(suggestions);
+        } else if (e.key === 'Enter' && activeSuggestionIndex >= 0) {
+            e.preventDefault();
+            selectSuggestion(suggestions[activeSuggestionIndex].dataset.value);
+        } else if (e.key === 'Escape') {
+            hideSuggestions();
+        }
+    };
+
+    // Obsługa kliknięcia poza sugestie
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.search-input-wrapper')) {
+            hideSuggestions();
+        }
+    });
+
+    // Obsługa kliknięcia w sugestię (delegacja)
+    const suggestionsContainer = document.getElementById('search-suggestions');
+    if (suggestionsContainer) {
+        suggestionsContainer.onclick = (e) => {
+            const item = e.target.closest('.suggestion-item');
+            if (item) {
+                selectSuggestion(item.dataset.value);
+            }
+        };
+    }
+}
+
+function updateActiveSuggestion(suggestions) {
+    suggestions.forEach((s, i) => {
+        s.classList.toggle('active', i === activeSuggestionIndex);
+        if (i === activeSuggestionIndex) {
+            s.scrollIntoView({ block: 'nearest' });
+        }
+    });
 }
 
 if (searchClearBtn) {
@@ -286,6 +446,7 @@ if (searchClearBtn) {
             searchInput.value = '';
             setQuery('');
             updateSearchClearBtnVisibility();
+            hideSuggestions();
             searchInput.focus();
         }
     };
@@ -305,29 +466,28 @@ function updateUrlFromFilters(filts) {
 
 function loadFiltersFromUrl() {
     const params = new URLSearchParams(window.location.search);
-    const q = params.get('q');
+    const newFilters = {
+        query: params.get('q') || '',
+        formulas: params.get('formula') ? params.get('formula').split(',') : [],
+        difficulties: params.get('difficulty') ? params.get('difficulty').split(',') : [],
+        languages: params.get('language') ? params.get('language').split(',') : [],
+        hideCompleted: params.get('hideCompleted') === '1'
+    };
+    setFilters(newFilters);
+    const input = document.getElementById('search-input');
+    if (input) input.value = newFilters.query;
 
-    if (q) {
-        const input = document.getElementById('search-input');
-        if (input) input.value = q;
-        setQuery(q);
-    }
-
-    ['formula', 'difficulty', 'language'].forEach(type => {
-        const val = params.get(type);
-        if (val) {
-            val.split(',').forEach(v => {
-                toggleFilter(type, v);
-                const btn = document.querySelector(`.filter-btn[data-filter="${type}"][data-value="${v}"]`);
-                if (btn) btn.classList.add('active');
-            });
-        }
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        const type = btn.dataset.filter;
+        const val = btn.dataset.value;
+        const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas' };
+        const key = keyMap[type] || type;
+        const isActive = newFilters[key].includes(val);
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive);
     });
 
-    if (params.get('hideCompleted') === '1') {
-        setHideCompleted(true);
-    }
-
+    if (typeof updateHideCompletedBtnText === 'function') updateHideCompletedBtnText();
     updateSearchClearBtnVisibility();
 }
 
@@ -365,6 +525,11 @@ async function initApp() {
             setupInfiniteScroll();
             setupBackToTop();
             setupResultsGridHandlers();
+        });
+
+        window.addEventListener('popstate', () => {
+            loadFiltersFromUrl();
+            handleFiltersChange(getFilters(), true);
         });
 
     } catch (error) {
