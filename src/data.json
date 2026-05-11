@@ -25,6 +25,50 @@
         "formula": "E.14",
         "year": 2018,
         "session": "Czerwiec",
+        "number": "02",
+        "language": "PHP",
+        "name": "Bar \"Smaczne Jadło\"",
+        "codeName": "E.14-02-18.06",
+        "links": {
+            "mainFolder": "/e14/e14_2018_06_02",
+            "examSheet": "e_14_2018_06_02.pdf",
+            "gradingRules": "e_14_2018_06_02_zo.pdf",
+            "archive": "zad2.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "wstawianie danych do bazy",
+            "formularz"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "E.14",
+        "year": 2018,
+        "session": "Czerwiec",
+        "number": "03",
+        "language": "PHP",
+        "name": "Restauracja \"Kulinaria.pl\"",
+        "codeName": "E.14-03-18.06",
+        "links": {
+            "mainFolder": "/e14/e14_2018_06_03",
+            "examSheet": "e_14_2018_06_03.pdf",
+            "gradingRules": "e_14_2018_06_03_zo.pdf",
+            "archive": "zad3.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "przeskalowanie grafiki",
+            "wyświetlanie danych z bazy"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "E.14",
+        "year": 2018,
+        "session": "Czerwiec",
         "number": "04",
         "language": "PHP",
         "name": "Restauracja \"Kulinaria.pl\"",
