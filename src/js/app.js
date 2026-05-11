@@ -1,151 +1,71 @@
-let examData = [];
-let completedExams = getCompletedExams();
-let filteredExams = [];
-let expandedTags = new Set();
+/**
+ * Główna logika aplikacji
+ */
 
 const CARDS_PER_PAGE = 24;
-let visibleCount = CARDS_PER_PAGE;
-let loadMoreObserver;
 
-class ResultsRenderer {
-    constructor(state) {
-        this.state = state;
-        this.elements = {
-            grid: document.getElementById('results-grid'),
-            noResults: document.getElementById('no-results'),
-        };
-    }
-
-    render(options = {}) {
-        if (!this.elements.grid || !this.elements.noResults) return;
-
-        if (options.loading) return this.renderSkeleton();
-        if (this.state.filteredExams.length === 0) return this.renderEmpty();
-        if (options.onlyCardId) return this.updateCard(options.onlyCardId);
-        return this.renderGrid(options);
-    }
-
-    renderSkeleton() {
-        this.showElement('grid');
-        this.hideElement('noResults');
-        this.elements.grid.innerHTML = Array(6)
-            .fill(0)
-            .map(() => window.uiComponents.createSkeletonCard())
-            .join('');
-    }
-
-    renderEmpty() {
-        this.hideElement('grid');
-        this.showElement('noResults');
-        removeLoadMoreBtn();
-    }
-
-    renderGrid(options = {}) {
-        this.showElement('grid');
-        this.hideElement('noResults');
-
-        const exams = this.state.filteredExams.slice(0, this.state.visibleCount);
-        const cardsHtml = this.createCardsHtml(exams, options.noAnimation);
-
-        this.elements.grid.innerHTML = cardsHtml;
-        renderLoadMoreBtn();
-    }
-
-    updateCard(examId) {
-        const card = this.elements.grid.querySelector(`[data-exam-id="${examId}"]`);
-        const exam = examData.find(e => e.codeName === examId);
-
-        if (card && exam) {
-            const html = this.createCardHtml(exam, examId);
-            card.replaceWith(this.htmlToElement(html));
-        }
-    }
-
-    createCardsHtml(exams, noAnimation = false) {
-        return exams
-            .map((exam, idx) => this.createCardHtml(exam, exam.codeName, idx, noAnimation))
-            .join('');
-    }
-
-    createCardHtml(exam, examId, index = 0, noAnimation = false) {
-        const isCompleted = this.state.completedExams.includes(examId);
-        const isExpanded = this.state.expandedTags.has(examId);
-        const delay = this.calculateAnimationDelay(index, noAnimation);
-
-        return window.uiComponents.createExamCard(
-            exam,
-            isCompleted,
-            isExpanded,
-            delay,
-            noAnimation
-        );
-    }
-
-    calculateAnimationDelay(index, noAnimation) {
-        if (noAnimation || index >= 12) return 0;
-        return (index % CARDS_PER_PAGE) * 0.05;
-    }
-
-    showElement(key) {
-        if (this.elements[key]) {
-            this.elements[key].style.display = key === 'grid' ? 'grid' : 'block';
-        }
-    }
-
-    hideElement(key) {
-        if (this.elements[key]) {
-            this.elements[key].style.display = 'none';
-        }
-    }
-
-    htmlToElement(html) {
-        const div = document.createElement('div');
-        div.innerHTML = html;
-        return div.firstElementChild;
-    }
+const app = {
+    exams: [],
+    filtered: [],
+    completed: getCompletedExams(),
+    visible: CARDS_PER_PAGE,
+    tags: new Set(),
+    loadMoreObserver: null
 }
 
-const appState = {
-    get filteredExams() { return filteredExams; },
-    get completedExams() { return completedExams; },
-    get expandedTags() { return expandedTags; },
-    get visibleCount() { return visibleCount; }
-};
+function renderResults(skipAnimation = false) {
+    const grid = document.getElementById('results-grid');
+    const noResults = document.getElementById('no-results');
 
-const renderer = new ResultsRenderer(appState);
+    if (app.filtered.length === 0) {
+        grid.style.display = 'none';
+        noResults.style.display = 'block';
+        return;
+    }
+
+    grid.style.display = '';
+    noResults.style.display = 'none';
+
+    grid.innerHTML = app.filtered
+        .slice(0, app.visible)
+        .map((exam, i) => window.uiComponents.createExamCard(exam, i, { skipAnimation }))
+        .join('');
+
+    renderLoadMoreBtn();
+}
 
 function renderLoadMoreBtn() {
     removeLoadMoreBtn();
-    if (visibleCount >= filteredExams.length) return;
+    if (app.visible >= app.filtered.length) return;
 
-    const remaining = filteredExams.length - visibleCount;
+    const remaining = app.filtered.length - app.visible;
     const btn = document.createElement('button');
     btn.id = 'load-more-btn';
     btn.className = 'load-more-btn';
     btn.textContent = `Załaduj więcej (${remaining} pozostałych)`;
     btn.onclick = () => {
-        visibleCount += CARDS_PER_PAGE;
-        renderer.render();
+        app.visible += CARDS_PER_PAGE;
+        renderResults(true);
         updateResultsCount();
     };
 
     const resultsSection = document.querySelector('.results-section');
     if (resultsSection) {
         resultsSection.appendChild(btn);
-        if (loadMoreObserver) loadMoreObserver.observe(btn);
+        if (app.loadMoreObserver) app.loadMoreObserver.observe(btn);
     }
 }
 
 function removeLoadMoreBtn() {
     const existing = document.getElementById('load-more-btn');
     if (existing) {
-        if (loadMoreObserver) loadMoreObserver.unobserve(existing);
+        if (app.loadMoreObserver) app.loadMoreObserver.unobserve(existing);
         existing.remove();
     }
 }
 
 function setupInfiniteScroll() {
-    loadMoreObserver = new IntersectionObserver((entries) => {
+    app.loadMoreObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const btn = entry.target;
@@ -175,122 +95,112 @@ function setupBackToTop() {
     });
 }
 
-function toggleTheme() {
-    const html = document.documentElement;
-    const currentTheme = html.getAttribute('data-theme') || 'dark';
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-}
-
 function setupThemeToggle() {
     const btn = document.getElementById('toggle-theme');
     if (!btn) return;
-    btn.addEventListener('click', toggleTheme);
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-    }
+
+    const setTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+    };
+
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    setTheme(savedTheme);
+
+    btn.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        const nextTheme = current === 'dark' ? 'light' : 'dark';
+        setTheme(nextTheme);
+        if (window.umami) window.umami.track('Toggle Theme', { theme: nextTheme });
+    });
 }
 
-function handleKeyboardActivation(el, callback) {
-    el.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            callback(e);
+function setupResultsGridHandlers() {
+    const grid = document.getElementById('results-grid');
+    if (!grid) return;
+
+    grid.addEventListener('click', (e) => {
+        const target = e.target;
+
+        // Podgląd (Modal)
+        if (target.closest('[data-action="open-modal"]')) {
+            const card = target.closest('.exam-card');
+            const examId = card.dataset.examId;
+            const exam = app.exams.find(x => x.codeName === examId);
+            if (window.openModal) window.openModal(exam);
+            return;
+        }
+
+        // Checkbox ukończenia
+        if (target.closest('[data-action="toggle-completed"]')) {
+            const card = target.closest('.exam-card');
+            const examId = card.dataset.examId;
+            toggleCompleted(examId);
+            return;
+        }
+
+        // Kopiowanie kodu
+        if (target.closest('[data-action="copy-code"]')) {
+            const btn = target.closest('[data-action="copy-code"]');
+            window.appUtils.copyToClipboard(btn.dataset.code, btn);
+            return;
+        }
+
+        // Rozwijanie tagów
+        if (target.closest('.exam-tag-expand')) {
+            const btn = target.closest('.exam-tag-expand');
+            const examId = btn.dataset.examId;
+            app.tags.add(examId);
+            renderResults(true); // Pomiń animację przy rozwijaniu tagów
+            return;
+        }
+
+        // Zwijanie tagów
+        if (target.closest('.exam-tag-collapse')) {
+            const btn = target.closest('.exam-tag-collapse');
+            const examId = btn.dataset.examId;
+            app.tags.delete(examId);
+            renderResults(true); // Pomiń animację przy zwijaniu tagów
+            return;
         }
     });
 }
 
-function setupEventDelegation() {
-    const grid = document.getElementById('results-grid');
-    if (!grid) return;
-
-    grid.onclick = (e) => {
-        const target = e.target;
-
-        const openModalEl = target.closest('[data-action="open-modal"]');
-        if (openModalEl) {
-            const card = openModalEl.closest('[data-exam-id]');
-            const examId = card.dataset.examId;
-            const exam = examData.find(ex => ex.codeName === examId);
-            if (exam) window.openModal(exam);
-            return;
-        }
-
-        const toggleCompletedEl = target.closest('[data-action="toggle-completed"]');
-        if (toggleCompletedEl) {
-            const card = toggleCompletedEl.closest('[data-exam-id]');
-            toggleExamCompletedHandler(card.dataset.examId);
-            return;
-        }
-
-        const copyCodeEl = target.closest('[data-action="copy-code"]');
-        if (copyCodeEl) {
-            window.appUtils.copyToClipboard(copyCodeEl.dataset.code, copyCodeEl);
-            return;
-        }
-
-        const expandTagsEl = target.closest('.exam-tag-expand');
-        if (expandTagsEl) {
-            const card = expandTagsEl.closest('[data-exam-id]');
-            const examId = card.dataset.examId;
-            expandedTags.add(examId);
-            renderer.render({ onlyCardId: examId });
-            return;
-        }
-
-        const collapseTagsEl = target.closest('.exam-tag-collapse');
-        if (collapseTagsEl) {
-            const card = collapseTagsEl.closest('[data-exam-id]');
-            const examId = card.dataset.examId;
-            expandedTags.delete(examId);
-            renderer.render({ onlyCardId: examId });
-            return;
-        }
-    };
-}
-
-function toggleExamCompletedHandler(examId) {
-    completedExams = toggleExamCompleted(examId);
-    const isNowCompleted = completedExams.includes(examId);
-
-    if (typeof gtag === 'function') {
-        gtag('event', 'toggle_exam_status', { 'exam_id': examId, 'completed': isNowCompleted ? 'yes' : 'no' });
-    }
-
+function toggleCompleted(examId) {
+    app.completed = toggleExamCompleted(examId);
     if (getFilters().hideCompleted) {
-        handleFiltersChange(getFilters());
+        handleFiltersChange(getFilters(), true);
     } else {
-        const card = document.querySelector(`.exam-card[data-exam-id="${examId}"]`);
-        if (card) {
-            card.classList.toggle('completed', isNowCompleted);
-            const btn = card.querySelector('.completion-checkbox');
-            if (btn) btn.classList.toggle('completed', isNowCompleted);
-        }
-        updateResultsCount();
+        renderResults(true);
     }
 }
 
 function updateResultsCount() {
     const resultsCount = document.getElementById('results-count');
-    const showing = Math.min(visibleCount, filteredExams.length);
-    if (resultsCount) {
-        if (showing < filteredExams.length) {
-            resultsCount.textContent = `Wyświetlono ${showing} z ${filteredExams.length} egzaminów (${examData.length} łącznie)`;
-        } else {
-            resultsCount.textContent = `${filteredExams.length} z ${examData.length} egzaminów`;
-        }
+    if (!resultsCount) return;
+
+    const total = app.exams.length;
+    const matched = app.filtered.length;
+    const showing = Math.min(app.visible, matched);
+    const hasFilters = matched !== total;
+
+    if (showing < matched) {
+        resultsCount.textContent = `Wyświetlono ${showing} z ${matched} znalezionych`;
+    } else if (hasFilters) {
+        resultsCount.textContent = `Znaleziono ${matched} z ${total} egzaminów`;
+    } else {
+        resultsCount.textContent = `${total} egzaminów`;
     }
 }
 
-function handleFiltersChange(filts) {
-    filteredExams = searchExams(examData, filts, completedExams);
-    visibleCount = CARDS_PER_PAGE;
-    renderer.render();
+function handleFiltersChange(filts, skipAnimation = false) {
+    app.filtered = searchExams(app.exams, filts, app.completed);
+    app.visible = CARDS_PER_PAGE;
+    renderResults(skipAnimation);
     updateResultsCount();
     updateUrlFromFilters(filts);
 
+    // Reset tag select if query was cleared
     if (!filts.query) {
         const customBtnText = document.querySelector('#custom-tag-select .custom-select-text');
         if (customBtnText) customBtnText.textContent = 'Wszystkie tagi';
@@ -300,80 +210,169 @@ function handleFiltersChange(filts) {
     }
 }
 
-setOnFiltersChangeCallback(handleFiltersChange);
-
-
 function initTagFilter() {
     const customSelectWrapper = document.getElementById('custom-tag-select');
     if (!customSelectWrapper) return;
 
     const button = customSelectWrapper.querySelector('.custom-select-button');
-    const buttonText = button.querySelector('.custom-select-text');
     const dropdown = customSelectWrapper.querySelector('.custom-select-dropdown');
 
     const tagCounts = {};
-    examData.forEach(exam => {
-        if (exam.tags && Array.isArray(exam.tags)) {
-            exam.tags.forEach(tag => {
-                tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+    app.exams.forEach(exam => {
+        exam.tags?.forEach(tag => {
+            tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+        });
+    });
+
+    const sortedTags = Object.keys(tagCounts).sort((a, b) => {
+        if (tagCounts[b] !== tagCounts[a]) return tagCounts[b] - tagCounts[a];
+        return a.localeCompare(b, 'pl');
+    });
+
+    dropdown.innerHTML = `<div class="custom-select-option selected" role="option" aria-selected="true" data-value="">Wszystkie tagi</div>` + 
+        sortedTags.map(tag => `
+            <div class="custom-select-option" role="option" aria-selected="false" data-value="${tag}">
+                <span>${tag}</span>
+                <span class="custom-select-tag-count">${tagCounts[tag]}</span>
+            </div>
+        `).join('');
+
+    button.onclick = () => {
+        dropdown.classList.toggle('show');
+        button.classList.toggle('active');
+    };
+
+    dropdown.onclick = (e) => {
+        const option = e.target.closest('.custom-select-option');
+        if (!option) return;
+
+        const value = option.dataset.value;
+        dropdown.querySelectorAll('.custom-select-option').forEach(o => {
+            const isSelected = o === option;
+            o.classList.toggle('selected', isSelected);
+            o.setAttribute('aria-selected', isSelected);
+        });
+        button.querySelector('.custom-select-text').textContent = value || 'Wszystkie tagi';
+        dropdown.classList.remove('show');
+        button.classList.remove('active');
+
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) {
+            setQuery(value);
+            searchInput.value = value;
+            updateSearchClearBtnVisibility();
+        }
+    };
+}
+
+let activeSuggestionIndex = -1;
+
+function renderSuggestions(query) {
+    const container = document.getElementById('search-suggestions');
+    if (!container) return;
+
+    if (!query || query.length < 1) {
+        container.style.display = 'none';
+        activeSuggestionIndex = -1;
+        return;
+    }
+
+    const suggestions = [];
+    const maxSuggestions = 15;
+
+    app.exams.forEach(exam => {
+        const queryLower = query.toLowerCase();
+        if (exam.codeName.toLowerCase().includes(queryLower) || 
+            exam.name.toLowerCase().includes(queryLower)) {
+            suggestions.push({
+                type: 'exam',
+                title: exam.name,
+                subtitle: exam.codeName,
+                value: exam.codeName,
+                thumb: window.appUtils.getThumbnailUrl(exam),
+                badges: window.uiComponents.createAllBadges(exam)
             });
         }
     });
 
-    const sortedTags = Object.keys(tagCounts).sort((a, b) => {
-        const countDiff = tagCounts[b] - tagCounts[a];
-        return countDiff !== 0 ? countDiff : a.localeCompare(b, 'pl');
-    });
-
-    let optionsHtml = `<div class="custom-select-option selected" data-value="">Wszystkie tagi</div>`;
-    optionsHtml += sortedTags.map(tag => `
-        <div class="custom-select-option" data-value="${tag}">
-            <span>${tag}</span>
-            <span class="custom-select-tag-count">${tagCounts[tag]}</span>
-        </div>
-    `).join('');
-    dropdown.innerHTML = optionsHtml;
-
-    button.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-        button.setAttribute('aria-expanded', !expanded);
-        button.classList.toggle('active');
-        dropdown.classList.toggle('show');
-    });
-
-    document.addEventListener('click', (e) => {
-        if (!customSelectWrapper.contains(e.target)) {
-            button.setAttribute('aria-expanded', 'false');
-            button.classList.remove('active');
-            dropdown.classList.remove('show');
+    const allTags = new Set();
+    app.exams.forEach(ex => ex.tags?.forEach(t => allTags.add(t)));
+    allTags.forEach(tag => {
+        if (tag.toLowerCase().includes(query.toLowerCase())) {
+            suggestions.push({
+                type: 'tag',
+                title: tag,
+                subtitle: 'Tag',
+                value: tag,
+                badges: ''
+            });
         }
     });
 
-    const options = dropdown.querySelectorAll('.custom-select-option');
-    options.forEach(opt => {
-        opt.addEventListener('click', () => {
-            const val = opt.dataset.value;
-            options.forEach(o => o.classList.remove('selected'));
-            opt.classList.add('selected');
-            buttonText.textContent = val ? val : 'Wszystkie';
+    const uniqueSuggestions = [];
+    const seen = new Set();
+    for (const s of suggestions) {
+        const key = `${s.type}-${s.value}`;
+        if (!seen.has(key)) {
+            seen.add(key);
+            uniqueSuggestions.push(s);
+        }
+        if (uniqueSuggestions.length >= maxSuggestions) break;
+    }
 
-            button.setAttribute('aria-expanded', 'false');
-            button.classList.remove('active');
-            dropdown.classList.remove('show');
-            const searchInput = document.getElementById('search-input');
-            if (searchInput) {
-                setQuery(val);
-                searchInput.value = val;
-                updateSearchClearBtnVisibility();
-            }
-        });
-    });
+    if (uniqueSuggestions.length === 0) {
+        container.style.display = 'none';
+        return;
+    }
+
+    container.innerHTML = uniqueSuggestions.map((s, i) => `
+        <div class="suggestion-item" data-index="${i}" data-value="${s.value}">
+            <div class="suggestion-icon">
+                ${s.thumb ? `<img src="${s.thumb}" alt="" class="suggestion-thumb">` : (s.type === 'exam' ? '📄' : '🏷️')}
+            </div>
+            <div class="suggestion-content">
+                <div class="suggestion-header-row">
+                    <span class="suggestion-title">${highlightText(s.title, query)}</span>
+                    <div class="suggestion-badges">${s.badges}</div>
+                </div>
+                <span class="suggestion-meta">${s.subtitle}</span>
+            </div>
+        </div>
+    `).join('');
+
+    container.style.display = 'block';
+    activeSuggestionIndex = -1;
+}
+
+function highlightText(text, query) {
+    if (!query) return text;
+    const regex = new RegExp(`(${query})`, 'gi');
+    return text.replace(regex, '<span class="suggestion-highlight">$1</span>');
+}
+
+function selectSuggestion(value) {
+    const input = document.getElementById('search-input');
+    if (input) {
+        input.value = value;
+        setQuery(value);
+        updateSearchClearBtnVisibility();
+        hideSuggestions();
+    }
+}
+
+function hideSuggestions() {
+    const container = document.getElementById('search-suggestions');
+    if (container) {
+        container.style.display = 'none';
+        activeSuggestionIndex = -1;
+    }
 }
 
 const debouncedSearch = window.appUtils.debounce((value) => {
     setQuery(value);
+    if (value && value.length > 2 && window.umami) {
+        window.umami.track('Search', { query: value });
+    }
 }, 200);
 
 const searchInput = document.getElementById('search-input');
@@ -387,9 +386,58 @@ function updateSearchClearBtnVisibility() {
 
 if (searchInput) {
     searchInput.oninput = e => {
-        debouncedSearch(e.target.value);
+        const val = e.target.value;
+        debouncedSearch(val);
         updateSearchClearBtnVisibility();
+        renderSuggestions(val);
     };
+
+    searchInput.onkeydown = e => {
+        const suggestions = document.querySelectorAll('.suggestion-item');
+        if (suggestions.length === 0) return;
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            activeSuggestionIndex = (activeSuggestionIndex + 1) % suggestions.length;
+            updateActiveSuggestion(suggestions);
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            activeSuggestionIndex = (activeSuggestionIndex - 1 + suggestions.length) % suggestions.length;
+            updateActiveSuggestion(suggestions);
+        } else if (e.key === 'Enter' && activeSuggestionIndex >= 0) {
+            e.preventDefault();
+            selectSuggestion(suggestions[activeSuggestionIndex].dataset.value);
+        } else if (e.key === 'Escape') {
+            hideSuggestions();
+        }
+    };
+
+    // Obsługa kliknięcia poza sugestie
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.search-input-wrapper')) {
+            hideSuggestions();
+        }
+    });
+
+    // Obsługa kliknięcia w sugestię (delegacja)
+    const suggestionsContainer = document.getElementById('search-suggestions');
+    if (suggestionsContainer) {
+        suggestionsContainer.onclick = (e) => {
+            const item = e.target.closest('.suggestion-item');
+            if (item) {
+                selectSuggestion(item.dataset.value);
+            }
+        };
+    }
+}
+
+function updateActiveSuggestion(suggestions) {
+    suggestions.forEach((s, i) => {
+        s.classList.toggle('active', i === activeSuggestionIndex);
+        if (i === activeSuggestionIndex) {
+            s.scrollIntoView({ block: 'nearest' });
+        }
+    });
 }
 
 if (searchClearBtn) {
@@ -398,6 +446,7 @@ if (searchClearBtn) {
             searchInput.value = '';
             setQuery('');
             updateSearchClearBtnVisibility();
+            hideSuggestions();
             searchInput.focus();
         }
     };
@@ -417,51 +466,75 @@ function updateUrlFromFilters(filts) {
 
 function loadFiltersFromUrl() {
     const params = new URLSearchParams(window.location.search);
-    const q = params.get('q');
+    const newFilters = {
+        query: params.get('q') || '',
+        formulas: params.get('formula') ? params.get('formula').split(',') : [],
+        difficulties: params.get('difficulty') ? params.get('difficulty').split(',') : [],
+        languages: params.get('language') ? params.get('language').split(',') : [],
+        hideCompleted: params.get('hideCompleted') === '1'
+    };
+    setFilters(newFilters);
+    const input = document.getElementById('search-input');
+    if (input) input.value = newFilters.query;
 
-    if (q) {
-        const input = document.getElementById('search-input');
-        if (input) input.value = q;
-        setQuery(q);
-    }
-
-    ['formula', 'difficulty', 'language'].forEach(type => {
-        const val = params.get(type);
-        if (val) {
-            val.split(',').forEach(v => {
-                toggleFilter(type, v);
-                const btn = document.querySelector(`.filter-btn[data-filter="${type}"][data-value="${v}"]`);
-                if (btn) btn.classList.add('active');
-            });
-        }
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        const type = btn.dataset.filter;
+        const val = btn.dataset.value;
+        const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas' };
+        const key = keyMap[type] || type;
+        const isActive = newFilters[key].includes(val);
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive);
     });
 
-    if (params.get('hideCompleted') === '1') {
-        setHideCompleted(true);
-    }
-
+    if (typeof updateHideCompletedBtnText === 'function') updateHideCompletedBtnText();
     updateSearchClearBtnVisibility();
 }
 
+function renderSkeletons() {
+    const grid = document.getElementById('results-grid');
+    if (grid) {
+        grid.innerHTML = Array(12).fill(window.uiComponents.createSkeletonCard()).join('');
+        grid.style.display = 'grid';
+    }
+}
+
 async function initApp() {
-    renderer.render({ loading: true });
+    setupThemeToggle();
+    renderSkeletons();
+
     try {
         const response = await fetch('data.json');
-        examData = await response.json();
+        app.exams = await response.json();
+
+        initFuse(app.exams);
+        loadFiltersFromUrl();
+        setOnFiltersChangeCallback(handleFiltersChange);
+        handleFiltersChange(getFilters());
+        const runIdle = (fn) => {
+            if ('requestIdleCallback' in window) {
+                window.requestIdleCallback(fn, { timeout: 2000 });
+            } else {
+                setTimeout(fn, 1);
+            }
+        };
+
+        runIdle(() => {
+            initTagFilter();
+            bindFilterEvents();
+            setupInfiniteScroll();
+            setupBackToTop();
+            setupResultsGridHandlers();
+        });
+
+        window.addEventListener('popstate', () => {
+            loadFiltersFromUrl();
+            handleFiltersChange(getFilters(), true);
+        });
+
     } catch (error) {
         console.error('Error loading exam data:', error);
     }
-
-    if (typeof initFuse === 'function') initFuse(examData);
-    if (typeof bindFilterEvents === 'function') bindFilterEvents();
-
-    initTagFilter();
-    loadFiltersFromUrl();
-    setupInfiniteScroll();
-    setupBackToTop();
-    setupThemeToggle();
-    setupEventDelegation();
-    handleFiltersChange(getFilters());
 }
 
 initApp();

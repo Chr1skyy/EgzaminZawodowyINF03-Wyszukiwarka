@@ -9,7 +9,8 @@
         "codeName": "E.14-01-18.06",
         "links": {
             "mainFolder": "/e14/e14_2018_06_01",
-            "examSheet": "e14_2018_06_01.pdf",
+            "examSheet": "e_14_2018_06_01.pdf",
+            "gradingRules": "e_14_2018_06_01_zo.pdf",
             "archive": "zad1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -24,13 +25,58 @@
         "formula": "E.14",
         "year": 2018,
         "session": "Czerwiec",
+        "number": "02",
+        "language": "PHP",
+        "name": "Bar \"Smaczne Jadło\"",
+        "codeName": "E.14-02-18.06",
+        "links": {
+            "mainFolder": "/e14/e14_2018_06_02",
+            "examSheet": "e_14_2018_06_02.pdf",
+            "gradingRules": "e_14_2018_06_02_zo.pdf",
+            "archive": "zad2.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "wstawianie danych do bazy",
+            "formularz"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "E.14",
+        "year": 2018,
+        "session": "Czerwiec",
+        "number": "03",
+        "language": "PHP",
+        "name": "Restauracja \"Kulinaria.pl\"",
+        "codeName": "E.14-03-18.06",
+        "links": {
+            "mainFolder": "/e14/e14_2018_06_03",
+            "examSheet": "e_14_2018_06_03.pdf",
+            "gradingRules": "e_14_2018_06_03_zo.pdf",
+            "archive": "zad3.zip",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "przeskalowanie grafiki",
+            "wyświetlanie danych z bazy"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "E.14",
+        "year": 2018,
+        "session": "Czerwiec",
         "number": "04",
         "language": "PHP",
         "name": "Restauracja \"Kulinaria.pl\"",
         "codeName": "E.14-04-18.06",
         "links": {
             "mainFolder": "/e14/e14_2018_06_04",
-            "examSheet": "e14_2018_06_04.pdf",
+            "examSheet": "e_14_2018_06_04.pdf",
+            "gradingRules": "e_14_2018_06_04_zo.pdf",
             "archive": "zad4.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -51,7 +97,8 @@
         "codeName": "E.14-05-18.06",
         "links": {
             "mainFolder": "/e14/e14_2018_06_05",
-            "examSheet": "e14_2018_06_05.pdf",
+            "examSheet": "e_14_2018_06_05.pdf",
+            "gradingRules": "e_14_2018_06_05_zo.pdf",
             "archive": "zad5.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -74,7 +121,8 @@
         "codeName": "E.14-06-18.06",
         "links": {
             "mainFolder": "/e14/e14_2018_06_06",
-            "examSheet": "e14_2018_06_06.pdf",
+            "examSheet": "e_14_2018_06_06.pdf",
+            "gradingRules": "e_14_2018_06_06_zo.pdf",
             "archive": "zad6.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -97,7 +145,8 @@
         "codeName": "E.14-01-19.01",
         "links": {
             "mainFolder": "/e14/e14_2019_01_01",
-            "examSheet": "e14_2019_01_01.pdf",
+            "examSheet": "e_14_2019_01_01.pdf",
+            "gradingRules": "e_14_2019_01_01_zo.pdf",
             "archive": "pliki1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -119,7 +168,8 @@
         "codeName": "E.14-02-19.01",
         "links": {
             "mainFolder": "/e14/e14_2019_01_02",
-            "examSheet": "e14_2019_01_02.pdf",
+            "examSheet": "e_14_2019_01_02.pdf",
+            "gradingRules": "e_14_2019_01_02_zo.pdf",
             "archive": "pliki2.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -143,7 +193,8 @@
         "codeName": "E.14-03-19.01",
         "links": {
             "mainFolder": "/e14/e14_2019_01_03",
-            "examSheet": "e14_2019_01_03.pdf",
+            "examSheet": "e_14_2019_01_03.pdf",
+            "gradingRules": "e_14_2019_01_03_zo.pdf",
             "archive": "pliki3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -165,7 +216,8 @@
         "codeName": "E.14-04-19.01",
         "links": {
             "mainFolder": "/e14/e14_2019_01_04",
-            "examSheet": "e14_2019_01_04.pdf",
+            "examSheet": "e_14_2019_01_04.pdf",
+            "gradingRules": "e_14_2019_01_04_zo.pdf",
             "archive": "pliki4.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -189,7 +241,8 @@
         "codeName": "E.14-05-19.01",
         "links": {
             "mainFolder": "/e14/e14_2019_01_05",
-            "examSheet": "e14_2019_01_05.pdf",
+            "examSheet": "e_14_2019_01_05.pdf",
+            "gradingRules": "e_14_2019_01_05_zo.pdf",
             "archive": "pliki5.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -210,7 +263,8 @@
         "codeName": "E.14-06-19.01",
         "links": {
             "mainFolder": "/e14/e14_2019_01_06",
-            "examSheet": "e14_2019_01_06.pdf",
+            "examSheet": "e_14_2019_01_06.pdf",
+            "gradingRules": "e_14_2019_01_06_zo.pdf",
             "archive": "pliki6.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -233,7 +287,8 @@
         "codeName": "E.14-07-19.01",
         "links": {
             "mainFolder": "/e14/e14_2019_01_07",
-            "examSheet": "e14_2019_01_07.pdf",
+            "examSheet": "e_14_2019_01_07.pdf",
+            "gradingRules": "e_14_2019_01_07_zo.pdf",
             "archive": "materialy1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -255,7 +310,8 @@
         "codeName": "E.14-08-19.01",
         "links": {
             "mainFolder": "/e14/e14_2019_01_08",
-            "examSheet": "e14_2019_01_08.pdf",
+            "examSheet": "e_14_2019_01_08.pdf",
+            "gradingRules": "e_14_2019_01_08_zo.pdf",
             "archive": "materialy2.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -277,7 +333,8 @@
         "codeName": "E.14-09-19.01",
         "links": {
             "mainFolder": "/e14/e14_2019_01_09",
-            "examSheet": "e14_2019_01_09.pdf",
+            "examSheet": "e_14_2019_01_09.pdf",
+            "gradingRules": "e_14_2019_01_09_zo.pdf",
             "archive": "materialy3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -298,7 +355,8 @@
         "codeName": "E.14-10-19.01",
         "links": {
             "mainFolder": "/e14/e14_2019_01_10",
-            "examSheet": "e14_2019_01_10.pdf",
+            "examSheet": "e_14_2019_01_10.pdf",
+            "gradingRules": "e_14_2019_01_10_zo.pdf",
             "archive": "materialy4.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -319,7 +377,8 @@
         "codeName": "E.14-11-19.01",
         "links": {
             "mainFolder": "/e14/e14_2019_01_11",
-            "examSheet": "e14_2019_01_11.pdf",
+            "examSheet": "e_14_2019_01_11.pdf",
+            "gradingRules": "e_14_2019_01_11_zo.pdf",
             "archive": "materialy5-6.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -341,7 +400,8 @@
         "codeName": "E.14-12-19.01",
         "links": {
             "mainFolder": "/e14/e14_2019_01_12",
-            "examSheet": "e14_2019_01_12.pdf",
+            "examSheet": "e_14_2019_01_12.pdf",
+            "gradingRules": "e_14_2019_01_12_zo.pdf",
             "archive": "materialy5-6.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -363,7 +423,8 @@
         "codeName": "E.14-01-19.06",
         "links": {
             "mainFolder": "/e14/e14_2019_06_01",
-            "examSheet": "e14_2019_06_01.pdf",
+            "examSheet": "e_14_2019_06_01.pdf",
+            "gradingRules": "e_14_2019_06_01_zo.pdf",
             "archive": "materialy1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -385,7 +446,8 @@
         "codeName": "E.14-02-19.06",
         "links": {
             "mainFolder": "/e14/e14_2019_06_02",
-            "examSheet": "e14_2019_06_02.pdf",
+            "examSheet": "e_14_2019_06_02.pdf",
+            "gradingRules": "e_14_2019_06_02_zo.pdf",
             "archive": "materialy2.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -407,7 +469,8 @@
         "codeName": "E.14-03-19.06",
         "links": {
             "mainFolder": "/e14/e14_2019_06_03",
-            "examSheet": "e14_2019_06_03.pdf",
+            "examSheet": "e_14_2019_06_03.pdf",
+            "gradingRules": "e_14_2019_06_03_zo.pdf",
             "archive": "materialy3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -429,7 +492,8 @@
         "codeName": "E.14-04-19.06",
         "links": {
             "mainFolder": "/e14/e14_2019_06_04",
-            "examSheet": "e14_2019_06_04.pdf",
+            "examSheet": "e_14_2019_06_04.pdf",
+            "gradingRules": "e_14_2019_06_04_zo.pdf",
             "archive": "materialy4.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -451,7 +515,8 @@
         "codeName": "E.14-05-19.06",
         "links": {
             "mainFolder": "/e14/e14_2019_06_05",
-            "examSheet": "e14_2019_06_05.pdf",
+            "examSheet": "e_14_2019_06_05.pdf",
+            "gradingRules": "e_14_2019_06_05_zo.pdf",
             "archive": "materialy5.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -475,7 +540,8 @@
         "codeName": "E.14-06-19.06",
         "links": {
             "mainFolder": "/e14/e14_2019_06_06",
-            "examSheet": "e14_2019_06_06.pdf",
+            "examSheet": "e_14_2019_06_06.pdf",
+            "gradingRules": "e_14_2019_06_06_zo.pdf",
             "archive": "materialy6.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -499,7 +565,8 @@
         "codeName": "E.14-01-20.01-SG",
         "links": {
             "mainFolder": "/e14/e14_2020_01_01",
-            "examSheet": "e14_2020_01_01.pdf",
+            "examSheet": "e_14_2020_01_01_SG.pdf",
+            "gradingRules": "e_14_2020_01_01_SG_zo.pdf",
             "archive": "materialy1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -520,7 +587,8 @@
         "codeName": "E.14-02-20.01-SG",
         "links": {
             "mainFolder": "/e14/e14_2020_01_02",
-            "examSheet": "e14_2020_01_02.pdf",
+            "examSheet": "e_14_2020_01_02_SG.pdf",
+            "gradingRules": "e_14_2020_01_02_SG_zo.pdf",
             "archive": "materialy2.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -543,7 +611,8 @@
         "codeName": "E.14-03-20.01-SG",
         "links": {
             "mainFolder": "/e14/e14_2020_01_03",
-            "examSheet": "e14_2020_01_03.pdf",
+            "examSheet": "e_14_2020_01_03_SG.pdf",
+            "gradingRules": "e_14_2020_01_03_SG_zo.pdf",
             "archive": "materialy3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -567,7 +636,8 @@
         "codeName": "E.14-04-20.01-SG",
         "links": {
             "mainFolder": "/e14/e14_2020_01_04",
-            "examSheet": "e14_2020_01_04.pdf",
+            "examSheet": "e_14_2020_01_04_SG.pdf",
+            "gradingRules": "e_14_2020_01_04_SG_zo.pdf",
             "archive": "materialy4.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -587,7 +657,8 @@
         "codeName": "E.14-01-20.06-SG",
         "links": {
             "mainFolder": "/e14/e14_2020_06_01",
-            "examSheet": "e14_2020_06_01.pdf",
+            "examSheet": "e_14_2020_06_01_SG.pdf",
+            "gradingRules": "e_14_2020_06_01_SG_zo.pdf",
             "archive": "egzamin1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -609,7 +680,8 @@
         "codeName": "E.14-02-20.06-SG",
         "links": {
             "mainFolder": "/e14/e14_2020_06_02",
-            "examSheet": "e14_2020_06_02.pdf",
+            "examSheet": "e_14_2020_06_02_SG.pdf",
+            "gradingRules": "e_14_2020_06_02_SG_zo.pdf",
             "archive": "egzamin2.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -631,7 +703,8 @@
         "codeName": "E.14-03-20.06-SG",
         "links": {
             "mainFolder": "/e14/e14_2020_06_03",
-            "examSheet": "e14_2020_06_03.pdf",
+            "examSheet": "e_14_2020_06_03_SG.pdf",
+            "gradingRules": "e_14_2020_06_03_SG_zo.pdf",
             "archive": "egzamin3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
@@ -654,7 +727,8 @@
         "codeName": "E.14-04-20.06-SG",
         "links": {
             "mainFolder": "/e14/e14_2020_06_04",
-            "examSheet": "e14_2020_06_04.pdf",
+            "examSheet": "e_14_2020_06_04_SG.pdf",
+            "gradingRules": "e_14_2020_06_04_SG_zo.pdf",
             "archive": "egzamin4.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
