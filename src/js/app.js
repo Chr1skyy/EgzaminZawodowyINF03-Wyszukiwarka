@@ -111,7 +111,6 @@ function setupThemeToggle() {
         const current = document.documentElement.getAttribute('data-theme');
         const nextTheme = current === 'dark' ? 'light' : 'dark';
         setTheme(nextTheme);
-        if (window.umami) window.umami.track('Toggle Theme', { theme: nextTheme });
     });
 }
 
@@ -261,6 +260,9 @@ function initTagFilter() {
             setQuery(value);
             searchInput.value = value;
             updateSearchClearBtnVisibility();
+            if (window.umami) {
+                window.umami.track('Filter Tag', { tag: value || 'Wszystkie' });
+            }
         }
     };
 }
@@ -355,6 +357,9 @@ function selectSuggestion(value) {
     if (input) {
         input.value = value;
         setQuery(value);
+        if (value && value.length > 2 && window.umami) {
+            window.umami.track('Search', { query: value });
+        }
         updateSearchClearBtnVisibility();
         hideSuggestions();
     }
@@ -370,10 +375,13 @@ function hideSuggestions() {
 
 const debouncedSearch = window.appUtils.debounce((value) => {
     setQuery(value);
+}, 200);
+
+const debouncedTrackSearch = window.appUtils.debounce((value) => {
     if (value && value.length > 2 && window.umami) {
         window.umami.track('Search', { query: value });
     }
-}, 200);
+}, 1000);
 
 const searchInput = document.getElementById('search-input');
 const searchClearBtn = document.getElementById('search-clear-btn');
@@ -388,6 +396,7 @@ if (searchInput) {
     searchInput.oninput = e => {
         const val = e.target.value;
         debouncedSearch(val);
+        debouncedTrackSearch(val);
         updateSearchClearBtnVisibility();
         renderSuggestions(val);
     };

@@ -13,6 +13,10 @@ function toggleFilter(type, value) {
     const arr = filters[key];
     const idx = arr.indexOf(value);
     if (idx > -1) arr.splice(idx, 1); else arr.push(value);
+    if (window.umami) {
+        const isActive = idx === -1;
+        window.umami.track('Filter Toggle', { type, value, active: isActive });
+    }
     triggerChange();
 }
 
