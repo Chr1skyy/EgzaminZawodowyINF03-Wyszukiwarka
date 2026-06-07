@@ -117,7 +117,8 @@ const runBuild = () => {
   './styles.min.css',
   './app.bundle.min.js',
   './data.json',
-  './favicon.png'
+  './favicon.png',
+  './manifest.json'
 ];`;
             swContent = swContent.replace(devAssetsBlock, prodAssets);
             

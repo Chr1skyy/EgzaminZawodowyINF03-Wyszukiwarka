@@ -12,7 +12,8 @@ const ASSETS = [
   './js/modal.js',
   './js/lib/fuse.basic.min.js',
   './data.json',
-  './favicon.png'
+  './favicon.png',
+  './manifest.json'
 ];
 
 self.addEventListener('install', (event) => {
@@ -25,6 +26,9 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  if (event.request.method !== 'GET') {
+    return;
+  }
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
       const fetchPromise = fetch(event.request).then((networkResponse) => {

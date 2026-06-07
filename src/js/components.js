@@ -105,12 +105,12 @@ const components = {
         const { skipAnimation = false } = options;
         const isCompleted = app.completed.includes(exam.codeName);
         const delay = (index < 12) ? (index % 24) * 0.05 : 0;
-        const priority = index < 6 ? 'fetchpriority="high"' : '';
+        const imgAttributes = index < 6 ? 'fetchpriority="high"' : 'loading="lazy"';
 
         return `
             <article class="exam-card${isCompleted ? ' completed' : ''}${skipAnimation ? ' no-entrance' : ''}" data-exam-id="${exam.codeName}" style="${skipAnimation ? '' : `animation-delay: ${delay}s`}">
                 <div class="exam-thumbnail">
-                    <img src="${window.appUtils.getThumbnailUrl(exam)}" alt="${exam.name}" data-action="open-modal" loading="lazy" ${priority} width="320" height="200" onerror="this.onerror=null;this.parentElement.replaceChild(Object.assign(document.createElement('div'),{className:'no-thumbnail',textContent:'Brak miniatury'}),this)">
+                    <img src="${window.appUtils.getThumbnailUrl(exam)}" alt="${exam.name}" data-action="open-modal" ${imgAttributes} width="320" height="200" onerror="this.onerror=null;this.parentElement.replaceChild(Object.assign(document.createElement('div'),{className:'no-thumbnail',textContent:'Brak miniatury'}),this)">
                     <div class="thumbnail-overlay" data-action="open-modal" role="button" tabindex="0" aria-label="Pokaż szczegóły i obrazek egzaminu"
                         data-umami-event="View exam modal" 
                         data-umami-event-exam="${exam.codeName}">
