@@ -3346,5 +3346,30 @@
             "modyfikacja danych skryptem"
         ],
         "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Czerwiec",
+        "number": "05",
+        "language": "PHP",
+        "name": "Sprzedaż antyków",
+        "codeName": "INF.03-05-26.06-SG",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_05",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki5.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "kadrowanie grafiki",
+            "przeskalowanie grafiki",
+            "wyświetlanie danych z bazy",
+            "wstawianie danych do bazy",
+            "formularz"
+        ],
+        "difficulty": "Medium"
     }
 ]
