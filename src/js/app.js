@@ -578,7 +578,7 @@ function repositionSearchInput() {
 
     if (!searchContainer || !headerContainer || !mainSearchSection) return;
 
-    if (window.innerWidth >= 800) {
+    if (window.innerWidth >= 768) {
         if (searchContainer.parentElement !== headerContainer) {
             headerContainer.appendChild(searchContainer);
         }
