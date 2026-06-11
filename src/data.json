@@ -3252,5 +3252,99 @@
             "tworzenie elementów skryptem"
         ],
         "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Czerwiec",
+        "number": "01",
+        "language": "PHP",
+        "name": "Zwiedzaj Islandię",
+        "codeName": "INF.03-01-26.06-SG",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_01",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "rozwiazanie",
+            "solutionZIP": ""
+        },
+        "tags": [
+            "wyświetlanie danych z bazy",
+            "efekty przejścia CSS",
+            "przekazywanie argumentu w pasku adresu $_GET"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Czerwiec",
+        "number": "02",
+        "language": "PHP",
+        "name": "Łowcy wodospadów",
+        "codeName": "INF.03-02-26.06-SG",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_02",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "rozwiazanie",
+            "solutionZIP": ""
+        },
+        "tags": [
+            "kwerenda tworząca widok (perspektywę)",
+            "wyświetlanie danych z bazy",
+            "wstawianie danych do bazy",
+            "przeskalowanie grafiki",
+            "formularz",
+            "przekazywanie argumentu w pasku adresu $_GET"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Czerwiec",
+        "number": "03",
+        "language": "JS",
+        "name": "Sklep meblowy",
+        "codeName": "INF.03-03-26.06-SG",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_03",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+        ],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": "Czerwiec",
+        "number": "04",
+        "language": "JS/PHP",
+        "name": "Rezerwacje wycieczek",
+        "codeName": "INF.03-04-26.06-SG",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_04",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki4.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "modyfikacja grafiki",
+            "przeskalowanie grafiki",
+            "galeria zdjęć",
+            "formularz",
+            "modyfikacja danych skryptem"
+        ],
+        "difficulty": "Medium"
     }
 ]
