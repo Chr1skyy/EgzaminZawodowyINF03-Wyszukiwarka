@@ -52,7 +52,6 @@ const runBuild = () => {
 
     // 2. Łączenie i minifikacja JS
     const jsFiles = [
-        'js/lib/fuse.basic.min.js',
         'js/utils.js',
         'js/components.js',
         'js/storage.js',
@@ -66,20 +65,20 @@ const runBuild = () => {
     fs.writeFileSync(path.join(DIST, 'app.bundle.js'), jsContent, 'utf-8');
 
     try {
-        execSync(`npx -y terser "${path.join(DIST, 'app.bundle.js')}" -o "${path.join(DIST, 'app.bundle.min.js')}" --compress --mangle`, { stdio: 'inherit' });
+        execSync(`npx -y esbuild "${path.join(DIST, 'app.bundle.js')}" --minify --outfile="${path.join(DIST, 'app.bundle.min.js')}"`, { stdio: 'inherit' });
         fs.unlinkSync(path.join(DIST, 'app.bundle.js')); // Oczyszczenie wersji niezminifikowanej
         console.log(`✅ JS minified`);
     } catch (e) {
-        console.log('⚠️ terser fallback or error:', e.message);
+        console.log('⚠️ esbuild JS error:', e.message);
     }
 
     // 3. Minifikacja CSS
     try {
         console.log('🎨 Minifying CSS...');
-        execSync(`npx -y clean-css-cli -o "${path.join(DIST, 'styles.min.css')}" "${path.join(SRC, 'css/styles.css')}"`, { stdio: 'inherit' });
-        console.log(`✅ CSS minified`);
+        execSync(`npx -y esbuild "${path.join(SRC, 'css/styles.css')}" --minify --outfile="${path.join(DIST, 'styles.min.css')}"`, { stdio: 'inherit' });
+        console.log(`✅ CSS minified via esbuild`);
     } catch (e) {
-        console.log('⚠️ clean-css-cli fallback or error:', e.message);
+        console.log('⚠️ esbuild CSS error:', e.message);
     }
 
     // 4. Minifikacja JSON
@@ -142,7 +141,7 @@ const runBuild = () => {
         html = html.replace('<link rel="stylesheet" href="css/styles.css">', '<link rel="stylesheet" href="styles.min.css">');
 
         // Zastąpienie wielu tagów script jednym połączonym bundle
-        const jsBlockRegex = /<script defer src="js\/lib\/fuse\.basic\.min\.js"><\/script>[\s\S]*?<script defer src="js\/modal\.js"><\/script>/;
+        const jsBlockRegex = /<script defer src="js\/utils\.js"><\/script>[\s\S]*?<script defer src="js\/modal\.js"><\/script>/;
         html = html.replace(jsBlockRegex, '<script defer src="app.bundle.min.js"></script>');
 
         fs.writeFileSync(path.join(DIST, 'index.html'), html, 'utf-8');

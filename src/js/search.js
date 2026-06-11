@@ -1,20 +1,4 @@
-let fuse;
-
-function initFuse(data) {
-    const options = {
-        includeScore: true,
-        threshold: 0.3,
-        ignoreLocation: true,
-        keys: [
-            { name: 'name', weight: 0.6 },
-            { name: 'tags', weight: 0.4 }
-        ]
-    };
-    fuse = new Fuse(data, options);
-}
-
 const normalizeString = window.appUtils.normalizeString;
-const SESSIONS = ['styczen', 'czerwiec'];
 
 function searchExams(data, filters, completedExams = []) {
     let results = data;
@@ -38,7 +22,9 @@ function searchExams(data, filters, completedExams = []) {
             words.forEach(word => {
                 const normWord = normalizeString(word);
                 const isYear = /^\d{4}$/.test(word);
-                const isSession = SESSIONS.includes(normWord);
+                
+                const sessionNames = Object.values(window.appUtils.SESSION_NAMES).map(name => normalizeString(name));
+                const isSession = sessionNames.includes(normWord);
 
                 if (isYear || isSession) {
                     filteredResults = filteredResults.filter(item => {
@@ -58,12 +44,13 @@ function searchExams(data, filters, completedExams = []) {
 
                     if (exactMatches.length > 0) {
                         filteredResults = filteredResults.filter(item => exactMatches.includes(item));
-                    } else if (fuse) {
-                        const wordResults = fuse.search(word);
-                        const wordItems = wordResults.map(r => r.item);
-                        filteredResults = filteredResults.filter(item => wordItems.includes(item));
                     } else {
-                        filteredResults = [];
+                        const partialMatches = data.filter(item =>
+                            normalizeString(item.codeName).includes(normWord) ||
+                            item.tags?.some(t => normalizeString(t).includes(normWord)) ||
+                            normalizeString(item.name).includes(normWord)
+                        );
+                        filteredResults = filteredResults.filter(item => partialMatches.includes(item));
                     }
                 }
             });

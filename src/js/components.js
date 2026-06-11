@@ -38,19 +38,32 @@ const components = {
     },
 
 
-    createTagList: (exam, hideControls = false) => {
+    createTagList: (exam, limit = 4) => {
         if (!exam.tags?.length) return '';
-        const isExpanded = app.tags.has(exam.codeName);
-        const visibleTags = (isExpanded || hideControls) ? exam.tags : exam.tags.slice(0, 4);
-        const hasMore = exam.tags.length > 4 && !hideControls;
+
+        const tagCounts = window.appTagCounts || {};
+        const sortedTags = [...exam.tags].sort((a, b) => {
+            const countA = tagCounts[a] || 0;
+            const countB = tagCounts[b] || 0;
+            return countA - countB;
+        });
+
+        let tagsToDisplay = sortedTags;
+        let hiddenCount = 0;
+        let hiddenTags = [];
+
+        if (limit && sortedTags.length > limit) {
+            tagsToDisplay = sortedTags.slice(0, limit);
+            hiddenTags = sortedTags.slice(limit);
+            hiddenCount = hiddenTags.length;
+        }
 
         return `
             <div class="exam-tags">
                 <span aria-hidden="true">🏷️</span>
                 <div class="exam-tags-list">
-                    ${visibleTags.map(tag => `<span class="exam-tag">${tag}</span>`).join('')}
-                    ${!isExpanded && hasMore ? `<span class="exam-tag-expand" data-exam-id="${exam.codeName}" role="button" tabindex="0" aria-label="Pokaż więcej tagów">+${exam.tags.length - 4}</span>` : ''}
-                    ${isExpanded && hasMore ? `<span class="exam-tag-collapse" data-exam-id="${exam.codeName}" role="button" tabindex="0" aria-label="Zwiń listę tagów" title="Zwiń tagi">Zwiń</span>` : ''}
+                    ${tagsToDisplay.map(tag => `<span class="exam-tag">${tag}</span>`).join('')}
+                    ${hiddenCount > 0 ? `<span class="exam-tag-more" data-action="open-modal" role="button" tabindex="0" title="Kliknij, aby zobaczyć wszystkie. Pozostałe: ${hiddenTags.join(', ')}">+${hiddenCount}</span>` : ''}
                 </div>
             </div>
         `;
@@ -161,7 +174,7 @@ const components = {
                     ${components.createAllBadges(exam)}
                 </div>
             </div>
-            ${components.createTagList(exam, true)}
+            ${components.createTagList(exam, 0)}
             <div class="modal-links">
                 ${components.createLinkButtons(exam)}
             </div>

@@ -10,7 +10,6 @@ const ASSETS = [
   './js/storage.js',
   './js/utils.js',
   './js/modal.js',
-  './js/lib/fuse.basic.min.js',
   './data.json',
   './favicon.png',
   './manifest.json'

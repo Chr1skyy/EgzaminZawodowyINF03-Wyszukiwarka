@@ -9,7 +9,6 @@ const app = {
     filtered: [],
     completed: getCompletedExams(),
     visible: CARDS_PER_PAGE,
-    tags: new Set(),
     loadMoreObserver: null
 }
 
@@ -99,18 +98,11 @@ function setupThemeToggle() {
     const btn = document.getElementById('toggle-theme');
     if (!btn) return;
 
-    const setTheme = (theme) => {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-    };
-
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    setTheme(savedTheme);
-
     btn.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme');
+        const current = document.documentElement.getAttribute('data-theme') || 'dark';
         const nextTheme = current === 'dark' ? 'light' : 'dark';
-        setTheme(nextTheme);
+        document.documentElement.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('theme', nextTheme);
     });
 }
 
@@ -142,24 +134,6 @@ function setupResultsGridHandlers() {
         if (target.closest('[data-action="copy-code"]')) {
             const btn = target.closest('[data-action="copy-code"]');
             window.appUtils.copyToClipboard(btn.dataset.code, btn);
-            return;
-        }
-
-        // Rozwijanie tagów
-        if (target.closest('.exam-tag-expand')) {
-            const btn = target.closest('.exam-tag-expand');
-            const examId = btn.dataset.examId;
-            app.tags.add(examId);
-            renderResults(true); // Pomiń animację przy rozwijaniu tagów
-            return;
-        }
-
-        // Zwijanie tagów
-        if (target.closest('.exam-tag-collapse')) {
-            const btn = target.closest('.exam-tag-collapse');
-            const examId = btn.dataset.examId;
-            app.tags.delete(examId);
-            renderResults(true); // Pomiń animację przy zwijaniu tagów
             return;
         }
     });
@@ -196,7 +170,6 @@ function updateTagFilterOptions(filts) {
     const dropdown = document.querySelector('#custom-tag-select .custom-select-dropdown');
     if (!dropdown) return;
 
-    // Filter exams by all criteria EXCEPT the search query/tag itself to find possible tag combinations
     const filtersWithoutQuery = {
         ...filts,
         query: ''
@@ -236,13 +209,11 @@ function handleFiltersChange(filts, skipAnimation = false) {
     updateResultsCount();
     updateUrlFromFilters(filts);
 
-    // Sync/Reset tag select based on query
     const btnText = document.querySelector('#custom-tag-select .custom-select-text');
     if (btnText) {
         if (!filts.query) {
             btnText.textContent = 'Wszystkie tagi';
         } else {
-            // Find if there is an exact tag match in exams database
             const hasExactTag = app.exams.some(ex => ex.tags?.some(t => t.toLowerCase() === filts.query.toLowerCase()));
             btnText.textContent = hasExactTag ? filts.query : 'Wszystkie tagi';
         }
@@ -258,7 +229,6 @@ function initTagFilter() {
     const button = customSelectWrapper.querySelector('.custom-select-button');
     const dropdown = customSelectWrapper.querySelector('.custom-select-dropdown');
 
-    // Populate initial dropdown options based on current filter states
     updateTagFilterOptions(getFilters());
 
     button.onclick = () => {
@@ -628,9 +598,14 @@ async function initApp() {
     try {
         const response = await fetch('data.json');
         app.exams = await response.json();
+        window.appTagCounts = {};
+        app.exams.forEach(exam => {
+            exam.tags?.forEach(tag => {
+                window.appTagCounts[tag] = (window.appTagCounts[tag] || 0) + 1;
+            });
+        });
 
         renderDynamicFilters();
-        initFuse(app.exams);
         loadFiltersFromUrl();
         setOnFiltersChangeCallback(handleFiltersChange);
         handleFiltersChange(getFilters());

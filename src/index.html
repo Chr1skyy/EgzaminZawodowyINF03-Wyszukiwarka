@@ -2,6 +2,9 @@
 <html lang="pl" data-theme="dark">
 
 <head>
+    <script>
+        document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arkusze INF.03, EE.09, E.14 - Wyszukiwarka i rozwiązania</title>
@@ -264,7 +267,6 @@
             </svg>
         </button>
     </div>
-    <script defer src="js/lib/fuse.basic.min.js"></script>
     <script defer src="js/utils.js"></script>
     <script defer src="js/components.js"></script>
     <script defer src="js/storage.js"></script>

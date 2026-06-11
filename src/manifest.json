@@ -1,7 +1,7 @@
 {
-  "name": "Wyszukiwarka Egzaminów Zawodowych",
-  "short_name": "EZINF",
-  "description": "Wyszukiwarka arkuszy egzaminacyjnych INF.03, EE.09, E.14",
+  "name": "EZINF.IT - Wyszukiwarka i rozwiązania INF.03, EE.09, E.14",
+  "short_name": "EZINF.IT",
+  "description": "Wyszukiwarka i rozwiązania arkuszy egzaminacyjnych INF.03, EE.09, E.14",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#111827",
