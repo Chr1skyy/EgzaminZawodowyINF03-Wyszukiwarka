@@ -1,21 +1,26 @@
-let filters = { query: '', formulas: [], difficulties: [], languages: [], hideCompleted: false };
+let filters = { query: '', formulas: [], difficulties: [], languages: [], sessions: [], hideCompleted: false };
 let onFiltersChange = null;
 
 function setOnFiltersChangeCallback(cb) { onFiltersChange = cb; }
 function getFilters() { return { ...filters }; }
 function setQuery(q) { filters.query = q; triggerChange(); }
 function setFilters(newFilters) {
-    filters = { ...newFilters, formulas: [...newFilters.formulas], difficulties: [...newFilters.difficulties], languages: [...newFilters.languages] };
+    filters = { 
+        ...newFilters, 
+        formulas: [...newFilters.formulas], 
+        difficulties: [...newFilters.difficulties], 
+        languages: [...newFilters.languages],
+        sessions: [...(newFilters.sessions || [])]
+    };
 }
 function toggleFilter(type, value) {
-    const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas' };
+    const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas', 'session': 'sessions' };
     const key = keyMap[type] || type;
     const arr = filters[key];
     const idx = arr.indexOf(value);
     if (idx > -1) arr.splice(idx, 1); else arr.push(value);
     if (window.umami) {
-        const isActive = idx === -1;
-        window.umami.track('Filter Toggle', { type, value, active: isActive });
+        window.umami.track('Filter Toggle', { type, value });
     }
     triggerChange();
 }
@@ -25,7 +30,7 @@ function triggerChange() {
 }
 
 function clearFilters() {
-    filters = { query: '', formulas: [], difficulties: [], languages: [], hideCompleted: false };
+    filters = { query: '', formulas: [], difficulties: [], languages: [], sessions: [], hideCompleted: false };
     document.querySelectorAll('.filter-btn.active, .hide-completed-btn.active').forEach(btn => {
         btn.classList.remove('active');
         btn.setAttribute('aria-pressed', 'false');

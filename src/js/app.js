@@ -192,32 +192,19 @@ function updateResultsCount() {
     }
 }
 
-function handleFiltersChange(filts, skipAnimation = false) {
-    app.filtered = searchExams(app.exams, filts, app.completed);
-    app.visible = CARDS_PER_PAGE;
-    renderResults(skipAnimation);
-    updateResultsCount();
-    updateUrlFromFilters(filts);
+function updateTagFilterOptions(filts) {
+    const dropdown = document.querySelector('#custom-tag-select .custom-select-dropdown');
+    if (!dropdown) return;
 
-    // Reset tag select if query was cleared
-    if (!filts.query) {
-        const customBtnText = document.querySelector('#custom-tag-select .custom-select-text');
-        if (customBtnText) customBtnText.textContent = 'Wszystkie tagi';
-        document.querySelectorAll('#custom-tag-select .custom-select-option').forEach(o => o.classList.remove('selected'));
-        const defaultTagBtn = document.querySelector('#custom-tag-select .custom-select-option[data-value=""]');
-        if (defaultTagBtn) defaultTagBtn.classList.add('selected');
-    }
-}
-
-function initTagFilter() {
-    const customSelectWrapper = document.getElementById('custom-tag-select');
-    if (!customSelectWrapper) return;
-
-    const button = customSelectWrapper.querySelector('.custom-select-button');
-    const dropdown = customSelectWrapper.querySelector('.custom-select-dropdown');
+    // Filter exams by all criteria EXCEPT the search query/tag itself to find possible tag combinations
+    const filtersWithoutQuery = {
+        ...filts,
+        query: ''
+    };
+    const baseFiltered = searchExams(app.exams, filtersWithoutQuery, app.completed);
 
     const tagCounts = {};
-    app.exams.forEach(exam => {
+    baseFiltered.forEach(exam => {
         exam.tags?.forEach(tag => {
             tagCounts[tag] = (tagCounts[tag] || 0) + 1;
         });
@@ -228,13 +215,51 @@ function initTagFilter() {
         return a.localeCompare(b, 'pl');
     });
 
-    dropdown.innerHTML = `<div class="custom-select-option selected" role="option" aria-selected="true" data-value="">Wszystkie tagi</div>` + 
-        sortedTags.map(tag => `
-            <div class="custom-select-option" role="option" aria-selected="false" data-value="${tag}">
-                <span>${tag}</span>
-                <span class="custom-select-tag-count">${tagCounts[tag]}</span>
-            </div>
-        `).join('');
+    const currentQuery = (filts.query || '').trim();
+
+    dropdown.innerHTML = `<div class="custom-select-option ${currentQuery === '' ? 'selected' : ''}" role="option" aria-selected="${currentQuery === ''}" data-value="">Wszystkie tagi</div>` + 
+        sortedTags.map(tag => {
+            const isSelected = tag.toLowerCase() === currentQuery.toLowerCase();
+            return `
+                <div class="custom-select-option ${isSelected ? 'selected' : ''}" role="option" aria-selected="${isSelected}" data-value="${tag}">
+                    <span>${tag}</span>
+                    <span class="custom-select-tag-count">${tagCounts[tag]}</span>
+                </div>
+            `;
+        }).join('');
+}
+
+function handleFiltersChange(filts, skipAnimation = false) {
+    app.filtered = searchExams(app.exams, filts, app.completed);
+    app.visible = CARDS_PER_PAGE;
+    renderResults(skipAnimation);
+    updateResultsCount();
+    updateUrlFromFilters(filts);
+
+    // Sync/Reset tag select based on query
+    const btnText = document.querySelector('#custom-tag-select .custom-select-text');
+    if (btnText) {
+        if (!filts.query) {
+            btnText.textContent = 'Wszystkie tagi';
+        } else {
+            // Find if there is an exact tag match in exams database
+            const hasExactTag = app.exams.some(ex => ex.tags?.some(t => t.toLowerCase() === filts.query.toLowerCase()));
+            btnText.textContent = hasExactTag ? filts.query : 'Wszystkie tagi';
+        }
+    }
+
+    updateTagFilterOptions(filts);
+}
+
+function initTagFilter() {
+    const customSelectWrapper = document.getElementById('custom-tag-select');
+    if (!customSelectWrapper) return;
+
+    const button = customSelectWrapper.querySelector('.custom-select-button');
+    const dropdown = customSelectWrapper.querySelector('.custom-select-dropdown');
+
+    // Populate initial dropdown options based on current filter states
+    updateTagFilterOptions(getFilters());
 
     button.onclick = () => {
         dropdown.classList.toggle('show');
@@ -282,10 +307,13 @@ function renderSuggestions(query) {
     const suggestions = [];
     const maxSuggestions = 15;
 
+    const normalizedQuery = window.appUtils.normalizeString(query);
+
     app.exams.forEach(exam => {
-        const queryLower = query.toLowerCase();
-        if (exam.codeName.toLowerCase().includes(queryLower) || 
-            exam.name.toLowerCase().includes(queryLower)) {
+        const normalizedCode = window.appUtils.normalizeString(exam.codeName);
+        const normalizedName = window.appUtils.normalizeString(exam.name);
+        if (normalizedCode.includes(normalizedQuery) || 
+            normalizedName.includes(normalizedQuery)) {
             suggestions.push({
                 type: 'exam',
                 title: exam.name,
@@ -300,7 +328,8 @@ function renderSuggestions(query) {
     const allTags = new Set();
     app.exams.forEach(ex => ex.tags?.forEach(t => allTags.add(t)));
     allTags.forEach(tag => {
-        if (tag.toLowerCase().includes(query.toLowerCase())) {
+        const normalizedTag = window.appUtils.normalizeString(tag);
+        if (normalizedTag.includes(normalizedQuery)) {
             suggestions.push({
                 type: 'tag',
                 title: tag,
@@ -330,7 +359,7 @@ function renderSuggestions(query) {
     container.innerHTML = uniqueSuggestions.map((s, i) => `
         <div class="suggestion-item" data-index="${i}" data-value="${s.value}">
             <div class="suggestion-icon">
-                ${s.thumb ? `<img src="${s.thumb}" alt="" class="suggestion-thumb">` : (s.type === 'exam' ? '📄' : '🏷️')}
+                ${s.thumb ? `<img src="${s.thumb}" alt="" class="suggestion-thumb" onerror="this.onerror=null; this.parentElement.innerHTML='🖼️';">` : (s.type === 'exam' ? '📄' : '🏷️')}
             </div>
             <div class="suggestion-content">
                 <div class="suggestion-header-row">
@@ -348,8 +377,36 @@ function renderSuggestions(query) {
 
 function highlightText(text, query) {
     if (!query) return text;
-    const regex = new RegExp(`(${query})`, 'gi');
-    return text.replace(regex, '<span class="suggestion-highlight">$1</span>');
+    
+    const map = {
+        'a': '[aą]',
+        'c': '[cć]',
+        'e': '[eę]',
+        'l': '[lł]',
+        'n': '[nń]',
+        'o': '[oó]',
+        's': '[sś]',
+        'z': '[zźż]'
+    };
+    
+    const normalized = window.appUtils.normalizeString(query);
+    let pattern = '';
+    for (let i = 0; i < normalized.length; i++) {
+        const char = normalized[i];
+        if ('[\\^$.|?*+()'.includes(char)) {
+            pattern += '\\' + char;
+        } else {
+            pattern += map[char] || char;
+        }
+    }
+    
+    try {
+        const regex = new RegExp(`(${pattern})`, 'gi');
+        return text.replace(regex, '<span class="suggestion-highlight">$1</span>');
+    } catch (e) {
+        const fallbackRegex = new RegExp(`(${query})`, 'gi');
+        return text.replace(fallbackRegex, '<span class="suggestion-highlight">$1</span>');
+    }
 }
 
 function selectSuggestion(value) {
@@ -467,6 +524,7 @@ function updateUrlFromFilters(filts) {
     if (filts.formulas.length) params.set('formula', filts.formulas.join(','));
     if (filts.difficulties.length) params.set('difficulty', filts.difficulties.join(','));
     if (filts.languages.length) params.set('language', filts.languages.join(','));
+    if (filts.sessions && filts.sessions.length) params.set('session', filts.sessions.join(','));
     if (filts.hideCompleted) params.set('hideCompleted', '1');
 
     const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
@@ -480,6 +538,7 @@ function loadFiltersFromUrl() {
         formulas: params.get('formula') ? params.get('formula').split(',') : [],
         difficulties: params.get('difficulty') ? params.get('difficulty').split(',') : [],
         languages: params.get('language') ? params.get('language').split(',') : [],
+        sessions: params.get('session') ? params.get('session').split(',') : [],
         hideCompleted: params.get('hideCompleted') === '1'
     };
     setFilters(newFilters);
@@ -489,7 +548,7 @@ function loadFiltersFromUrl() {
     document.querySelectorAll('.filter-btn').forEach(btn => {
         const type = btn.dataset.filter;
         const val = btn.dataset.value;
-        const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas' };
+        const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas', 'session': 'sessions' };
         const key = keyMap[type] || type;
         const isActive = newFilters[key].includes(val);
         btn.classList.toggle('active', isActive);
@@ -508,14 +567,69 @@ function renderSkeletons() {
     }
 }
 
+function renderDynamicFilters() {
+    const languages = new Set();
+    const sessions = new Set();
+    const langCounts = {};
+
+    app.exams.forEach(exam => {
+        if (exam.language) {
+            languages.add(exam.language);
+            langCounts[exam.language] = (langCounts[exam.language] || 0) + 1;
+        }
+        if (exam.session) sessions.add(exam.session);
+    });
+
+    const sortedLanguages = Array.from(languages).sort((a, b) => langCounts[b] - langCounts[a]);
+    const sortedSessions = Array.from(sessions).sort((a, b) => a - b);
+
+    const langContainer = document.getElementById('language-filters');
+    if (langContainer) {
+        langContainer.innerHTML = sortedLanguages.map(lang => {
+            const cleanLang = lang.toLowerCase().replace('+', '').replace('/', '');
+            return `<button class="filter-btn language-${cleanLang}" data-filter="language" data-value="${lang}">${lang}</button>`;
+        }).join('');
+    }
+
+    const sessionContainer = document.getElementById('session-filters');
+    if (sessionContainer) {
+        sessionContainer.innerHTML = sortedSessions.map(session => {
+            const sessionName = window.appUtils.SESSION_NAMES[session] || session;
+            const cleanSession = sessionName.toLowerCase().replace('ć', 'c').replace('ń', 'n');
+            return `<button class="filter-btn session-${cleanSession}" data-filter="session" data-value="${session}">${sessionName}</button>`;
+        }).join('');
+    }
+}
+
+function repositionSearchInput() {
+    const searchContainer = document.querySelector('.search-container');
+    const headerContainer = document.querySelector('.header-search-container');
+    const mainSearchSection = document.querySelector('.search-section');
+
+    if (!searchContainer || !headerContainer || !mainSearchSection) return;
+
+    if (window.innerWidth >= 800) {
+        if (searchContainer.parentElement !== headerContainer) {
+            headerContainer.appendChild(searchContainer);
+        }
+    } else {
+        if (searchContainer.parentElement !== mainSearchSection) {
+            mainSearchSection.appendChild(searchContainer);
+        }
+    }
+}
+
 async function initApp() {
     setupThemeToggle();
+    repositionSearchInput();
+    window.addEventListener('resize', repositionSearchInput);
     renderSkeletons();
 
     try {
         const response = await fetch('data.json');
         app.exams = await response.json();
 
+        renderDynamicFilters();
         initFuse(app.exams);
         loadFiltersFromUrl();
         setOnFiltersChangeCallback(handleFiltersChange);

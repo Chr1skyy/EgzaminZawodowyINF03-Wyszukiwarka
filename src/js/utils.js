@@ -58,6 +58,20 @@ const utils = {
         const suffix = large ? '' : '-300px';
         return `${utils.CDN_BASE}/thumbnails/${formulaPath}/${exam.codeName}${suffix}.webp`;
     },
+    /**
+     * Normalizuje znaki (usuwa polskie diakrytyki)
+     */
+    normalizeString: (str) => {
+        if (!str) return '';
+        return str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ł/g, "l");
+    },
+    /**
+     * Słownik mapujący numery sesji na nazwy wyświetlane
+     */
+    SESSION_NAMES: {
+        1: "Styczeń",
+        6: "Czerwiec"
+    },
 };
 
 window.appUtils = utils;

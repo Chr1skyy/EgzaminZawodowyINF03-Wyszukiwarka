@@ -13,7 +13,7 @@ function initFuse(data) {
     fuse = new Fuse(data, options);
 }
 
-const normalizeString = (str) => str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ł/g, "l");
+const normalizeString = window.appUtils.normalizeString;
 const SESSIONS = ['styczen', 'czerwiec'];
 
 function searchExams(data, filters, completedExams = []) {
@@ -21,14 +21,15 @@ function searchExams(data, filters, completedExams = []) {
 
     if (filters.query && filters.query.trim() !== '') {
         const query = filters.query.trim().toLowerCase();
+        const normalizedQuery = normalizeString(query);
         
-        const isExactCode = data.some(item => item.codeName.toLowerCase() === query);
-        const isExactTag = data.some(item => item.tags?.some(t => normalizeString(t) === normalizeString(query)));
+        const isExactCode = data.some(item => normalizeString(item.codeName) === normalizedQuery);
+        const isExactTag = data.some(item => item.tags?.some(t => normalizeString(t) === normalizedQuery));
         
         if (isExactCode || isExactTag) {
             results = data.filter(item => 
-                item.codeName.toLowerCase() === query || 
-                item.tags?.some(t => normalizeString(t) === normalizeString(query))
+                normalizeString(item.codeName) === normalizedQuery || 
+                item.tags?.some(t => normalizeString(t) === normalizedQuery)
             );
         } else {
             const words = query.split(/\s+/);
@@ -42,14 +43,17 @@ function searchExams(data, filters, completedExams = []) {
                 if (isYear || isSession) {
                     filteredResults = filteredResults.filter(item => {
                         if (isYear) return item.year.toString() === word;
-                        if (isSession) return normalizeString(item.session).includes(normWord);
+                        if (isSession) {
+                            const sessionName = window.appUtils.SESSION_NAMES[item.session] || '';
+                            return normalizeString(sessionName).includes(normWord);
+                        }
                         return false;
                     });
                 } else {
                     const exactMatches = data.filter(item =>
-                        item.codeName.toLowerCase() === word ||
-                        item.tags?.some(t => t.toLowerCase() === word) ||
-                        item.name.toLowerCase().includes(word)
+                        normalizeString(item.codeName) === normWord ||
+                        item.tags?.some(t => normalizeString(t) === normWord) ||
+                        normalizeString(item.name).includes(normWord)
                     );
 
                     if (exactMatches.length > 0) {
@@ -71,6 +75,7 @@ function searchExams(data, filters, completedExams = []) {
         if (filters.formulas.length && !filters.formulas.includes(exam.formula)) return false;
         if (filters.difficulties.length && !filters.difficulties.includes(exam.difficulty)) return false;
         if (filters.languages.length && !filters.languages.includes(exam.language)) return false;
+        if (filters.sessions && filters.sessions.length && !filters.sessions.map(Number).includes(exam.session)) return false;
         return true;
     });
 
@@ -78,9 +83,14 @@ function searchExams(data, filters, completedExams = []) {
         if (b.year !== a.year) {
             return b.year - a.year;
         }
-        if (a.session !== b.session) {
-            const sessionPriority = { "Czerwiec": 0, "Styczeń": 1 };
-            return (sessionPriority[a.session] ?? 2) - (sessionPriority[b.session] ?? 2);
+        if (b.session !== a.session) {
+            return b.session - a.session;
+        }
+        if (a.formula !== b.formula) {
+            const formulaPriority = { "INF.03": 0, "EE.09": 1, "E.14": 2 };
+            const priorityA = formulaPriority[a.formula] ?? 9;
+            const priorityB = formulaPriority[b.formula] ?? 9;
+            return priorityA - priorityB;
         }
         return parseInt(a.number) - parseInt(b.number);
     });

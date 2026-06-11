@@ -125,7 +125,7 @@ const components = {
                     ${components.createExamHeader(exam, { showCode: true })}
                     <div class="exam-metadata">
                         <div class="exam-metadata-item">
-                            <span>📅 Nr ${exam.number} | ${exam.session} ${exam.year}</span>
+                            <span>📅 Nr ${exam.number} | ${window.appUtils.SESSION_NAMES[exam.session] || exam.session} ${exam.year}</span>
                         </div>
                         <div class="exam-metadata-item">
                             ${components.createAllBadges(exam)}
@@ -148,7 +148,7 @@ const components = {
             ${components.createExamHeader(exam, { showCode: false })}
             <div class="exam-metadata">
                 <div class="exam-metadata-item">
-                    <span>📅 Nr ${exam.number} | ${exam.session} ${exam.year}</span>
+                    <span>📅 Nr ${exam.number} | ${window.appUtils.SESSION_NAMES[exam.session] || exam.session} ${exam.year}</span>
                 </div>
                 <div class="exam-metadata-item">
                     <span class="exam-code" title="Kliknij aby skopiować kod" data-action="copy-code" data-code="${exam.codeName}"

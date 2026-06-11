@@ -2,7 +2,7 @@
     {
         "formula": "E.14",
         "year": 2018,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Restauracja \"Wszystkie Smaki\"",
@@ -24,7 +24,7 @@
     {
         "formula": "E.14",
         "year": 2018,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "PHP",
         "name": "Bar \"Smaczne Jadło\"",
@@ -46,7 +46,7 @@
     {
         "formula": "E.14",
         "year": 2018,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Bar \"Smacznie i Miło\"",
@@ -68,7 +68,7 @@
     {
         "formula": "E.14",
         "year": 2018,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "PHP",
         "name": "Restauracja \"Kulinaria.pl\"",
@@ -90,7 +90,7 @@
     {
         "formula": "E.14",
         "year": 2018,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "05",
         "language": "JS",
         "name": "Dom weselny",
@@ -114,7 +114,7 @@
     {
         "formula": "E.14",
         "year": 2018,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "06",
         "language": "JS",
         "name": "Pizzeria",
@@ -138,7 +138,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Filmoteka",
@@ -161,7 +161,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "JS",
         "name": "Formatowanie dokumentów HTML",
@@ -186,7 +186,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "PHP",
         "name": "Baza filmów",
@@ -209,7 +209,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "JS",
         "name": "Hurtownia kawy",
@@ -234,7 +234,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "PHP",
         "name": "Idziemy na grzyby",
@@ -256,7 +256,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "06",
         "language": "PHP",
         "name": "Biuro podróży \"WESOŁA WYPRAWA\"",
@@ -280,7 +280,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "07",
         "language": "PHP",
         "name": "Hurtownia komputerowa - podzespoły",
@@ -303,7 +303,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "08",
         "language": "PHP",
         "name": "Hurtownia komputerowa - podzespoły",
@@ -326,7 +326,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "09",
         "language": "PHP",
         "name": "Atlas zwierząt",
@@ -348,7 +348,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "10",
         "language": "PHP",
         "name": "Drapieżniki i inne",
@@ -370,7 +370,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "11",
         "language": "JS",
         "name": "Zdjęcia psów",
@@ -393,7 +393,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "12",
         "language": "JS",
         "name": "Fotografie zwierząt",
@@ -416,7 +416,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Sklep papierniczy",
@@ -439,7 +439,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "PHP",
         "name": "Hurtownia papiernicza",
@@ -462,7 +462,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Biblioteka Publiczna w Książkowicach",
@@ -485,7 +485,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "PHP",
         "name": "Biblioteka Publiczna w Książkowicach",
@@ -508,7 +508,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "05",
         "language": "JS",
         "name": "Usługi informatyczne",
@@ -533,7 +533,7 @@
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "06",
         "language": "JS",
         "name": "Pogotowie komputerowe",
@@ -558,7 +558,7 @@
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Podzespoły komputerowe",
@@ -580,7 +580,7 @@
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "JS",
         "name": "Fabryka żelków",
@@ -604,7 +604,7 @@
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "JS",
         "name": "Fabryka cukierków",
@@ -629,7 +629,7 @@
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Gromady kręgowców",
@@ -650,7 +650,7 @@
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "JS",
         "name": "Malarz",
@@ -673,7 +673,7 @@
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "PHP",
         "name": "Wynajem pokoi",
@@ -696,7 +696,7 @@
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Moje kwiaty",
@@ -720,7 +720,7 @@
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "JS+PHP",
         "name": "Ozdoby - sklep",
@@ -745,7 +745,7 @@
     {
         "formula": "EE.09",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Portal dla wędkarzy",
@@ -767,7 +767,7 @@
     {
         "formula": "EE.09",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "JS",
         "name": "Stacja paliw",
@@ -789,7 +789,7 @@
     {
         "formula": "EE.09",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Zawody wędkarskie",
@@ -812,7 +812,7 @@
     {
         "formula": "EE.09",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "JS",
         "name": "Pomocnik matematyczny",
@@ -834,7 +834,7 @@
     {
         "formula": "EE.09",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "05",
         "language": "JS",
         "name": "Poznaj Ciągi Liczbowe",
@@ -856,7 +856,7 @@
     {
         "formula": "EE.09",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "06",
         "language": "PHP",
         "name": "Pogotowie Ratunkowe",
@@ -879,7 +879,7 @@
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Wędkuj z nami!",
@@ -901,7 +901,7 @@
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "JS",
         "name": "Witamy na stacji paliw",
@@ -923,7 +923,7 @@
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "PHP",
         "name": "Prognoza pogody dla Poznania",
@@ -945,7 +945,7 @@
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Mój organizer",
@@ -969,7 +969,7 @@
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "PHP",
         "name": "Biuro podróży",
@@ -990,7 +990,7 @@
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Mój kalendarz",
@@ -1014,7 +1014,7 @@
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "JS",
         "name": "Salon kosmetyczny",
@@ -1036,7 +1036,7 @@
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "05",
         "language": "JS",
         "name": "Salon fryzjerski",
@@ -1058,7 +1058,7 @@
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "06",
         "language": "PHP",
         "name": "Witamy w biurze podróży",
@@ -1079,7 +1079,7 @@
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Światowe Rozgrywki Piłkarskie",
@@ -1102,7 +1102,7 @@
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "PHP",
         "name": "Reprezentacja Polski w Piłce Nożnej",
@@ -1125,7 +1125,7 @@
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "PHP",
         "name": "Oblicz swoje BMI",
@@ -1148,7 +1148,7 @@
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Oblicz Twój wskaŁşnik BMI",
@@ -1171,7 +1171,7 @@
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "PHP",
         "name": "Przyloty",
@@ -1194,7 +1194,7 @@
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Styczeń",
+        "session": 1,
         "number": "06",
         "language": "PHP",
         "name": "Odloty z lotniska",
@@ -1217,7 +1217,7 @@
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Portal społecznościowy - moje konto",
@@ -1240,7 +1240,7 @@
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "PHP",
         "name": "Internetowy sklep z eko-warzywami",
@@ -1265,7 +1265,7 @@
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Internetowa wypożyczalnia filmów",
@@ -1289,7 +1289,7 @@
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "PHP",
         "name": "Portal społecznościowy - panel administratora",
@@ -1313,7 +1313,7 @@
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Zgłoszenie na kartę wędkarską",
@@ -1336,7 +1336,7 @@
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "PHP",
         "name": "Prognoza pogody dla Wrocławia",
@@ -1358,7 +1358,7 @@
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "PHP",
         "name": "Dodanie zespołu ratowniczego",
@@ -1381,7 +1381,7 @@
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Forum wielbicieli psów",
@@ -1406,7 +1406,7 @@
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "PHP",
         "name": "Nasze osiedle",
@@ -1430,7 +1430,7 @@
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "06",
         "language": "JS",
         "name": "Konfigurator stylu",
@@ -1452,7 +1452,7 @@
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "07",
         "language": "JS",
         "name": "Galeria miejsc ciekawych",
@@ -1474,7 +1474,7 @@
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Forum miłośników psów",
@@ -1498,7 +1498,7 @@
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "JS",
         "name": "Pomocnik CSS",
@@ -1522,7 +1522,7 @@
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Hurtownia spożywcza - opinie klientów",
@@ -1544,7 +1544,7 @@
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "JS",
         "name": "Sieci komputerowe",
@@ -1566,7 +1566,7 @@
     {
         "formula": "EE.09",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Akta pracownicze",
@@ -1588,7 +1588,7 @@
     {
         "formula": "EE.09",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "JS",
         "name": "Galeria obrazów",
@@ -1611,7 +1611,7 @@
     {
         "formula": "EE.09",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "JS",
         "name": "Gazeta codzienna",
@@ -1633,7 +1633,7 @@
     {
         "formula": "EE.09",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Wizytówki pracowników",
@@ -1656,7 +1656,7 @@
     {
         "formula": "INF.03",
         "year": 2021,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Restauracja \"Wszystkie Smaki\"",
@@ -1678,7 +1678,7 @@
     {
         "formula": "INF.03",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Restauracja \"Wszystkie Smaki\"",
@@ -1700,7 +1700,7 @@
     {
         "formula": "INF.03",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Portal dla wędkarzy",
@@ -1722,7 +1722,7 @@
     {
         "formula": "INF.03",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "JS",
         "name": "Całodobowa stacja paliw",
@@ -1744,7 +1744,7 @@
     {
         "formula": "INF.03",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Zawody polskich wędkarzy",
@@ -1768,7 +1768,7 @@
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "JS",
         "name": "Malowanie pokoi i biur",
@@ -1792,7 +1792,7 @@
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "PHP",
         "name": "Pensjonat pod dobrym humorem",
@@ -1814,7 +1814,7 @@
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "PHP",
         "name": "Grupa Polskich Kwiaciarni",
@@ -1837,7 +1837,7 @@
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Biuro turystyczne",
@@ -1858,7 +1858,7 @@
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "PHP",
         "name": "Organizer: Sierpnień",
@@ -1882,7 +1882,7 @@
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Dzisiejsze promocje naszego sklepu dla uczniów",
@@ -1905,7 +1905,7 @@
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "PHP",
         "name": "Hurtownia szkolna z najlepszymi cenami",
@@ -1929,7 +1929,7 @@
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "PHP",
         "name": "Biblioteka w Książkowicach Wielkich",
@@ -1954,7 +1954,7 @@
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "07",
         "language": "PHP",
         "name": "Biblioteka w Książkowicach Małych",
@@ -1979,7 +1979,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "JS",
         "name": "Usługi informatyczne",
@@ -2004,7 +2004,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "JS",
         "name": "Pogotowie komputerowe",
@@ -2029,7 +2029,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Terminarz",
@@ -2051,7 +2051,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "JS",
         "name": "Usługi kosmetyczne",
@@ -2073,7 +2073,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Styczeń",
+        "session": 1,
         "number": "06",
         "language": "PHP",
         "name": "Biuro podróży",
@@ -2094,7 +2094,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Styczeń",
+        "session": 1,
         "number": "08",
         "language": "JS",
         "name": "Salon fryzjerski",
@@ -2116,7 +2116,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Motocykle - moja pasja",
@@ -2138,7 +2138,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "JS",
         "name": "Chat",
@@ -2163,7 +2163,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Poziomy rzek w województwie dolnośląskim",
@@ -2186,7 +2186,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "PHP",
         "name": "Zdjęcia",
@@ -2211,7 +2211,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "05",
         "language": "PHP",
         "name": "KupAuto! Internetowy komis samochodowy",
@@ -2234,7 +2234,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "06",
         "language": "JS",
         "name": "Formualrz rejestracyjny konferencji \"Nasze Kwiaty\"",
@@ -2258,7 +2258,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "07",
         "language": "PHP",
         "name": "Ważenie pojazdów ciężarowych we Wrocławiu",
@@ -2283,7 +2283,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "08",
         "language": "JS",
         "name": "Zarejestruj się w sklepie",
@@ -2307,7 +2307,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "09",
         "language": "JS",
         "name": "Zwiedzamy Polskę",
@@ -2331,7 +2331,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "10",
         "language": "JS",
         "name": "Nasz zespół",
@@ -2354,7 +2354,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "11",
         "language": "PHP",
         "name": "Hodowla świnek morskich",
@@ -2376,7 +2376,7 @@
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "12",
         "language": "JS",
         "name": "Efekty na obrazach",
@@ -2398,7 +2398,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "JS",
         "name": "Kursy komputerowe",
@@ -2421,7 +2421,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "JS",
         "name": "Montaż paneli podłogowych",
@@ -2444,7 +2444,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "PHP",
         "name": "Kalendarz",
@@ -2467,7 +2467,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Obuwie męskie",
@@ -2489,7 +2489,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "PHP",
         "name": "Firma szkoleniowa",
@@ -2513,7 +2513,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "06",
         "language": "JS",
         "name": "Pozycyjne systemy liczbowe",
@@ -2536,7 +2536,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "07",
         "language": "PHP",
         "name": "Wyszukiwarka miast",
@@ -2560,7 +2560,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "08",
         "language": "PHP",
         "name": "Mieszalnia farb",
@@ -2584,7 +2584,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "09",
         "language": "PHP",
         "name": "Klub zdobywców gór polskich",
@@ -2609,7 +2609,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "10",
         "language": "PHP",
         "name": "Koło szachowe gambit piona",
@@ -2633,7 +2633,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "11",
         "language": "PHP",
         "name": "Konkurs - wolontariat szkolny",
@@ -2657,7 +2657,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "12",
         "language": "PHP",
         "name": "Piekarnia",
@@ -2681,7 +2681,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Ranking gier komputerowych / Gry komputerowe",
@@ -2706,7 +2706,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "JS",
         "name": "Moje zadania / Planer zadań",
@@ -2731,7 +2731,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Biblioteka szkolna \"Wiedzamin\"",
@@ -2755,7 +2755,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "PHP",
         "name": "Firma przewozowa Półdarmo",
@@ -2780,7 +2780,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "05",
         "language": "JS",
         "name": "Fotografia artystyczna",
@@ -2803,7 +2803,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "06",
         "language": "PHP",
         "name": "Biblioteka miejska",
@@ -2828,7 +2828,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "07",
         "language": "PHP",
         "name": "Biuro turystyczne",
@@ -2852,7 +2852,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "08",
         "language": "JS+PHP",
         "name": "Poznaj smoki!",
@@ -2877,7 +2877,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "09",
         "language": "PHP",
         "name": "Malowanie i gipsowanie / Remonty",
@@ -2902,7 +2902,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "10",
         "language": "PHP",
         "name": "Szkolenia i kursy",
@@ -2926,7 +2926,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "11",
         "language": "PHP",
         "name": "Opony",
@@ -2948,7 +2948,7 @@
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "12",
         "language": "PHP",
         "name": "Przychodnia Medica",
@@ -2972,7 +2972,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Konfigurator samochodów",
@@ -2995,7 +2995,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "PHP",
         "name": "Zdrowy bazarek",
@@ -3020,7 +3020,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "JS",
         "name": "Pola figur płaskich",
@@ -3042,7 +3042,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "System informacji dla maturzystów / Matura",
@@ -3064,7 +3064,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "PHP",
         "name": "Zgłoszenia wydarzeń",
@@ -3088,7 +3088,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "06",
         "language": "PHP",
         "name": "Informacja o chorobach w Polsce",
@@ -3111,7 +3111,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "07",
         "language": "PHP",
         "name": "Pogoda w Europie",
@@ -3135,7 +3135,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "08",
         "language": "PHP",
         "name": "Korona gór polskich",
@@ -3161,7 +3161,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "09",
         "language": "JS",
         "name": "Stylizacja paznokci / Twoje wymarzone paznokcie",
@@ -3185,7 +3185,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "10",
         "language": "PHP",
         "name": "Blog kulinarny",
@@ -3208,7 +3208,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "11",
         "language": "PHP",
         "name": "Lista aktorów | KinoTEKA",
@@ -3230,7 +3230,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "12",
         "language": "JS",
         "name": "Studio tatuażu",
@@ -3256,7 +3256,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Zwiedzaj Islandię",
@@ -3279,7 +3279,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "PHP",
         "name": "Łowcy wodospadów",
@@ -3305,7 +3305,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "JS",
         "name": "Sklep meblowy",
@@ -3318,14 +3318,13 @@
             "solution": "",
             "solutionZIP": ""
         },
-        "tags": [
-        ],
+        "tags": [],
         "difficulty": ""
     },
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "JS/PHP",
         "name": "Rezerwacje wycieczek",
@@ -3350,7 +3349,7 @@
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "05",
         "language": "PHP",
         "name": "Sprzedaż antyków",

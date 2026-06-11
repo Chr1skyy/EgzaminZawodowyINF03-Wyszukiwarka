@@ -14,15 +14,22 @@ html {
     --h-hard: 0;
     --h-php: 265;
     --h-js: 50;
+    --h-styczen: 200;
+    --h-czerwiec: 40;
 
     --accent-primary: #3b82f6;
     --accent-secondary: #60a5fa;
     --success: #10b981;
 
-    --lang-jsphp-bg: linear-gradient(90deg, var(--lang-js-bg) 30%, var(--lang-php-bg) 70%);
+    --lang-jsphp-bg: repeating-linear-gradient(-45deg, var(--lang-js-bg), var(--lang-js-bg) 6px, var(--lang-php-bg) 6px, var(--lang-php-bg) 12px);
     --lang-jsphp-text: var(--lang-php-text);
-    --lang-jsphp-border: linear-gradient(90deg, var(--lang-js-border) 30%, var(--lang-php-border) 70%);
-    --lang-jsphp-active: linear-gradient(90deg, var(--lang-js-active) 30%, var(--lang-php-active) 70%);
+    --lang-jsphp-border: repeating-linear-gradient(-45deg, var(--lang-js-border), var(--lang-js-border) 6px, var(--lang-php-border) 6px, var(--lang-php-border) 12px);
+    --lang-jsphp-active: repeating-linear-gradient(-45deg, var(--lang-js-active), var(--lang-js-active) 8px, var(--lang-php-active) 8px, var(--lang-php-active) 16px);
+
+    --lang-jsorphp-bg: linear-gradient(90deg, var(--lang-js-bg) 50%, var(--lang-php-bg) 50%);
+    --lang-jsorphp-text: var(--lang-php-text);
+    --lang-jsorphp-border: linear-gradient(90deg, var(--lang-js-border) 50%, var(--lang-php-border) 50%);
+    --lang-jsorphp-active: linear-gradient(90deg, var(--lang-js-active) 50%, var(--lang-php-active) 50%);
 }
 
 [data-theme="light"] {
@@ -62,6 +69,17 @@ html {
     --lang-js-text: hsl(var(--h-js), 95%, 20%);
     --lang-js-border: hsl(var(--h-js), 80%, 80%);
     --lang-js-active: hsl(var(--h-js), 80%, 45%);
+
+    /* Sesje */
+    --session-styczen-bg: hsl(var(--h-styczen), 85%, 93%);
+    --session-styczen-text: hsl(var(--h-styczen), 80%, 25%);
+    --session-styczen-border: hsl(var(--h-styczen), 70%, 85%);
+    --session-styczen-active: hsl(var(--h-styczen), 75%, 45%);
+
+    --session-czerwiec-bg: hsl(var(--h-czerwiec), 95%, 92%);
+    --session-czerwiec-text: hsl(var(--h-czerwiec), 90%, 25%);
+    --session-czerwiec-border: hsl(var(--h-czerwiec), 85%, 82%);
+    --session-czerwiec-active: hsl(var(--h-czerwiec), 90%, 45%);
 
     /* Linki */
     --link-exam-bg: #dbeafe;
@@ -124,6 +142,17 @@ html {
     --lang-js-text: hsl(var(--h-js), 90%, 75%);
     --lang-js-border: hsla(var(--h-js), 90%, 50%, 0.3);
     --lang-js-active: hsl(var(--h-js), 90%, 60%);
+
+    /* Sesje */
+    --session-styczen-bg: hsla(var(--h-styczen), 80%, 50%, 0.15);
+    --session-styczen-text: hsl(var(--h-styczen), 90%, 75%);
+    --session-styczen-border: hsla(var(--h-styczen), 70%, 50%, 0.3);
+    --session-styczen-active: hsl(var(--h-styczen), 75%, 55%);
+
+    --session-czerwiec-bg: hsla(var(--h-czerwiec), 90%, 50%, 0.15);
+    --session-czerwiec-text: hsl(var(--h-czerwiec), 90%, 75%);
+    --session-czerwiec-border: hsla(var(--h-czerwiec), 80%, 50%, 0.3);
+    --session-czerwiec-active: hsl(var(--h-czerwiec), 90%, 55%);
 
     /* Linki */
     --link-exam-bg: rgba(30, 58, 138, 0.25);
@@ -334,6 +363,22 @@ body {
 /* =========================================
    4. SEARCH SECTION
    ========================================= */
+.header-search-container {
+    display: none;
+    flex: 1;
+    max-width: 32rem;
+    margin: 0 1.5rem;
+}
+
+@media (min-width: 800px) {
+    .header-search-container {
+        display: block;
+    }
+    .search-section {
+        display: none !important;
+    }
+}
+
 .search-section {
     margin-bottom: 1rem;
     position: sticky;
@@ -485,17 +530,53 @@ body {
 }
 
 .filters {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 .filter-section {
-    margin-bottom: 1rem
+    margin-bottom: 0;
 }
 
-.filter-section:last-child {
-    margin-bottom: 0
+@media (min-width: 480px) {
+    .filters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tag-filter-section,
+    .hide-completed-section {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1079px) {
+    .filters {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+    .tag-filter-section {
+        grid-column: span 2;
+    }
+    .hide-completed-section {
+        grid-column: span 2;
+        display: flex;
+        align-items: flex-end;
+    }
+    .hide-completed-btn {
+        width: 100%;
+        height: 2.375rem;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1080px) {
+    .filters {
+        grid-template-columns: 1fr;
+    }
+    .tag-filter-section,
+    .hide-completed-section {
+        grid-column: span 1;
+    }
 }
 
 .filter-section h3 {
@@ -543,6 +624,7 @@ body {
     color: #fff;
     border: 1px solid;
     border-color: var(--btn-active);
+    font-weight: 700;
 }
 
 .filter-btn[data-filter="formula"] {
@@ -555,6 +637,7 @@ body {
 .filter-btn[data-filter="difficulty"],
 .filter-btn[data-filter="language"],
 .filter-btn[data-filter="formula"],
+.filter-btn[data-filter="session"],
 .exam-badge[data-filter="difficulty"],
 .exam-badge[data-filter="language"] {
     --btn-hover-bg: var(--btn-border);
@@ -608,9 +691,38 @@ body {
     --btn-active: var(--lang-jsphp-active);
 }
 
+.filter-btn[data-filter="language"][data-value="JS/PHP"],
+.exam-badge[data-filter="language"][data-value="JS/PHP"] {
+    --btn-bg: var(--lang-jsorphp-bg);
+    --btn-text: var(--lang-jsorphp-text);
+    --btn-border: var(--lang-jsorphp-border);
+    --btn-active: var(--lang-jsorphp-active);
+}
+
 .filter-btn[data-filter="language"][data-value="JS+PHP"].active {
     background: var(--btn-active);
     border-color: var(--lang-php-active);
+}
+
+.filter-btn[data-filter="language"][data-value="JS/PHP"].active {
+    background: var(--btn-active);
+    border-color: var(--lang-php-active);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.filter-btn[data-filter="session"][data-value="1"] {
+    --btn-bg: var(--session-styczen-bg);
+    --btn-text: var(--session-styczen-text);
+    --btn-border: var(--session-styczen-border);
+    --btn-active: var(--session-styczen-active);
+}
+
+.filter-btn[data-filter="session"][data-value="6"] {
+    --btn-bg: var(--session-czerwiec-bg);
+    --btn-text: var(--session-czerwiec-text);
+    --btn-border: var(--session-czerwiec-border);
+    --btn-active: var(--session-czerwiec-active);
 }
 
 .hide-completed-btn {
@@ -1620,6 +1732,22 @@ body {
     object-fit: cover;
     border-radius: 4px;
     border: 1px solid var(--border-primary);
+}
+
+.suggestion-thumb-fallback {
+    width: 40px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-tertiary);
+    color: var(--text-tertiary);
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 1px solid var(--border-primary);
+    user-select: none;
 }
 
 .suggestion-highlight {
