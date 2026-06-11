@@ -3370,5 +3370,30 @@
             "formularz"
         ],
         "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "06",
+        "language": "JS",
+        "name": "Strefa pacjenta",
+        "codeName": "INF.03-06-26.06-SG",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_06",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "rozwiazanie",
+            "solutionZIP": ""
+        },
+        "tags": [
+            "tworzenie użytkownika w bazie",
+            "modyfikacja grafiki",
+            "przeskalowanie grafiki",
+            "operacje na tablicach",
+            "tworzenie elementów skryptem"
+        ],
+        "difficulty": "Medium"
     }
 ]
