@@ -565,7 +565,7 @@ function renderDynamicFilters() {
     if (sessionContainer) {
         sessionContainer.innerHTML = sortedSessions.map(session => {
             const sessionName = window.appUtils.SESSION_NAMES[session] || session;
-            const cleanSession = sessionName.toLowerCase().replace('ć', 'c').replace('ń', 'n');
+            const cleanSession = String(sessionName).toLowerCase().replace('ć', 'c').replace('ń', 'n');
             return `<button class="filter-btn session-${cleanSession}" data-filter="session" data-value="${session}">${sessionName}</button>`;
         }).join('');
     }

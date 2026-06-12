@@ -62,21 +62,29 @@ const runBuild = () => {
     ];
     console.log('📦 Bundling JS...');
     const jsContent = jsFiles.map(f => fs.readFileSync(path.join(SRC, f), 'utf-8')).join('\n;\n');
+    const crypto = require('crypto');
+    const jsHash = crypto.createHash('md5').update(jsContent).digest('hex').slice(0, 8);
+    const jsDestFile = `app.${jsHash}.min.js`;
     fs.writeFileSync(path.join(DIST, 'app.bundle.js'), jsContent, 'utf-8');
 
     try {
-        execSync(`npx -y esbuild "${path.join(DIST, 'app.bundle.js')}" --minify --outfile="${path.join(DIST, 'app.bundle.min.js')}"`, { stdio: 'inherit' });
+        execSync(`npx -y esbuild "${path.join(DIST, 'app.bundle.js')}" --minify --outfile="${path.join(DIST, jsDestFile)}"`, { stdio: 'inherit' });
         fs.unlinkSync(path.join(DIST, 'app.bundle.js')); // Oczyszczenie wersji niezminifikowanej
-        console.log(`✅ JS minified`);
+        console.log(`✅ JS minified to ${jsDestFile}`);
     } catch (e) {
         console.log('⚠️ esbuild JS error:', e.message);
     }
 
     // 3. Minifikacja CSS
+    let cssDestFile = 'styles.min.css';
+    let cssHash = 'default';
     try {
         console.log('🎨 Minifying CSS...');
-        execSync(`npx -y esbuild "${path.join(SRC, 'css/styles.css')}" --minify --outfile="${path.join(DIST, 'styles.min.css')}"`, { stdio: 'inherit' });
-        console.log(`✅ CSS minified via esbuild`);
+        const cssContent = fs.readFileSync(path.join(SRC, 'css/styles.css'), 'utf-8');
+        cssHash = crypto.createHash('md5').update(cssContent).digest('hex').slice(0, 8);
+        cssDestFile = `styles.${cssHash}.min.css`;
+        execSync(`npx -y esbuild "${path.join(SRC, 'css/styles.css')}" --minify --outfile="${path.join(DIST, cssDestFile)}"`, { stdio: 'inherit' });
+        console.log(`✅ CSS minified to ${cssDestFile}`);
     } catch (e) {
         console.log('⚠️ esbuild CSS error:', e.message);
     }
@@ -108,13 +116,16 @@ const runBuild = () => {
         if (fs.existsSync(swPath)) {
             let swContent = fs.readFileSync(swPath, 'utf-8');
             
-            // Zmiana listy assetów na wersje zminifikowane/zbuforowane
+            // Zmiana CACHE_NAME na unikalną dla tej kompilacji
+            swContent = swContent.replace(/const CACHE_NAME = '[\s\S]*?';/, `const CACHE_NAME = 'ezinf-${jsHash}-${cssHash}';`);
+
+            // Zmiana listy assetów na wersje zminifikowane/zbuforowane z hashami
             const devAssetsBlock = /const ASSETS = \[[\s\S]*?\];/;
             const prodAssets = `const ASSETS = [
   './',
   './index.html',
-  './styles.min.css',
-  './app.bundle.min.js',
+  './${cssDestFile}',
+  './${jsDestFile}',
   './data.json',
   './favicon.png',
   './manifest.json'
@@ -137,12 +148,12 @@ const runBuild = () => {
     try {
         let html = fs.readFileSync(path.join(SRC, 'index.html'), 'utf-8');
 
-        // Zmiana łączy CSS
-        html = html.replace('<link rel="stylesheet" href="css/styles.css">', '<link rel="stylesheet" href="styles.min.css">');
+        // Zmiana łączy CSS z hashem
+        html = html.replace('<link rel="stylesheet" href="css/styles.css">', `<link rel="stylesheet" href="${cssDestFile}">`);
 
-        // Zastąpienie wielu tagów script jednym połączonym bundle
+        // Zastąpienie wielu tagów script jednym połączonym bundle z hashem
         const jsBlockRegex = /<script defer src="js\/utils\.js"><\/script>[\s\S]*?<script defer src="js\/modal\.js"><\/script>/;
-        html = html.replace(jsBlockRegex, '<script defer src="app.bundle.min.js"></script>');
+        html = html.replace(jsBlockRegex, `<script defer src="${jsDestFile}"></script>`);
 
         fs.writeFileSync(path.join(DIST, 'index.html'), html, 'utf-8');
         console.log('✅ HTML rewritten perfectly for /dist');
