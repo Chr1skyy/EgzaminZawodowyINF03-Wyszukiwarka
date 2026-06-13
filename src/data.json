@@ -4042,18 +4042,27 @@
         "session": 6,
         "number": "11",
         "language": "JS",
-        "name": "",
+        "name": "Atlas drzew",
         "codeName": "INF.03-11-26.06-SG",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_11",
             "examSheet": "",
             "gradingRules": "",
             "archive": "",
-            "solution": "",
+            "solution": "rozwiazanie",
             "solutionZIP": ""
         },
-        "tags": [],
-        "difficulty": ""
+        "tags": [
+            "SQL: wyświetlanie danych (SELECT)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: relacja n:m / podwójna relacja",
+            "Grafika: przeskalowanie grafiki",
+            "CSS: pseudoklasy (np. :hover)",
+            "JS: modyfikacja danych skryptem",
+            "JS: operacje na tablicach",
+            "JS: tworzenie elementów (createElement, appendChild)"
+        ],
+        "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
