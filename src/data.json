@@ -3981,8 +3981,12 @@
             "solutionZIP": ""
         },
         "tags": [
+            "SQL: wyświetlanie danych (SELECT)",
+            "SQL: relacja LEFT JOIN",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
             "JS: obsługa localStorage",
-            "SQL: relacja n:m / podwójna relacja"
+            "JS: modyfikacja danych skryptem"
         ],
         "difficulty": ""
     },
@@ -4003,7 +4007,11 @@
             "solutionZIP": ""
         },
         "tags": [
-            "SQL: relacja n:m / podwójna relacja"
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: relacja n:m / podwójna relacja",
+            "CSS: pseudoklasy (np. :hover)"
         ],
         "difficulty": ""
     },
@@ -4023,7 +4031,9 @@
             "solution": "",
             "solutionZIP": ""
         },
-        "tags": [],
+        "tags": [
+            "PHP: obsługa sesji ($_SESSION)"
+        ],
         "difficulty": ""
     },
     {
@@ -4031,7 +4041,7 @@
         "year": 2026,
         "session": 6,
         "number": "11",
-        "language": "",
+        "language": "JS",
         "name": "",
         "codeName": "INF.03-11-26.06-SG",
         "links": {
