@@ -17,7 +17,6 @@
         },
         "tags": [
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wstawianie danych (INSERT)",
@@ -43,7 +42,6 @@
         },
         "tags": [
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wstawianie danych (INSERT)",
@@ -120,8 +118,7 @@
             "Grafika: grafika wektorowa",
             "Grafika: tworzenie grafiki",
             "Grafika: wykluczanie części wspólnej",
-            "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)"
+            "JS: modyfikacja danych skryptem"
         ],
         "difficulty": "Easy"
     },
@@ -146,8 +143,7 @@
             "Grafika: grafika wektorowa",
             "Grafika: tekst po ścieżce",
             "Grafika: tworzenie grafiki",
-            "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)"
+            "JS: modyfikacja danych skryptem"
         ],
         "difficulty": "Easy"
     },
@@ -171,7 +167,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: kadrowanie",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: tworzenie tabeli (CREATE TABLE)",
             "SQL: wstawianie danych (INSERT)",
@@ -201,7 +196,6 @@
             "Grafika: usunięcie tła (przezroczystość)",
             "HTML: łączenie komórek tabeli (rowspan/colspan)",
             "JS: modyfikacja stylów skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
@@ -256,8 +250,7 @@
             "Grafika: obrót lub odbicie",
             "Grafika: przeskalowanie grafiki",
             "Grafika: tekst po ścieżce",
-            "Grafika: tworzenie grafiki",
-            "JS: zdarzenia formularza (change/input/blur)"
+            "Grafika: tworzenie grafiki"
         ],
         "difficulty": "Easy"
     },
@@ -332,7 +325,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -359,7 +351,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -384,7 +375,6 @@
         },
         "tags": [
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: tworzenie użytkownika (CREATE USER)",
@@ -514,7 +504,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
@@ -540,7 +529,6 @@
         },
         "tags": [
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -565,7 +553,6 @@
         },
         "tags": [
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
@@ -598,8 +585,7 @@
             "HTML: favicon",
             "HTML: formularz",
             "JS: modyfikacja danych skryptem",
-            "JS: walidacja formularza",
-            "JS: zdarzenia formularza (change/input/blur)"
+            "JS: walidacja formularza"
         ],
         "difficulty": "Medium"
     },
@@ -628,7 +614,6 @@
             "HTML: favicon",
             "HTML: formularz",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
@@ -681,8 +666,7 @@
             "Grafika: tworzenie grafiki",
             "Grafika: usunięcie tła (przezroczystość)",
             "JS: modyfikacja danych skryptem",
-            "JS: modyfikacja stylów skryptem",
-            "JS: zdarzenia formularza (change/input/blur)"
+            "JS: modyfikacja stylów skryptem"
         ],
         "difficulty": "Easy"
     },
@@ -712,8 +696,7 @@
             "Grafika: tworzenie grafiki",
             "HTML: łączenie komórek tabeli (rowspan/colspan)",
             "JS: modyfikacja danych skryptem",
-            "JS: modyfikacja stylów skryptem",
-            "JS: zdarzenia formularza (change/input/blur)"
+            "JS: modyfikacja stylów skryptem"
         ],
         "difficulty": "Easy"
     },
@@ -736,6 +719,7 @@
         "tags": [
             "CSS: pseudoklasy (np. :hover)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
@@ -759,7 +743,6 @@
         "tags": [
             "Grafika: przeskalowanie grafiki",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: tworzenie tabeli (CREATE TABLE)",
             "SQL: wstawianie danych (INSERT)",
@@ -817,7 +800,6 @@
             "Grafika: kadrowanie",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
@@ -850,7 +832,6 @@
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "JS: zdarzenia myszy (mouseover/mouseout)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
@@ -903,7 +884,6 @@
         "tags": [
             "Grafika: przeskalowanie grafiki",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie użytkownika (CREATE USER)",
@@ -930,7 +910,6 @@
         "tags": [
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wstawianie danych (INSERT)",
@@ -957,7 +936,6 @@
         "tags": [
             "Grafika: przeskalowanie grafiki",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: tworzenie tabeli (CREATE TABLE)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -983,8 +961,8 @@
         "tags": [
             "Grafika: przeskalowanie grafiki",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
@@ -1008,7 +986,6 @@
         "tags": [
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje daty i czasu",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
@@ -1060,7 +1037,6 @@
         "tags": [
             "Grafika: przeskalowanie grafiki",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie użytkownika (CREATE USER)",
@@ -1110,7 +1086,6 @@
         "tags": [
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -1160,7 +1135,6 @@
         "tags": [
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -1187,7 +1161,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie użytkownika (CREATE USER)",
@@ -1215,7 +1188,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie użytkownika (CREATE USER)",
@@ -1243,6 +1215,7 @@
             "CSS: pseudoelementy (np. ::first-letter)",
             "CSS: pseudoklasy (np. :hover)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
@@ -1267,9 +1240,9 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
@@ -1296,6 +1269,7 @@
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
@@ -1320,7 +1294,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: funkcje daty i czasu",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
@@ -1350,7 +1323,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: funkcje daty i czasu",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
@@ -1458,7 +1430,6 @@
             "Grafika: kadrowanie",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
             "SQL: tworzenie użytkownika (CREATE USER)",
@@ -1486,7 +1457,6 @@
         "tags": [
             "Grafika: kadrowanie",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
             "SQL: usuwanie danych (DELETE)",
@@ -1514,7 +1484,6 @@
             "Grafika: kadrowanie",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: funkcje daty i czasu",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
@@ -1543,7 +1512,6 @@
         "tags": [
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: tworzenie użytkownika (CREATE USER)",
             "SQL: wstawianie danych (INSERT)",
@@ -1593,10 +1561,10 @@
         "tags": [
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -1623,7 +1591,6 @@
             "Grafika: obrót lub odbicie",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: logowanie/rejestracja",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: szyfrowanie (np. SHA1)",
@@ -1654,7 +1621,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: kadrowanie",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: funkcje daty i czasu",
             "PHP: logowanie/rejestracja",
             "PHP: odbieranie danych formularza (POST)",
@@ -1690,6 +1656,7 @@
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
@@ -1772,7 +1739,6 @@
             "Grafika: przeskalowanie grafiki",
             "HTML: łączenie komórek tabeli (rowspan/colspan)",
             "JS: modyfikacja stylów skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: relacja n:m / podwójna relacja",
@@ -1902,6 +1868,7 @@
             "JS: pokazywanie/ukrywanie elementów",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
@@ -1926,7 +1893,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje daty i czasu",
             "SQL: modyfikacja struktury tabeli (ALTER)",
@@ -1952,7 +1918,6 @@
         },
         "tags": [
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wstawianie danych (INSERT)",
@@ -1978,7 +1943,6 @@
         },
         "tags": [
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wstawianie danych (INSERT)",
@@ -2032,7 +1996,6 @@
             "Grafika: usunięcie tła (przezroczystość)",
             "HTML: formularz",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
@@ -2061,7 +2024,6 @@
             "Grafika: obrót lub odbicie",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wstawianie danych (INSERT)",
@@ -2091,7 +2053,6 @@
             "Grafika: przeskalowanie grafiki",
             "HTML: łączenie komórek tabeli (rowspan/colspan)",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: tworzenie widoku (CREATE VIEW)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -2145,7 +2106,6 @@
             "Grafika: kadrowanie",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
@@ -2198,7 +2158,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
@@ -2254,7 +2213,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
@@ -2283,7 +2241,6 @@
             "Grafika: przeskalowanie grafiki",
             "Grafika: tworzenie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -2311,7 +2268,6 @@
             "Grafika: przeskalowanie grafiki",
             "Grafika: tworzenie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
@@ -2345,8 +2301,7 @@
             "HTML: favicon",
             "HTML: formularz",
             "JS: modyfikacja danych skryptem",
-            "JS: walidacja formularza",
-            "JS: zdarzenia formularza (change/input/blur)"
+            "JS: walidacja formularza"
         ],
         "difficulty": "Medium"
     },
@@ -2375,7 +2330,6 @@
             "Grafika: tworzenie grafiki",
             "HTML: favicon",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
@@ -2426,7 +2380,6 @@
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja danych (UPDATE)",
@@ -2454,6 +2407,7 @@
         },
         "tags": [
             "CSS: pseudoelementy (np. ::first-letter)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
@@ -2478,7 +2432,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -2533,7 +2486,6 @@
             "HTML: formularz",
             "JS: losowanie elementów z tablicy",
             "JS: tworzenie elementów (createElement, appendChild)",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
@@ -2564,7 +2516,6 @@
             "Grafika: tworzenie grafiki",
             "Grafika: usunięcie tła (przezroczystość)",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
@@ -2646,9 +2597,9 @@
             "HTML: odtwarzacz wideo",
             "JS: pokazywanie/ukrywanie elementów",
             "JS: walidacja formularza",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
@@ -2840,7 +2791,6 @@
             "Grafika: dodawanie tekstu",
             "Grafika: kadrowanie",
             "Grafika: tworzenie grafiki",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie użytkownika (CREATE USER)",
@@ -2872,10 +2822,10 @@
             "HTML: łączenie komórek tabeli (rowspan/colspan)",
             "JS: modyfikacja danych skryptem",
             "JS: walidacja formularza",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
@@ -2900,7 +2850,6 @@
             "Grafika: animacja GIF",
             "HTML: formularz",
             "HTML: łączenie komórek tabeli (rowspan/colspan)",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: funkcje daty i czasu",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
@@ -2930,7 +2879,6 @@
         "tags": [
             "CSS: pseudoklasy (np. :hover)",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -2991,7 +2939,6 @@
             "Grafika: usunięcie tła (przezroczystość)",
             "JS: algorytmy",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje daty i czasu",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -3020,7 +2967,6 @@
             "Grafika: tworzenie grafiki",
             "HTML: favicon",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
@@ -3052,7 +2998,6 @@
             "Grafika: tworzenie grafiki",
             "HTML: favicon",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
@@ -3082,7 +3027,6 @@
             "Grafika: tworzenie grafiki",
             "Grafika: usunięcie tła (przezroczystość)",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
             "SQL: wstawianie danych (INSERT)",
@@ -3195,7 +3139,6 @@
             "CSS: responsywność (@media query)",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
             "SQL: wstawianie danych (INSERT)",
@@ -3224,7 +3167,6 @@
             "Grafika: przeskalowanie grafiki",
             "JS: modyfikacja stylów skryptem",
             "JS: tworzenie elementów (createElement, appendChild)",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -3281,7 +3223,6 @@
             "Grafika: przeskalowanie grafiki",
             "Grafika: usunięcie tła (przezroczystość)",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: odbieranie danych z paska adresu (GET)",
             "SQL: usuwanie danych (DELETE)",
@@ -3310,7 +3251,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "JS: tworzenie elementów (createElement, appendChild)",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: tworzenie użytkownika (CREATE USER)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -3367,7 +3307,6 @@
             "Grafika: obrót lub odbicie",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
@@ -3429,7 +3368,6 @@
             "Grafika: obrót lub odbicie",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: relacja n:m / podwójna relacja",
@@ -3457,7 +3395,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
@@ -3564,7 +3501,6 @@
             "Grafika: przeskalowanie grafiki",
             "Grafika: usunięcie tła (przezroczystość)",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -3591,8 +3527,7 @@
             "CSS: pseudoelementy (np. ::first-letter)",
             "Grafika: animacja GIF",
             "Grafika: kadrowanie",
-            "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)"
+            "JS: modyfikacja danych skryptem"
         ],
         "difficulty": "Easy"
     },
@@ -3640,7 +3575,6 @@
         "tags": [
             "CSS: pseudoklasy (np. :hover)",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: funkcje daty i czasu",
@@ -3757,7 +3691,6 @@
             "Grafika: kadrowanie",
             "Grafika: przeskalowanie grafiki",
             "JS: pokazywanie/ukrywanie elementów",
-            "JS: zdarzenia formularza (change/input/blur)",
             "JS: zdarzenia myszy (mouseover/mouseout)",
             "PHP: opcjonalny PHP",
             "SQL: modyfikacja struktury tabeli (ALTER)",
@@ -3841,7 +3774,6 @@
             "Grafika: tworzenie grafiki",
             "HTML: formularz",
             "JS: tworzenie elementów (createElement, appendChild)",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja danych (UPDATE)",
@@ -3894,7 +3826,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: odbieranie danych z paska adresu (GET)",
             "SQL: wstawianie danych (INSERT)",
@@ -3943,7 +3874,6 @@
             "HTML: formularz",
             "JS: galeria zdjęć",
             "JS: modyfikacja danych skryptem",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych z paska adresu (GET)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",

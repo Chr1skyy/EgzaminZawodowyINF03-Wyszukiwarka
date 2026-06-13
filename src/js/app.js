@@ -167,8 +167,8 @@ function updateResultsCount() {
 }
 
 function updateTagFilterOptions(filts) {
-    const dropdown = document.querySelector('#custom-tag-select .custom-select-dropdown');
-    if (!dropdown) return;
+    const container = document.querySelector('#custom-tag-select .custom-select-options-container');
+    if (!container) return;
 
     const filtersWithoutQuery = {
         ...filts,
@@ -193,10 +193,10 @@ function updateTagFilterOptions(filts) {
     const categories = {
         'SQL': [],
         'Grafika': [],
-        'CSS': [],
-        'JS': [],
-        'PHP': [],
         'HTML': [],
+        'CSS': [],
+        'PHP': [],
+        'JS': [],
         'Inne': []
     };
 
@@ -213,13 +213,13 @@ function updateTagFilterOptions(filts) {
 
     for (const [category, items] of Object.entries(categories)) {
         if (items.length === 0) continue;
-        html += `<div class="custom-select-group-header" style="padding: 8px 12px 4px 12px; font-weight: 700; font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.5; border-top: 1px solid var(--border-color, rgba(255,255,255,0.08)); margin-top: 4px;">${category}</div>`;
+        html += `<div class="custom-select-group-header">${category}</div>`;
         html += items.map(item => {
             const tag = item.full;
             const cleanTag = item.clean;
             const isSelected = tag.toLowerCase() === currentQuery.toLowerCase();
             return `
-                <div class="custom-select-option ${isSelected ? 'selected' : ''}" role="option" aria-selected="${isSelected}" data-value="${tag}" style="padding-left: 20px;">
+                <div class="custom-select-option ${isSelected ? 'selected' : ''} custom-select-option-indented" role="option" aria-selected="${isSelected}" data-value="${tag}">
                     <span>${cleanTag}</span>
                     <span class="custom-select-tag-count">${tagCounts[tag]}</span>
                 </div>
@@ -227,7 +227,7 @@ function updateTagFilterOptions(filts) {
         }).join('');
     }
 
-    dropdown.innerHTML = html;
+    container.innerHTML = html;
 }
 
 function handleFiltersChange(filts, skipAnimation = false) {
@@ -257,12 +257,18 @@ function initTagFilter() {
 
     const button = customSelectWrapper.querySelector('.custom-select-button');
     const dropdown = customSelectWrapper.querySelector('.custom-select-dropdown');
+    const tagSearchInput = document.getElementById('tag-search-input');
 
     updateTagFilterOptions(getFilters());
 
     button.onclick = () => {
-        dropdown.classList.toggle('show');
+        const show = dropdown.classList.toggle('show');
         button.classList.toggle('active');
+        if (show && tagSearchInput) {
+            tagSearchInput.value = '';
+            filterDropdownOptions('');
+            setTimeout(() => tagSearchInput.focus(), 50);
+        }
     };
 
     dropdown.onclick = (e) => {
@@ -289,6 +295,63 @@ function initTagFilter() {
             }
         }
     };
+
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!customSelectWrapper.contains(e.target)) {
+            dropdown.classList.remove('show');
+            button.classList.remove('active');
+        }
+    });
+
+    if (tagSearchInput) {
+        tagSearchInput.oninput = (e) => {
+            filterDropdownOptions(e.target.value);
+        };
+        // Stop clicks inside search container from bubbling (so it doesn't trigger button toggle or closing)
+        tagSearchInput.parentElement.onclick = (e) => {
+            e.stopPropagation();
+        };
+    }
+
+    function filterDropdownOptions(query) {
+        const cleanQuery = query.toLowerCase().trim();
+        const options = dropdown.querySelectorAll('.custom-select-option');
+        
+        options.forEach(opt => {
+            const val = (opt.dataset.value || '').toLowerCase();
+            const text = (opt.textContent || '').toLowerCase();
+            if (!cleanQuery || val.includes(cleanQuery) || text.includes(cleanQuery)) {
+                opt.style.display = 'flex';
+            } else {
+                opt.style.display = 'none';
+            }
+        });
+
+        // Hide headers that have no visible options in their section
+        let nextEl = dropdown.querySelector('.custom-select-options-container').firstElementChild;
+        let currentHeader = null;
+        let hasVisibleOptions = false;
+        
+        while (nextEl) {
+            if (nextEl.classList.contains('custom-select-group-header')) {
+                if (currentHeader && !hasVisibleOptions) {
+                    currentHeader.style.display = 'none';
+                }
+                currentHeader = nextEl;
+                currentHeader.style.display = '';
+                hasVisibleOptions = false;
+            } else if (nextEl.classList.contains('custom-select-option')) {
+                if (nextEl.style.display !== 'none' && nextEl.dataset.value !== "") {
+                    hasVisibleOptions = true;
+                }
+            }
+            nextEl = nextEl.nextElementSibling;
+        }
+        if (currentHeader && !hasVisibleOptions) {
+            currentHeader.style.display = 'none';
+        }
+    }
 }
 
 let activeSuggestionIndex = -1;

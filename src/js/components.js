@@ -80,11 +80,11 @@ const components = {
 
         const categories = {
             'SQL': [],
-            'JS': [],
-            'PHP': [],
-            'CSS': [],
             'Grafika': [],
             'HTML': [],
+            'CSS': [],
+            'PHP': [],
+            'JS': [],
             'Inne': []
         };
 
