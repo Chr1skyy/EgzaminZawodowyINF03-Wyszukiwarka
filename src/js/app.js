@@ -190,16 +190,44 @@ function updateTagFilterOptions(filts) {
 
     const currentQuery = (filts.query || '').trim();
 
-    dropdown.innerHTML = `<div class="custom-select-option ${currentQuery === '' ? 'selected' : ''}" role="option" aria-selected="${currentQuery === ''}" data-value="">Wszystkie tagi</div>` + 
-        sortedTags.map(tag => {
+    const categories = {
+        'SQL': [],
+        'Grafika': [],
+        'CSS': [],
+        'JS': [],
+        'PHP': [],
+        'HTML': [],
+        'Inne': []
+    };
+
+    sortedTags.forEach(tag => {
+        const parts = tag.split(': ');
+        if (parts.length > 1 && categories[parts[0]] !== undefined) {
+            categories[parts[0]].push({ full: tag, clean: parts[1] });
+        } else {
+            categories['Inne'].push({ full: tag, clean: tag });
+        }
+    });
+
+    let html = `<div class="custom-select-option ${currentQuery === '' ? 'selected' : ''}" role="option" aria-selected="${currentQuery === ''}" data-value="">Wszystkie tagi</div>`;
+
+    for (const [category, items] of Object.entries(categories)) {
+        if (items.length === 0) continue;
+        html += `<div class="custom-select-group-header" style="padding: 8px 12px 4px 12px; font-weight: 700; font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.5; border-top: 1px solid var(--border-color, rgba(255,255,255,0.08)); margin-top: 4px;">${category}</div>`;
+        html += items.map(item => {
+            const tag = item.full;
+            const cleanTag = item.clean;
             const isSelected = tag.toLowerCase() === currentQuery.toLowerCase();
             return `
-                <div class="custom-select-option ${isSelected ? 'selected' : ''}" role="option" aria-selected="${isSelected}" data-value="${tag}">
-                    <span>${tag}</span>
+                <div class="custom-select-option ${isSelected ? 'selected' : ''}" role="option" aria-selected="${isSelected}" data-value="${tag}" style="padding-left: 20px;">
+                    <span>${cleanTag}</span>
                     <span class="custom-select-tag-count">${tagCounts[tag]}</span>
                 </div>
             `;
         }).join('');
+    }
+
+    dropdown.innerHTML = html;
 }
 
 function handleFiltersChange(filts, skipAnimation = false) {
@@ -215,7 +243,8 @@ function handleFiltersChange(filts, skipAnimation = false) {
             btnText.textContent = 'Wszystkie tagi';
         } else {
             const hasExactTag = app.exams.some(ex => ex.tags?.some(t => t.toLowerCase() === filts.query.toLowerCase()));
-            btnText.textContent = hasExactTag ? filts.query : 'Wszystkie tagi';
+            const showName = filts.query.includes(': ') ? filts.query.split(': ')[1] : filts.query;
+            btnText.textContent = hasExactTag ? showName : 'Wszystkie tagi';
         }
     }
 
@@ -282,7 +311,7 @@ function renderSuggestions(query) {
     app.exams.forEach(exam => {
         const normalizedCode = window.appUtils.normalizeString(exam.codeName);
         const normalizedName = window.appUtils.normalizeString(exam.name);
-        if (normalizedCode.includes(normalizedQuery) || 
+        if (normalizedCode.includes(normalizedQuery) ||
             normalizedName.includes(normalizedQuery)) {
             suggestions.push({
                 type: 'exam',
@@ -298,12 +327,15 @@ function renderSuggestions(query) {
     const allTags = new Set();
     app.exams.forEach(ex => ex.tags?.forEach(t => allTags.add(t)));
     allTags.forEach(tag => {
+        const parts = tag.split(': ');
+        const category = parts.length > 1 ? parts[0] : '';
+        const cleanTag = parts.length > 1 ? parts[1] : tag;
         const normalizedTag = window.appUtils.normalizeString(tag);
         if (normalizedTag.includes(normalizedQuery)) {
             suggestions.push({
                 type: 'tag',
-                title: tag,
-                subtitle: 'Tag',
+                title: cleanTag,
+                subtitle: category ? `Tag (${category})` : 'Tag',
                 value: tag,
                 badges: ''
             });
@@ -347,7 +379,7 @@ function renderSuggestions(query) {
 
 function highlightText(text, query) {
     if (!query) return text;
-    
+
     const map = {
         'a': '[aą]',
         'c': '[cć]',
@@ -358,7 +390,7 @@ function highlightText(text, query) {
         's': '[sś]',
         'z': '[zźż]'
     };
-    
+
     const normalized = window.appUtils.normalizeString(query);
     let pattern = '';
     for (let i = 0; i < normalized.length; i++) {
@@ -369,7 +401,7 @@ function highlightText(text, query) {
             pattern += map[char] || char;
         }
     }
-    
+
     try {
         const regex = new RegExp(`(${pattern})`, 'gi');
         return text.replace(regex, '<span class="suggestion-highlight">$1</span>');

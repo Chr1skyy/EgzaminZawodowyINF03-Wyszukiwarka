@@ -41,11 +41,10 @@ const components = {
     createTagList: (exam, limit = 4) => {
         if (!exam.tags?.length) return '';
 
-        const tagCounts = window.appTagCounts || {};
         const sortedTags = [...exam.tags].sort((a, b) => {
-            const countA = tagCounts[a] || 0;
-            const countB = tagCounts[b] || 0;
-            return countA - countB;
+            const cleanA = a.includes(': ') ? a.split(': ')[1] : a;
+            const cleanB = b.includes(': ') ? b.split(': ')[1] : b;
+            return cleanA.length - cleanB.length;
         });
 
         let tagsToDisplay = sortedTags;
@@ -62,11 +61,57 @@ const components = {
             <div class="exam-tags">
                 <span aria-hidden="true">🏷️</span>
                 <div class="exam-tags-list">
-                    ${tagsToDisplay.map(tag => `<span class="exam-tag">${tag}</span>`).join('')}
-                    ${hiddenCount > 0 ? `<span class="exam-tag-more" data-action="open-modal" role="button" tabindex="0" title="Kliknij, aby zobaczyć wszystkie. Pozostałe: ${hiddenTags.join(', ')}">+${hiddenCount}</span>` : ''}
+                    ${tagsToDisplay.map(tag => {
+            const parts = tag.split(': ');
+            const cleanTag = parts.length > 1 ? parts[1] : tag;
+            return `<span class="exam-tag" title="${tag}">${cleanTag}</span>`;
+        }).join('')}
+                    ${hiddenCount > 0 ? `<span class="exam-tag-more" data-action="open-modal" role="button" tabindex="0" title="Kliknij, aby zobaczyć wszystkie. Pozostałe: ${hiddenTags.map(t => t.includes(': ') ? t.split(': ')[1] : t).join(', ')}">+${hiddenCount}</span>` : ''}
                 </div>
             </div>
         `;
+    },
+
+    /**
+     * Grupowanie tagów według kategorii w modalu
+     */
+    createCategorizedTagGroups: (exam) => {
+        if (!exam.tags?.length) return '';
+
+        const categories = {
+            'SQL': [],
+            'JS': [],
+            'PHP': [],
+            'CSS': [],
+            'Grafika': [],
+            'HTML': [],
+            'Inne': []
+        };
+
+        exam.tags.forEach(tag => {
+            const parts = tag.split(': ');
+            if (parts.length > 1 && categories[parts[0]] !== undefined) {
+                categories[parts[0]].push({ full: tag, clean: parts[1] });
+            } else {
+                categories['Inne'].push({ full: tag, clean: tag });
+            }
+        });
+
+        let html = '<div class="modal-tag-groups">';
+        for (const [category, items] of Object.entries(categories)) {
+            if (items.length === 0) continue;
+            const catClass = `tag-cat-${category.toLowerCase()}`;
+            html += `
+                <div class="modal-tag-group">
+                    <span class="modal-tag-group-label ${catClass}">${category}</span>
+                    <div class="modal-tag-group-items">
+                        ${items.map(item => `<span class="exam-tag ${catClass}" title="${item.full}">${item.clean}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+        }
+        html += '</div>';
+        return html;
     },
 
     /**
@@ -174,7 +219,7 @@ const components = {
                     ${components.createAllBadges(exam)}
                 </div>
             </div>
-            ${components.createTagList(exam, 0)}
+            ${components.createCategorizedTagGroups(exam)}
             <div class="modal-links">
                 ${components.createLinkButtons(exam)}
             </div>

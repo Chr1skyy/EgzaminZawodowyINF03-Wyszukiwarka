@@ -1360,7 +1360,7 @@ body {
     position: relative;
     max-width: 60rem;
     width: calc(100% - 2rem);
-    max-height: calc(90vh - 2rem);
+    max-height: 90vh;
     background-color: var(--bg-primary);
     border-radius: var(--radius-xl);
     overflow-y: auto;
@@ -1390,7 +1390,7 @@ body {
 }
 
 .modal-image img {
-    max-height: 60vh;
+    max-height: 50vh;
     width: auto;
     max-width: 100%;
     object-fit: contain;
@@ -1751,4 +1751,138 @@ body {
 .suggestion-highlight {
     font-weight: 700;
     color: var(--accent-primary);
+}
+
+/* =========================================
+   11. CATEGORIZED TAG STYLES
+   ========================================= */
+[data-theme="light"] {
+    --tag-sql-bg: rgba(79, 70, 229, 0.1);
+    --tag-sql-text: #4f46e5;
+    --tag-sql-border: rgba(79, 70, 229, 0.2);
+
+    --tag-js-bg: rgba(217, 119, 6, 0.1);
+    --tag-js-text: #b45309;
+    --tag-js-border: rgba(217, 119, 6, 0.2);
+
+    --tag-php-bg: rgba(3, 105, 161, 0.1);
+    --tag-php-text: #0369a1;
+    --tag-php-border: rgba(3, 105, 161, 0.2);
+
+    --tag-css-bg: rgba(225, 29, 72, 0.1);
+    --tag-css-text: #e11d48;
+    --tag-css-border: rgba(225, 29, 72, 0.2);
+
+    --tag-grafika-bg: rgba(4, 120, 87, 0.1);
+    --tag-grafika-text: #047857;
+    --tag-grafika-border: rgba(4, 120, 87, 0.2);
+
+    --tag-html-bg: rgba(249, 115, 22, 0.1);
+    --tag-html-text: #ea580c;
+    --tag-html-border: rgba(249, 115, 22, 0.2);
+}
+
+[data-theme="dark"] {
+    --tag-sql-bg: rgba(99, 102, 241, 0.15);
+    --tag-sql-text: #a5b4fc;
+    --tag-sql-border: rgba(99, 102, 241, 0.3);
+
+    --tag-js-bg: rgba(245, 158, 11, 0.15);
+    --tag-js-text: #fde047;
+    --tag-js-border: rgba(245, 158, 11, 0.3);
+
+    --tag-php-bg: rgba(14, 165, 233, 0.15);
+    --tag-php-text: #7dd3fc;
+    --tag-php-border: rgba(14, 165, 233, 0.3);
+
+    --tag-css-bg: rgba(244, 63, 94, 0.15);
+    --tag-css-text: #fda4af;
+    --tag-css-border: rgba(244, 63, 94, 0.3);
+
+    --tag-grafika-bg: rgba(16, 185, 129, 0.15);
+    --tag-grafika-text: #6ee7b7;
+    --tag-grafika-border: rgba(16, 185, 129, 0.3);
+
+    --tag-html-bg: rgba(249, 115, 22, 0.15);
+    --tag-html-text: #fdba74;
+    --tag-html-border: rgba(249, 115, 22, 0.3);
+}
+
+.tag-cat-sql {
+    background-color: var(--tag-sql-bg);
+    color: var(--tag-sql-text);
+    border-color: var(--tag-sql-border);
+}
+
+.tag-cat-js {
+    background-color: var(--tag-js-bg);
+    color: var(--tag-js-text);
+    border-color: var(--tag-js-border);
+}
+
+.tag-cat-php {
+    background-color: var(--tag-php-bg);
+    color: var(--tag-php-text);
+    border-color: var(--tag-php-border);
+}
+
+.tag-cat-css {
+    background-color: var(--tag-css-bg);
+    color: var(--tag-css-text);
+    border-color: var(--tag-css-border);
+}
+
+.tag-cat-grafika {
+    background-color: var(--tag-grafika-bg);
+    color: var(--tag-grafika-text);
+    border-color: var(--tag-grafika-border);
+}
+
+.tag-cat-html {
+    background-color: var(--tag-html-bg);
+    color: var(--tag-html-text);
+    border-color: var(--tag-html-border);
+}
+
+/* Modal Categorized Tags Layout */
+.modal-tag-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 1.25rem 0;
+    padding: 1rem;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+}
+
+.modal-tag-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.modal-tag-group:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.modal-tag-group-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-sm);
+    min-width: 5.5rem;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.modal-tag-group-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
 }

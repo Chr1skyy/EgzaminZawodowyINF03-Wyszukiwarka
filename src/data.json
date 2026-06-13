@@ -16,8 +16,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wstawianie danych do bazy",
-            "formularz"
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -38,8 +43,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wstawianie danych do bazy",
-            "formularz"
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -60,8 +70,10 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -82,8 +94,10 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -104,10 +118,12 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "grafika wektorowa",
-            "wykluczanie części wspólnej na grafice",
-            "tworzenie grafiki",
-            "formularz"
+            "Grafika: dodawanie tekstu",
+            "Grafika: grafika wektorowa",
+            "Grafika: tworzenie grafiki",
+            "Grafika: wykluczanie części wspólnej",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)"
         ],
         "difficulty": "Easy"
     },
@@ -128,10 +144,12 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "grafika wektorowa",
-            "tworzenie grafiki",
-            "tekst po ścieżce",
-            "formularz"
+            "Grafika: dodawanie tekstu",
+            "Grafika: grafika wektorowa",
+            "Grafika: tekst po ścieżce",
+            "Grafika: tworzenie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)"
         ],
         "difficulty": "Easy"
     },
@@ -152,9 +170,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "wstawianie danych do bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -175,11 +199,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "formatowanie elementów",
-            "formularz"
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "JS: modyfikacja stylów skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -200,9 +226,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -223,11 +253,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "tworzenie grafiki",
-            "tekst po ścieżce",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: filtry",
+            "Grafika: grafika wektorowa",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tekst po ścieżce",
+            "Grafika: tworzenie grafiki",
+            "JS: zdarzenia formularza (change/input/blur)"
         ],
         "difficulty": "Easy"
     },
@@ -248,8 +282,11 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -270,10 +307,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "kadrowanie grafiki",
-            "cookies/ciasteczka"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: filtry",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "PHP: funkcje daty i czasu",
+            "PHP: obsługa ciasteczek ($_COOKIE)",
+            "PHP: walidacja formularza"
         ],
         "difficulty": "Medium"
     },
@@ -294,9 +334,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -317,9 +362,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -340,8 +390,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -362,8 +417,12 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -384,9 +443,11 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "galeria zdjęć"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "JS: galeria zdjęć",
+            "JS: zdarzenia myszy (mouseover/mouseout)"
         ],
         "difficulty": "Medium"
     },
@@ -407,9 +468,11 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "galeria zdjęć"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "JS: galeria zdjęć",
+            "JS: zdarzenia myszy (mouseover/mouseout)"
         ],
         "difficulty": "Medium"
     },
@@ -430,9 +493,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -453,9 +521,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -476,9 +550,12 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -499,9 +576,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -522,11 +604,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "animacja",
-            "przeskalowanie grafiki",
-            "favicon",
-            "formularz"
+            "Grafika: animacja GIF",
+            "Grafika: dodawanie tekstu",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: favicon",
+            "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
+            "JS: walidacja formularza",
+            "JS: zdarzenia formularza (change/input/blur)"
         ],
         "difficulty": "Medium"
     },
@@ -547,11 +633,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "animacja",
-            "przeskalowanie grafiki",
-            "favicon",
-            "formularz"
+            "Grafika: animacja GIF",
+            "Grafika: dodawanie tekstu",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: favicon",
+            "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -572,8 +663,10 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -594,10 +687,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "tworzenie grafiki",
-            "formularz",
-            "formatowanie elementów"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: kadrowanie",
+            "Grafika: obrót lub odbicie",
+            "Grafika: tworzenie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "JS: modyfikacja danych skryptem",
+            "JS: modyfikacja stylów skryptem",
+            "JS: zdarzenia formularza (change/input/blur)"
         ],
         "difficulty": "Easy"
     },
@@ -618,11 +716,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "tworzenie grafiki",
-            "tekst po ścieżce",
-            "formularz",
-            "formatowanie elementów"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: filtry",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tekst po ścieżce",
+            "Grafika: tworzenie grafiki",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "JS: modyfikacja danych skryptem",
+            "JS: modyfikacja stylów skryptem",
+            "JS: zdarzenia formularza (change/input/blur)"
         ],
         "difficulty": "Easy"
     },
@@ -643,7 +747,9 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -664,9 +770,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "tworzenie bazy danych",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -687,9 +797,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -710,10 +827,18 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "tworzenie bazy danych",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -734,11 +859,20 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "animacja",
-            "tworzenie bazy danych",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: animacja GIF",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "JS: zdarzenia myszy (mouseover/mouseout)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)"
         ],
         "difficulty": "Medium"
     },
@@ -759,8 +893,9 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -781,8 +916,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -803,9 +943,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -826,8 +971,12 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -848,8 +997,11 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -870,9 +1022,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje daty i czasu",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -893,8 +1052,9 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -915,8 +1075,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -937,8 +1102,9 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: usuwanie danych (DELETE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -959,10 +1125,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "modyfikacja danych w bazie",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -983,7 +1152,10 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "CSS: pseudoklasy (np. :hover)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1004,10 +1176,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "modyfikacja danych w bazie",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1028,8 +1203,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1050,8 +1231,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1072,7 +1259,10 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "CSS: pseudoklasy (np. :hover)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1093,9 +1283,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1116,9 +1310,12 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1139,9 +1336,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: funkcje daty i czasu",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje daty i czasu",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -1162,9 +1366,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: funkcje daty i czasu",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje daty i czasu",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -1185,9 +1396,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "cookies/ciasteczka"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "PHP: funkcje daty i czasu",
+            "PHP: obsługa ciasteczek ($_COOKIE)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -1208,9 +1424,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "cookies/ciasteczka"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "PHP: funkcje daty i czasu",
+            "PHP: obsługa ciasteczek ($_COOKIE)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -1231,9 +1452,10 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1254,11 +1476,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -1279,10 +1505,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "usuwanie danych z bazy",
-            "formularz"
+            "Grafika: kadrowanie",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: usuwanie danych (DELETE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -1303,10 +1532,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: funkcje daty i czasu",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: funkcje daty i czasu",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1327,9 +1563,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1350,8 +1591,9 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1372,9 +1614,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1395,11 +1643,18 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "logowanie/rejestracja",
-            "formularz"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: logowanie/rejestracja",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: szyfrowanie (np. SHA1)",
+            "PHP: walidacja formularza",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Hard"
     },
@@ -1420,10 +1675,19 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "logowanie/rejestracja",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: funkcje daty i czasu",
+            "PHP: logowanie/rejestracja",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: szyfrowanie (np. SHA1)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: funkcje daty i czasu",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Hard"
     },
@@ -1444,8 +1708,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formatowanie elementów"
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja stylów skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -1466,8 +1735,12 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "galeria zdjęć"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "JS: galeria zdjęć",
+            "JS: modyfikacja danych skryptem",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -1488,10 +1761,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "plik video/wideo/film",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "HTML: odtwarzacz wideo",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje daty i czasu",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -1512,10 +1791,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "formatowanie elementów",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "JS: modyfikacja stylów skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -1536,8 +1821,11 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1558,8 +1846,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja danych skryptem"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "JS: modyfikacja danych skryptem",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Hard"
     },
@@ -1580,8 +1873,9 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1602,9 +1896,12 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "galeria zdjęć",
-            "przewijanie zdjęć"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "JS: galeria zdjęć",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -1625,8 +1922,11 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "pokazywanie/ukrywanie elementów"
+            "Grafika: przeskalowanie grafiki",
+            "JS: pokazywanie/ukrywanie elementów",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -1647,9 +1947,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje daty i czasu",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1670,8 +1975,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wstawianie danych do bazy",
-            "formularz"
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1692,8 +2002,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wstawianie danych do bazy",
-            "formularz"
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1714,8 +2029,10 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1736,8 +2053,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1758,10 +2084,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1782,10 +2113,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kwerenda tworząca widok (perspektywę)",
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: tworzenie widoku (CREATE VIEW)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1806,8 +2141,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1828,9 +2168,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1851,7 +2199,10 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "CSS: pseudoklasy (np. :hover)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1872,10 +2223,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "modyfikacja danych w bazie",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1896,9 +2253,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1919,10 +2281,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1943,11 +2311,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1968,11 +2339,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -1993,11 +2370,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "animacja",
-            "przeskalowanie grafiki",
-            "favicon",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: animacja GIF",
+            "Grafika: dodawanie tekstu",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: favicon",
+            "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
+            "JS: walidacja formularza",
+            "JS: zdarzenia formularza (change/input/blur)"
         ],
         "difficulty": "Medium"
     },
@@ -2018,11 +2400,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "animacja",
-            "przeskalowanie grafiki",
-            "favicon",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: animacja GIF",
+            "Grafika: dodawanie tekstu",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: favicon",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2043,8 +2430,11 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje daty i czasu",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2065,8 +2455,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2087,7 +2486,8 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2108,8 +2508,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2130,8 +2535,12 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pozycjonowanie (position)",
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2152,11 +2561,18 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "formularz",
-            "losowanie elementów z tablicy",
-            "tworzenie elementów skryptem"
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: losowanie elementów z tablicy",
+            "JS: tworzenie elementów (createElement, appendChild)",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Hard"
     },
@@ -2177,9 +2593,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: tworzenie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2200,11 +2623,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "galeria zdjęć",
-            "efekty przejścia CSS",
-            "pokazywanie/ukrywanie elementów"
+            "CSS: efekty przejścia (transition)",
+            "CSS: pozycjonowanie (position)",
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2225,9 +2651,11 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2248,10 +2676,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "formularz",
-            "pokazywanie/ukrywanie elementów",
-            "plik video/wideo/film"
+            "Grafika: filtry",
+            "HTML: odtwarzacz wideo",
+            "JS: pokazywanie/ukrywanie elementów",
+            "JS: walidacja formularza",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2272,11 +2704,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "odświezanie strony"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "PHP: odświeżanie strony (refresh)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2297,10 +2732,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "formularz",
-            "pokazywanie/ukrywanie elementów"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "JS: pokazywanie/ukrywanie elementów",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Hard"
     },
@@ -2321,10 +2760,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "galeria zdjęć",
-            "przewijanie zdjęć",
-            "animacja CSS (@keyframes)"
+            "CSS: animacja (@keyframes)",
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "JS: galeria zdjęć",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2345,9 +2789,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "pokazywanie/ukrywanie elementów"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "JS: pokazywanie/ukrywanie elementów",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2368,8 +2818,9 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2390,8 +2841,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "transformacja/filtr grafiki skryptem"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: transformacja i filtr grafiki",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2412,9 +2870,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "tworzenie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: kadrowanie",
+            "Grafika: tworzenie grafiki",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2435,9 +2899,18 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "przeskalowanie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "JS: modyfikacja danych skryptem",
+            "JS: walidacja formularza",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2458,9 +2931,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "animacja",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: animacja GIF",
+            "HTML: formularz",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: funkcje daty i czasu",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: funkcje daty i czasu",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2481,8 +2962,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2503,10 +2989,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "kadrowanie grafiki",
-            "zapis do pliku skryptem",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: perspektywa",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: zapis do pliku skryptem",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2527,9 +3020,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "animacja",
-            "formularz"
+            "Grafika: animacja GIF",
+            "Grafika: obrót lub odbicie",
+            "Grafika: tworzenie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "JS: algorytmy",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje daty i czasu",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2550,10 +3049,18 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "favicon",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: kadrowanie",
+            "Grafika: tworzenie grafiki",
+            "HTML: favicon",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2574,10 +3081,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "favicon",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: kadrowanie",
+            "Grafika: tworzenie grafiki",
+            "HTML: favicon",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2598,11 +3112,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: dodawanie tekstu",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2623,10 +3142,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "losowanie rekordów z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje daty i czasu",
+            "SQL: losowanie rekordów (ORDER BY RAND)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2647,10 +3172,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "cień na grafice",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "losowanie rekordów z bazy"
+            "Grafika: cień na grafice",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "SQL: losowanie rekordów (ORDER BY RAND)",
+            "SQL: usuwanie danych (DELETE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2671,10 +3199,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "cień na grafice",
-            "tworzenie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pozycjonowanie (position)",
+            "Grafika: cień na grafice",
+            "Grafika: tworzenie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2695,11 +3229,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "wyświetlanie danych z bazy",
-            "formularz",
-            "responsywność strony (@media query)"
+            "CSS: responsywność (@media query)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2720,11 +3257,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "tworzenie elementów skryptem",
-            "modyfikacja danych skryptem",
-            "dodawanie elementów",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja stylów skryptem",
+            "JS: tworzenie elementów (createElement, appendChild)",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2745,10 +3285,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "losowanie rekordów z bazy",
-            "modyfikacja grafiki",
-            "tworzenie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "CSS: responsywność (@media query)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: tworzenie grafiki",
+            "SQL: losowanie rekordów (ORDER BY RAND)",
+            "SQL: usuwanie danych (DELETE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2769,11 +3312,19 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "usuwanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: perspektywa",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "PHP: walidacja formularza",
+            "SQL: usuwanie danych (DELETE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Hard"
     },
@@ -2794,9 +3345,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "dodawanie elementów",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "JS: tworzenie elementów (createElement, appendChild)",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2817,11 +3372,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "modyfikacja danych w bazie",
-            "formularz",
-            "responsywność strony (@media query)"
+            "CSS: pseudoklasy (np. :hover)",
+            "CSS: responsywność (@media query)",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2842,10 +3402,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2866,11 +3433,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "podwójna relacja",
-            "wyświetlanie danych z bazy",
-            "formularz",
-            "pokazywanie/ukrywanie elementów"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: pokazywanie/ukrywanie elementów",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2891,11 +3464,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2916,10 +3495,16 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2940,8 +3525,12 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "PHP: odświeżanie strony (refresh)",
+            "SQL: losowanie rekordów (ORDER BY RAND)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -2962,10 +3551,12 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "relacja n:m (wiele do wielu)",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "favicon"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: favicon",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -2986,9 +3577,11 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "losowanie rekordów z bazy",
-            "wyświetlanie danych z bazy",
-            "łączenie komórek tabeli"
+            "CSS: pseudoklasy (np. :hover)",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: losowanie rekordów (ORDER BY RAND)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -3009,11 +3602,14 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -3034,8 +3630,11 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "animacja",
-            "formularz"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "Grafika: animacja GIF",
+            "Grafika: kadrowanie",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)"
         ],
         "difficulty": "Easy"
     },
@@ -3056,8 +3655,11 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "przekazywanie argumentu w pasku adresu $_GET"
+            "CSS: pseudoklasy (np. :hover)",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -3078,10 +3680,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "kwerenda z relacją LEFT JOIN",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: funkcje daty i czasu",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: relacja LEFT JOIN",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -3102,9 +3711,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "formularz",
-            "wyświetlanie danych z bazy"
+            "CSS: pozycjonowanie (position)",
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: kadrowanie",
+            "Grafika: tworzenie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -3125,10 +3742,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "przekazywanie argumentu w pasku adresu $_GET"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -3149,12 +3771,13 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "zewnętrzna czcionka CSS",
-            "przekazywanie argumentu w pasku adresu $_GET"
+            "CSS: pseudoklasy (np. :hover)",
+            "CSS: zewnętrzna czcionka (@font-face)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -3175,10 +3798,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "pokazywanie/ukrywanie elementów",
-            "opcjonalny PHP"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "JS: pokazywanie/ukrywanie elementów",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "JS: zdarzenia myszy (mouseover/mouseout)",
+            "PHP: opcjonalny PHP",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -3199,9 +3827,12 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "przekazywanie argumentu w pasku adresu $_GET"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "PHP: walidacja formularza",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -3222,8 +3853,11 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "przekazywanie argumentu w pasku adresu $_GET"
+            "CSS: pseudoklasy (np. :hover)",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -3244,12 +3878,20 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "zewnętrzna czcionka CSS",
-            "formularz",
-            "tworzenie elementów skryptem"
+            "CSS: efekty przejścia (transition)",
+            "CSS: pseudoklasy (np. :hover)",
+            "CSS: zewnętrzna czcionka (@font-face)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: formularz",
+            "JS: tworzenie elementów (createElement, appendChild)",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -3270,9 +3912,12 @@
             "solutionZIP": ""
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "efekty przejścia CSS",
-            "przekazywanie argumentu w pasku adresu $_GET"
+            "CSS: efekty przejścia (transition)",
+            "CSS: pseudoklasy (np. :hover)",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -3293,12 +3938,15 @@
             "solutionZIP": ""
         },
         "tags": [
-            "kwerenda tworząca widok (perspektywę)",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "przeskalowanie grafiki",
-            "formularz",
-            "przekazywanie argumentu w pasku adresu $_GET"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "PHP: walidacja formularza",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
@@ -3338,11 +3986,17 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "galeria zdjęć",
-            "formularz",
-            "modyfikacja danych skryptem"
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: galeria zdjęć",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -3363,11 +4017,15 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -3388,11 +4046,15 @@
             "solutionZIP": ""
         },
         "tags": [
-            "tworzenie użytkownika w bazie",
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "operacje na tablicach",
-            "tworzenie elementów skryptem"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "JS: operacje na tablicach",
+            "JS: tworzenie elementów (createElement, appendChild)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -3413,10 +4075,113 @@
             "solutionZIP": ""
         },
         "tags": [
-            "podkwerenda",
-            "pokazywanie/ukrywanie elementów",
-            "modyfikacja danych skryptem"
+            "CSS: pseudoklasy (np. :hover)",
+            "JS: modyfikacja danych skryptem",
+            "JS: pokazywanie/ukrywanie elementów",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: podkwerenda",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "08",
+        "language": "JS",
+        "name": "",
+        "codeName": "INF.03-08-26.06-SG",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_08",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+            "JS: obsługa localStorage",
+            "SQL: relacja n:m / podwójna relacja"
+        ],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "09",
+        "language": "JS",
+        "name": "Restauracja Marchewka",
+        "codeName": "INF.03-09-26.06-SG",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_09",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+            "SQL: relacja n:m / podwójna relacja"
+        ],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "10",
+        "language": "PHP",
+        "name": "",
+        "codeName": "INF.03-10-26.06-SG",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_10",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "11",
+        "language": "",
+        "name": "",
+        "codeName": "INF.03-11-26.06-SG",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_11",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "12",
+        "language": "",
+        "name": "",
+        "codeName": "INF.03-12-26.06-SG",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_12",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [],
+        "difficulty": ""
     }
 ]
