@@ -19,7 +19,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -46,7 +45,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -175,7 +173,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: tworzenie tabeli (CREATE TABLE)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -230,7 +227,6 @@
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -312,8 +308,7 @@
             "Grafika: kadrowanie",
             "Grafika: przeskalowanie grafiki",
             "PHP: funkcje daty i czasu",
-            "PHP: obsługa ciasteczek ($_COOKIE)",
-            "PHP: walidacja formularza"
+            "PHP: obsługa ciasteczek ($_COOKIE)"
         ],
         "difficulty": "Medium"
     },
@@ -339,7 +334,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -367,7 +361,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -393,7 +386,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: tworzenie użytkownika (CREATE USER)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -419,7 +411,6 @@
         "tags": [
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: tworzenie użytkownika (CREATE USER)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -496,7 +487,6 @@
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
@@ -526,7 +516,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -553,7 +542,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -579,7 +567,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: wstawianie danych (INSERT)",
@@ -832,7 +819,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
@@ -867,7 +853,6 @@
             "JS: zdarzenia formularza (change/input/blur)",
             "JS: zdarzenia myszy (mouseover/mouseout)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie tabeli (CREATE TABLE)",
@@ -947,7 +932,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -1026,7 +1010,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje daty i czasu",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie użytkownika (CREATE USER)",
@@ -1129,7 +1112,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -1180,7 +1162,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -1400,7 +1381,6 @@
             "Grafika: przeskalowanie grafiki",
             "PHP: funkcje daty i czasu",
             "PHP: obsługa ciasteczek ($_COOKIE)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -1428,7 +1408,6 @@
             "Grafika: przeskalowanie grafiki",
             "PHP: funkcje daty i czasu",
             "PHP: obsługa ciasteczek ($_COOKIE)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -1538,7 +1517,6 @@
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: funkcje daty i czasu",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: funkcje daty i czasu",
             "SQL: modyfikacja danych (UPDATE)",
@@ -1567,7 +1545,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: tworzenie użytkownika (CREATE USER)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -1618,7 +1595,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie użytkownika (CREATE USER)",
             "SQL: wstawianie danych (INSERT)",
@@ -1978,7 +1954,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -2005,7 +1980,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -2089,7 +2063,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -2174,7 +2147,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: tworzenie tabeli (CREATE TABLE)",
@@ -2228,7 +2200,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja danych (UPDATE)",
@@ -2256,7 +2227,6 @@
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
@@ -2286,7 +2256,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja danych (UPDATE)",
@@ -2316,7 +2285,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -2345,7 +2313,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: wstawianie danych (INSERT)",
@@ -2599,7 +2566,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -2966,7 +2932,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -3147,7 +3112,6 @@
             "Grafika: usunięcie tła (przezroczystość)",
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje daty i czasu",
             "SQL: losowanie rekordów (ORDER BY RAND)",
             "SQL: modyfikacja danych (UPDATE)",
@@ -3205,7 +3169,6 @@
             "Grafika: usunięcie tła (przezroczystość)",
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -3321,7 +3284,6 @@
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: odbieranie danych z paska adresu (GET)",
-            "PHP: walidacja formularza",
             "SQL: usuwanie danych (DELETE)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -3378,7 +3340,6 @@
             "Grafika: usunięcie tła (przezroczystość)",
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -3438,7 +3399,6 @@
             "HTML: formularz",
             "JS: pokazywanie/ukrywanie elementów",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
@@ -3471,7 +3431,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: relacja n:m / podwójna relacja",
             "SQL: wyświetlanie danych (SELECT)"
@@ -3607,7 +3566,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -3684,7 +3642,6 @@
             "HTML: formularz",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: funkcje daty i czasu",
             "SQL: grupowanie (GROUP BY)",
@@ -3718,7 +3675,6 @@
             "Grafika: tworzenie grafiki",
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -3746,7 +3702,6 @@
             "Grafika: kadrowanie",
             "Grafika: przeskalowanie grafiki",
             "PHP: odbieranie danych z paska adresu (GET)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: wstawianie danych (INSERT)",
@@ -3830,7 +3785,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: kadrowanie",
             "PHP: odbieranie danych z paska adresu (GET)",
-            "PHP: walidacja formularza",
             "SQL: relacja n:m / podwójna relacja",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -3915,7 +3869,6 @@
             "CSS: efekty przejścia (transition)",
             "CSS: pseudoklasy (np. :hover)",
             "PHP: odbieranie danych z paska adresu (GET)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -3944,7 +3897,6 @@
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: odbieranie danych z paska adresu (GET)",
-            "PHP: walidacja formularza",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -3993,7 +3945,6 @@
             "JS: modyfikacja danych skryptem",
             "JS: zdarzenia formularza (change/input/blur)",
             "PHP: odbieranie danych z paska adresu (GET)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -4022,7 +3973,6 @@
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: relacja n:m / podwójna relacja",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
