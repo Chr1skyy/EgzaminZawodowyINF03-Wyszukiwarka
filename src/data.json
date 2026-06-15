@@ -1979,6 +1979,7 @@
         "language": "PHP",
         "name": "Restauracja \"Wszystkie Smaki\"",
         "codeName": "INF.03-01-21.06-SG",
+        "archive_password": "Wykon@jTo",
         "links": {
             "mainFolder": "/inf03/inf03_2021_06_01",
             "examSheet": "inf_03_2021_06_01_SG.pdf",
@@ -2004,6 +2005,7 @@
         "language": "PHP",
         "name": "Restauracja \"Wszystkie Smaki\"",
         "codeName": "INF.03-01-22.01-SG",
+        "archive_password": "Wykon@jTo",
         "links": {
             "mainFolder": "/inf03/inf03_2022_01_01",
             "examSheet": "inf_03_2022_01_01_SG.pdf",
@@ -2029,6 +2031,7 @@
         "language": "PHP",
         "name": "Portal dla wędkarzy",
         "codeName": "INF.03-01-22.06-SG",
+        "archive_password": "WedkoWaniE&",
         "links": {
             "mainFolder": "/inf03/inf03_2022_06_01",
             "examSheet": "inf_03_2022_06_01_SG.pdf",
@@ -2053,6 +2056,7 @@
         "language": "JS",
         "name": "Całodobowa stacja paliw",
         "codeName": "INF.03-02-22.06-SG",
+        "archive_password": "PaLiWo5&",
         "links": {
             "mainFolder": "/inf03/inf03_2022_06_02",
             "examSheet": "inf_03_2022_06_02_SG.pdf",
@@ -2083,6 +2087,7 @@
         "language": "PHP",
         "name": "Zawody polskich wędkarzy",
         "codeName": "INF.03-03-22.06-SG",
+        "archive_password": "ZaWodY7%",
         "links": {
             "mainFolder": "/inf03/inf03_2022_06_03",
             "examSheet": "inf_03_2022_06_03_SG.pdf",
@@ -2110,6 +2115,7 @@
         "language": "JS",
         "name": "Malowanie pokoi i biur",
         "codeName": "INF.03-01-23.01-SG",
+        "archive_password": "2ws3ed!#",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_01",
             "examSheet": "inf_03_2023_01_01_SG.pdf",
@@ -2137,6 +2143,7 @@
         "language": "PHP",
         "name": "Pensjonat pod dobrym humorem",
         "codeName": "INF.03-02-23.01-SG",
+        "archive_password": "MN52dc%%",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_02",
             "examSheet": "inf_03_2023_01_02_SG.pdf",
@@ -2164,6 +2171,7 @@
         "language": "PHP",
         "name": "Grupa Polskich Kwiaciarni",
         "codeName": "INF.03-03-23.01-SG",
+        "archive_password": "5T2k@W$2n",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_03",
             "examSheet": "inf_03_2023_01_03_SG.pdf",
@@ -2193,6 +2201,7 @@
         "language": "PHP",
         "name": "Biuro turystyczne",
         "codeName": "INF.03-04-23.01-SG",
+        "archive_password": "&poDrozE$",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_04",
             "examSheet": "inf_03_2023_01_04_SG.pdf",
@@ -2217,6 +2226,7 @@
         "language": "PHP",
         "name": "Organizer: Sierpnień",
         "codeName": "INF.03-05-23.01-SG",
+        "archive_password": "kaL(end)arz%",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_05",
             "examSheet": "inf_03_2023_01_05_SG.pdf",
@@ -2245,6 +2255,7 @@
         "language": "PHP",
         "name": "Dzisiejsze promocje naszego sklepu dla uczniów",
         "codeName": "INF.03-01-23.06-SG",
+        "archive_password": "Z@dani3x",
         "links": {
             "mainFolder": "/inf03/inf03_2023_06_01",
             "examSheet": "inf_03_2023_06_01_SG.pdf",
@@ -2272,6 +2283,7 @@
         "language": "PHP",
         "name": "Hurtownia szkolna z najlepszymi cenami",
         "codeName": "INF.03-02-23.06-SG",
+        "archive_password": "Zad@n!e#2",
         "links": {
             "mainFolder": "/inf03/inf03_2023_06_02",
             "examSheet": "inf_03_2023_06_02_SG.pdf",
@@ -2300,6 +2312,7 @@
         "language": "PHP",
         "name": "Biblioteka w Książkowicach Wielkich",
         "codeName": "INF.03-04-23.06-SG",
+        "archive_password": "4rch!wum4x",
         "links": {
             "mainFolder": "/inf03/inf03_2023_06_04",
             "examSheet": "inf_03_2023_06_04_SG.pdf",
@@ -2326,6 +2339,7 @@
         "language": "PHP",
         "name": "Biblioteka w Książkowicach Małych",
         "codeName": "INF.03-07-23.06-SG",
+        "archive_password": "@Z@d@nie$s7",
         "links": {
             "mainFolder": "/inf03/inf03_2023_06_07",
             "examSheet": "inf_03_2023_06_07_SG.pdf",
@@ -2355,6 +2369,7 @@
         "language": "JS",
         "name": "Usługi informatyczne",
         "codeName": "INF.03-01-24.01-SG",
+        "archive_password": "m@t3rialyX",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_01",
             "examSheet": "inf_03_2024_01_01_SG.pdf",
@@ -2384,6 +2399,7 @@
         "language": "JS",
         "name": "Pogotowie komputerowe",
         "codeName": "INF.03-02-24.01-SG",
+        "archive_password": "m4teRi@lyQ",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_02",
             "examSheet": "inf_03_2024_01_02_SG.pdf",
@@ -2401,6 +2417,7 @@
             "Grafika: tworzenie grafiki",
             "HTML: favicon",
             "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
@@ -2413,6 +2430,7 @@
         "language": "PHP",
         "name": "Terminarz",
         "codeName": "INF.03-04-24.01-SG",
+        "archive_password": "kaL(end)arz%",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_04",
             "examSheet": "inf_03_2024_01_04_SG.pdf",
@@ -2438,6 +2456,7 @@
         "language": "JS",
         "name": "Usługi kosmetyczne",
         "codeName": "INF.03-05-24.01-SG",
+        "archive_password": "Do!!@rozp@#",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_05",
             "examSheet": "inf_03_2024_01_05_SG.pdf",
@@ -2453,7 +2472,6 @@
             "JS: modyfikacja danych skryptem",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
-            "SQL: modyfikacja danych (UPDATE)",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie użytkownika (CREATE USER)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -2468,6 +2486,7 @@
         "language": "PHP",
         "name": "Biuro podróży",
         "codeName": "INF.03-06-24.01-SG",
+        "archive_password": "$poDrozE&!",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_06",
             "examSheet": "inf_03_2024_01_06_SG.pdf",
@@ -2491,6 +2510,7 @@
         "language": "JS",
         "name": "Salon fryzjerski",
         "codeName": "INF.03-08-24.01-SG",
+        "archive_password": "XSaloon[Fryz]",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_08",
             "examSheet": "inf_03_2024_01_08_SG.pdf",
@@ -2517,6 +2537,7 @@
         "language": "PHP",
         "name": "Motocykle - moja pasja",
         "codeName": "INF.03-01-24.06-SG",
+        "archive_password": "^moTocyKle^",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_01",
             "examSheet": "inf_03_2024_06_01_SG.pdf",
@@ -2543,6 +2564,7 @@
         "language": "JS",
         "name": "Chat",
         "codeName": "INF.03-02-24.06-SG",
+        "archive_password": "ChaT_Ch@t",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_02",
             "examSheet": "inf_03_2024_06_02_SG.pdf",
@@ -2558,7 +2580,6 @@
             "JS: losowanie elementów z tablicy",
             "JS: tworzenie elementów (createElement, appendChild)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
-            "SQL: modyfikacja danych (UPDATE)",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie użytkownika (CREATE USER)",
             "SQL: wstawianie danych (INSERT)",
@@ -2574,6 +2595,7 @@
         "language": "PHP",
         "name": "Poziomy rzek w województwie dolnośląskim",
         "codeName": "INF.03-03-24.06-SG",
+        "archive_password": "St@ny%RzeK",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_03",
             "examSheet": "inf_03_2024_06_03_SG.pdf",
@@ -2602,6 +2624,7 @@
         "language": "PHP",
         "name": "Zdjęcia",
         "codeName": "INF.03-04-24.06-SG",
+        "archive_password": "(G@LeriA)",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_04",
             "examSheet": "inf_03_2024_06_04_SG.pdf",
@@ -2630,6 +2653,7 @@
         "language": "PHP",
         "name": "KupAuto! Internetowy komis samochodowy",
         "codeName": "INF.03-05-24.06-SG",
+        "archive_password": "S@moCHody^",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_05",
             "examSheet": "inf_03_2024_06_05_SG.pdf",
@@ -2642,7 +2666,6 @@
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
@@ -2655,6 +2678,7 @@
         "language": "JS",
         "name": "Formualrz rejestracyjny konferencji \"Nasze Kwiaty\"",
         "codeName": "INF.03-06-24.06-SG",
+        "archive_password": "^konfErEncja&",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_06",
             "examSheet": "inf_03_2024_06_06_SG.pdf",
@@ -2683,6 +2707,7 @@
         "language": "PHP",
         "name": "Ważenie pojazdów ciężarowych we Wrocławiu",
         "codeName": "INF.03-07-24.06-SG",
+        "archive_password": "%WAg@Poj@zdoW",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_07",
             "examSheet": "inf_03_2024_06_07_SG.pdf",
@@ -2697,6 +2722,7 @@
             "Grafika: przeskalowanie grafiki",
             "Grafika: tworzenie grafiki",
             "PHP: odświeżanie strony (refresh)",
+            "SQL: funkcje daty i czasu",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -2711,6 +2737,7 @@
         "language": "JS",
         "name": "Zarejestruj się w sklepie",
         "codeName": "INF.03-08-24.06-SG",
+        "archive_password": "_Rejestr@cja_",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_08",
             "examSheet": "inf_03_2024_06_08_SG.pdf",
@@ -2739,6 +2766,7 @@
         "language": "JS",
         "name": "Zwiedzamy Polskę",
         "codeName": "INF.03-09-24.06-SG",
+        "archive_password": "G@leri@Animowan@",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_09",
             "examSheet": "inf_03_2024_06_09_SG.pdf",
@@ -2768,6 +2796,7 @@
         "language": "JS",
         "name": "Nasz zespół",
         "codeName": "INF.03-10-24.06-SG",
+        "archive_password": "K@dra_FirMy#",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_10",
             "examSheet": "inf_03_2024_06_10_SG.pdf",
@@ -2797,6 +2826,7 @@
         "language": "PHP",
         "name": "Hodowla świnek morskich",
         "codeName": "INF.03-11-24.06-SG",
+        "archive_password": "@Swinki-MorSkie!",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_11",
             "examSheet": "inf_03_2024_06_11_SG.pdf",
@@ -2820,6 +2850,7 @@
         "language": "JS",
         "name": "Efekty na obrazach",
         "codeName": "INF.03-12-24.06-SG",
+        "archive_password": "#TransfoRm@cje",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_12",
             "examSheet": "inf_03_2024_06_12_SG.pdf",
@@ -2837,6 +2868,7 @@
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja danych (UPDATE)",
+            "SQL: podkwerenda",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
@@ -2849,6 +2881,7 @@
         "language": "JS",
         "name": "Kursy komputerowe",
         "codeName": "INF.03-01-25.01-SG",
+        "archive_password": "KuRsyKompuTerow3&",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_01",
             "examSheet": "inf_03_2025_01_01_SG.pdf",
@@ -2862,7 +2895,7 @@
             "Grafika: dodawanie tekstu",
             "Grafika: kadrowanie",
             "Grafika: tworzenie grafiki",
-            "SQL: modyfikacja danych (UPDATE)",
+            "JS: modyfikacja danych skryptem",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie użytkownika (CREATE USER)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -2877,6 +2910,7 @@
         "language": "JS",
         "name": "Montaż paneli podłogowych",
         "codeName": "INF.03-02-25.01-SG",
+        "archive_password": "P@neLePodLoGowe!+",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_02",
             "examSheet": "inf_03_2025_01_02_SG.pdf",
@@ -2909,6 +2943,7 @@
         "language": "PHP",
         "name": "Kalendarz",
         "codeName": "INF.03-03-25.01-SG",
+        "archive_password": "k@L3ndarz",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_03",
             "examSheet": "inf_03_2025_01_03_SG.pdf",
@@ -2923,9 +2958,7 @@
             "HTML: łączenie komórek tabeli (rowspan/colspan)",
             "PHP: funkcje daty i czasu",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
-            "SQL: funkcje daty i czasu",
             "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -2939,6 +2972,7 @@
         "language": "PHP",
         "name": "Obuwie męskie",
         "codeName": "INF.03-04-25.01-SG",
+        "archive_password": "*HurTowni@Buty$",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_04",
             "examSheet": "inf_03_2025_01_04_SG.pdf",
@@ -2964,6 +2998,7 @@
         "language": "PHP",
         "name": "Firma szkoleniowa",
         "codeName": "INF.03-05-25.01-SG",
+        "archive_password": "SzkoL3Nia%",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_05",
             "examSheet": "inf_03_2025_01_05_SG.pdf",
@@ -2995,6 +3030,7 @@
         "language": "JS",
         "name": "Pozycyjne systemy liczbowe",
         "codeName": "INF.03-06-25.01-SG",
+        "archive_password": "Cyf3rki#",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_06",
             "examSheet": "inf_03_2025_01_06_SG.pdf",
@@ -3023,6 +3059,7 @@
         "language": "PHP",
         "name": "Wyszukiwarka miast",
         "codeName": "INF.03-07-25.01-SG",
+        "archive_password": "@PolSki3Miast@",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_07",
             "examSheet": "inf_03_2025_01_07_SG.pdf",
@@ -3054,6 +3091,7 @@
         "language": "PHP",
         "name": "Mieszalnia farb",
         "codeName": "INF.03-08-25.01-SG",
+        "archive_password": "Miesz@nie&F@rB",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_08",
             "examSheet": "inf_03_2025_01_08_SG.pdf",
@@ -3084,6 +3122,7 @@
         "language": "PHP",
         "name": "Klub zdobywców gór polskich",
         "codeName": "INF.03-09-25.01-SG",
+        "archive_password": "$ZdobyWcy&",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_09",
             "examSheet": "inf_03_2025_01_09_SG.pdf",
@@ -3113,6 +3152,7 @@
         "language": "PHP",
         "name": "Koło szachowe gambit piona",
         "codeName": "INF.03-10-25.01-SG",
+        "archive_password": "Sz4chm4t!",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_10",
             "examSheet": "inf_03_2025_01_10_SG.pdf",
@@ -3142,6 +3182,7 @@
         "language": "PHP",
         "name": "Konkurs - wolontariat szkolny",
         "codeName": "INF.03-11-25.01-SG",
+        "archive_password": "^WolonTari@t",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_11",
             "examSheet": "inf_03_2025_01_11_SG.pdf",
@@ -3169,6 +3210,7 @@
         "language": "PHP",
         "name": "Piekarnia",
         "codeName": "INF.03-12-25.01-SG",
+        "archive_password": "ULeptnny!",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_12",
             "examSheet": "inf_03_2025_01_12_SG.pdf",
@@ -3198,6 +3240,7 @@
         "language": "PHP",
         "name": "Ranking gier komputerowych / Gry komputerowe",
         "codeName": "INF.03-01-25.06-SG",
+        "archive_password": "Gry&KomputErowE",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_01",
             "examSheet": "inf_03_2025_06_01_SG.pdf",
@@ -3225,6 +3268,7 @@
         "language": "JS",
         "name": "Moje zadania / Planer zadań",
         "codeName": "INF.03-02-25.06-SG",
+        "archive_password": "#ToDoList@",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_02",
             "examSheet": "inf_03_2025_06_02_SG.pdf",
@@ -3252,6 +3296,7 @@
         "language": "PHP",
         "name": "Biblioteka szkolna \"Wiedzamin\"",
         "codeName": "INF.03-03-25.06-SG",
+        "archive_password": "&&BiBlioTek@",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_03",
             "examSheet": "inf_03_2025_06_03_SG.pdf",
@@ -3279,6 +3324,7 @@
         "language": "PHP",
         "name": "Firma przewozowa Półdarmo",
         "codeName": "INF.03-04-25.06-SG",
+        "archive_password": "*PrzEwozy!",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_04",
             "examSheet": "inf_03_2025_06_04_SG.pdf",
@@ -3310,6 +3356,7 @@
         "language": "JS",
         "name": "Fotografia artystyczna",
         "codeName": "INF.03-05-25.06-SG",
+        "archive_password": "#Foto+Foto&",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_05",
             "examSheet": "inf_03_2025_06_05_SG.pdf",
@@ -3336,6 +3383,7 @@
         "language": "PHP",
         "name": "Biblioteka miejska",
         "codeName": "INF.03-06-25.06-SG",
+        "archive_password": "BibLio#tek@",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_06",
             "examSheet": "inf_03_2025_06_06_SG.pdf",
@@ -3365,6 +3413,7 @@
         "language": "PHP",
         "name": "Biuro turystyczne",
         "codeName": "INF.03-07-25.06-SG",
+        "archive_password": "#TurysTyk@7!",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_07",
             "examSheet": "inf_03_2025_06_07_SG.pdf",
@@ -3395,6 +3444,7 @@
         "language": "JS+PHP",
         "name": "Poznaj smoki!",
         "codeName": "INF.03-08-25.06-SG",
+        "archive_password": "SmoKi-Swi@ta#",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_08",
             "examSheet": "inf_03_2025_06_08_SG.pdf",
@@ -3425,6 +3475,7 @@
         "language": "PHP",
         "name": "Malowanie i gipsowanie / Remonty",
         "codeName": "INF.03-09-25.06-SG",
+        "archive_password": "Remon&Tow@nie+",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_09",
             "examSheet": "inf_03_2025_06_09_SG.pdf",
@@ -3454,6 +3505,7 @@
         "language": "PHP",
         "name": "Szkolenia i kursy",
         "codeName": "INF.03-10-25.06-SG",
+        "archive_password": "*SzkoLenia^",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_10",
             "examSheet": "inf_03_2025_06_10_SG.pdf",
@@ -3483,6 +3535,7 @@
         "language": "PHP",
         "name": "Opony",
         "codeName": "INF.03-11-25.06-SG",
+        "archive_password": "#OpoNki&+",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_11",
             "examSheet": "inf_03_2025_06_11_SG.pdf",
@@ -3509,6 +3562,7 @@
         "language": "PHP",
         "name": "Przychodnia Medica",
         "codeName": "INF.03-12-25.06-SG",
+        "archive_password": "_PrzychoDnia%",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_12",
             "examSheet": "inf_03_2025_06_12_SG.pdf",
@@ -3535,6 +3589,7 @@
         "language": "PHP",
         "name": "Konfigurator samochodów",
         "codeName": "INF.03-01-26.01-SG",
+        "archive_password": "S@mocHody^",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_01",
             "examSheet": "inf_03_2026_01_01_SG.pdf",
@@ -3560,6 +3615,7 @@
         "language": "PHP",
         "name": "Zdrowy bazarek",
         "codeName": "INF.03-02-26.01-SG",
+        "archive_password": "baz@rEk100%",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_02",
             "examSheet": "inf_03_2026_01_02_SG.pdf",
@@ -3586,6 +3642,7 @@
         "language": "JS",
         "name": "Pola figur płaskich",
         "codeName": "INF.03-03-26.01-SG",
+        "archive_password": "*M@tem@tyk@6",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_03",
             "examSheet": "inf_03_2026_01_03_SG.pdf",
@@ -3610,6 +3667,7 @@
         "language": "PHP",
         "name": "System informacji dla maturzystów / Matura",
         "codeName": "INF.03-04-26.01-SG",
+        "archive_password": "Z@Rok!Matur@",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_04",
             "examSheet": "inf_03_2026_01_04_SG.pdf",
@@ -3635,6 +3693,7 @@
         "language": "PHP",
         "name": "Zgłoszenia wydarzeń",
         "codeName": "INF.03-05-26.01-SG",
+        "archive_password": "@LarMowe^",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_05",
             "examSheet": "inf_03_2026_01_05_SG.pdf",
@@ -3664,6 +3723,7 @@
         "language": "PHP",
         "name": "Informacja o chorobach w Polsce",
         "codeName": "INF.03-06-26.01-SG",
+        "archive_password": "*ZdroWia!!!",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_06",
             "examSheet": "inf_03_2026_01_06_SG.pdf",
@@ -3694,6 +3754,7 @@
         "language": "PHP",
         "name": "Pogoda w Europie",
         "codeName": "INF.03-07-26.01-SG",
+        "archive_password": "&M3t3oPogoDa%",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_07",
             "examSheet": "inf_03_2026_01_07_SG.pdf",
@@ -3722,6 +3783,7 @@
         "language": "PHP",
         "name": "Korona gór polskich",
         "codeName": "INF.03-08-26.01-SG",
+        "archive_password": "Gory^PoLskie!",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_08",
             "examSheet": "inf_03_2026_01_08_SG.pdf",
@@ -3749,6 +3811,7 @@
         "language": "JS",
         "name": "Stylizacja paznokci / Twoje wymarzone paznokcie",
         "codeName": "INF.03-09-26.01-SG",
+        "archive_password": "P@znoKcie?",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_09",
             "examSheet": "inf_03_2026_01_09_SG.pdf",
@@ -3777,6 +3840,7 @@
         "language": "PHP",
         "name": "Blog kulinarny",
         "codeName": "INF.03-10-26.01-SG",
+        "archive_password": "BLog+#KuLinarnY@",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_10",
             "examSheet": "inf_03_2026_01_10_SG.pdf",
@@ -3802,6 +3866,7 @@
         "language": "PHP",
         "name": "Lista aktorów | KinoTEKA",
         "codeName": "INF.03-11-26.01-SG",
+        "archive_password": "@ktorzy+f1Lmy",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_11",
             "examSheet": "inf_03_2026_01_11_SG.pdf",
@@ -3827,6 +3892,7 @@
         "language": "JS",
         "name": "Studio tatuażu",
         "codeName": "INF.03-12-26.01-SG",
+        "archive_password": "<Studio&T@tu>",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_12",
             "examSheet": "inf_03_2026_01_12_SG.pdf",
@@ -3860,6 +3926,7 @@
         "language": "PHP",
         "name": "Zwiedzaj Islandię",
         "codeName": "INF.03-01-26.06-SG",
+        "archive_password": "isLandi@",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_01",
             "examSheet": "",
@@ -3885,6 +3952,7 @@
         "language": "PHP",
         "name": "Łowcy wodospadów",
         "codeName": "INF.03-02-26.06-SG",
+        "archive_password": "",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_02",
             "examSheet": "",
@@ -3912,6 +3980,7 @@
         "language": "JS",
         "name": "Sklep meblowy",
         "codeName": "INF.03-03-26.06-SG",
+        "archive_password": "",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_03",
             "examSheet": "",
@@ -3931,6 +4000,7 @@
         "language": "JS/PHP",
         "name": "Rezerwacje wycieczek",
         "codeName": "INF.03-04-26.06-SG",
+        "archive_password": "RezErw@cjE",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_04",
             "examSheet": "",
@@ -3960,6 +4030,7 @@
         "language": "PHP",
         "name": "Sprzedaż antyków",
         "codeName": "INF.03-05-26.06-SG",
+        "archive_password": "Twoje@ntyki&",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_05",
             "examSheet": "",
@@ -3988,6 +4059,7 @@
         "language": "JS",
         "name": "Strefa pacjenta",
         "codeName": "INF.03-06-26.06-SG",
+        "archive_password": "",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_06",
             "examSheet": "",
@@ -4017,6 +4089,7 @@
         "language": "JS",
         "name": "Gra kółko i krzyżyk",
         "codeName": "INF.03-07-26.06-SG",
+        "archive_password": "KoLko+KrzyZyk",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_07",
             "examSheet": "",
@@ -4043,6 +4116,7 @@
         "language": "JS",
         "name": "",
         "codeName": "INF.03-08-26.06-SG",
+        "archive_password": "",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_08",
             "examSheet": "",
@@ -4069,6 +4143,7 @@
         "language": "JS",
         "name": "Restauracja Marchewka",
         "codeName": "INF.03-09-26.06-SG",
+        "archive_password": "",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_09",
             "examSheet": "",
@@ -4094,6 +4169,7 @@
         "language": "PHP",
         "name": "",
         "codeName": "INF.03-10-26.06-SG",
+        "archive_password": "",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_10",
             "examSheet": "",
@@ -4115,6 +4191,7 @@
         "language": "JS",
         "name": "Atlas drzew",
         "codeName": "INF.03-11-26.06-SG",
+        "archive_password": "",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_11",
             "examSheet": "",
@@ -4140,9 +4217,10 @@
         "year": 2026,
         "session": 6,
         "number": "12",
-        "language": "",
+        "language": "JS",
         "name": "",
         "codeName": "INF.03-12-26.06-SG",
+        "archive_password": "",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_12",
             "examSheet": "",
@@ -4151,7 +4229,9 @@
             "solution": "",
             "solutionZIP": ""
         },
-        "tags": [],
+        "tags": [
+            "JS: funkcje daty i czasu"
+        ],
         "difficulty": ""
     }
 ]
