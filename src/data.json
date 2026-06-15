@@ -250,7 +250,8 @@
             "Grafika: obrót lub odbicie",
             "Grafika: przeskalowanie grafiki",
             "Grafika: tekst po ścieżce",
-            "Grafika: tworzenie grafiki"
+            "Grafika: tworzenie grafiki",
+            "JS: modyfikacja danych skryptem"
         ],
         "difficulty": "Easy"
     },
@@ -451,6 +452,7 @@
         "tags": [
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: filtry",
+            "Grafika: obrót lub odbicie",
             "Grafika: przeskalowanie grafiki",
             "JS: galeria zdjęć",
             "JS: zdarzenia myszy (mouseover/mouseout)"
@@ -1297,7 +1299,6 @@
             "PHP: funkcje daty i czasu",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
-            "SQL: funkcje daty i czasu",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -1326,7 +1327,6 @@
             "PHP: funkcje daty i czasu",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
-            "SQL: funkcje daty i czasu",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -1487,7 +1487,6 @@
             "PHP: funkcje daty i czasu",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
-            "SQL: funkcje daty i czasu",
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -1564,7 +1563,6 @@
             "PHP: odbieranie danych formularza (POST)",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie użytkownika (CREATE USER)",
-            "SQL: usuwanie struktury (DROP, TRUNCATE)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -1627,7 +1625,6 @@
             "PHP: szyfrowanie (np. SHA1)",
             "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
-            "SQL: funkcje daty i czasu",
             "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -1767,6 +1764,7 @@
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: relacja n:m / podwójna relacja",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
@@ -1793,6 +1791,7 @@
             "Grafika: usunięcie tła (przezroczystość)",
             "JS: modyfikacja danych skryptem",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: relacja n:m / podwójna relacja",
             "SQL: tworzenie użytkownika (CREATE USER)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
