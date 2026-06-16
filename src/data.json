@@ -4179,19 +4179,27 @@
         "language": "PHP",
         "name": "",
         "codeName": "INF.03-10-26.06-SG",
-        "archive_password": "",
+        "archive_password": "LaBoRaToR2um",
         "links": {
             "mainFolder": "/inf03/inf03_2026_06_10",
             "examSheet": "",
             "gradingRules": "",
-            "archive": "",
-            "solution": "",
-            "solutionZIP": ""
+            "archive": "pliki20.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "PHP: obsługa sesji ($_SESSION)"
+            "SQL: wyświetlanie danych (SELECT)",
+            "SQL: funkcje daty i czasu",
+            "SQL: relacja LEFT JOIN",
+            "SQL: relacja n:m / podwójna relacja",
+            "HTML: formularz",
+            "CSS: pseudoklasy (np. :hover)",
+            "PHP: obsługa sesji ($_SESSION)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza"
         ],
-        "difficulty": ""
+        "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
@@ -4206,7 +4214,7 @@
             "mainFolder": "/inf03/inf03_2026_06_11",
             "examSheet": "",
             "gradingRules": "",
-            "archive": "",
+            "archive": "pliki21.7z",
             "solution": "rozwiazanie",
             "solutionZIP": ""
         },
