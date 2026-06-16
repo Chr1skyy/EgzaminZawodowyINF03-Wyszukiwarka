@@ -3013,7 +3013,6 @@
             "Grafika: perspektywa",
             "Grafika: przeskalowanie grafiki",
             "Grafika: tworzenie grafiki",
-            "JS: zdarzenia formularza (change/input/blur)",
             "PHP: zapis do pliku skryptem",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
@@ -3076,8 +3075,8 @@
             "HTML: favicon",
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: funkcje tekstowe (np. LOWER)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -3255,6 +3254,7 @@
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
+            "SQL: funkcje tekstowe (np. LOWER)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
@@ -3428,7 +3428,6 @@
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: tworzenie tabeli (CREATE TABLE)",
