@@ -55,12 +55,8 @@ const utils = {
      */
     getThumbnailUrl: (exam, large = false) => {
         const formulaPath = exam.formula.toLowerCase().replace('.', '');
-        if (formulaPath === 'e14') {
-            const fileName = large ? exam.codeName : `${exam.codeName}_tb`;
-            return `${utils.CDN_BASE}/thumbnails/${formulaPath}/${fileName}.webp`;
-        }
-        const suffix = large ? '' : '-300px';
-        return `${utils.CDN_BASE}/thumbnails/${formulaPath}/${exam.codeName}${suffix}.webp`;
+        const fileName = large ? exam.codeName : `${exam.codeName}_tb`;
+        return `${utils.CDN_BASE}/thumbnails/${formulaPath}/${fileName}.webp`;
     },
     /**
      * Normalizuje znaki (usuwa polskie diakrytyki)
