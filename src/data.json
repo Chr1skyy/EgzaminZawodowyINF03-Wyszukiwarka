@@ -286,7 +286,6 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: przeskalowanie grafiki",
             "SQL: modyfikacja struktury tabeli (ALTER)",
-            "SQL: relacja n:m / podwójna relacja",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
@@ -1715,7 +1714,8 @@
             "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: tworzenie użytkownika (CREATE USER)",
             "SQL: usuwanie struktury (DROP, TRUNCATE)",
-            "SQL: wyświetlanie danych (SELECT)"
+            "SQL: wyświetlanie danych (SELECT)",
+            "SQL: relacja n:m / podwójna relacja"
         ],
         "difficulty": "Medium"
     },
@@ -1802,7 +1802,6 @@
             "JS: modyfikacja stylów skryptem",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
-            "SQL: relacja n:m / podwójna relacja",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
@@ -1829,7 +1828,6 @@
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja struktury tabeli (ALTER)",
-            "SQL: relacja n:m / podwójna relacja",
             "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
@@ -2471,7 +2469,6 @@
             "HTML: formularz",
             "JS: modyfikacja danych skryptem",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
-            "SQL: grupowanie (GROUP BY)",
             "SQL: nadawanie uprawnień (GRANT, REVOKE)",
             "SQL: tworzenie użytkownika (CREATE USER)",
             "SQL: wyświetlanie danych (SELECT)"
