@@ -1,4 +1,4 @@
-let filters = { query: '', formulas: [], difficulties: [], languages: [], sessions: [], hideCompleted: false };
+let filters = { query: '', formulas: [], difficulties: [], languages: [], sessions: [], years: [], hideCompleted: false };
 let onFiltersChange = null;
 
 function setOnFiltersChangeCallback(cb) { onFiltersChange = cb; }
@@ -10,11 +10,12 @@ function setFilters(newFilters) {
         formulas: [...newFilters.formulas], 
         difficulties: [...newFilters.difficulties], 
         languages: [...newFilters.languages],
-        sessions: [...(newFilters.sessions || [])]
+        sessions: [...(newFilters.sessions || [])],
+        years: [...(newFilters.years || [])]
     };
 }
 function toggleFilter(type, value) {
-    const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas', 'session': 'sessions' };
+    const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas', 'session': 'sessions', 'year': 'years' };
     const key = keyMap[type] || type;
     const arr = filters[key];
     const idx = arr.indexOf(value);
@@ -30,7 +31,7 @@ function triggerChange() {
 }
 
 function clearFilters() {
-    filters = { query: '', formulas: [], difficulties: [], languages: [], sessions: [], hideCompleted: false };
+    filters = { query: '', formulas: [], difficulties: [], languages: [], sessions: [], years: [], hideCompleted: false };
     document.querySelectorAll('.filter-btn.active, .hide-completed-btn.active').forEach(btn => {
         btn.classList.remove('active');
         btn.setAttribute('aria-pressed', 'false');

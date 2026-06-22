@@ -526,7 +526,7 @@ body {
 
 .filters {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
@@ -534,15 +534,15 @@ body {
     margin-bottom: 0;
 }
 
-@media (min-width: 640px) {
-    .filters {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.year-filter-section,
+.tag-filter-section,
+.hide-completed-section {
+    grid-column: span 2;
+}
 
-    .tag-filter-section,
-    .hide-completed-section {
-        grid-column: span 2;
-    }
+.hide-completed-btn {
+    width: 100%;
+    justify-content: center;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -551,18 +551,21 @@ body {
         gap: 1rem;
     }
 
+    .year-filter-section,
     .tag-filter-section {
         grid-column: span 2;
     }
 
     .hide-completed-section {
-        grid-column: span 2;
+        grid-column: span 4;
         display: flex;
-        align-items: flex-end;
+        justify-content: center;
+        align-items: center;
     }
 
     .hide-completed-btn {
         width: 100%;
+        max-width: 320px;
         height: 2.375rem;
         justify-content: center;
     }
@@ -573,6 +576,7 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .year-filter-section,
     .tag-filter-section,
     .hide-completed-section {
         grid-column: span 1;
@@ -1095,7 +1099,10 @@ body {
 }
 
 .exam-content {
-    padding: 1.25rem
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .exam-header {
@@ -1244,7 +1251,8 @@ body {
 .exam-links {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: .5rem
+    gap: .5rem;
+    margin-top: auto;
 }
 
 @media (max-width: 640px) {

@@ -248,6 +248,22 @@ function handleFiltersChange(filts, skipAnimation = false) {
         }
     }
 
+    const yearBtnText = document.querySelector('#custom-year-select .custom-select-text');
+    if (yearBtnText) {
+        if (!filts.years || filts.years.length === 0) {
+            yearBtnText.textContent = 'Wszystkie lata';
+        } else {
+            yearBtnText.textContent = filts.years.join(', ');
+        }
+    }
+
+    document.querySelectorAll('#custom-year-select .custom-select-option').forEach(opt => {
+        const val = opt.dataset.value;
+        const isSelected = val === '' ? (!filts.years || filts.years.length === 0) : filts.years.includes(val);
+        opt.classList.toggle('selected', isSelected);
+        opt.setAttribute('aria-selected', isSelected);
+    });
+
     updateTagFilterOptions(filts);
 }
 
@@ -352,6 +368,43 @@ function initTagFilter() {
             currentHeader.style.display = 'none';
         }
     }
+}
+
+function initYearFilter() {
+    const customSelectWrapper = document.getElementById('custom-year-select');
+    if (!customSelectWrapper) return;
+
+    const button = customSelectWrapper.querySelector('.custom-select-button');
+    const dropdown = customSelectWrapper.querySelector('.custom-select-dropdown');
+
+    button.onclick = () => {
+        const show = dropdown.classList.toggle('show');
+        button.classList.toggle('active');
+    };
+
+    dropdown.onclick = (e) => {
+        const option = e.target.closest('.custom-select-option');
+        if (!option) return;
+
+        const value = option.dataset.value;
+        if (value === "") {
+            filters.years = [];
+            triggerChange();
+        } else {
+            toggleFilter('year', value);
+        }
+
+        dropdown.classList.remove('show');
+        button.classList.remove('active');
+    };
+
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!customSelectWrapper.contains(e.target)) {
+            dropdown.classList.remove('show');
+            button.classList.remove('active');
+        }
+    });
 }
 
 let activeSuggestionIndex = -1;
@@ -590,6 +643,7 @@ function updateUrlFromFilters(filts) {
     if (filts.difficulties.length) params.set('difficulty', filts.difficulties.join(','));
     if (filts.languages.length) params.set('language', filts.languages.join(','));
     if (filts.sessions && filts.sessions.length) params.set('session', filts.sessions.join(','));
+    if (filts.years && filts.years.length) params.set('year', filts.years.join(','));
     if (filts.hideCompleted) params.set('hideCompleted', '1');
 
     const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
@@ -604,6 +658,7 @@ function loadFiltersFromUrl() {
         difficulties: params.get('difficulty') ? params.get('difficulty').split(',') : [],
         languages: params.get('language') ? params.get('language').split(',') : [],
         sessions: params.get('session') ? params.get('session').split(',') : [],
+        years: params.get('year') ? params.get('year').split(',') : [],
         hideCompleted: params.get('hideCompleted') === '1'
     };
     setFilters(newFilters);
@@ -613,7 +668,7 @@ function loadFiltersFromUrl() {
     document.querySelectorAll('.filter-btn').forEach(btn => {
         const type = btn.dataset.filter;
         const val = btn.dataset.value;
-        const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas', 'session': 'sessions' };
+        const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas', 'session': 'sessions', 'year': 'years' };
         const key = keyMap[type] || type;
         const isActive = newFilters[key].includes(val);
         btn.classList.toggle('active', isActive);
@@ -635,6 +690,7 @@ function renderSkeletons() {
 function renderDynamicFilters() {
     const languages = new Set();
     const sessions = new Set();
+    const years = new Set();
     const langCounts = {};
 
     app.exams.forEach(exam => {
@@ -643,10 +699,12 @@ function renderDynamicFilters() {
             langCounts[exam.language] = (langCounts[exam.language] || 0) + 1;
         }
         if (exam.session) sessions.add(exam.session);
+        if (exam.year) years.add(exam.year);
     });
 
     const sortedLanguages = Array.from(languages).sort((a, b) => langCounts[b] - langCounts[a]);
     const sortedSessions = Array.from(sessions).sort((a, b) => a - b);
+    const sortedYears = Array.from(years).sort((a, b) => b - a);
 
     const langContainer = document.getElementById('language-filters');
     if (langContainer) {
@@ -663,6 +721,15 @@ function renderDynamicFilters() {
             const cleanSession = String(sessionName).toLowerCase().replace('ć', 'c').replace('ń', 'n');
             return `<button class="filter-btn session-${cleanSession}" data-filter="session" data-value="${session}">${sessionName}</button>`;
         }).join('');
+    }
+
+    const yearContainer = document.querySelector('#custom-year-select .custom-select-options-container');
+    if (yearContainer) {
+        let html = `<div class="custom-select-option" role="option" data-value="">Wszystkie lata</div>`;
+        html += sortedYears.map(year => {
+            return `<div class="custom-select-option" role="option" data-value="${year}">${year}</div>`;
+        }).join('');
+        yearContainer.innerHTML = html;
     }
 }
 
@@ -714,6 +781,7 @@ async function initApp() {
 
         runIdle(() => {
             initTagFilter();
+            initYearFilter();
             bindFilterEvents();
             setupInfiniteScroll();
             setupBackToTop();

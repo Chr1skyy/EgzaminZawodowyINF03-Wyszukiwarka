@@ -63,6 +63,7 @@ function searchExams(data, filters, completedExams = []) {
         if (filters.difficulties.length && !filters.difficulties.includes(exam.difficulty)) return false;
         if (filters.languages.length && !filters.languages.includes(exam.language)) return false;
         if (filters.sessions && filters.sessions.length && !filters.sessions.map(Number).includes(exam.session)) return false;
+        if (filters.years && filters.years.length && !filters.years.map(Number).includes(exam.year)) return false;
         return true;
     });
 
