@@ -19,8 +19,9 @@ function toggleFilter(type, value) {
     const key = keyMap[type] || type;
     const arr = filters[key];
     const idx = arr.indexOf(value);
-    if (idx > -1) arr.splice(idx, 1); else arr.push(value);
-    if (window.umami) {
+    const isAdding = idx === -1;
+    if (isAdding) arr.push(value); else arr.splice(idx, 1);
+    if (window.umami && isAdding) {
         let trackValue = value;
         if (type === 'session' && window.appUtils && window.appUtils.SESSION_NAMES) {
             trackValue = window.appUtils.SESSION_NAMES[value] || value;
