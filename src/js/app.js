@@ -425,10 +425,8 @@ function renderSuggestions(query) {
     const normalizedQuery = window.appUtils.normalizeString(query);
 
     app.exams.forEach(exam => {
-        const normalizedCode = window.appUtils.normalizeString(exam.codeName);
-        const normalizedName = window.appUtils.normalizeString(exam.name);
-        if (normalizedCode.includes(normalizedQuery) ||
-            normalizedName.includes(normalizedQuery)) {
+        if (exam._normalizedCode.includes(normalizedQuery) ||
+            exam._normalizedName.includes(normalizedQuery)) {
             suggestions.push({
                 type: 'exam',
                 title: exam.name,
@@ -762,6 +760,9 @@ async function initApp() {
         app.exams = await response.json();
         window.appTagCounts = {};
         app.exams.forEach(exam => {
+            exam._normalizedCode = window.appUtils.normalizeString(exam.codeName);
+            exam._normalizedName = window.appUtils.normalizeString(exam.name);
+            exam._normalizedTags = exam.tags?.map(t => window.appUtils.normalizeString(t)) || [];
             exam.tags?.forEach(tag => {
                 window.appTagCounts[tag] = (window.appTagCounts[tag] || 0) + 1;
             });

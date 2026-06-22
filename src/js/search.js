@@ -7,13 +7,13 @@ function searchExams(data, filters, completedExams = []) {
         const query = filters.query.trim().toLowerCase();
         const normalizedQuery = normalizeString(query);
         
-        const isExactCode = data.some(item => normalizeString(item.codeName) === normalizedQuery);
-        const isExactTag = data.some(item => item.tags?.some(t => normalizeString(t) === normalizedQuery));
+        const isExactCode = data.some(item => item._normalizedCode === normalizedQuery);
+        const isExactTag = data.some(item => item._normalizedTags.includes(normalizedQuery));
         
         if (isExactCode || isExactTag) {
             results = data.filter(item => 
-                normalizeString(item.codeName) === normalizedQuery || 
-                item.tags?.some(t => normalizeString(t) === normalizedQuery)
+                item._normalizedCode === normalizedQuery || 
+                item._normalizedTags.includes(normalizedQuery)
             );
         } else {
             const words = query.split(/\s+/);
@@ -37,18 +37,18 @@ function searchExams(data, filters, completedExams = []) {
                     });
                 } else {
                     const exactMatches = data.filter(item =>
-                        normalizeString(item.codeName) === normWord ||
-                        item.tags?.some(t => normalizeString(t) === normWord) ||
-                        normalizeString(item.name).includes(normWord)
+                        item._normalizedCode === normWord ||
+                        item._normalizedTags.includes(normWord) ||
+                        item._normalizedName.includes(normWord)
                     );
 
                     if (exactMatches.length > 0) {
                         filteredResults = filteredResults.filter(item => exactMatches.includes(item));
                     } else {
                         const partialMatches = data.filter(item =>
-                            normalizeString(item.codeName).includes(normWord) ||
-                            item.tags?.some(t => normalizeString(t).includes(normWord)) ||
-                            normalizeString(item.name).includes(normWord)
+                            item._normalizedCode.includes(normWord) ||
+                            item._normalizedTags.some(t => t.includes(normWord)) ||
+                            item._normalizedName.includes(normWord)
                         );
                         filteredResults = filteredResults.filter(item => partialMatches.includes(item));
                     }

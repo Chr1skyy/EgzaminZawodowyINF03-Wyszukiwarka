@@ -21,7 +21,11 @@ function toggleFilter(type, value) {
     const idx = arr.indexOf(value);
     if (idx > -1) arr.splice(idx, 1); else arr.push(value);
     if (window.umami) {
-        window.umami.track('Filter Toggle', { type, value });
+        let trackValue = value;
+        if (type === 'session' && window.appUtils && window.appUtils.SESSION_NAMES) {
+            trackValue = window.appUtils.SESSION_NAMES[value] || value;
+        }
+        window.umami.track('Filter Toggle', { type, value: trackValue });
     }
     triggerChange();
 }
