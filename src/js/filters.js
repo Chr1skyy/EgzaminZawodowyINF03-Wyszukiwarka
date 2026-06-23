@@ -1,18 +1,34 @@
-let filters = { query: '', formulas: [], difficulties: [], languages: [], hideCompleted: false };
+let filters = { query: '', formulas: [], difficulties: [], languages: [], sessions: [], years: [], hideCompleted: false, sortBy: 'default' };
 let onFiltersChange = null;
 
 function setOnFiltersChangeCallback(cb) { onFiltersChange = cb; }
 function getFilters() { return { ...filters }; }
 function setQuery(q) { filters.query = q; triggerChange(); }
 function setFilters(newFilters) {
-    filters = { ...newFilters, formulas: [...newFilters.formulas], difficulties: [...newFilters.difficulties], languages: [...newFilters.languages] };
+    filters = { 
+        ...newFilters, 
+        formulas: [...newFilters.formulas], 
+        difficulties: [...newFilters.difficulties], 
+        languages: [...newFilters.languages],
+        sessions: [...(newFilters.sessions || [])],
+        years: [...(newFilters.years || [])],
+        sortBy: newFilters.sortBy || 'default'
+    };
 }
 function toggleFilter(type, value) {
-    const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas' };
+    const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas', 'session': 'sessions', 'year': 'years' };
     const key = keyMap[type] || type;
     const arr = filters[key];
     const idx = arr.indexOf(value);
-    if (idx > -1) arr.splice(idx, 1); else arr.push(value);
+    const isAdding = idx === -1;
+    if (isAdding) arr.push(value); else arr.splice(idx, 1);
+    if (window.umami && isAdding) {
+        let trackValue = value;
+        if (type === 'session' && window.appUtils && window.appUtils.SESSION_NAMES) {
+            trackValue = window.appUtils.SESSION_NAMES[value] || value;
+        }
+        window.umami.track('Filter Toggle', { type, value: trackValue });
+    }
     triggerChange();
 }
 
@@ -21,13 +37,15 @@ function triggerChange() {
 }
 
 function clearFilters() {
-    filters = { query: '', formulas: [], difficulties: [], languages: [], hideCompleted: false };
+    filters = { query: '', formulas: [], difficulties: [], languages: [], sessions: [], years: [], hideCompleted: false, sortBy: 'default' };
     document.querySelectorAll('.filter-btn.active, .hide-completed-btn.active').forEach(btn => {
         btn.classList.remove('active');
         btn.setAttribute('aria-pressed', 'false');
     });
     const searchInput = document.getElementById('search-input');
     if (searchInput) searchInput.value = '';
+    const sortSelect = document.getElementById('sort-select');
+    if (sortSelect) sortSelect.value = 'default';
     if (typeof updateHideCompletedBtnText === 'function') updateHideCompletedBtnText();
     if (typeof updateSearchClearBtnVisibility === 'function') updateSearchClearBtnVisibility();
     triggerChange();

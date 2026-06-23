@@ -2,11 +2,12 @@
     {
         "formula": "E.14",
         "year": 2018,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Restauracja \"Wszystkie Smaki\"",
         "codeName": "E.14-01-18.06",
+        "archive_password": "Wykon@jTo",
         "links": {
             "mainFolder": "/e14/e14_2018_06_01",
             "examSheet": "e_14_2018_06_01.pdf",
@@ -16,19 +17,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wstawianie danych do bazy",
-            "formularz"
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2018,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "PHP",
         "name": "Bar \"Smaczne Jadło\"",
         "codeName": "E.14-02-18.06",
+        "archive_password": "Wykon@jTo",
         "links": {
             "mainFolder": "/e14/e14_2018_06_02",
             "examSheet": "e_14_2018_06_02.pdf",
@@ -38,19 +43,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wstawianie danych do bazy",
-            "formularz"
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2018,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
-        "name": "Restauracja \"Kulinaria.pl\"",
+        "name": "Bar \"Smacznie i Miło\"",
         "codeName": "E.14-03-18.06",
+        "archive_password": "TwojeZ@d@nie",
         "links": {
             "mainFolder": "/e14/e14_2018_06_03",
             "examSheet": "e_14_2018_06_03.pdf",
@@ -60,19 +69,22 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2018,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "PHP",
         "name": "Restauracja \"Kulinaria.pl\"",
         "codeName": "E.14-04-18.06",
+        "archive_password": "TwojeZ@d@nie",
         "links": {
             "mainFolder": "/e14/e14_2018_06_04",
             "examSheet": "e_14_2018_06_04.pdf",
@@ -82,19 +94,22 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2018,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "05",
         "language": "JS",
         "name": "Dom weselny",
         "codeName": "E.14-05-18.06",
+        "archive_password": "Z@d@niE",
         "links": {
             "mainFolder": "/e14/e14_2018_06_05",
             "examSheet": "e_14_2018_06_05.pdf",
@@ -104,21 +119,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "grafika wektorowa",
-            "wykluczanie części wspólnej na grafice",
-            "tworzenie grafiki",
-            "formularz"
+            "Grafika: dodawanie tekstu",
+            "Grafika: grafika wektorowa",
+            "Grafika: tworzenie grafiki",
+            "Grafika: wykluczanie części wspólnej",
+            "JS: modyfikacja danych skryptem"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2018,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "06",
         "language": "JS",
         "name": "Pizzeria",
         "codeName": "E.14-06-18.06",
+        "archive_password": "z@d@nie",
         "links": {
             "mainFolder": "/e14/e14_2018_06_06",
             "examSheet": "e_14_2018_06_06.pdf",
@@ -128,21 +145,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "grafika wektorowa",
-            "tworzenie grafiki",
-            "tekst po ścieżce",
-            "formularz"
+            "Grafika: dodawanie tekstu",
+            "Grafika: grafika wektorowa",
+            "Grafika: tekst po ścieżce",
+            "Grafika: tworzenie grafiki",
+            "JS: modyfikacja danych skryptem"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Filmoteka",
         "codeName": "E.14-01-19.01",
+        "archive_password": "Baz@FilmY",
         "links": {
             "mainFolder": "/e14/e14_2019_01_01",
             "examSheet": "e_14_2019_01_01.pdf",
@@ -152,20 +171,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "wstawianie danych do bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "JS",
         "name": "Formatowanie dokumentów HTML",
         "codeName": "E.14-02-19.01",
+        "archive_password": "ZdJeCiE",
         "links": {
             "mainFolder": "/e14/e14_2019_01_02",
             "examSheet": "e_14_2019_01_02.pdf",
@@ -175,22 +199,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "formatowanie elementów",
-            "formularz"
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "JS: modyfikacja stylów skryptem",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "PHP",
         "name": "Baza filmów",
         "codeName": "E.14-03-19.01",
+        "archive_password": "FiLmoTekA",
         "links": {
             "mainFolder": "/e14/e14_2019_01_03",
             "examSheet": "e_14_2019_01_03.pdf",
@@ -200,20 +226,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "JS",
         "name": "Hurtownia kawy",
         "codeName": "E.14-04-19.01",
+        "archive_password": "@K4wA!",
         "links": {
             "mainFolder": "/e14/e14_2019_01_04",
             "examSheet": "e_14_2019_01_04.pdf",
@@ -223,22 +253,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "tworzenie grafiki",
-            "tekst po ścieżce",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: filtry",
+            "Grafika: grafika wektorowa",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tekst po ścieżce",
+            "Grafika: tworzenie grafiki",
+            "JS: modyfikacja danych skryptem"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "PHP",
         "name": "Idziemy na grzyby",
         "codeName": "E.14-05-19.01",
+        "archive_password": "@grzYbY",
         "links": {
             "mainFolder": "/e14/e14_2019_01_05",
             "examSheet": "e_14_2019_01_05.pdf",
@@ -248,19 +283,22 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "06",
         "language": "PHP",
-        "name": "Biuro podróży \"WESOŁA WYPRAWA\"",
+        "name": "Biuro podróży \"WESOŁA WYPRAWA\"",
         "codeName": "E.14-06-19.01",
+        "archive_password": "PodRoz3",
         "links": {
             "mainFolder": "/e14/e14_2019_01_06",
             "examSheet": "e_14_2019_01_06.pdf",
@@ -270,21 +308,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "kadrowanie grafiki",
-            "cookies/ciasteczka"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: filtry",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "PHP: funkcje daty i czasu",
+            "PHP: obsługa ciasteczek ($_COOKIE)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "07",
         "language": "PHP",
         "name": "Hurtownia komputerowa - podzespoły",
         "codeName": "E.14-07-19.01",
+        "archive_password": "TwojeZ@d@nie",
         "links": {
             "mainFolder": "/e14/e14_2019_01_07",
             "examSheet": "e_14_2019_01_07.pdf",
@@ -294,20 +335,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "08",
         "language": "PHP",
         "name": "Hurtownia komputerowa - podzespoły",
         "codeName": "E.14-08-19.01",
+        "archive_password": "Twoj3Zad@niE",
         "links": {
             "mainFolder": "/e14/e14_2019_01_08",
             "examSheet": "e_14_2019_01_08.pdf",
@@ -317,20 +362,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "09",
         "language": "PHP",
         "name": "Atlas zwierząt",
         "codeName": "E.14-09-19.01",
+        "archive_password": "G@tuneK",
         "links": {
             "mainFolder": "/e14/e14_2019_01_09",
             "examSheet": "e_14_2019_01_09.pdf",
@@ -340,19 +389,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "10",
         "language": "PHP",
         "name": "Drapieżniki i inne",
         "codeName": "E.14-10-19.01",
+        "archive_password": "OdzYwi4niE",
         "links": {
             "mainFolder": "/e14/e14_2019_01_10",
             "examSheet": "e_14_2019_01_10.pdf",
@@ -362,19 +415,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "11",
         "language": "JS",
         "name": "Zdjęcia psów",
         "codeName": "E.14-11-19.01",
+        "archive_password": "Zdj3ci@",
         "links": {
             "mainFolder": "/e14/e14_2019_01_11",
             "examSheet": "e_14_2019_01_11.pdf",
@@ -384,20 +441,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "galeria zdjęć"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "JS: galeria zdjęć",
+            "JS: zdarzenia myszy (mouseover/mouseout)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Styczeń",
+        "session": 1,
         "number": "12",
         "language": "JS",
         "name": "Fotografie zwierząt",
         "codeName": "E.14-12-19.01",
+        "archive_password": "Zdj3ci@",
         "links": {
             "mainFolder": "/e14/e14_2019_01_12",
             "examSheet": "e_14_2019_01_12.pdf",
@@ -407,20 +467,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "galeria zdjęć"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: filtry",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "JS: galeria zdjęć",
+            "JS: zdarzenia myszy (mouseover/mouseout)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Sklep papierniczy",
         "codeName": "E.14-01-19.06",
+        "archive_password": "Z@dani3",
         "links": {
             "mainFolder": "/e14/e14_2019_06_01",
             "examSheet": "e_14_2019_06_01.pdf",
@@ -430,20 +494,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "PHP",
         "name": "Hurtownia papiernicza",
         "codeName": "E.14-02-19.06",
+        "archive_password": "Zad@n!e",
         "links": {
             "mainFolder": "/e14/e14_2019_06_02",
             "examSheet": "e_14_2019_06_02.pdf",
@@ -453,20 +522,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Biblioteka Publiczna w Książkowicach",
         "codeName": "E.14-03-19.06",
+        "archive_password": "4rch!wum",
         "links": {
             "mainFolder": "/e14/e14_2019_06_03",
             "examSheet": "e_14_2019_06_03.pdf",
@@ -476,20 +550,22 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "PHP",
         "name": "Biblioteka Publiczna w Książkowicach",
         "codeName": "E.14-04-19.06",
+        "archive_password": "Z@d@nie",
         "links": {
             "mainFolder": "/e14/e14_2019_06_04",
             "examSheet": "e_14_2019_06_04.pdf",
@@ -499,20 +575,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "05",
         "language": "JS",
         "name": "Usługi informatyczne",
         "codeName": "E.14-05-19.06",
+        "archive_password": "m@t3rialy",
         "links": {
             "mainFolder": "/e14/e14_2019_06_05",
             "examSheet": "e_14_2019_06_05.pdf",
@@ -522,22 +602,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "animacja",
-            "przeskalowanie grafiki",
-            "favicon",
-            "formularz"
+            "Grafika: animacja GIF",
+            "Grafika: dodawanie tekstu",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: favicon",
+            "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
+            "JS: walidacja formularza"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "E.14",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "06",
         "language": "JS",
         "name": "Pogotowie komputerowe",
         "codeName": "E.14-06-19.06",
+        "archive_password": "m4teRi@ly",
         "links": {
             "mainFolder": "/e14/e14_2019_06_06",
             "examSheet": "e_14_2019_06_06.pdf",
@@ -547,114 +631,137 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "animacja",
-            "przeskalowanie grafiki",
-            "favicon",
-            "formularz"
+            "Grafika: animacja GIF",
+            "Grafika: dodawanie tekstu",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: favicon",
+            "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Podzespoły komputerowe",
         "codeName": "E.14-01-20.01-SG",
+        "archive_password": "3gz@miN",
         "links": {
             "mainFolder": "/e14/e14_2020_01_01",
             "examSheet": "e_14_2020_01_01_SG.pdf",
-            "gradingRules": "e_14_2020_01_01_SG_zo.pdf",
+            "gradingRules": "E_14_2020_01_01_SG_zo.pdf",
             "archive": "materialy1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "JS",
         "name": "Fabryka żelków",
         "codeName": "E.14-02-20.01-SG",
+        "archive_password": "Wyp@kujMni3",
         "links": {
             "mainFolder": "/e14/e14_2020_01_02",
             "examSheet": "e_14_2020_01_02_SG.pdf",
-            "gradingRules": "e_14_2020_01_02_SG_zo.pdf",
+            "gradingRules": "E_14_2020_01_02_SG_zo.pdf",
             "archive": "materialy2.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "tworzenie grafiki",
-            "formularz",
-            "formatowanie elementów"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: kadrowanie",
+            "Grafika: obrót lub odbicie",
+            "Grafika: tworzenie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "JS: modyfikacja danych skryptem",
+            "JS: modyfikacja stylów skryptem"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "JS",
         "name": "Fabryka cukierków",
         "codeName": "E.14-03-20.01-SG",
+        "archive_password": "Wyp@kujMni3",
         "links": {
             "mainFolder": "/e14/e14_2020_01_03",
             "examSheet": "e_14_2020_01_03_SG.pdf",
-            "gradingRules": "e_14_2020_01_03_SG_zo.pdf",
+            "gradingRules": "E_14_2020_01_03_SG_zo.pdf",
             "archive": "materialy3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "tworzenie grafiki",
-            "tekst po ścieżce",
-            "formularz",
-            "formatowanie elementów"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: filtry",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tekst po ścieżce",
+            "Grafika: tworzenie grafiki",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "JS: modyfikacja danych skryptem",
+            "JS: modyfikacja stylów skryptem"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Gromady kręgowców",
         "codeName": "E.14-04-20.01-SG",
+        "archive_password": "Stron4WWW",
         "links": {
             "mainFolder": "/e14/e14_2020_01_04",
             "examSheet": "e_14_2020_01_04_SG.pdf",
-            "gradingRules": "e_14_2020_01_04_SG_zo.pdf",
+            "gradingRules": "E_14_2020_01_04_SG_zo.pdf",
             "archive": "materialy4.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "JS",
         "name": "Malarz",
         "codeName": "E.14-01-20.06-SG",
+        "archive_password": "2ws3ed!#",
         "links": {
             "mainFolder": "/e14/e14_2020_06_01",
             "examSheet": "e_14_2020_06_01_SG.pdf",
@@ -664,20 +771,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "tworzenie bazy danych",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "PHP",
         "name": "Wynajem pokoi",
         "codeName": "E.14-02-20.06-SG",
+        "archive_password": "MN52dc%%",
         "links": {
             "mainFolder": "/e14/e14_2020_06_02",
             "examSheet": "e_14_2020_06_02_SG.pdf",
@@ -687,20 +798,28 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Moje kwiaty",
         "codeName": "E.14-03-20.06-SG",
+        "archive_password": "5T2k@W$2n",
         "links": {
             "mainFolder": "/e14/e14_2020_06_03",
             "examSheet": "e_14_2020_06_03_SG.pdf",
@@ -710,21 +829,28 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "tworzenie bazy danych",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "E.14",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "JS+PHP",
         "name": "Ozdoby - sklep",
         "codeName": "E.14-04-20.06-SG",
+        "archive_password": "6hM9N#k@",
         "links": {
             "mainFolder": "/e14/e14_2020_06_04",
             "examSheet": "e_14_2020_06_04_SG.pdf",
@@ -734,22 +860,30 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "animacja",
-            "tworzenie bazy danych",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: animacja GIF",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
+            "JS: zdarzenia myszy (mouseover/mouseout)",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Portal dla wędkarzy",
         "codeName": "EE.09-01-19.06",
+        "archive_password": "WedkoWaniE&",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_01",
             "examSheet": "ee_09_2019_06_01.pdf",
@@ -759,19 +893,21 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "JS",
         "name": "Stacja paliw",
         "codeName": "EE.09-02-19.06",
+        "archive_password": "PaliWo5&",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_02",
             "examSheet": "ee_09_2019_06_02.pdf",
@@ -781,19 +917,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Zawody wędkarskie",
         "codeName": "EE.09-03-19.06",
+        "archive_password": "ZaWodY7%",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_03",
             "examSheet": "ee_09_2019_06_03.pdf",
@@ -803,20 +944,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "JS",
         "name": "Pomocnik matematyczny",
         "codeName": "EE.09-04-19.06",
+        "archive_password": "&MaTeMaTyKa&",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_04",
             "examSheet": "ee_09_2019_06_04.pdf",
@@ -826,19 +971,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "05",
         "language": "JS",
         "name": "Poznaj Ciągi Liczbowe",
         "codeName": "EE.09-05-19.06",
+        "archive_password": "4%LiczbY&9",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_05",
             "examSheet": "ee_09_2019_06_05.pdf",
@@ -848,19 +997,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2019,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "06",
         "language": "PHP",
         "name": "Pogotowie Ratunkowe",
         "codeName": "EE.09-06-19.06",
+        "archive_password": "997Help!!2",
         "links": {
             "mainFolder": "/ee09/ee09_2019_06_06",
             "examSheet": "ee_09_2019_06_06.pdf",
@@ -870,20 +1023,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje daty i czasu",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Wędkuj z nami!",
         "codeName": "EE.09-01-20.01-SG",
+        "archive_password": "mAt3riaLy",
         "links": {
             "mainFolder": "/ee09/ee09_2020_01_01",
             "examSheet": "ee_09_2020_01_01_SG.pdf",
@@ -893,19 +1052,21 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "JS",
         "name": "Witamy na stacji paliw",
         "codeName": "EE.09-02-20.01-SG",
+        "archive_password": "P4liWo$3",
         "links": {
             "mainFolder": "/ee09/ee09_2020_01_02",
             "examSheet": "ee_09_2020_01_02_SG.pdf",
@@ -915,19 +1076,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "PHP",
         "name": "Prognoza pogody dla Poznania",
         "codeName": "EE.09-03-20.01-SG",
+        "archive_password": "!Pogod4!",
         "links": {
             "mainFolder": "/ee09/ee09_2020_01_03",
             "examSheet": "ee_09_2020_01_03_SG.pdf",
@@ -937,19 +1103,21 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: usuwanie danych (DELETE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Mój organizer",
         "codeName": "EE.09-01-20.06-SG",
+        "archive_password": "kaL(end)arz%",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_01",
             "examSheet": "ee_09_2020_06_01_SG.pdf",
@@ -959,21 +1127,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "modyfikacja danych w bazie",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "PHP",
         "name": "Biuro podróży",
         "codeName": "EE.09-02-20.06-SG",
+        "archive_password": "&poDrozE$",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_02",
             "examSheet": "ee_09_2020_06_02_SG.pdf",
@@ -983,18 +1153,22 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "CSS: pseudoklasy (np. :hover)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Mój kalendarz",
         "codeName": "EE.09-03-20.06-SG",
+        "archive_password": "kaL(end)arz%",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_03",
             "examSheet": "ee_09_2020_06_03_SG.pdf",
@@ -1004,21 +1178,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "modyfikacja danych w bazie",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "JS",
         "name": "Salon kosmetyczny",
         "codeName": "EE.09-04-20.06-SG",
+        "archive_password": "Do{Rozp4kow4ni4}",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_04",
             "examSheet": "ee_09_2020_06_04_SG.pdf",
@@ -1028,19 +1204,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "05",
         "language": "JS",
         "name": "Salon fryzjerski",
         "codeName": "EE.09-05-20.06-SG",
+        "archive_password": "Salon[FryzUr]",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_05",
             "examSheet": "ee_09_2020_06_05_SG.pdf",
@@ -1050,19 +1232,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2020,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "06",
         "language": "PHP",
         "name": "Witamy w biurze podróży",
         "codeName": "EE.09-06-20.06-SG",
+        "archive_password": "$poDrozE&",
         "links": {
             "mainFolder": "/ee09/ee09_2020_06_06",
             "examSheet": "ee_09_2020_06_06_SG.pdf",
@@ -1072,18 +1260,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "CSS: pseudoklasy (np. :hover)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Światowe Rozgrywki Piłkarskie",
         "codeName": "EE.09-01-21.01-SG",
+        "archive_password": "&futbol&",
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_01",
             "examSheet": "ee_09_2021_01_01_SG.pdf",
@@ -1093,20 +1286,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "PHP",
         "name": "Reprezentacja Polski w Piłce Nożnej",
         "codeName": "EE.09-02-21.01-SG",
+        "archive_password": "$piLkaRze%",
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_02",
             "examSheet": "ee_09_2021_01_02_SG.pdf",
@@ -1116,20 +1314,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "PHP",
         "name": "Oblicz swoje BMI",
         "codeName": "EE.09-03-21.01-SG",
+        "archive_password": "(Moj3BmI)",
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_03",
             "examSheet": "ee_09_2021_01_03_SG.pdf",
@@ -1139,20 +1342,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: funkcje daty i czasu",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Oblicz Twój wskaŁşnik BMI",
         "codeName": "EE.09-04-21.01-SG",
+        "archive_password": "#Wylicz3ni4BMI^",
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_04",
             "examSheet": "ee_09_2021_01_04_SG.pdf",
@@ -1162,20 +1371,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: funkcje daty i czasu",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "PHP",
         "name": "Przyloty",
         "codeName": "EE.09-05-21.01-SG",
+        "archive_password": "LotniSko%7",
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_05",
             "examSheet": "ee_09_2021_01_05_SG.pdf",
@@ -1185,20 +1400,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "cookies/ciasteczka"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "PHP: funkcje daty i czasu",
+            "PHP: obsługa ciasteczek ($_COOKIE)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Styczeń",
+        "session": 1,
         "number": "06",
         "language": "PHP",
         "name": "Odloty z lotniska",
         "codeName": "EE.09-06-21.01-SG",
+        "archive_password": "@SaMolotY9%",
         "links": {
             "mainFolder": "/ee09/ee09_2021_01_06",
             "examSheet": "ee_09_2021_01_06_SG.pdf",
@@ -1208,20 +1428,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "cookies/ciasteczka"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "PHP: funkcje daty i czasu",
+            "PHP: obsługa ciasteczek ($_COOKIE)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Portal społecznościowy - moje konto",
         "codeName": "EE.09-01-21.06-SG",
+        "archive_password": "List@Przyjaciol&",
         "links": {
             "mainFolder": "/ee09/ee09_2021_06_01",
             "examSheet": "ee_09_2021_06_01_SG.pdf",
@@ -1231,20 +1456,22 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "PHP",
         "name": "Internetowy sklep z eko-warzywami",
         "codeName": "EE.09-02-21.06-SG",
+        "archive_password": "#Warzywni@czeK",
         "links": {
             "mainFolder": "/ee09/ee09_2021_06_02",
             "examSheet": "ee_09_2021_06_02_SG.pdf",
@@ -1254,22 +1481,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Internetowa wypożyczalnia filmów",
         "codeName": "EE.09-03-21.06-SG",
+        "archive_password": "#MoJeVoD$",
         "links": {
             "mainFolder": "/ee09/ee09_2021_06_03",
             "examSheet": "ee_09_2021_06_03_SG.pdf",
@@ -1279,21 +1510,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "usuwanie danych z bazy",
-            "formularz"
+            "Grafika: kadrowanie",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: usuwanie danych (DELETE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2021,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "PHP",
         "name": "Portal społecznościowy - panel administratora",
         "codeName": "EE.09-04-21.06-SG",
+        "archive_password": "*Uzytkownicy^Portalu$",
         "links": {
             "mainFolder": "/ee09/ee09_2021_06_04",
             "examSheet": "ee_09_2021_06_04_SG.pdf",
@@ -1303,274 +1537,341 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: funkcje daty i czasu",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Zgłoszenie na kartę wędkarską",
         "codeName": "EE.09-01-22.01-SG",
+        "archive_password": "K@RTY*",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_01",
             "examSheet": "ee_09_2022_01_01_SG.pdf",
-            "gradingRules": "ee_09_2022_01_01_SG_zo.pdf",
+            "gradingRules": "EE_09_2022_01_01_SG_zo.pdf",
             "archive": "pliki1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "PHP",
         "name": "Prognoza pogody dla Wrocławia",
         "codeName": "EE.09-02-22.01-SG",
+        "archive_password": "3MeTeo#",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_02",
             "examSheet": "ee_09_2022_01_02_SG.pdf",
-            "gradingRules": "ee_09_2022_01_02_SG_zo.pdf",
+            "gradingRules": "EE_09_2022_01_02_SG_zo.pdf",
             "archive": "pliki2.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "PHP",
         "name": "Dodanie zespołu ratowniczego",
         "codeName": "EE.09-03-22.01-SG",
+        "archive_password": "##Pogotowi3$",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_03",
             "examSheet": "ee_09_2022_01_03_SG.pdf",
-            "gradingRules": "ee_09_2022_01_03_SG_zo.pdf",
+            "gradingRules": "EE_09_2022_01_03_SG_zo.pdf",
             "archive": "pliki3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Forum wielbicieli psów",
         "codeName": "EE.09-04-22.01-SG",
+        "archive_password": "!Psy!Psy!",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_04",
             "examSheet": "ee_09_2022_01_04_SG.pdf",
-            "gradingRules": "ee_09_2022_01_04_SG_zo.pdf",
+            "gradingRules": "EE_09_2022_01_04_SG_zo.pdf",
             "archive": "pliki4.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "logowanie/rejestracja",
-            "formularz"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: hashowanie (np. SHA1)",
+            "PHP: walidacja formularza",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Hard"
     },
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "PHP",
         "name": "Nasze osiedle",
         "codeName": "EE.09-05-22.01-SG",
+        "archive_password": "*Mieszk4ncY*",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_05",
             "examSheet": "ee_09_2022_01_05_SG.pdf",
-            "gradingRules": "ee_09_2022_01_05_SG_zo.pdf",
+            "gradingRules": "EE_09_2022_01_05_SG_zo.pdf",
             "archive": "pliki5.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "logowanie/rejestracja",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "HTML: formularz",
+            "PHP: funkcje daty i czasu",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: hashowanie (np. SHA1)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Hard"
     },
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "06",
         "language": "JS",
         "name": "Konfigurator stylu",
         "codeName": "EE.09-06-22.01-SG",
+        "archive_password": "#s4mochody!",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_06",
             "examSheet": "ee_09_2022_01_06_SG.pdf",
-            "gradingRules": "ee_09_2022_01_06_SG_zo.pdf",
+            "gradingRules": "EE_09_2022_01_06_SG_zo.pdf",
             "archive": "pliki6.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formatowanie elementów"
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja stylów skryptem",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
+            "SQL: wyświetlanie danych (SELECT)",
+            "SQL: relacja n:m / podwójna relacja"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "07",
         "language": "JS",
         "name": "Galeria miejsc ciekawych",
         "codeName": "EE.09-07-22.01-SG",
+        "archive_password": "{Ciekaw3Zdjecia}",
         "links": {
             "mainFolder": "/ee09/ee09_2022_01_07",
             "examSheet": "ee_09_2022_01_07_SG.pdf",
-            "gradingRules": "ee_09_2022_01_07_SG_zo.pdf",
+            "gradingRules": "EE_09_2022_01_07_SG_zo.pdf",
             "archive": "pliki7.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "galeria zdjęć"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "JS: galeria zdjęć",
+            "JS: modyfikacja danych skryptem",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Forum miłośników psów",
         "codeName": "EE.09-01-22.06-SG",
+        "archive_password": "_3&PsY#@_",
         "links": {
             "mainFolder": "/ee09/ee09_2022_06_01",
             "examSheet": "ee_09_2022_06_01_SG.pdf",
-            "gradingRules": "ee_09_2022_06_01_SG_zo.pdf",
+            "gradingRules": "EE_09_2022_06_01_SG_zo.pdf",
             "archive": "zad1.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "plik video/wideo/film",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "HTML: odtwarzacz wideo",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje daty i czasu",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "JS",
         "name": "Pomocnik CSS",
         "codeName": "EE.09-02-22.06-SG",
+        "archive_password": "Css_$_Css",
         "links": {
             "mainFolder": "/ee09/ee09_2022_06_02",
             "examSheet": "ee_09_2022_06_02_SG.pdf",
-            "gradingRules": "ee_09_2022_06_02_SG_zo.pdf",
+            "gradingRules": "EE_09_2022_06_02_SG_zo.pdf",
             "archive": "zad2.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "formatowanie elementów",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "JS: modyfikacja stylów skryptem",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Hurtownia spożywcza - opinie klientów",
         "codeName": "EE.09-03-22.06-SG",
+        "archive_password": "#_Opini3%",
         "links": {
             "mainFolder": "/ee09/ee09_2022_06_03",
             "examSheet": "ee_09_2022_06_03_SG.pdf",
-            "gradingRules": "ee_09_2022_06_03_SG_zo.pdf",
+            "gradingRules": "EE_09_2022_06_03_SG_zo.pdf",
             "archive": "zad3.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "JS",
         "name": "Sieci komputerowe",
         "codeName": "EE.09-04-22.06-SG",
+        "archive_password": "Sieci^KomPuterowe_!",
         "links": {
             "mainFolder": "/ee09/ee09_2022_06_04",
             "examSheet": "ee_09_2022_06_04_SG.pdf",
-            "gradingRules": "ee_09_2022_06_04_SG_zo.pdf",
+            "gradingRules": "EE_09_2022_06_04_SG_zo.pdf",
             "archive": "zad4.zip",
             "solution": "rozwiazanie",
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja danych skryptem"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "JS: modyfikacja danych skryptem",
+            "JS: modyfikacja stylów skryptem",
+            "JS: wyświetlanie komunikatów (alert, console.log)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Hard"
     },
     {
         "formula": "EE.09",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Akta pracownicze",
         "codeName": "EE.09-01-23.01-SG",
+        "archive_password": "AKt@PR@cownicZE",
         "links": {
             "mainFolder": "/ee09/ee09_2023_01_01",
             "examSheet": "ee_09_2023_01_01_SG.pdf",
@@ -1580,19 +1881,21 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "EE.09",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "JS",
         "name": "Galeria obrazów",
         "codeName": "EE.09-02-23.01-SG",
+        "archive_password": "!<MojaG@leri@>!",
         "links": {
             "mainFolder": "/ee09/ee09_2023_01_02",
             "examSheet": "ee_09_2023_01_02_SG.pdf",
@@ -1602,20 +1905,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "galeria zdjęć",
-            "przewijanie zdjęć"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "JS: galeria zdjęć",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "JS",
         "name": "Gazeta codzienna",
         "codeName": "EE.09-03-23.01-SG",
+        "archive_password": "Gaz3t@Codzienn@!",
         "links": {
             "mainFolder": "/ee09/ee09_2023_01_03",
             "examSheet": "ee_09_2023_01_03_SG.pdf",
@@ -1625,19 +1932,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "pokazywanie/ukrywanie elementów"
+            "Grafika: przeskalowanie grafiki",
+            "JS: pokazywanie/ukrywanie elementów",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "EE.09",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Wizytówki pracowników",
         "codeName": "EE.09-04-23.01-SG",
+        "archive_password": "#WizyTowniK$",
         "links": {
             "mainFolder": "/ee09/ee09_2023_01_04",
             "examSheet": "ee_09_2023_01_04_SG.pdf",
@@ -1647,20 +1959,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje daty i czasu",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2021,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Restauracja \"Wszystkie Smaki\"",
         "codeName": "INF.03-01-21.06-SG",
+        "archive_password": "Wykon@jTo",
         "links": {
             "mainFolder": "/inf03/inf03_2021_06_01",
             "examSheet": "inf_03_2021_06_01_SG.pdf",
@@ -1670,19 +1987,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wstawianie danych do bazy",
-            "formularz"
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2022,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Restauracja \"Wszystkie Smaki\"",
         "codeName": "INF.03-01-22.01-SG",
+        "archive_password": "Wykon@jTo",
         "links": {
             "mainFolder": "/inf03/inf03_2022_01_01",
             "examSheet": "inf_03_2022_01_01_SG.pdf",
@@ -1692,19 +2013,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wstawianie danych do bazy",
-            "formularz"
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Portal dla wędkarzy",
         "codeName": "INF.03-01-22.06-SG",
+        "archive_password": "WedkoWaniE&",
         "links": {
             "mainFolder": "/inf03/inf03_2022_06_01",
             "examSheet": "inf_03_2022_06_01_SG.pdf",
@@ -1714,19 +2039,22 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "JS",
         "name": "Całodobowa stacja paliw",
         "codeName": "INF.03-02-22.06-SG",
+        "archive_password": "PaLiWo5&",
         "links": {
             "mainFolder": "/inf03/inf03_2022_06_02",
             "examSheet": "inf_03_2022_06_02_SG.pdf",
@@ -1736,19 +2064,28 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2022,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Zawody polskich wędkarzy",
         "codeName": "INF.03-03-22.06-SG",
+        "archive_password": "ZaWodY7%",
         "links": {
             "mainFolder": "/inf03/inf03_2022_06_03",
             "examSheet": "inf_03_2022_06_03_SG.pdf",
@@ -1758,21 +2095,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "JS",
         "name": "Malowanie pokoi i biur",
         "codeName": "INF.03-01-23.01-SG",
+        "archive_password": "2ws3ed!#",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_01",
             "examSheet": "inf_03_2023_01_01_SG.pdf",
@@ -1782,21 +2123,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kwerenda tworząca widok (perspektywę)",
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "JS: modyfikacja danych skryptem",
+            "SQL: tworzenie widoku (CREATE VIEW)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "PHP",
         "name": "Pensjonat pod dobrym humorem",
         "codeName": "INF.03-02-23.01-SG",
+        "archive_password": "MN52dc%%",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_02",
             "examSheet": "inf_03_2023_01_02_SG.pdf",
@@ -1806,19 +2151,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "PHP",
         "name": "Grupa Polskich Kwiaciarni",
         "codeName": "INF.03-03-23.01-SG",
+        "archive_password": "5T2k@W$2n",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_03",
             "examSheet": "inf_03_2023_01_03_SG.pdf",
@@ -1828,20 +2179,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Biuro turystyczne",
         "codeName": "INF.03-04-23.01-SG",
+        "archive_password": "&poDrozE$",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_04",
             "examSheet": "inf_03_2023_01_04_SG.pdf",
@@ -1851,18 +2209,22 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "CSS: pseudoklasy (np. :hover)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "PHP",
         "name": "Organizer: Sierpnień",
         "codeName": "INF.03-05-23.01-SG",
+        "archive_password": "kaL(end)arz%",
         "links": {
             "mainFolder": "/inf03/inf03_2023_01_05",
             "examSheet": "inf_03_2023_01_05_SG.pdf",
@@ -1872,21 +2234,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "modyfikacja danych w bazie",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Dzisiejsze promocje naszego sklepu dla uczniów",
         "codeName": "INF.03-01-23.06-SG",
+        "archive_password": "Z@dani3x",
         "links": {
             "mainFolder": "/inf03/inf03_2023_06_01",
             "examSheet": "inf_03_2023_06_01_SG.pdf",
@@ -1896,20 +2263,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "PHP",
         "name": "Hurtownia szkolna z najlepszymi cenami",
         "codeName": "INF.03-02-23.06-SG",
+        "archive_password": "Zad@n!e#2",
         "links": {
             "mainFolder": "/inf03/inf03_2023_06_02",
             "examSheet": "inf_03_2023_06_02_SG.pdf",
@@ -1919,21 +2291,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "PHP",
         "name": "Biblioteka w Książkowicach Wielkich",
         "codeName": "INF.03-04-23.06-SG",
+        "archive_password": "4rch!wum4x",
         "links": {
             "mainFolder": "/inf03/inf03_2023_06_04",
             "examSheet": "inf_03_2023_06_04_SG.pdf",
@@ -1943,22 +2320,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2023,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "07",
         "language": "PHP",
         "name": "Biblioteka w Książkowicach Małych",
         "codeName": "INF.03-07-23.06-SG",
+        "archive_password": "@Z@d@nie$s7",
         "links": {
             "mainFolder": "/inf03/inf03_2023_06_07",
             "examSheet": "inf_03_2023_06_07_SG.pdf",
@@ -1968,22 +2347,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "JS",
         "name": "Usługi informatyczne",
         "codeName": "INF.03-01-24.01-SG",
+        "archive_password": "m@t3rialyX",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_01",
             "examSheet": "inf_03_2024_01_01_SG.pdf",
@@ -1993,22 +2377,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "animacja",
-            "przeskalowanie grafiki",
-            "favicon",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: animacja GIF",
+            "Grafika: dodawanie tekstu",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: favicon",
+            "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
+            "JS: walidacja formularza"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "JS",
         "name": "Pogotowie komputerowe",
         "codeName": "INF.03-02-24.01-SG",
+        "archive_password": "m4teRi@lyQ",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_02",
             "examSheet": "inf_03_2024_01_02_SG.pdf",
@@ -2018,22 +2407,28 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "animacja",
-            "przeskalowanie grafiki",
-            "favicon",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: animacja GIF",
+            "Grafika: dodawanie tekstu",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: favicon",
+            "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Terminarz",
         "codeName": "INF.03-04-24.01-SG",
+        "archive_password": "kaL(end)arz%",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_04",
             "examSheet": "inf_03_2024_01_04_SG.pdf",
@@ -2043,19 +2438,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje daty i czasu",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "JS",
         "name": "Usługi kosmetyczne",
         "codeName": "INF.03-05-24.01-SG",
+        "archive_password": "Do!!@rozp@#",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_05",
             "examSheet": "inf_03_2024_01_05_SG.pdf",
@@ -2065,19 +2464,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: modyfikacja danych skryptem",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Styczeń",
+        "session": 1,
         "number": "06",
         "language": "PHP",
         "name": "Biuro podróży",
         "codeName": "INF.03-06-24.01-SG",
+        "archive_password": "$poDrozE&!",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_06",
             "examSheet": "inf_03_2024_01_06_SG.pdf",
@@ -2087,18 +2493,21 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Styczeń",
+        "session": 1,
         "number": "08",
         "language": "JS",
         "name": "Salon fryzjerski",
         "codeName": "INF.03-08-24.01-SG",
+        "archive_password": "XSaloon[Fryz]",
         "links": {
             "mainFolder": "/inf03/inf03_2024_01_08",
             "examSheet": "inf_03_2024_01_08_SG.pdf",
@@ -2108,19 +2517,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Motocykle - moja pasja",
         "codeName": "INF.03-01-24.06-SG",
+        "archive_password": "^moTocyKle^",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_01",
             "examSheet": "inf_03_2024_06_01_SG.pdf",
@@ -2130,19 +2544,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pozycjonowanie (position)",
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "JS",
         "name": "Chat",
         "codeName": "INF.03-02-24.06-SG",
+        "archive_password": "ChaT_Ch@t",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_02",
             "examSheet": "inf_03_2024_06_02_SG.pdf",
@@ -2152,22 +2571,29 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "formularz",
-            "losowanie elementów z tablicy",
-            "tworzenie elementów skryptem"
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: losowanie elementów z tablicy",
+            "JS: modyfikacja stylów skryptem",
+            "JS: tworzenie elementów (createElement, appendChild)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Hard"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Poziomy rzek w województwie dolnośląskim",
         "codeName": "INF.03-03-24.06-SG",
+        "archive_password": "St@ny%RzeK",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_03",
             "examSheet": "inf_03_2024_06_03_SG.pdf",
@@ -2177,20 +2603,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: tworzenie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "PHP",
         "name": "Zdjęcia",
         "codeName": "INF.03-04-24.06-SG",
+        "archive_password": "(G@LeriA)",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_04",
             "examSheet": "inf_03_2024_06_04_SG.pdf",
@@ -2200,22 +2632,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "galeria zdjęć",
-            "efekty przejścia CSS",
-            "pokazywanie/ukrywanie elementów"
+            "CSS: efekty przejścia (transition)",
+            "CSS: pozycjonowanie (position)",
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "05",
         "language": "PHP",
         "name": "KupAuto! Internetowy komis samochodowy",
         "codeName": "INF.03-05-24.06-SG",
+        "archive_password": "S@moCHody^",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_05",
             "examSheet": "inf_03_2024_06_05_SG.pdf",
@@ -2225,20 +2661,22 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "06",
         "language": "JS",
         "name": "Formualrz rejestracyjny konferencji \"Nasze Kwiaty\"",
         "codeName": "INF.03-06-24.06-SG",
+        "archive_password": "^konfErEncja&",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_06",
             "examSheet": "inf_03_2024_06_06_SG.pdf",
@@ -2248,21 +2686,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "formularz",
-            "pokazywanie/ukrywanie elementów",
-            "plik video/wideo/film"
+            "Grafika: filtry",
+            "HTML: odtwarzacz wideo",
+            "JS: pokazywanie/ukrywanie elementów",
+            "JS: walidacja formularza",
+            "JS: wyświetlanie komunikatów (alert, console.log)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "07",
         "language": "PHP",
         "name": "Ważenie pojazdów ciężarowych we Wrocławiu",
         "codeName": "INF.03-07-24.06-SG",
+        "archive_password": "%WAg@Poj@zdoW",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_07",
             "examSheet": "inf_03_2024_06_07_SG.pdf",
@@ -2272,22 +2716,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "odświezanie strony"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "PHP: odświeżanie strony (refresh)",
+            "SQL: funkcje daty i czasu",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "08",
         "language": "JS",
         "name": "Zarejestruj się w sklepie",
         "codeName": "INF.03-08-24.06-SG",
+        "archive_password": "_Rejestr@cja_",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_08",
             "examSheet": "inf_03_2024_06_08_SG.pdf",
@@ -2297,21 +2746,28 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "formularz",
-            "pokazywanie/ukrywanie elementów"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "JS: modyfikacja stylów skryptem",
+            "JS: pokazywanie/ukrywanie elementów",
+            "JS: wyświetlanie komunikatów (alert, console.log)",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Hard"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "09",
         "language": "JS",
         "name": "Zwiedzamy Polskę",
         "codeName": "INF.03-09-24.06-SG",
+        "archive_password": "G@leri@Animowan@",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_09",
             "examSheet": "inf_03_2024_06_09_SG.pdf",
@@ -2321,21 +2777,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "galeria zdjęć",
-            "przewijanie zdjęć",
-            "animacja CSS (@keyframes)"
+            "CSS: animacja (@keyframes)",
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "JS: galeria zdjęć",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "10",
         "language": "JS",
         "name": "Nasz zespół",
         "codeName": "INF.03-10-24.06-SG",
+        "archive_password": "K@dra_FirMy#",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_10",
             "examSheet": "inf_03_2024_06_10_SG.pdf",
@@ -2345,20 +2807,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "pokazywanie/ukrywanie elementów"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "JS: pokazywanie/ukrywanie elementów",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "11",
         "language": "PHP",
         "name": "Hodowla świnek morskich",
         "codeName": "INF.03-11-24.06-SG",
+        "archive_password": "@Swinki-MorSkie!",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_11",
             "examSheet": "inf_03_2024_06_11_SG.pdf",
@@ -2368,19 +2837,21 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2024,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "12",
         "language": "JS",
         "name": "Efekty na obrazach",
         "codeName": "INF.03-12-24.06-SG",
+        "archive_password": "#TransfoRm@cje",
         "links": {
             "mainFolder": "/inf03/inf03_2024_06_12",
             "examSheet": "inf_03_2024_06_12_SG.pdf",
@@ -2390,19 +2861,28 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "transformacja/filtr grafiki skryptem"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: transformacja i filtr grafiki",
+            "JS: zdarzenia formularza (change/input/blur)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: podkwerenda",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "JS",
         "name": "Kursy komputerowe",
         "codeName": "INF.03-01-25.01-SG",
+        "archive_password": "KuRsyKompuTerow3&",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_01",
             "examSheet": "inf_03_2025_01_01_SG.pdf",
@@ -2412,20 +2892,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "tworzenie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: kadrowanie",
+            "Grafika: tworzenie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "SQL: nadawanie uprawnień (GRANT, REVOKE)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "JS",
         "name": "Montaż paneli podłogowych",
         "codeName": "INF.03-02-25.01-SG",
+        "archive_password": "P@neLePodLoGowe!+",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_02",
             "examSheet": "inf_03_2025_01_02_SG.pdf",
@@ -2435,20 +2921,30 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "przeskalowanie grafiki",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "JS: modyfikacja danych skryptem",
+            "JS: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: usuwanie struktury (DROP, TRUNCATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "PHP",
         "name": "Kalendarz",
         "codeName": "INF.03-03-25.01-SG",
+        "archive_password": "k@L3ndarz",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_03",
             "examSheet": "inf_03_2025_01_03_SG.pdf",
@@ -2458,20 +2954,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "animacja",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: animacja GIF",
+            "HTML: formularz",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "PHP: funkcje daty i czasu",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "Obuwie męskie",
         "codeName": "INF.03-04-25.01-SG",
+        "archive_password": "*HurTowni@Buty$",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_04",
             "examSheet": "inf_03_2025_01_04_SG.pdf",
@@ -2481,19 +2983,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "PHP",
         "name": "Firma szkoleniowa",
         "codeName": "INF.03-05-25.01-SG",
+        "archive_password": "SzkoL3Nia%",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_05",
             "examSheet": "inf_03_2025_01_05_SG.pdf",
@@ -2503,21 +3009,28 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "kadrowanie grafiki",
-            "zapis do pliku skryptem",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: perspektywa",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "PHP: zapis do pliku skryptem",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "06",
         "language": "JS",
         "name": "Pozycyjne systemy liczbowe",
         "codeName": "INF.03-06-25.01-SG",
+        "archive_password": "Cyf3rki#",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_06",
             "examSheet": "inf_03_2025_01_06_SG.pdf",
@@ -2527,20 +3040,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "animacja",
-            "formularz"
+            "Grafika: animacja GIF",
+            "Grafika: obrót lub odbicie",
+            "Grafika: tworzenie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "JS: algorytmy",
+            "JS: modyfikacja danych skryptem",
+            "SQL: funkcje daty i czasu",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "07",
         "language": "PHP",
         "name": "Wyszukiwarka miast",
         "codeName": "INF.03-07-25.01-SG",
+        "archive_password": "@PolSki3Miast@",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_07",
             "examSheet": "inf_03_2025_01_07_SG.pdf",
@@ -2550,21 +3069,29 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "favicon",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: kadrowanie",
+            "Grafika: tworzenie grafiki",
+            "HTML: favicon",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: funkcje tekstowe (np. LOWER)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "08",
         "language": "PHP",
         "name": "Mieszalnia farb",
         "codeName": "INF.03-08-25.01-SG",
+        "archive_password": "Miesz@nie&F@rB",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_08",
             "examSheet": "inf_03_2025_01_08_SG.pdf",
@@ -2574,21 +3101,28 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "favicon",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: kadrowanie",
+            "Grafika: tworzenie grafiki",
+            "HTML: favicon",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "09",
         "language": "PHP",
         "name": "Klub zdobywców gór polskich",
         "codeName": "INF.03-09-25.01-SG",
+        "archive_password": "$ZdobyWcy&",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_09",
             "examSheet": "inf_03_2025_01_09_SG.pdf",
@@ -2598,22 +3132,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "Grafika: dodawanie tekstu",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "10",
         "language": "PHP",
         "name": "Koło szachowe gambit piona",
         "codeName": "INF.03-10-25.01-SG",
+        "archive_password": "Sz4chm4t!",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_10",
             "examSheet": "inf_03_2025_01_10_SG.pdf",
@@ -2623,21 +3162,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "losowanie rekordów z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje daty i czasu",
+            "SQL: losowanie rekordów (ORDER BY RAND)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "11",
         "language": "PHP",
         "name": "Konkurs - wolontariat szkolny",
         "codeName": "INF.03-11-25.01-SG",
+        "archive_password": "^WolonTari@t",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_11",
             "examSheet": "inf_03_2025_01_11_SG.pdf",
@@ -2647,21 +3192,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "cień na grafice",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "losowanie rekordów z bazy"
+            "Grafika: cień na grafice",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "SQL: losowanie rekordów (ORDER BY RAND)",
+            "SQL: usuwanie danych (DELETE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Styczeń",
+        "session": 1,
         "number": "12",
         "language": "PHP",
         "name": "Piekarnia",
         "codeName": "INF.03-12-25.01-SG",
+        "archive_password": "ULeptnny!",
         "links": {
             "mainFolder": "/inf03/inf03_2025_01_12",
             "examSheet": "inf_03_2025_01_12_SG.pdf",
@@ -2671,21 +3220,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "cień na grafice",
-            "tworzenie grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pozycjonowanie (position)",
+            "Grafika: cień na grafice",
+            "Grafika: tworzenie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "01",
         "language": "PHP",
         "name": "Ranking gier komputerowych / Gry komputerowe",
         "codeName": "INF.03-01-25.06-SG",
+        "archive_password": "Gry&KomputErowE",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_01",
             "examSheet": "inf_03_2025_06_01_SG.pdf",
@@ -2695,22 +3250,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wstawianie danych do bazy",
-            "wyświetlanie danych z bazy",
-            "formularz",
-            "responsywność strony (@media query)"
+            "CSS: responsywność (@media query)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje tekstowe (np. LOWER)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "02",
         "language": "JS",
         "name": "Moje zadania / Planer zadań",
         "codeName": "INF.03-02-25.06-SG",
+        "archive_password": "#ToDoList@",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_02",
             "examSheet": "inf_03_2025_06_02_SG.pdf",
@@ -2720,22 +3279,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "tworzenie elementów skryptem",
-            "modyfikacja danych skryptem",
-            "dodawanie elementów",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja stylów skryptem",
+            "JS: tworzenie elementów (createElement, appendChild)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "03",
         "language": "PHP",
         "name": "Biblioteka szkolna \"Wiedzamin\"",
         "codeName": "INF.03-03-25.06-SG",
+        "archive_password": "&&BiBlioTek@",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_03",
             "examSheet": "inf_03_2025_06_03_SG.pdf",
@@ -2745,21 +3307,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "losowanie rekordów z bazy",
-            "modyfikacja grafiki",
-            "tworzenie grafiki",
-            "wyświetlanie danych z bazy"
+            "CSS: pseudoklasy (np. :hover)",
+            "CSS: responsywność (@media query)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: tworzenie grafiki",
+            "SQL: losowanie rekordów (ORDER BY RAND)",
+            "SQL: usuwanie danych (DELETE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "04",
         "language": "PHP",
         "name": "Firma przewozowa Półdarmo",
         "codeName": "INF.03-04-25.06-SG",
+        "archive_password": "*PrzEwozy!",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_04",
             "examSheet": "inf_03_2025_06_04_SG.pdf",
@@ -2769,22 +3335,29 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "usuwanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: perspektywa",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "SQL: usuwanie danych (DELETE)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Hard"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "05",
         "language": "JS",
         "name": "Fotografia artystyczna",
         "codeName": "INF.03-05-25.06-SG",
+        "archive_password": "#Foto+Foto&",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_05",
             "examSheet": "inf_03_2025_06_05_SG.pdf",
@@ -2794,20 +3367,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "dodawanie elementów",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "JS: obsługa pola typu file",
+            "JS: tworzenie elementów (createElement, appendChild)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "06",
         "language": "PHP",
         "name": "Biblioteka miejska",
         "codeName": "INF.03-06-25.06-SG",
+        "archive_password": "BibLio#tek@",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_06",
             "examSheet": "inf_03_2025_06_06_SG.pdf",
@@ -2817,22 +3395,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "modyfikacja danych w bazie",
-            "formularz",
-            "responsywność strony (@media query)"
+            "CSS: pseudoklasy (np. :hover)",
+            "CSS: responsywność (@media query)",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
-        "difficulty": "Hard"
+        "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "07",
         "language": "PHP",
         "name": "Biuro turystyczne",
         "codeName": "INF.03-07-25.06-SG",
+        "archive_password": "#TurysTyk@7!",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_07",
             "examSheet": "inf_03_2025_06_07_SG.pdf",
@@ -2842,21 +3425,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: tworzenie tabeli (CREATE TABLE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "08",
         "language": "JS+PHP",
         "name": "Poznaj smoki!",
         "codeName": "INF.03-08-25.06-SG",
+        "archive_password": "SmoKi-Swi@ta#",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_08",
             "examSheet": "inf_03_2025_06_08_SG.pdf",
@@ -2866,22 +3455,29 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "podwójna relacja",
-            "wyświetlanie danych z bazy",
-            "formularz",
-            "pokazywanie/ukrywanie elementów"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: modyfikacja stylów skryptem",
+            "JS: pokazywanie/ukrywanie elementów",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "09",
         "language": "PHP",
         "name": "Malowanie i gipsowanie / Remonty",
         "codeName": "INF.03-09-25.06-SG",
+        "archive_password": "Remon&Tow@nie+",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_09",
             "examSheet": "inf_03_2025_06_09_SG.pdf",
@@ -2891,22 +3487,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "modyfikacja grafiki",
-            "wyświetlanie danych z bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "10",
         "language": "PHP",
         "name": "Szkolenia i kursy",
         "codeName": "INF.03-10-25.06-SG",
+        "archive_password": "*SzkoLenia^",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_10",
             "examSheet": "inf_03_2025_06_10_SG.pdf",
@@ -2916,21 +3517,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "11",
         "language": "PHP",
         "name": "Opony",
         "codeName": "INF.03-11-25.06-SG",
+        "archive_password": "#OpoNki&+",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_11",
             "examSheet": "inf_03_2025_06_11_SG.pdf",
@@ -2940,19 +3547,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy"
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "PHP: odświeżanie strony (refresh)",
+            "SQL: losowanie rekordów (ORDER BY RAND)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2025,
-        "session": "Czerwiec",
+        "session": 6,
         "number": "12",
         "language": "PHP",
         "name": "Przychodnia Medica",
         "codeName": "INF.03-12-25.06-SG",
+        "archive_password": "_PrzychoDnia%",
         "links": {
             "mainFolder": "/inf03/inf03_2025_06_12",
             "examSheet": "inf_03_2025_06_12_SG.pdf",
@@ -2962,21 +3574,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "relacja n:m (wiele do wielu)",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "favicon"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: favicon",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "01",
         "language": "PHP",
         "name": "Konfigurator samochodów",
         "codeName": "INF.03-01-26.01-SG",
+        "archive_password": "S@mocHody^",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_01",
             "examSheet": "inf_03_2026_01_01_SG.pdf",
@@ -2986,20 +3601,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "losowanie rekordów z bazy",
-            "wyświetlanie danych z bazy",
-            "łączenie komórek tabeli"
+            "CSS: pseudoklasy (np. :hover)",
+            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: losowanie rekordów (ORDER BY RAND)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "02",
         "language": "PHP",
         "name": "Zdrowy bazarek",
         "codeName": "INF.03-02-26.01-SG",
+        "archive_password": "baz@rEk100%",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_02",
             "examSheet": "inf_03_2026_01_02_SG.pdf",
@@ -3009,22 +3627,24 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "formularz"
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "03",
         "language": "JS",
         "name": "Pola figur płaskich",
         "codeName": "INF.03-03-26.01-SG",
+        "archive_password": "*M@tem@tyk@6",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_03",
             "examSheet": "inf_03_2026_01_03_SG.pdf",
@@ -3034,19 +3654,22 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "animacja",
-			"formularz"
+            "CSS: pseudoelementy (np. ::first-letter)",
+            "Grafika: animacja GIF",
+            "Grafika: kadrowanie",
+            "JS: modyfikacja danych skryptem"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "04",
         "language": "PHP",
         "name": "System informacji dla maturzystów / Matura",
         "codeName": "INF.03-04-26.01-SG",
+        "archive_password": "Z@Rok!Matur@",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_04",
             "examSheet": "inf_03_2026_01_04_SG.pdf",
@@ -3056,19 +3679,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "przekazywanie argumentu w pasku adresu $_GET"
+            "CSS: pseudoklasy (np. :hover)",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "05",
         "language": "PHP",
         "name": "Zgłoszenia wydarzeń",
         "codeName": "INF.03-05-26.01-SG",
+        "archive_password": "@LarMowe^",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_05",
             "examSheet": "inf_03_2026_01_05_SG.pdf",
@@ -3078,21 +3705,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "wstawianie danych do bazy",
-            "kwerenda z relacją LEFT JOIN",
-            "formularz"
+            "CSS: pseudoklasy (np. :hover)",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: funkcje daty i czasu",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: relacja LEFT JOIN",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "06",
         "language": "PHP",
         "name": "Informacja o chorobach w Polsce",
         "codeName": "INF.03-06-26.01-SG",
+        "archive_password": "*ZdroWia!!!",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_06",
             "examSheet": "inf_03_2026_01_06_SG.pdf",
@@ -3102,20 +3735,28 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "tworzenie grafiki",
-            "formularz",
-            "wyświetlanie danych z bazy"
+            "CSS: pozycjonowanie (position)",
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: kadrowanie",
+            "Grafika: tworzenie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "07",
         "language": "PHP",
         "name": "Pogoda w Europie",
         "codeName": "INF.03-07-26.01-SG",
+        "archive_password": "&M3t3oPogoDa%",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_07",
             "examSheet": "inf_03_2026_01_07_SG.pdf",
@@ -3125,21 +3766,26 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "przekazywanie argumentu w pasku adresu $_GET"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "08",
         "language": "PHP",
         "name": "Korona gór polskich",
         "codeName": "INF.03-08-26.01-SG",
+        "archive_password": "Gory^PoLskie!",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_08",
             "examSheet": "inf_03_2026_01_08_SG.pdf",
@@ -3149,23 +3795,25 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "modyfikacja grafiki",
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "zewnętrzna czcionka CSS",
-            "przekazywanie argumentu w pasku adresu $_GET"
+            "CSS: pseudoklasy (np. :hover)",
+            "CSS: zewnętrzna czcionka (@font-face)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: usunięcie tła (przezroczystość)",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "09",
         "language": "JS",
         "name": "Stylizacja paznokci / Twoje wymarzone paznokcie",
         "codeName": "INF.03-09-26.01-SG",
+        "archive_password": "P@znoKcie?",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_09",
             "examSheet": "inf_03_2026_01_09_SG.pdf",
@@ -3175,21 +3823,27 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "przeskalowanie grafiki",
-            "pokazywanie/ukrywanie elementów",
-            "opcjonalny PHP"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja stylów skryptem",
+            "JS: pokazywanie/ukrywanie elementów",
+            "JS: zdarzenia myszy (mouseover/mouseout)",
+            "PHP: opcjonalny PHP",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "10",
         "language": "PHP",
         "name": "Blog kulinarny",
         "codeName": "INF.03-10-26.01-SG",
+        "archive_password": "BLog+#KuLinarnY@",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_10",
             "examSheet": "inf_03_2026_01_10_SG.pdf",
@@ -3199,20 +3853,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "wyświetlanie danych z bazy",
-            "przekazywanie argumentu w pasku adresu $_GET"
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "11",
         "language": "PHP",
         "name": "Lista aktorów | KinoTEKA",
         "codeName": "INF.03-11-26.01-SG",
+        "archive_password": "@ktorzy+f1Lmy",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_11",
             "examSheet": "inf_03_2026_01_11_SG.pdf",
@@ -3222,19 +3879,23 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "wyświetlanie danych z bazy",
-            "przekazywanie argumentu w pasku adresu $_GET"
+            "CSS: pseudoklasy (np. :hover)",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
         "year": 2026,
-        "session": "Styczeń",
+        "session": 1,
         "number": "12",
         "language": "JS",
         "name": "Studio tatuażu",
         "codeName": "INF.03-12-26.01-SG",
+        "archive_password": "<Studio&T@tu>",
         "links": {
             "mainFolder": "/inf03/inf03_2026_01_12",
             "examSheet": "inf_03_2026_01_12_SG.pdf",
@@ -3244,13 +3905,348 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "kadrowanie grafiki",
-            "modyfikacja grafiki",
-            "przeskalowanie grafiki",
-            "zewnętrzna czcionka CSS",
-            "formularz",
-            "tworzenie elementów skryptem"
+            "CSS: efekty przejścia (transition)",
+            "CSS: pseudoklasy (np. :hover)",
+            "CSS: zewnętrzna czcionka (@font-face)",
+            "Grafika: dodawanie tekstu",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "Grafika: tworzenie grafiki",
+            "HTML: formularz",
+            "JS: modyfikacja stylów skryptem",
+            "JS: obsługa pola typu file",
+            "JS: tworzenie elementów (createElement, appendChild)",
+            "JS: wyświetlanie komunikatów (alert, console.log)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "01",
+        "language": "PHP",
+        "name": "Zwiedzaj Islandię",
+        "codeName": "INF.03-01-26.06-SG",
+        "archive_password": "isLandi@",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_01",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "rozwiazanie",
+            "solutionZIP": ""
+        },
+        "tags": [
+            "CSS: efekty przejścia (transition)",
+            "CSS: pseudoklasy (np. :hover)",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: wyświetlanie danych (SELECT)"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "02",
+        "language": "PHP",
+        "name": "Łowcy wodospadów",
+        "codeName": "INF.03-02-26.06-SG",
+        "archive_password": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_02",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "rozwiazanie",
+            "solutionZIP": ""
+        },
+        "tags": [
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "03",
+        "language": "JS",
+        "name": "Sklep meblowy",
+        "codeName": "INF.03-03-26.06-SG",
+        "archive_password": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_03",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "04",
+        "language": "JS/PHP",
+        "name": "Rezerwacje wycieczek",
+        "codeName": "INF.03-04-26.06-SG",
+        "archive_password": "RezErw@cjE",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_04",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki4.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: galeria zdjęć",
+            "JS: modyfikacja danych skryptem",
+            "JS: modyfikacja stylów skryptem",
+            "PHP: odbieranie danych z paska adresu (GET)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: wyświetlanie danych (SELECT)"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "05",
+        "language": "PHP",
+        "name": "Sprzedaż antyków",
+        "codeName": "INF.03-05-26.06-SG",
+        "archive_password": "Twoje@ntyki&",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_05",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki5.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "PHP: odbieranie danych formularza (POST)",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wstawianie danych (INSERT)",
+            "SQL: wyświetlanie danych (SELECT)"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "06",
+        "language": "JS",
+        "name": "Strefa pacjenta",
+        "codeName": "INF.03-06-26.06-SG",
+        "archive_password": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_06",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "rozwiazanie",
+            "solutionZIP": ""
+        },
+        "tags": [
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: filtry",
+            "Grafika: przeskalowanie grafiki",
+            "JS: operacje na tablicach",
+            "JS: tworzenie elementów (createElement, appendChild)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "07",
+        "language": "JS",
+        "name": "Gra kółko i krzyżyk",
+        "codeName": "INF.03-07-26.06-SG",
+        "archive_password": "KoLko+KrzyZyk",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_07",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "rozwiazanie",
+            "solutionZIP": ""
+        },
+        "tags": [
+            "CSS: pseudoklasy (np. :hover)",
+            "JS: modyfikacja danych skryptem",
+            "JS: pokazywanie/ukrywanie elementów",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: podkwerenda",
+            "SQL: wyświetlanie danych (SELECT)"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "08",
+        "language": "JS",
+        "name": "",
+        "codeName": "INF.03-08-26.06-SG",
+        "archive_password": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_08",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+            "SQL: wyświetlanie danych (SELECT)",
+            "SQL: relacja LEFT JOIN",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "JS: obsługa localStorage",
+            "JS: modyfikacja danych skryptem"
+        ],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "09",
+        "language": "JS",
+        "name": "Restauracja Marchewka",
+        "codeName": "INF.03-09-26.06-SG",
+        "archive_password": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_09",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
+            "SQL: relacja n:m / podwójna relacja",
+            "CSS: pseudoklasy (np. :hover)"
+        ],
+        "difficulty": ""
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "10",
+        "language": "PHP",
+        "name": "Portal laboratorium",
+        "codeName": "INF.03-10-26.06-SG",
+        "archive_password": "LaBoRaToR2um",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_10",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki20.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
+        },
+        "tags": [
+            "SQL: wyświetlanie danych (SELECT)",
+            "SQL: funkcje daty i czasu",
+            "SQL: relacja LEFT JOIN",
+            "SQL: relacja n:m / podwójna relacja",
+            "HTML: formularz",
+            "CSS: pseudoklasy (np. :hover)",
+            "PHP: obsługa sesji ($_SESSION)",
+            "PHP: odbieranie danych formularza (POST)",
+            "PHP: walidacja formularza"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "11",
+        "language": "JS",
+        "name": "Atlas drzew",
+        "codeName": "INF.03-11-26.06-SG",
+        "archive_password": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_11",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "pliki21.7z",
+            "solution": "rozwiazanie",
+            "solutionZIP": ""
+        },
+        "tags": [
+            "SQL: wyświetlanie danych (SELECT)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: relacja n:m / podwójna relacja",
+            "Grafika: przeskalowanie grafiki",
+            "CSS: pseudoklasy (np. :hover)",
+            "JS: modyfikacja danych skryptem",
+            "JS: operacje na tablicach",
+            "JS: tworzenie elementów (createElement, appendChild)"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "formula": "INF.03",
+        "year": 2026,
+        "session": 6,
+        "number": "12",
+        "language": "JS",
+        "name": "",
+        "codeName": "INF.03-12-26.06-SG",
+        "archive_password": "",
+        "links": {
+            "mainFolder": "/inf03/inf03_2026_06_12",
+            "examSheet": "",
+            "gradingRules": "",
+            "archive": "",
+            "solution": "",
+            "solutionZIP": ""
+        },
+        "tags": [
+            "JS: funkcje daty i czasu"
+        ],
+        "difficulty": ""
     }
 ]

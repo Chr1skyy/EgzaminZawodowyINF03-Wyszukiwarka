@@ -38,22 +38,80 @@ const components = {
     },
 
 
-    createTagList: (exam, hideControls = false) => {
+    createTagList: (exam, limit = 4) => {
         if (!exam.tags?.length) return '';
-        const isExpanded = app.tags.has(exam.codeName);
-        const visibleTags = (isExpanded || hideControls) ? exam.tags : exam.tags.slice(0, 4);
-        const hasMore = exam.tags.length > 4 && !hideControls;
+
+        const sortedTags = [...exam.tags].sort((a, b) => {
+            const cleanA = a.includes(': ') ? a.split(': ')[1] : a;
+            const cleanB = b.includes(': ') ? b.split(': ')[1] : b;
+            return cleanA.length - cleanB.length;
+        });
+
+        let tagsToDisplay = sortedTags;
+        let hiddenCount = 0;
+        let hiddenTags = [];
+
+        if (limit && sortedTags.length > limit) {
+            tagsToDisplay = sortedTags.slice(0, limit);
+            hiddenTags = sortedTags.slice(limit);
+            hiddenCount = hiddenTags.length;
+        }
 
         return `
             <div class="exam-tags">
                 <span aria-hidden="true">🏷️</span>
                 <div class="exam-tags-list">
-                    ${visibleTags.map(tag => `<span class="exam-tag">${tag}</span>`).join('')}
-                    ${!isExpanded && hasMore ? `<span class="exam-tag-expand" data-exam-id="${exam.codeName}" role="button" tabindex="0" aria-label="Pokaż więcej tagów">+${exam.tags.length - 4}</span>` : ''}
-                    ${isExpanded && hasMore ? `<span class="exam-tag-collapse" data-exam-id="${exam.codeName}" role="button" tabindex="0" aria-label="Zwiń listę tagów" title="Zwiń tagi">Zwiń</span>` : ''}
+                    ${tagsToDisplay.map(tag => {
+            const parts = tag.split(': ');
+            const cleanTag = parts.length > 1 ? parts[1] : tag;
+            return `<span class="exam-tag" title="${tag}">${cleanTag}</span>`;
+        }).join('')}
+                    ${hiddenCount > 0 ? `<span class="exam-tag-more" data-action="open-modal" role="button" tabindex="0" title="Kliknij, aby zobaczyć wszystkie. Pozostałe: ${hiddenTags.map(t => t.includes(': ') ? t.split(': ')[1] : t).join(', ')}">+${hiddenCount}</span>` : ''}
                 </div>
             </div>
         `;
+    },
+
+    /**
+     * Grupowanie tagów według kategorii w modalu
+     */
+    createCategorizedTagGroups: (exam) => {
+        if (!exam.tags?.length) return '';
+
+        const categories = {
+            'SQL': [],
+            'Grafika': [],
+            'HTML': [],
+            'CSS': [],
+            'PHP': [],
+            'JS': [],
+            'Inne': []
+        };
+
+        exam.tags.forEach(tag => {
+            const parts = tag.split(': ');
+            if (parts.length > 1 && categories[parts[0]] !== undefined) {
+                categories[parts[0]].push({ full: tag, clean: parts[1] });
+            } else {
+                categories['Inne'].push({ full: tag, clean: tag });
+            }
+        });
+
+        let html = '<div class="modal-tag-groups">';
+        for (const [category, items] of Object.entries(categories)) {
+            if (items.length === 0) continue;
+            const catClass = `tag-cat-${category.toLowerCase()}`;
+            html += `
+                <div class="modal-tag-group">
+                    <span class="modal-tag-group-label ${catClass}">${category}</span>
+                    <div class="modal-tag-group-items">
+                        ${items.map(item => `<span class="exam-tag ${catClass}" title="${item.full}">${item.clean}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+        }
+        html += '</div>';
+        return html;
     },
 
     /**
@@ -105,21 +163,18 @@ const components = {
         const { skipAnimation = false } = options;
         const isCompleted = app.completed.includes(exam.codeName);
         const delay = (index < 12) ? (index % 24) * 0.05 : 0;
-        const priority = index < 6 ? 'fetchpriority="high"' : '';
+        const imgAttributes = index < 6 ? 'fetchpriority="high"' : 'loading="lazy"';
 
         return `
             <article class="exam-card${isCompleted ? ' completed' : ''}${skipAnimation ? ' no-entrance' : ''}" data-exam-id="${exam.codeName}" style="${skipAnimation ? '' : `animation-delay: ${delay}s`}">
                 <div class="exam-thumbnail">
-                    <img src="${window.appUtils.getThumbnailUrl(exam)}" alt="${exam.name}" data-action="open-modal" loading="lazy" ${priority} width="320" height="200" onerror="this.onerror=null;this.parentElement.replaceChild(Object.assign(document.createElement('div'),{className:'no-thumbnail',textContent:'Brak miniatury'}),this)">
+                    <img src="${window.appUtils.getThumbnailUrl(exam)}" alt="${exam.name}" data-action="open-modal" ${imgAttributes} width="320" height="200" onerror="this.onerror=null;this.parentElement.replaceChild(Object.assign(document.createElement('div'),{className:'no-thumbnail',textContent:'Brak miniatury'}),this)">
                     <div class="thumbnail-overlay" data-action="open-modal" role="button" tabindex="0" aria-label="Pokaż szczegóły i obrazek egzaminu"
                         data-umami-event="View exam modal" 
                         data-umami-event-exam="${exam.codeName}">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="9" x2="11" y2="13"/><line x1="9" y1="11" x2="13" y2="11"/></svg>
                     </div>
-                    <div class="completion-checkbox${isCompleted ? ' completed' : ''}" data-action="toggle-completed" role="checkbox" aria-checked="${isCompleted}" aria-label="Oznacz egzamin jako ukończony" title="Oznacz egzamin jako ukończony"
-                        data-umami-event="Completion status change" 
-                        data-umami-event-action="${isCompleted ? 'Unmark' : 'Mark'} | ${exam.codeName}"
-                        data-umami-event-exam="${exam.codeName}">
+                    <div class="completion-checkbox${isCompleted ? ' completed' : ''}" data-action="toggle-completed" role="checkbox" aria-checked="${isCompleted}" aria-label="Oznacz egzamin jako ukończony" title="Oznacz egzamin jako ukończony">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg>
                     </div>
                 </div>
@@ -128,7 +183,7 @@ const components = {
                     ${components.createExamHeader(exam, { showCode: true })}
                     <div class="exam-metadata">
                         <div class="exam-metadata-item">
-                            <span>📅 Nr ${exam.number} | ${exam.session} ${exam.year}</span>
+                            <span>📅 Nr ${exam.number} | ${window.appUtils.SESSION_NAMES[exam.session] || exam.session} ${exam.year}</span>
                         </div>
                         <div class="exam-metadata-item">
                             ${components.createAllBadges(exam)}
@@ -151,7 +206,7 @@ const components = {
             ${components.createExamHeader(exam, { showCode: false })}
             <div class="exam-metadata">
                 <div class="exam-metadata-item">
-                    <span>📅 Nr ${exam.number} | ${exam.session} ${exam.year}</span>
+                    <span>📅 Nr ${exam.number} | ${window.appUtils.SESSION_NAMES[exam.session] || exam.session} ${exam.year}</span>
                 </div>
                 <div class="exam-metadata-item">
                     <span class="exam-code" title="Kliknij aby skopiować kod" data-action="copy-code" data-code="${exam.codeName}"
@@ -164,7 +219,7 @@ const components = {
                     ${components.createAllBadges(exam)}
                 </div>
             </div>
-            ${components.createTagList(exam, true)}
+            ${components.createCategorizedTagGroups(exam)}
             <div class="modal-links">
                 ${components.createLinkButtons(exam)}
             </div>
