@@ -206,8 +206,10 @@
                                         </svg>
                                     </button>
                                     <div class="custom-select-dropdown" role="listbox">
-                                        <div class="custom-select-search-container" style="padding: 8px; position: sticky; top: 0; background: var(--bg-secondary); border-bottom: 1px solid var(--border-primary); z-index: 10;">
-                                            <input type="text" id="tag-search-input" placeholder="Szukaj tagu..." style="width: 100%; padding: 6px 10px; border: 1px solid var(--border-primary); border-radius: var(--radius-sm); background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.8rem; outline: none; border-color: var(--border-secondary);">
+                                        <div class="custom-select-search-container"
+                                            style="padding: 8px; position: sticky; top: 0; background: var(--bg-secondary); border-bottom: 1px solid var(--border-primary); z-index: 10;">
+                                            <input type="text" id="tag-search-input" placeholder="Szukaj tagu..."
+                                                style="width: 100%; padding: 6px 10px; border: 1px solid var(--border-primary); border-radius: var(--radius-sm); background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.8rem; outline: none; border-color: var(--border-secondary);">
                                         </div>
                                         <div class="custom-select-options-container">
                                         </div>
@@ -243,7 +245,21 @@
                 <div class="results-section">
                     <div class="results-header">
                         <h2>Wyniki wyszukiwania</h2>
-                        <span id="results-count" class="results-count" aria-live="polite">0 z 0 egzaminów</span>
+                        <div class="results-header-actions">
+                            <span id="results-count" class="results-count" aria-live="polite">0 z 0 egzaminów</span>
+                            <div class="sort-select-container">
+                                <span>Sortuj po:</span>
+                                <select id="sort-select" class="sort-select" aria-label="Sortowanie egzaminów">
+                                    <option value="default">Domyślne</option>
+                                    <option value="difficulty-asc">Trudność: Rosnąco</option>
+                                    <option value="difficulty-desc">Trudność: Malejąco</option>
+                                    <option value="tags-count-asc">Liczba tagów: Rosnąco</option>
+                                    <option value="tags-count-desc">Liczba tagów: Malejąco</option>
+                                    <option value="name-asc">Nazwa: A-Z</option>
+                                    <option value="name-desc">Nazwa: Z-A</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div id="results-grid" class="results-grid">
                     </div>
@@ -269,10 +285,12 @@
                         <line x1="6" y1="6" x2="18" y2="18" />
                     </svg>
                 </button>
-                <div class="modal-image">
-                    <img id="modal-image" src="" alt="Podgląd zadania" loading="lazy">
-                </div>
-                <div id="modal-dynamic-content" class="exam-content">
+                <div class="modal-scrollable-content">
+                    <div class="modal-image">
+                        <img id="modal-image" src="" alt="Podgląd zadania" loading="lazy">
+                    </div>
+                    <div id="modal-dynamic-content" class="exam-content">
+                    </div>
                 </div>
             </div>
         </dialog>

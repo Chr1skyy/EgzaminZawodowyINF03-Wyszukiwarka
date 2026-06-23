@@ -141,10 +141,33 @@ function setupResultsGridHandlers() {
 
 function toggleCompleted(examId) {
     app.completed = toggleExamCompleted(examId);
+    const isCompleted = app.completed.includes(examId);
+    const card = document.querySelector(`.exam-card[data-exam-id="${examId}"]`);
+    if (card) {
+        card.classList.toggle('completed', isCompleted);
+        const checkbox = card.querySelector('[data-action="toggle-completed"]');
+        if (checkbox) {
+            checkbox.classList.toggle('completed', isCompleted);
+            checkbox.setAttribute('aria-checked', isCompleted);
+        }
+    }
+
     if (getFilters().hideCompleted) {
-        handleFiltersChange(getFilters(), true);
+        if (card) {
+            card.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                card.remove();
+                app.filtered = app.filtered.filter(x => x.codeName !== examId);
+                updateResultsCount();
+                renderResults(true);
+            }, 200);
+        } else {
+            handleFiltersChange(getFilters(), true);
+        }
     } else {
-        renderResults(true);
+        updateResultsCount();
     }
 }
 
@@ -407,6 +430,20 @@ function initYearFilter() {
     });
 }
 
+function initSortSelect() {
+    const sortSelect = document.getElementById('sort-select');
+    if (sortSelect) {
+        sortSelect.onchange = (e) => {
+            const val = e.target.value;
+            filters.sortBy = val;
+            if (window.umami) {
+                window.umami.track('Sort Change', { sortBy: val });
+            }
+            triggerChange();
+        };
+    }
+}
+
 let activeSuggestionIndex = -1;
 
 function renderSuggestions(query) {
@@ -642,6 +679,7 @@ function updateUrlFromFilters(filts) {
     if (filts.languages.length) params.set('language', filts.languages.join(','));
     if (filts.sessions && filts.sessions.length) params.set('session', filts.sessions.join(','));
     if (filts.years && filts.years.length) params.set('year', filts.years.join(','));
+    if (filts.sortBy && filts.sortBy !== 'default') params.set('sortBy', filts.sortBy);
     if (filts.hideCompleted) params.set('hideCompleted', '1');
 
     const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
@@ -657,11 +695,14 @@ function loadFiltersFromUrl() {
         languages: params.get('language') ? params.get('language').split(',') : [],
         sessions: params.get('session') ? params.get('session').split(',') : [],
         years: params.get('year') ? params.get('year').split(',') : [],
+        sortBy: params.get('sortBy') || 'default',
         hideCompleted: params.get('hideCompleted') === '1'
     };
     setFilters(newFilters);
     const input = document.getElementById('search-input');
     if (input) input.value = newFilters.query;
+    const sortSelect = document.getElementById('sort-select');
+    if (sortSelect) sortSelect.value = newFilters.sortBy;
 
     document.querySelectorAll('.filter-btn').forEach(btn => {
         const type = btn.dataset.filter;
@@ -783,6 +824,7 @@ async function initApp() {
         runIdle(() => {
             initTagFilter();
             initYearFilter();
+            initSortSelect();
             bindFilterEvents();
             setupInfiniteScroll();
             setupBackToTop();

@@ -68,6 +68,26 @@ function searchExams(data, filters, completedExams = []) {
     });
 
     return filtered.sort((a, b) => {
+        if (filters.sortBy === 'difficulty-asc' || filters.sortBy === 'difficulty-desc') {
+            const diffOrder = { "Easy": 0, "Medium": 1, "Hard": 2 };
+            const valA = diffOrder[a.difficulty] ?? 9;
+            const valB = diffOrder[b.difficulty] ?? 9;
+            if (valA !== valB) {
+                return filters.sortBy === 'difficulty-asc' ? valA - valB : valB - valA;
+            }
+        } else if (filters.sortBy === 'tags-count-asc' || filters.sortBy === 'tags-count-desc') {
+            const lenA = a.tags?.length || 0;
+            const lenB = b.tags?.length || 0;
+            if (lenA !== lenB) {
+                return filters.sortBy === 'tags-count-asc' ? lenA - lenB : lenB - lenA;
+            }
+        } else if (filters.sortBy === 'name-asc' || filters.sortBy === 'name-desc') {
+            const comp = a.name.localeCompare(b.name, 'pl');
+            if (comp !== 0) {
+                return filters.sortBy === 'name-asc' ? comp : -comp;
+            }
+        }
+
         if (b.year !== a.year) {
             return b.year - a.year;
         }

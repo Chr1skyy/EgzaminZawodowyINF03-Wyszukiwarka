@@ -1,4 +1,4 @@
-let filters = { query: '', formulas: [], difficulties: [], languages: [], sessions: [], years: [], hideCompleted: false };
+let filters = { query: '', formulas: [], difficulties: [], languages: [], sessions: [], years: [], hideCompleted: false, sortBy: 'default' };
 let onFiltersChange = null;
 
 function setOnFiltersChangeCallback(cb) { onFiltersChange = cb; }
@@ -11,7 +11,8 @@ function setFilters(newFilters) {
         difficulties: [...newFilters.difficulties], 
         languages: [...newFilters.languages],
         sessions: [...(newFilters.sessions || [])],
-        years: [...(newFilters.years || [])]
+        years: [...(newFilters.years || [])],
+        sortBy: newFilters.sortBy || 'default'
     };
 }
 function toggleFilter(type, value) {
@@ -36,13 +37,15 @@ function triggerChange() {
 }
 
 function clearFilters() {
-    filters = { query: '', formulas: [], difficulties: [], languages: [], sessions: [], years: [], hideCompleted: false };
+    filters = { query: '', formulas: [], difficulties: [], languages: [], sessions: [], years: [], hideCompleted: false, sortBy: 'default' };
     document.querySelectorAll('.filter-btn.active, .hide-completed-btn.active').forEach(btn => {
         btn.classList.remove('active');
         btn.setAttribute('aria-pressed', 'false');
     });
     const searchInput = document.getElementById('search-input');
     if (searchInput) searchInput.value = '';
+    const sortSelect = document.getElementById('sort-select');
+    if (sortSelect) sortSelect.value = 'default';
     if (typeof updateHideCompletedBtnText === 'function') updateHideCompletedBtnText();
     if (typeof updateSearchClearBtnVisibility === 'function') updateSearchClearBtnVisibility();
     triggerChange();
