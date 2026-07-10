@@ -1346,15 +1346,16 @@ body {
 @media (max-width: 640px) {
     .exam-links {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(6, 1fr);
     }
 
     .exam-link {
-        grid-column: span 1 !important;
+        grid-column: span 2 !important;
     }
 
+    .exam-link:nth-child(4),
     .exam-link:nth-child(5) {
-        grid-column: span 2 !important;
+        grid-column: span 3 !important;
     }
 }
 
@@ -1367,7 +1368,6 @@ body {
     .exam-link {
         grid-column: span 1 !important;
     }
-
 }
 
 .exam-link {
@@ -1477,7 +1477,7 @@ body {
     position: relative;
     max-width: 64rem;
     width: calc(100% - 2rem);
-    max-height: 95vh;
+    max-height: 90vh;
     background-color: var(--bg-primary);
     border-radius: var(--radius-xl);
     overflow: hidden;
