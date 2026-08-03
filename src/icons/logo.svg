@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   viewBox="0 0 2048 2048"
+   width="2048"
+   height="2048"
+   style="display: block;"
+   id="svg9"
+   sodipodi:docname="t3s_3df32a9c_svg.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="false"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="false"
+     inkscape:lockguides="false"
+     showgrid="true"
+     showborder="true"
+     inkscape:clip-to-page="true"
+     inkscape:antialias-rendering="false"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="1582.505"
+     inkscape:cy="1489.1669"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3">
+    <inkscape:grid
+       id="grid17"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="10"
+       enabled="true"
+       visible="true"
+       dotted="false" />
+  </sodipodi:namedview>
+  <!-- Black background cutout & Handle Shadow -->
+  <rect
+     style="display:block;fill:#f24b00;fill-opacity:1;fill-rule:nonzero;stroke-width:1.11214"
+     id="rect17"
+     width="703.77924"
+     height="359.70938"
+     x="564.52081"
+     y="-1628.0093"
+     transform="rotate(135)"
+     inkscape:label="raczka"
+     sodipodi:insensitive="true" />
+  <circle
+     style="display:inline;fill:#000000;stroke-width:1.4905"
+     id="path10"
+     cx="1186.5"
+     cy="861.5"
+     inkscape:label="czarny"
+     r="861.5" />
+  <circle
+     style="display:block;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke-width:1.25803"
+     id="path16"
+     cx="1186.5"
+     cy="861.5"
+     r="732.5"
+     inkscape:label="bialy zewnatrz"
+     sodipodi:insensitive="true" />
+  <!-- Clean Geometric Circles replacing path 4, 5, 6 -->
+  <!-- Geometric Circle 1: Orange Outer Ring -->
+  <circle
+     cx="1186.5"
+     cy="861.5"
+     r="642"
+     fill="rgb(254,83,1)"
+     id="circle2"
+     inkscape:label="pomaranczowy"
+     style="fill:#f24b00;fill-opacity:1;fill-rule:nonzero"
+     sodipodi:insensitive="true" />
+  <!-- Geometric Circle 2: Gray Ring -->
+  <circle
+     cx="1186.5"
+     cy="861.5"
+     r="626"
+     fill="#c0c0c0"
+     id="circle3"
+     inkscape:label="szary"
+     sodipodi:insensitive="true" />
+  <!-- Geometric Circle 3: White Inner Lens -->
+  <circle
+     cx="1455.3998"
+     cy="178.25827"
+     r="575"
+     fill="#ffffff"
+     id="circle4"
+     inkscape:label="bialy wewnatrz"
+     transform="rotate(29)"
+     sodipodi:insensitive="true" />
+  <!-- Symbols < / > and Handle -->
+  <g
+     id="g3"
+     transform="translate(10.505652,2.681815e-5)">
+    <rect
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.24043;stroke-dasharray:none;stroke-opacity:1"
+       id="rect18"
+       width="65.839439"
+       height="509.17722"
+       x="1394.3516"
+       y="642.8089"
+       transform="matrix(1,0,-0.28000624,0.95999818,0,0)"
+       inkscape:label="slash" />
+    <g
+       id="g2"
+       inkscape:label="right gt"
+       transform="translate(-2.5165043,-11.712665)">
+      <rect
+         style="fill:#f24b00;fill-opacity:1;stroke-width:0.976398"
+         id="rect1"
+         width="341.92667"
+         height="67"
+         x="1460.33"
+         y="102.35844"
+         transform="matrix(0.91247632,0.40912951,0,1,0,0)" />
+      <rect
+         style="display:block;fill:#f24b00;fill-opacity:1;stroke-width:0.976398"
+         id="rect1-9"
+         width="341.927"
+         height="67"
+         x="1460.3334"
+         y="-1644.0682"
+         transform="matrix(0.91247632,-0.40912951,0,-1,0,0)" />
+    </g>
+    <g
+       id="g2-8"
+       inkscape:label="left lt"
+       style="display:block"
+       transform="rotate(180,1177.2526,867.35631)">
+      <rect
+         style="fill:#f24b00;fill-opacity:1;stroke-width:0.976398"
+         id="rect1-8"
+         width="341.92667"
+         height="67"
+         x="1460.33"
+         y="102.35844"
+         transform="matrix(0.91247632,0.40912951,0,1,0,0)" />
+      <rect
+         style="display:block;fill:#f24b00;fill-opacity:1;stroke-width:0.976398"
+         id="rect1-9-2"
+         width="341.927"
+         height="67"
+         x="1460.3334"
+         y="-1644.0682"
+         transform="matrix(0.91247632,-0.40912951,0,-1,0,0)" />
+    </g>
+  </g>
+</svg>

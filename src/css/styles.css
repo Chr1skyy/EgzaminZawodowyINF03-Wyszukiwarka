@@ -527,7 +527,7 @@ body {
 .filters {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .filter-section {
@@ -548,7 +548,7 @@ body {
 @media (max-width: 480px) {
     .filters {
         grid-template-columns: 1fr;
-        gap: 0.875rem;
+        gap: 0.75rem;
     }
 
     .year-filter-section,
@@ -575,7 +575,7 @@ body {
 @media (min-width: 768px) and (max-width: 1023px) {
     .filters {
         grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
+        gap: 0.75rem;
     }
 
     .year-filter-section,
@@ -915,6 +915,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -966,7 +968,7 @@ body {
     border-color: var(--accent-primary);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .results-header {
         flex-direction: column;
         align-items: flex-start;
@@ -986,7 +988,7 @@ body {
     }
 
     .sort-select {
-        max-width: 240px;
+        max-width: 200px;
     }
 }
 
@@ -1346,15 +1348,16 @@ body {
 @media (max-width: 640px) {
     .exam-links {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(6, 1fr);
     }
 
     .exam-link {
-        grid-column: span 1 !important;
+        grid-column: span 2 !important;
     }
 
+    .exam-link:nth-child(4),
     .exam-link:nth-child(5) {
-        grid-column: span 2 !important;
+        grid-column: span 3 !important;
     }
 }
 
@@ -1367,7 +1370,6 @@ body {
     .exam-link {
         grid-column: span 1 !important;
     }
-
 }
 
 .exam-link {
@@ -1477,7 +1479,7 @@ body {
     position: relative;
     max-width: 64rem;
     width: calc(100% - 2rem);
-    max-height: 95vh;
+    max-height: 90vh;
     background-color: var(--bg-primary);
     border-radius: var(--radius-xl);
     overflow: hidden;
