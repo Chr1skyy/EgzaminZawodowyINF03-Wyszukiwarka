@@ -102,13 +102,31 @@ const runBuild = () => {
         console.log('⚠️ JSON minify error:', e.message);
     }
 
-    // 5. Kopiowanie statycznych assetów (favicon itp.)
-    const assetsToCopy = ['favicon.ico', 'favicon.png', 'og-image.png', 'manifest.json', 'sitemap.xml', 'robots.txt'];
+    // 5. Kopiowanie statycznych assetów oraz katalogu z ikonami
+    const assetsToCopy = [
+        'favicon.ico',
+        'og-image.png',
+        'manifest.json',
+        'sitemap.xml',
+        'robots.txt'
+    ];
     assetsToCopy.forEach(asset => {
         if (fs.existsSync(path.join(SRC, asset))) {
             fs.copyFileSync(path.join(SRC, asset), path.join(DIST, asset));
         }
     });
+
+    const iconsSrcDir = path.join(SRC, 'icons');
+    const iconsDistDir = path.join(DIST, 'icons');
+    if (fs.existsSync(iconsSrcDir)) {
+        if (!fs.existsSync(iconsDistDir)) {
+            fs.mkdirSync(iconsDistDir, { recursive: true });
+        }
+        fs.readdirSync(iconsSrcDir).forEach(file => {
+            fs.copyFileSync(path.join(iconsSrcDir, file), path.join(iconsDistDir, file));
+        });
+        console.log('✅ Icons folder copied to /dist/icons');
+    }
 
     // 5a. Kopiowanie i modyfikacja Service Workera
     try {
@@ -127,7 +145,12 @@ const runBuild = () => {
   './${cssDestFile}',
   './${jsDestFile}',
   './data.json',
-  './favicon.png',
+  './favicon.ico',
+  './icons/logo.svg',
+  './icons/favicon.png',
+  './icons/apple-touch-icon.png',
+  './icons/icon-192.png',
+  './icons/icon-512.png',
   './manifest.json'
 ];`;
             swContent = swContent.replace(devAssetsBlock, prodAssets);

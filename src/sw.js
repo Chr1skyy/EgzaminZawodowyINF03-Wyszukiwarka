@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ezinf-v2';
+const CACHE_NAME = 'ezinf-v2.1';
 const ASSETS = [
   './',
   './index.html',
@@ -11,7 +11,12 @@ const ASSETS = [
   './js/utils.js',
   './js/modal.js',
   './data.json',
-  './favicon.png',
+  './favicon.ico',
+  './icons/logo.svg',
+  './icons/favicon.png',
+  './icons/apple-touch-icon.png',
+  './icons/icon-192.png',
+  './icons/icon-512.png',
   './manifest.json'
 ];
 
