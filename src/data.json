@@ -3939,14 +3939,15 @@
             "gradingRules": "INF_03_2026_06_01_SG_zo.pdf",
             "archive": "pliki1.7z",
             "solution": "rozwiazanie",
-            "solutionZIP": ""
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
             "CSS: efekty przejścia (transition)",
             "CSS: pseudoklasy (np. :hover)",
             "PHP: odbieranie danych z paska adresu (GET)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
-            "SQL: wyświetlanie danych (SELECT)"
+            "SQL: wyświetlanie danych (SELECT)",
+            "SQL: grupowanie (GROUP BY)"
         ],
         "difficulty": "Easy"
     },
@@ -3965,7 +3966,7 @@
             "gradingRules": "INF_03_2026_06_02_SG_zo.pdf",
             "archive": "pliki2.7z",
             "solution": "rozwiazanie",
-            "solutionZIP": ""
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
             "CSS: pseudoklasy (np. :hover)",
@@ -3995,7 +3996,16 @@
             "solution": "",
             "solutionZIP": ""
         },
-        "tags": [],
+        "tags": [
+            "CSS: pozycjonowanie (position)",
+            "Grafika: kadrowanie",
+            "JS: galeria zdjęć",
+            "JS: pokazywanie/ukrywanie elementów",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: tworzenie widoku (CREATE VIEW)",
+            "SQL: usuwanie danych (DELETE)",
+            "SQL: wyświetlanie danych (SELECT)"
+        ],
         "difficulty": ""
     },
     {
@@ -4016,13 +4026,11 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "Grafika: filtry",
+            "Grafika: usunięcie tła (przezroczystość)",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
-            "JS: galeria zdjęć",
             "JS: modyfikacja danych skryptem",
             "JS: modyfikacja stylów skryptem",
-            "PHP: odbieranie danych z paska adresu (GET)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -4073,11 +4081,10 @@
             "gradingRules": "INF_03_2026_06_06_SG_zo.pdf",
             "archive": "pliki7.7z",
             "solution": "rozwiazanie",
-            "solutionZIP": ""
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
             "CSS: pseudoklasy (np. :hover)",
-            "Grafika: filtry",
             "Grafika: przeskalowanie grafiki",
             "JS: operacje na tablicach",
             "JS: tworzenie elementów (createElement, appendChild)",
@@ -4103,7 +4110,7 @@
             "gradingRules": "INF_03_2026_06_07_SG_zo.pdf",
             "archive": "pliki8.7z",
             "solution": "rozwiazanie",
-            "solutionZIP": ""
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
             "CSS: pseudoklasy (np. :hover)",
@@ -4133,12 +4140,17 @@
             "solutionZIP": ""
         },
         "tags": [
-            "SQL: wyświetlanie danych (SELECT)",
+            "CSS: pseudoklasy (np. :hover)",
+            "Grafika: kadrowanie",
+            "Grafika: przeskalowanie grafiki",
+            "JS: modyfikacja danych skryptem",
+            "JS: obsługa localStorage",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: relacja LEFT JOIN",
             "SQL: relacja n:m / podwójna relacja",
-            "SQL: modyfikacja struktury tabeli (ALTER)",
-            "JS: obsługa localStorage",
-            "JS: modyfikacja danych skryptem"
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": ""
     },
@@ -4160,11 +4172,15 @@
             "solutionZIP": ""
         },
         "tags": [
+            "CSS: pseudoklasy (np. :hover)",
+            "JS: modyfikacja danych skryptem",
+            "JS: tworzenie elementów (createElement, appendChild)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
-            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: funkcje daty i czasu",
             "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: relacja n:m / podwójna relacja",
-            "CSS: pseudoklasy (np. :hover)"
+            "SQL: tworzenie użytkownika (CREATE USER)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": ""
     },
@@ -4186,15 +4202,18 @@
             "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "SQL: wyświetlanie danych (SELECT)",
-            "SQL: funkcje daty i czasu",
-            "SQL: relacja LEFT JOIN",
-            "SQL: relacja n:m / podwójna relacja",
-            "HTML: formularz",
             "CSS: pseudoklasy (np. :hover)",
+            "HTML: formularz",
+            "PHP: funkcje daty i czasu",
             "PHP: obsługa sesji ($_SESSION)",
             "PHP: odbieranie danych formularza (POST)",
-            "PHP: walidacja formularza"
+            "PHP: walidacja formularza",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: funkcje daty i czasu",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: relacja LEFT JOIN",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -4213,17 +4232,18 @@
             "gradingRules": "INF_03_2026_06_11_SG_zo.pdf",
             "archive": "pliki21.7z",
             "solution": "rozwiazanie",
-            "solutionZIP": ""
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
-            "SQL: wyświetlanie danych (SELECT)",
-            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
-            "SQL: relacja n:m / podwójna relacja",
-            "Grafika: przeskalowanie grafiki",
             "CSS: pseudoklasy (np. :hover)",
+            "Grafika: przeskalowanie grafiki",
             "JS: modyfikacja danych skryptem",
             "JS: operacje na tablicach",
-            "JS: tworzenie elementów (createElement, appendChild)"
+            "JS: tworzenie elementów (createElement, appendChild)",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: relacja n:m / podwójna relacja",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": "Medium"
     },
@@ -4245,7 +4265,16 @@
             "solutionZIP": ""
         },
         "tags": [
-            "JS: funkcje daty i czasu"
+            "CSS: pozycjonowanie (position)",
+            "Grafika: obrót lub odbicie",
+            "Grafika: przeskalowanie grafiki",
+            "HTML: formularz",
+            "JS: funkcje daty i czasu",
+            "JS: modyfikacja danych skryptem",
+            "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
+            "SQL: grupowanie (GROUP BY)",
+            "SQL: modyfikacja danych (UPDATE)",
+            "SQL: wyświetlanie danych (SELECT)"
         ],
         "difficulty": ""
     }
