@@ -4006,7 +4006,7 @@
             "SQL: usuwanie danych (DELETE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
-        "difficulty": ""
+        "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
@@ -4152,7 +4152,7 @@
             "SQL: relacja n:m / podwójna relacja",
             "SQL: wyświetlanie danych (SELECT)"
         ],
-        "difficulty": ""
+        "difficulty": "Easy"
     },
     {
         "formula": "INF.03",
@@ -4182,7 +4182,7 @@
             "SQL: tworzenie użytkownika (CREATE USER)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
-        "difficulty": ""
+        "difficulty": "Medium"
     },
     {
         "formula": "INF.03",
@@ -4266,6 +4266,7 @@
         },
         "tags": [
             "CSS: pozycjonowanie (position)",
+            "CSS: pseudoklasy (np. :hover)",
             "Grafika: obrót lub odbicie",
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
@@ -4276,6 +4277,6 @@
             "SQL: modyfikacja danych (UPDATE)",
             "SQL: wyświetlanie danych (SELECT)"
         ],
-        "difficulty": ""
+        "difficulty": "Medium"
     }
 ]
