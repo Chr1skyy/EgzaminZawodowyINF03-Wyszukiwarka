@@ -3993,8 +3993,8 @@
             "examSheet": "inf_03_2026_06_03_SG.pdf",
             "gradingRules": "INF_03_2026_06_03_SG_zo.pdf",
             "archive": "pliki3.7z",
-            "solution": "",
-            "solutionZIP": ""
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
             "CSS: pozycjonowanie (position)",
@@ -4136,8 +4136,8 @@
             "examSheet": "inf_03_2026_06_08_SG.pdf",
             "gradingRules": "INF_03_2026_06_08_SG_zo.pdf",
             "archive": "pliki18.7z",
-            "solution": "",
-            "solutionZIP": ""
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
             "CSS: pseudoklasy (np. :hover)",
@@ -4168,8 +4168,8 @@
             "examSheet": "inf_03_2026_06_09_SG.pdf",
             "gradingRules": "INF_03_2026_06_09_SG_zo.pdf",
             "archive": "pliki19.7z",
-            "solution": "",
-            "solutionZIP": ""
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
             "CSS: pseudoklasy (np. :hover)",
@@ -4261,8 +4261,8 @@
             "examSheet": "inf_03_2026_06_12_SG.pdf",
             "gradingRules": "INF_03_2026_06_12_SG_zo.pdf",
             "archive": "pliki22.7z",
-            "solution": "",
-            "solutionZIP": ""
+            "solution": "rozwiazanie",
+            "solutionZIP": "rozwiazanie.zip"
         },
         "tags": [
             "CSS: pozycjonowanie (position)",
