@@ -1,10 +1,13 @@
+import { SESSION_NAMES, track } from './utils.js';
+
 let filters = { query: '', formulas: [], difficulties: [], languages: [], sessions: [], years: [], hideCompleted: false, sortBy: 'default' };
 let onFiltersChange = null;
 
-function setOnFiltersChangeCallback(cb) { onFiltersChange = cb; }
-function getFilters() { return { ...filters }; }
-function setQuery(q) { filters.query = q; triggerChange(); }
-function setFilters(newFilters) {
+export function setOnFiltersChangeCallback(cb) { onFiltersChange = cb; }
+export function getFilters() { return { ...filters }; }
+export function setQuery(q) { filters.query = q; triggerChange(); }
+export function updateFilters(changes) { Object.assign(filters, changes); triggerChange(); }
+export function setFilters(newFilters) {
     filters = { 
         ...newFilters, 
         formulas: [...newFilters.formulas], 
@@ -15,19 +18,17 @@ function setFilters(newFilters) {
         sortBy: newFilters.sortBy || 'default'
     };
 }
-function toggleFilter(type, value) {
-    const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas', 'session': 'sessions', 'year': 'years' };
-    const key = keyMap[type] || type;
+export const FILTER_KEYS = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas', 'session': 'sessions', 'year': 'years' };
+
+export function toggleFilter(type, value) {
+    const key = FILTER_KEYS[type] || type;
     const arr = filters[key];
     const idx = arr.indexOf(value);
     const isAdding = idx === -1;
     if (isAdding) arr.push(value); else arr.splice(idx, 1);
-    if (window.umami && isAdding) {
-        let trackValue = value;
-        if (type === 'session' && window.appUtils && window.appUtils.SESSION_NAMES) {
-            trackValue = window.appUtils.SESSION_NAMES[value] || value;
-        }
-        window.umami.track('Filter Toggle', { type, value: trackValue });
+    if (isAdding) {
+        const trackValue = type === 'session' ? (SESSION_NAMES[value] || value) : value;
+        track('Filter Toggle', { type, value: trackValue });
     }
     triggerChange();
 }
@@ -46,12 +47,11 @@ function clearFilters() {
     if (searchInput) searchInput.value = '';
     const sortSelect = document.getElementById('sort-select');
     if (sortSelect) sortSelect.value = 'default';
-    if (typeof updateHideCompletedBtnText === 'function') updateHideCompletedBtnText();
-    if (typeof updateSearchClearBtnVisibility === 'function') updateSearchClearBtnVisibility();
+    updateHideCompletedBtnText();
     triggerChange();
 }
 
-function updateHideCompletedBtnText() {
+export function updateHideCompletedBtnText() {
     const btn = document.getElementById('hide-completed-toggle');
     if (btn) {
         const span = btn.querySelector('span');
@@ -64,20 +64,8 @@ function updateHideCompletedBtnText() {
     }
 }
 
-function setHideCompleted(val) {
-    filters.hideCompleted = !!val;
-    const btn = document.getElementById('hide-completed-toggle');
-    if (btn) {
-        btn.classList.toggle('active', filters.hideCompleted);
-        btn.setAttribute('aria-pressed', filters.hideCompleted);
-    }
-    updateHideCompletedBtnText();
-    triggerChange();
-}
-
-function bindFilterEvents() {
+export function bindFilterEvents() {
     document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.setAttribute('aria-pressed', 'false');
         btn.onclick = e => {
             const t = btn.dataset.filter, v = btn.dataset.value;
             toggleFilter(t, v);

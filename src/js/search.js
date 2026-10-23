@@ -1,6 +1,6 @@
-const normalizeString = window.appUtils.normalizeString;
+import { normalizeString, SESSION_NAMES } from './utils.js';
 
-function searchExams(data, filters, completedExams = []) {
+export function searchExams(data, filters, completedExams = []) {
     let results = data;
 
     if (filters.query && filters.query.trim() !== '') {
@@ -23,14 +23,14 @@ function searchExams(data, filters, completedExams = []) {
                 const normWord = normalizeString(word);
                 const isYear = /^\d{4}$/.test(word);
                 
-                const sessionNames = Object.values(window.appUtils.SESSION_NAMES).map(name => normalizeString(name));
+                const sessionNames = Object.values(SESSION_NAMES).map(name => normalizeString(name));
                 const isSession = sessionNames.includes(normWord);
 
                 if (isYear || isSession) {
                     filteredResults = filteredResults.filter(item => {
                         if (isYear) return item.year.toString() === word;
                         if (isSession) {
-                            const sessionName = window.appUtils.SESSION_NAMES[item.session] || '';
+                            const sessionName = SESSION_NAMES[item.session] || '';
                             return normalizeString(sessionName).includes(normWord);
                         }
                         return false;

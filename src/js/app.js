@@ -2,6 +2,13 @@
  * Główna logika aplikacji
  */
 
+import { SESSION_NAMES, cleanTag, copyToClipboard, debounce, getThumbnailUrl, groupTagsByCategory, normalizeString, track } from './utils.js';
+import { createAllBadges, createExamCard, createSkeletonCard } from './components.js';
+import { getCompletedExams, toggleExamCompleted } from './storage.js';
+import { FILTER_KEYS, bindFilterEvents, getFilters, setFilters, setOnFiltersChangeCallback, setQuery, toggleFilter, updateFilters, updateHideCompletedBtnText } from './filters.js';
+import { searchExams } from './search.js';
+import { bindModalEvents, openModal } from './modal.js';
+
 const CARDS_PER_PAGE = 24;
 
 const app = {
@@ -27,7 +34,7 @@ function renderResults(skipAnimation = false) {
 
     grid.innerHTML = app.filtered
         .slice(0, app.visible)
-        .map((exam, i) => window.uiComponents.createExamCard(exam, i, { skipAnimation }))
+        .map((exam, i) => createExamCard(exam, i, { skipAnimation, isCompleted: app.completed.includes(exam.codeName) }))
         .join('');
 
     renderLoadMoreBtn();
@@ -118,7 +125,8 @@ function setupResultsGridHandlers() {
             const card = target.closest('.exam-card');
             const examId = card.dataset.examId;
             const exam = app.exams.find(x => x.codeName === examId);
-            if (window.openModal) window.openModal(exam);
+            openModal(exam);
+track('View exam modal', { exam: examId });
             return;
         }
 
@@ -133,7 +141,8 @@ function setupResultsGridHandlers() {
         // Kopiowanie kodu
         if (target.closest('[data-action="copy-code"]')) {
             const btn = target.closest('[data-action="copy-code"]');
-            window.appUtils.copyToClipboard(btn.dataset.code, btn);
+copyToClipboard(btn.dataset.code, btn);
+track('Copy exam code', { exam: btn.dataset.code });
             return;
         }
     });
@@ -212,27 +221,9 @@ function updateTagFilterOptions(filts) {
     });
 
     const currentQuery = (filts.query || '').trim();
+    const categories = groupTagsByCategory(sortedTags);
 
-    const categories = {
-        'SQL': [],
-        'Grafika': [],
-        'HTML': [],
-        'CSS': [],
-        'PHP': [],
-        'JS': [],
-        'Inne': []
-    };
-
-    sortedTags.forEach(tag => {
-        const parts = tag.split(': ');
-        if (parts.length > 1 && categories[parts[0]] !== undefined) {
-            categories[parts[0]].push({ full: tag, clean: parts[1] });
-        } else {
-            categories['Inne'].push({ full: tag, clean: tag });
-        }
-    });
-
-    let html = `<div class="custom-select-option ${currentQuery === '' ? 'selected' : ''}" role="option" aria-selected="${currentQuery === ''}" data-value="">Wszystkie tagi</div>`;
+    let html = `<div class="custom-select-option ${currentQuery === '' ? 'selected' : ''}" role="option" tabindex="0" aria-selected="${currentQuery === ''}" data-value="">Wszystkie tagi</div>`;
 
     for (const [category, items] of Object.entries(categories)) {
         if (items.length === 0) continue;
@@ -242,7 +233,7 @@ function updateTagFilterOptions(filts) {
             const cleanTag = item.clean;
             const isSelected = tag.toLowerCase() === currentQuery.toLowerCase();
             return `
-                <div class="custom-select-option ${isSelected ? 'selected' : ''} custom-select-option-indented" role="option" aria-selected="${isSelected}" data-value="${tag}">
+                <div class="custom-select-option ${isSelected ? 'selected' : ''} custom-select-option-indented" role="option" tabindex="0" aria-selected="${isSelected}" data-value="${tag}">
                     <span>${cleanTag}</span>
                     <span class="custom-select-tag-count">${tagCounts[tag]}</span>
                 </div>
@@ -266,8 +257,7 @@ function handleFiltersChange(filts, skipAnimation = false) {
             btnText.textContent = 'Wszystkie tagi';
         } else {
             const hasExactTag = app.exams.some(ex => ex.tags?.some(t => t.toLowerCase() === filts.query.toLowerCase()));
-            const showName = filts.query.includes(': ') ? filts.query.split(': ')[1] : filts.query;
-            btnText.textContent = hasExactTag ? showName : 'Wszystkie tagi';
+            btnText.textContent = hasExactTag ? cleanTag(filts.query) : 'Wszystkie tagi';
         }
     }
 
@@ -290,6 +280,34 @@ function handleFiltersChange(filts, skipAnimation = false) {
     updateTagFilterOptions(filts);
 }
 
+function setDropdownOpen(wrapper, open) {
+    const button = wrapper.querySelector('.custom-select-button');
+    wrapper.querySelector('.custom-select-dropdown').classList.toggle('show', open);
+    button.classList.toggle('active', open);
+    button.setAttribute('aria-expanded', open);
+}
+
+function bindDropdownClose(wrapper) {
+    document.addEventListener('click', (e) => {
+        if (!wrapper.contains(e.target)) setDropdownOpen(wrapper, false);
+    });
+    wrapper.addEventListener('keydown', (e) => {
+        if (e.key !== 'Escape') return;
+        setDropdownOpen(wrapper, false);
+        wrapper.querySelector('.custom-select-button').focus();
+    });
+}
+
+function setupKeyboardActivation() {
+    document.addEventListener('keydown', (e) => {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        const el = e.target;
+        if (!el.matches('[role="button"], [role="checkbox"], [role="option"]') || el.matches('button, a, input')) return;
+        e.preventDefault();
+        el.click();
+    });
+}
+
 function initTagFilter() {
     const customSelectWrapper = document.getElementById('custom-tag-select');
     if (!customSelectWrapper) return;
@@ -301,8 +319,8 @@ function initTagFilter() {
     updateTagFilterOptions(getFilters());
 
     button.onclick = () => {
-        const show = dropdown.classList.toggle('show');
-        button.classList.toggle('active');
+        const show = !dropdown.classList.contains('show');
+        setDropdownOpen(customSelectWrapper, show);
         if (show && tagSearchInput) {
             tagSearchInput.value = '';
             filterDropdownOptions('');
@@ -321,27 +339,18 @@ function initTagFilter() {
             o.setAttribute('aria-selected', isSelected);
         });
         button.querySelector('.custom-select-text').textContent = value || 'Wszystkie tagi';
-        dropdown.classList.remove('show');
-        button.classList.remove('active');
+        setDropdownOpen(customSelectWrapper, false);
+        button.focus();
 
         const searchInput = document.getElementById('search-input');
         if (searchInput) {
             setQuery(value);
             searchInput.value = value;
-            updateSearchClearBtnVisibility();
-            if (window.umami) {
-                window.umami.track('Filter Tag', { tag: value || 'Wszystkie' });
-            }
+            if (value) track('Filter Tag', { tag: value });
         }
     };
 
-    // Close when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!customSelectWrapper.contains(e.target)) {
-            dropdown.classList.remove('show');
-            button.classList.remove('active');
-        }
-    });
+    bindDropdownClose(customSelectWrapper);
 
     if (tagSearchInput) {
         tagSearchInput.oninput = (e) => {
@@ -401,8 +410,7 @@ function initYearFilter() {
     const dropdown = customSelectWrapper.querySelector('.custom-select-dropdown');
 
     button.onclick = () => {
-        const show = dropdown.classList.toggle('show');
-        button.classList.toggle('active');
+        setDropdownOpen(customSelectWrapper, !dropdown.classList.contains('show'));
     };
 
     dropdown.onclick = (e) => {
@@ -411,23 +419,16 @@ function initYearFilter() {
 
         const value = option.dataset.value;
         if (value === "") {
-            filters.years = [];
-            triggerChange();
+            updateFilters({ years: [] });
         } else {
             toggleFilter('year', value);
         }
 
-        dropdown.classList.remove('show');
-        button.classList.remove('active');
+        setDropdownOpen(customSelectWrapper, false);
+        button.focus();
     };
 
-    // Close when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!customSelectWrapper.contains(e.target)) {
-            dropdown.classList.remove('show');
-            button.classList.remove('active');
-        }
-    });
+    bindDropdownClose(customSelectWrapper);
 }
 
 function initSortSelect() {
@@ -435,11 +436,8 @@ function initSortSelect() {
     if (sortSelect) {
         sortSelect.onchange = (e) => {
             const val = e.target.value;
-            filters.sortBy = val;
-            if (window.umami) {
-                window.umami.track('Sort Change', { sortBy: val });
-            }
-            triggerChange();
+            track('Sort Change', { sortBy: val });
+            updateFilters({ sortBy: val });
         };
     }
 }
@@ -459,7 +457,7 @@ function renderSuggestions(query) {
     const suggestions = [];
     const maxSuggestions = 15;
 
-    const normalizedQuery = window.appUtils.normalizeString(query);
+    const normalizedQuery = normalizeString(query);
 
     app.exams.forEach(exam => {
         if (exam._normalizedCode.includes(normalizedQuery) ||
@@ -469,8 +467,8 @@ function renderSuggestions(query) {
                 title: exam.name,
                 subtitle: exam.codeName,
                 value: exam.codeName,
-                thumb: window.appUtils.getThumbnailUrl(exam),
-                badges: window.uiComponents.createAllBadges(exam)
+                thumb: getThumbnailUrl(exam),
+                badges: createAllBadges(exam)
             });
         }
     });
@@ -480,12 +478,11 @@ function renderSuggestions(query) {
     allTags.forEach(tag => {
         const parts = tag.split(': ');
         const category = parts.length > 1 ? parts[0] : '';
-        const cleanTag = parts.length > 1 ? parts[1] : tag;
-        const normalizedTag = window.appUtils.normalizeString(tag);
+        const normalizedTag = normalizeString(tag);
         if (normalizedTag.includes(normalizedQuery)) {
             suggestions.push({
                 type: 'tag',
-                title: cleanTag,
+                title: cleanTag(tag),
                 subtitle: category ? `Tag (${category})` : 'Tag',
                 value: tag,
                 badges: ''
@@ -542,24 +539,11 @@ function highlightText(text, query) {
         'z': '[zźż]'
     };
 
-    const normalized = window.appUtils.normalizeString(query);
-    let pattern = '';
-    for (let i = 0; i < normalized.length; i++) {
-        const char = normalized[i];
-        if ('[\\^$.|?*+()'.includes(char)) {
-            pattern += '\\' + char;
-        } else {
-            pattern += map[char] || char;
-        }
-    }
+    const pattern = [...normalizeString(query)]
+        .map(char => map[char] || char.replace(/[.*+?^${}()|[\]\\]/, '\\$&'))
+        .join('');
 
-    try {
-        const regex = new RegExp(`(${pattern})`, 'gi');
-        return text.replace(regex, '<span class="suggestion-highlight">$1</span>');
-    } catch (e) {
-        const fallbackRegex = new RegExp(`(${query})`, 'gi');
-        return text.replace(fallbackRegex, '<span class="suggestion-highlight">$1</span>');
-    }
+    return text.replace(new RegExp(`(${pattern})`, 'gi'), '<span class="suggestion-highlight">$1</span>');
 }
 
 function selectSuggestion(value) {
@@ -567,10 +551,7 @@ function selectSuggestion(value) {
     if (input) {
         input.value = value;
         setQuery(value);
-        if (value && value.length > 2 && window.umami) {
-            window.umami.track('Search', { query: value });
-        }
-        updateSearchClearBtnVisibility();
+        debouncedTrackSearch(value);
         hideSuggestions();
     }
 }
@@ -583,31 +564,25 @@ function hideSuggestions() {
     }
 }
 
-const debouncedSearch = window.appUtils.debounce((value) => {
+const debouncedSearch = debounce((value) => {
     setQuery(value);
 }, 200);
 
-const debouncedTrackSearch = window.appUtils.debounce((value) => {
-    if (value && value.length > 2 && window.umami) {
-        window.umami.track('Search', { query: value });
+const debouncedTrackSearch = debounce((value) => {
+    if (value && value.length > 2) {
+        const results = searchExams(app.exams, { query: value, formulas: [], difficulties: [], languages: [] }).length;
+track('Search', { query: value, results });
     }
 }, 1000);
 
 const searchInput = document.getElementById('search-input');
 const searchClearBtn = document.getElementById('search-clear-btn');
 
-function updateSearchClearBtnVisibility() {
-    if (searchClearBtn && searchInput) {
-        searchClearBtn.classList.toggle('visible', searchInput.value.length > 0);
-    }
-}
-
 if (searchInput) {
     searchInput.oninput = e => {
         const val = e.target.value;
         debouncedSearch(val);
         debouncedTrackSearch(val);
-        updateSearchClearBtnVisibility();
         renderSuggestions(val);
     };
 
@@ -664,7 +639,6 @@ if (searchClearBtn) {
         if (searchInput) {
             searchInput.value = '';
             setQuery('');
-            updateSearchClearBtnVisibility();
             hideSuggestions();
             searchInput.focus();
         }
@@ -707,21 +681,19 @@ function loadFiltersFromUrl() {
     document.querySelectorAll('.filter-btn').forEach(btn => {
         const type = btn.dataset.filter;
         const val = btn.dataset.value;
-        const keyMap = { 'difficulty': 'difficulties', 'language': 'languages', 'formula': 'formulas', 'session': 'sessions', 'year': 'years' };
-        const key = keyMap[type] || type;
+        const key = FILTER_KEYS[type] || type;
         const isActive = newFilters[key].includes(val);
         btn.classList.toggle('active', isActive);
         btn.setAttribute('aria-pressed', isActive);
     });
 
-    if (typeof updateHideCompletedBtnText === 'function') updateHideCompletedBtnText();
-    updateSearchClearBtnVisibility();
+    updateHideCompletedBtnText();
 }
 
 function renderSkeletons() {
     const grid = document.getElementById('results-grid');
     if (grid) {
-        grid.innerHTML = Array(12).fill(window.uiComponents.createSkeletonCard()).join('');
+        grid.innerHTML = Array(12).fill(createSkeletonCard()).join('');
         grid.style.display = 'grid';
     }
 }
@@ -756,7 +728,7 @@ function renderDynamicFilters() {
     const sessionContainer = document.getElementById('session-filters');
     if (sessionContainer) {
         sessionContainer.innerHTML = sortedSessions.map(session => {
-            const sessionName = window.appUtils.SESSION_NAMES[session] || session;
+            const sessionName = SESSION_NAMES[session] || session;
             const cleanSession = String(sessionName).toLowerCase().replace('ć', 'c').replace('ń', 'n');
             return `<button class="filter-btn session-${cleanSession}" data-filter="session" data-value="${session}">${sessionName}</button>`;
         }).join('');
@@ -764,49 +736,26 @@ function renderDynamicFilters() {
 
     const yearContainer = document.querySelector('#custom-year-select .custom-select-options-container');
     if (yearContainer) {
-        let html = `<div class="custom-select-option" role="option" data-value="">Wszystkie lata</div>`;
+        let html = `<div class="custom-select-option" role="option" tabindex="0" data-value="">Wszystkie lata</div>`;
         html += sortedYears.map(year => {
-            return `<div class="custom-select-option" role="option" data-value="${year}">${year}</div>`;
+            return `<div class="custom-select-option" role="option" tabindex="0" data-value="${year}">${year}</div>`;
         }).join('');
         yearContainer.innerHTML = html;
     }
 }
 
-function repositionSearchInput() {
-    const searchContainer = document.querySelector('.search-container');
-    const headerContainer = document.querySelector('.header-search-container');
-    const mainSearchSection = document.querySelector('.search-section');
-
-    if (!searchContainer || !headerContainer || !mainSearchSection) return;
-
-    if (window.innerWidth >= 768) {
-        if (searchContainer.parentElement !== headerContainer) {
-            headerContainer.appendChild(searchContainer);
-        }
-    } else {
-        if (searchContainer.parentElement !== mainSearchSection) {
-            mainSearchSection.appendChild(searchContainer);
-        }
-    }
-}
-
 async function initApp() {
     setupThemeToggle();
-    repositionSearchInput();
-    window.addEventListener('resize', repositionSearchInput);
+    bindModalEvents();
     renderSkeletons();
 
     try {
         const response = await fetch('data.json');
         app.exams = await response.json();
-        window.appTagCounts = {};
         app.exams.forEach(exam => {
-            exam._normalizedCode = window.appUtils.normalizeString(exam.codeName);
-            exam._normalizedName = window.appUtils.normalizeString(exam.name);
-            exam._normalizedTags = exam.tags?.map(t => window.appUtils.normalizeString(t)) || [];
-            exam.tags?.forEach(tag => {
-                window.appTagCounts[tag] = (window.appTagCounts[tag] || 0) + 1;
-            });
+            exam._normalizedCode = normalizeString(exam.codeName);
+            exam._normalizedName = normalizeString(exam.name);
+            exam._normalizedTags = exam.tags?.map(t => normalizeString(t)) || [];
         });
 
         renderDynamicFilters();
@@ -829,6 +778,7 @@ async function initApp() {
             setupInfiniteScroll();
             setupBackToTop();
             setupResultsGridHandlers();
+            setupKeyboardActivation();
         });
 
         window.addEventListener('popstate', () => {

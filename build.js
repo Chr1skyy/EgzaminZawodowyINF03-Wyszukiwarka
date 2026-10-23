@@ -1,79 +1,24 @@
 const { execSync } = require('child_process');
+const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
 const DIST = path.join(__dirname, 'dist');
 const SRC = path.join(__dirname, 'src');
 
-const isWindows = process.platform === 'win32';
-
-const sleep = (ms) => {
-    if (isWindows) {
-        execSync(`powershell Start-Sleep -Milliseconds ${ms}`);
-    } else {
-        execSync(`sleep ${ms / 1000}`);
-    }
-};
-
 const runBuild = () => {
     // 1. Przygotowanie czystego folderu DIST
-    if (fs.existsSync(DIST)) {
-        try {
-            fs.rmSync(DIST, { recursive: true, force: true });
-        } catch (e) {
-            console.log('⚠️ Could not remove DIST, trying to rename it...');
-            if (isWindows) {
-                const tempDist = path.join(__dirname, 'dist_old_' + Date.now());
-                try {
-                    fs.renameSync(DIST, tempDist);
-                } catch (renameErr) {
-                    console.log('⚠️ Could not rename DIST, it might be locked by another process.');
-                }
-            }
-        }
-        if (isWindows) sleep(300);
-    }
+    fs.rmSync(DIST, { recursive: true, force: true, maxRetries: 3, retryDelay: 300 });
+    fs.mkdirSync(DIST);
 
-    // Próba utworzenia lub wyczyszczenia folderu DIST
-    if (!fs.existsSync(DIST)) {
-        for (let i = 0; i < 3; i++) {
-            try {
-                fs.mkdirSync(DIST);
-                break;
-            } catch (e) {
-                if (i === 2) {
-                    console.error('❌ FATAL: Could not create DIST folder. Please close any programs using it.');
-                    throw e;
-                }
-                if (isWindows) sleep(300);
-            }
-        }
-    }
-
-    // 2. Łączenie i minifikacja JS
-    const jsFiles = [
-        'js/utils.js',
-        'js/components.js',
-        'js/storage.js',
-        'js/filters.js',
-        'js/search.js',
-        'js/app.js',
-        'js/modal.js'
-    ];
+    // 2. Łączenie modułów i minifikacja JS
     console.log('📦 Bundling JS...');
-    const jsContent = jsFiles.map(f => fs.readFileSync(path.join(SRC, f), 'utf-8')).join('\n;\n');
-    const crypto = require('crypto');
-    const jsHash = crypto.createHash('md5').update(jsContent).digest('hex').slice(0, 8);
+    const jsBundle = path.join(DIST, 'app.min.js');
+    execSync(`npx -y esbuild "${path.join(SRC, 'js/app.js')}" --bundle --minify --format=iife --outfile="${jsBundle}"`, { stdio: 'inherit' });
+    const jsHash = crypto.createHash('md5').update(fs.readFileSync(jsBundle)).digest('hex').slice(0, 8);
     const jsDestFile = `app.${jsHash}.min.js`;
-    fs.writeFileSync(path.join(DIST, 'app.bundle.js'), jsContent, 'utf-8');
-
-    try {
-        execSync(`npx -y esbuild "${path.join(DIST, 'app.bundle.js')}" --minify --outfile="${path.join(DIST, jsDestFile)}"`, { stdio: 'inherit' });
-        fs.unlinkSync(path.join(DIST, 'app.bundle.js')); // Oczyszczenie wersji niezminifikowanej
-        console.log(`✅ JS minified to ${jsDestFile}`);
-    } catch (e) {
-        console.log('⚠️ esbuild JS error:', e.message);
-    }
+    fs.renameSync(jsBundle, path.join(DIST, jsDestFile));
+    console.log(`✅ JS bundled to ${jsDestFile}`);
 
     // 3. Minifikacja CSS
     let cssDestFile = 'styles.min.css';
@@ -107,8 +52,7 @@ const runBuild = () => {
         'favicon.ico',
         'og-image.png',
         'manifest.json',
-        'sitemap.xml',
-        'robots.txt'
+        'sitemap.xml'
     ];
     assetsToCopy.forEach(asset => {
         if (fs.existsSync(path.join(SRC, asset))) {
@@ -174,9 +118,7 @@ const runBuild = () => {
         // Zmiana łączy CSS z hashem
         html = html.replace('<link rel="stylesheet" href="css/styles.css">', `<link rel="stylesheet" href="${cssDestFile}">`);
 
-        // Zastąpienie wielu tagów script jednym połączonym bundle z hashem
-        const jsBlockRegex = /<script defer src="js\/utils\.js"><\/script>[\s\S]*?<script defer src="js\/modal\.js"><\/script>/;
-        html = html.replace(jsBlockRegex, `<script defer src="${jsDestFile}"></script>`);
+        html = html.replace('<script type="module" src="js/app.js"></script>', `<script defer src="${jsDestFile}"></script>`);
 
         fs.writeFileSync(path.join(DIST, 'index.html'), html, 'utf-8');
         console.log('✅ HTML rewritten perfectly for /dist');

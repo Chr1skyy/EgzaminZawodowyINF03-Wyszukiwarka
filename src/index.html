@@ -47,7 +47,7 @@
 
     <!-- Analytics -->
     <script defer src="https://analytics.ezinf.it/script.js" data-website-id="714f3251-20e1-46cd-8ca4-48ae580c848b"
-        data-domains="ezinf.it,www.ezinf.it" data-performance="true"></script>
+        data-domains="ezinf.it,www.ezinf.it" data-performance="true" data-exclude-search="true"></script>
     <!-- JSON-LD -->
     <script type="application/ld+json">
     {
@@ -78,7 +78,29 @@
                         <h1>EZINF.IT</h1>
                     </div>
                 </div>
-                <div class="header-search-container"></div>
+                <div class="header-search-container" role="search" aria-label="Wyszukiwarka egzaminów">
+                    <div class="search-container">
+                        <div class="search-input-wrapper">
+                            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <circle cx="11" cy="11" r="8" />
+                                <path d="m21 21-4.35-4.35" />
+                            </svg>
+                            <input type="search" id="search-input" placeholder="Szukaj po roku, tytule, tagach..."
+                                class="search-input" aria-label="Wyszukaj egzaminy po roku, tytule lub tagach">
+                            <button id="search-clear-btn" class="search-clear-btn" aria-label="Wyczyść wyszukiwanie"
+                                title="Wyczyść">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </button>
+                            <div id="search-suggestions" class="search-suggestions" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="header-actions">
                     <a href="https://github.com/Chr1skyy" target="_blank" rel="noopener" class="header-btn github-btn"
                         aria-label="Profil autora na GitHub" data-umami-event="Github link">
@@ -104,31 +126,6 @@
         </header>
 
         <main class="main-content">
-            <div class="search-section" role="search" aria-label="Wyszukiwarka egzaminów">
-                <div class="search-container">
-                    <div class="search-input-wrapper">
-                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
-                            <circle cx="11" cy="11" r="8" />
-                            <path d="m21 21-4.35-4.35" />
-                        </svg>
-                        <input type="search" id="search-input" placeholder="Szukaj po roku, tytule, tagach..."
-                            class="search-input" aria-label="Wyszukaj egzaminy po roku, tytule lub tagach">
-                        <button id="search-clear-btn" class="search-clear-btn" aria-label="Wyczyść wyszukiwanie"
-                            title="Wyczyść">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="18" y1="6" x2="6" y2="18"></line>
-                                <line x1="6" y1="6" x2="18" y2="18"></line>
-                            </svg>
-                        </button>
-                        <div id="search-suggestions" class="search-suggestions" style="display: none;"></div>
-                    </div>
-
-                </div>
-            </div>
-
             <div class="content-layout">
                 <div class="content-layout-wrapper">
                     <aside class="filter-panel">
@@ -212,10 +209,8 @@
                                         </svg>
                                     </button>
                                     <div class="custom-select-dropdown" role="listbox">
-                                        <div class="custom-select-search-container"
-                                            style="padding: 8px; position: sticky; top: 0; background: var(--bg-secondary); border-bottom: 1px solid var(--border-primary); z-index: 10;">
-                                            <input type="text" id="tag-search-input" placeholder="Szukaj tagu..." aria-label="Szukaj tagu"
-                                                style="width: 100%; padding: 6px 10px; border: 1px solid var(--border-primary); border-radius: var(--radius-sm); background-color: var(--bg-primary); color: var(--text-primary); font-size: 0.8rem; outline: none; border-color: var(--border-secondary);">
+                                        <div class="custom-select-search-container">
+                                            <input type="text" id="tag-search-input" placeholder="Szukaj tagu..." aria-label="Szukaj tagu">
                                         </div>
                                         <div class="custom-select-options-container">
                                         </div>
@@ -292,9 +287,7 @@
                     </svg>
                 </button>
                 <div class="modal-scrollable-content">
-                    <div class="modal-image">
-                        <img id="modal-image" src="" alt="Podgląd zadania" loading="lazy">
-                    </div>
+                    <div class="modal-image"></div>
                     <div id="modal-dynamic-content" class="exam-content">
                     </div>
                 </div>
@@ -313,13 +306,7 @@
             </svg>
         </button>
     </div>
-    <script defer src="js/utils.js"></script>
-    <script defer src="js/components.js"></script>
-    <script defer src="js/storage.js"></script>
-    <script defer src="js/filters.js"></script>
-    <script defer src="js/search.js"></script>
-    <script defer src="js/app.js"></script>
-    <script defer src="js/modal.js"></script>
+    <script type="module" src="js/app.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
