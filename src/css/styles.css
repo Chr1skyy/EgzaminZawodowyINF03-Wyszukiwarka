@@ -717,24 +717,9 @@ body {
     --btn-active: var(--lang-jsphp-active);
 }
 
-.filter-btn[data-filter="language"][data-value="JS/PHP"],
-.exam-badge[data-filter="language"][data-value="JS/PHP"] {
-    --btn-bg: var(--lang-jsorphp-bg);
-    --btn-text: var(--lang-jsorphp-text);
-    --btn-border: var(--lang-jsorphp-border);
-    --btn-active: var(--lang-jsorphp-active);
-}
-
 .filter-btn[data-filter="language"][data-value="JS+PHP"].active {
     background: var(--btn-active);
     border-color: var(--lang-php-active);
-}
-
-.filter-btn[data-filter="language"][data-value="JS/PHP"].active {
-    background: var(--btn-active);
-    border-color: var(--lang-php-active);
-    color: #ffffff;
-    font-weight: 700;
 }
 
 .filter-btn[data-filter="session"][data-value="1"] {
