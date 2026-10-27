@@ -202,9 +202,8 @@
             "Grafika: filtry",
             "Grafika: przeskalowanie grafiki",
             "Grafika: usunięcie tła (przezroczystość)",
-            "HTML: łączenie komórek tabeli (rowspan/colspan)",
-            "JS: modyfikacja stylów skryptem",
-            "SQL: wyświetlanie danych (SELECT)"
+            "HTML: łączenie komórek (rowspan/colspan)",
+            "JS: modyfikacja stylów skryptem"
         ],
         "difficulty": "Medium"
     },
@@ -638,8 +637,7 @@
             "Grafika: tworzenie grafiki",
             "HTML: favicon",
             "HTML: formularz",
-            "JS: modyfikacja danych skryptem",
-            "SQL: wyświetlanie danych (SELECT)"
+            "JS: modyfikacja danych skryptem"
         ],
         "difficulty": "Medium"
     },
@@ -722,7 +720,7 @@
             "Grafika: przeskalowanie grafiki",
             "Grafika: tekst po ścieżce",
             "Grafika: tworzenie grafiki",
-            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "HTML: łączenie komórek (rowspan/colspan)",
             "JS: modyfikacja danych skryptem",
             "JS: modyfikacja stylów skryptem"
         ],
@@ -773,7 +771,6 @@
         "tags": [
             "Grafika: przeskalowanie grafiki",
             "JS: modyfikacja danych skryptem",
-            "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: tworzenie tabeli (CREATE TABLE)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -835,7 +832,6 @@
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
-            "SQL: modyfikacja struktury tabeli (ALTER)",
             "SQL: tworzenie tabeli (CREATE TABLE)",
             "SQL: wstawianie danych (INSERT)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -1798,7 +1794,7 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: kadrowanie",
             "Grafika: przeskalowanie grafiki",
-            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "HTML: łączenie komórek (rowspan/colspan)",
             "JS: modyfikacja stylów skryptem",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
@@ -2126,7 +2122,7 @@
             "CSS: pseudoklasy (np. :hover)",
             "Grafika: filtry",
             "Grafika: przeskalowanie grafiki",
-            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "HTML: łączenie komórek (rowspan/colspan)",
             "JS: modyfikacja danych skryptem",
             "SQL: tworzenie widoku (CREATE VIEW)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -2415,8 +2411,7 @@
             "Grafika: tworzenie grafiki",
             "HTML: favicon",
             "HTML: formularz",
-            "JS: modyfikacja danych skryptem",
-            "SQL: wyświetlanie danych (SELECT)"
+            "JS: modyfikacja danych skryptem"
         ],
         "difficulty": "Medium"
     },
@@ -2865,7 +2860,6 @@
             "Grafika: przeskalowanie grafiki",
             "HTML: formularz",
             "JS: transformacja i filtr grafiki",
-            "JS: zdarzenia formularza (change/input/blur)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja danych (UPDATE)",
@@ -2925,7 +2919,7 @@
             "Grafika: dodawanie tekstu",
             "Grafika: przeskalowanie grafiki",
             "Grafika: tworzenie grafiki",
-            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "HTML: łączenie komórek (rowspan/colspan)",
             "JS: modyfikacja danych skryptem",
             "JS: walidacja formularza",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
@@ -2956,7 +2950,7 @@
         "tags": [
             "Grafika: animacja GIF",
             "HTML: formularz",
-            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "HTML: łączenie komórek (rowspan/colspan)",
             "PHP: funkcje daty i czasu",
             "PHP: odbieranie danych formularza (POST)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
@@ -3602,7 +3596,7 @@
         },
         "tags": [
             "CSS: pseudoklasy (np. :hover)",
-            "HTML: łączenie komórek tabeli (rowspan/colspan)",
+            "HTML: łączenie komórek (rowspan/colspan)",
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: losowanie rekordów (ORDER BY RAND)",
             "SQL: wyświetlanie danych (SELECT)"
@@ -4204,7 +4198,6 @@
         "tags": [
             "CSS: pseudoklasy (np. :hover)",
             "HTML: formularz",
-            "PHP: funkcje daty i czasu",
             "PHP: obsługa sesji ($_SESSION)",
             "PHP: odbieranie danych formularza (POST)",
             "PHP: walidacja formularza",
@@ -4275,7 +4268,8 @@
             "SQL: funkcje agregujące (COUNT, SUM, AVG, MIN, MAX)",
             "SQL: grupowanie (GROUP BY)",
             "SQL: modyfikacja danych (UPDATE)",
-            "SQL: wyświetlanie danych (SELECT)"
+            "SQL: wyświetlanie danych (SELECT)",
+            "JS: zdarzenia formularza (change/input/blur)"
         ],
         "difficulty": "Medium"
     }
