@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ezinf-v2.1';
+const CACHE_NAME = 'ezinf-v2.2';
 const ASSETS = [
   './',
   './index.html',
@@ -31,6 +31,18 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin) {
+    return;
+  }
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request).then((networkResponse) => {
+        if (networkResponse.ok) {
+          const responseClone = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put('./index.html', responseClone));
+        }
+        return networkResponse;
+      }).catch(() => caches.match('./index.html'))
+    );
     return;
   }
   event.respondWith(

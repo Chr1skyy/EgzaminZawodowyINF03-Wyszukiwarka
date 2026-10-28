@@ -1,44 +1,70 @@
 import { normalizeString, SESSION_NAMES } from './utils.js';
 
+const LANGUAGES = { php: 'PHP', js: 'JS', javascript: 'JS' };
+const SEP = '[\\s._/-]+';
+const FORMULA = '\\b(inf|ee|e)[\\s._-]*(03|09|14)';
+// INF.03-11-26.01, INF 03.09.26.01
+const CODE_PATTERN = new RegExp(`${FORMULA}${SEP}(\\d{2})${SEP}(\\d{2})${SEP}(\\d{2})(?!\\d)`);
+// inf_03_2026_06_11
+const FILE_PATTERN = new RegExp(`${FORMULA}${SEP}(\\d{4})${SEP}(\\d{2})${SEP}(\\d{2})(?!\\d)`);
+
+function findByExamCode(data, query) {
+    let letters, digits, number, year, session;
+    const file = query.match(FILE_PATTERN);
+    const code = !file && query.match(CODE_PATTERN);
+    if (file) {
+        [, letters, digits, year, session, number] = file;
+    } else if (code) {
+        [, letters, digits, number, year, session] = code;
+        year = '20' + year;
+    } else {
+        return [];
+    }
+    const formula = `${letters.toUpperCase()}.${digits}`;
+    return data.filter(item =>
+        item.formula === formula &&
+        item.year === Number(year) &&
+        item.session === Number(session) &&
+        Number(item.number) === Number(number)
+    );
+}
+
 export function searchExams(data, filters, completedExams = []) {
     let results = data;
 
     if (filters.query && filters.query.trim() !== '') {
         const query = filters.query.trim().toLowerCase();
         const normalizedQuery = normalizeString(query);
-        
-        const isExactCode = data.some(item => item._normalizedCode === normalizedQuery);
-        const isExactTag = data.some(item => item._normalizedTags.includes(normalizedQuery));
-        
-        if (isExactCode || isExactTag) {
-            results = data.filter(item => 
-                item._normalizedCode === normalizedQuery || 
-                item._normalizedTags.includes(normalizedQuery)
-            );
+        const codeMatches = findByExamCode(data, query);
+
+        const tagMatches = LANGUAGES[normalizedQuery] ? [] : data.filter(item => item._normalizedTags.includes(normalizedQuery));
+
+        if (codeMatches.length) {
+            results = codeMatches;
+        } else if (tagMatches.length) {
+            results = tagMatches;
         } else {
             const words = query.split(/\s+/);
             let filteredResults = data;
 
             words.forEach(word => {
                 const normWord = normalizeString(word);
-                const isYear = /^\d{4}$/.test(word);
-                
-                const sessionNames = Object.values(SESSION_NAMES).map(name => normalizeString(name));
-                const isSession = sessionNames.includes(normWord);
+                const language = LANGUAGES[normWord];
+                const session = Object.keys(SESSION_NAMES).find(key => normalizeString(SESSION_NAMES[key]) === normWord);
 
-                if (isYear || isSession) {
-                    filteredResults = filteredResults.filter(item => {
-                        if (isYear) return item.year.toString() === word;
-                        if (isSession) {
-                            const sessionName = SESSION_NAMES[item.session] || '';
-                            return normalizeString(sessionName).includes(normWord);
-                        }
-                        return false;
-                    });
+                if (language) {
+                    filteredResults = filteredResults.filter(item =>
+                        item.language.split('+').includes(language) ||
+                        item._normalizedTags.some(t => t.includes(normWord))
+                    );
+                } else if (/^\d{4}$/.test(word)) {
+                    filteredResults = filteredResults.filter(item => item.year === Number(word));
+                } else if (session) {
+                    filteredResults = filteredResults.filter(item => item.session === Number(session));
                 } else {
                     const exactMatches = data.filter(item =>
                         item._normalizedCode === normWord ||
-                        item._normalizedTags.includes(normWord) ||
+                        item._normalizedTags.some(t => t.split(/[^a-z0-9]+/).includes(normWord)) ||
                         item._normalizedName.includes(normWord)
                     );
 
