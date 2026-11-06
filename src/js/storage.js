@@ -1,23 +1,14 @@
-function storageGet(key, def) {
-    const item = localStorage.getItem(key);
-    return item ? JSON.parse(item) : def;
-}
-function storageSet(key, val) {
-    localStorage.setItem(key, JSON.stringify(val));
-}
-
 const STORAGE_COMPLETED = 'completed-exams';
 
-function getCompletedExams() {
-    return storageGet(STORAGE_COMPLETED, []);
+export function getCompletedExams() {
+    const item = localStorage.getItem(STORAGE_COMPLETED);
+    return item ? JSON.parse(item) : [];
 }
-function setCompletedExams(arr) {
-    storageSet(STORAGE_COMPLETED, arr);
-}
-function toggleExamCompleted(examId) {
+
+export function toggleExamCompleted(examId) {
     const completed = getCompletedExams();
     const idx = completed.indexOf(examId);
     if (idx > -1) completed.splice(idx, 1); else completed.push(examId);
-    setCompletedExams(completed);
+    localStorage.setItem(STORAGE_COMPLETED, JSON.stringify(completed));
     return completed;
 }

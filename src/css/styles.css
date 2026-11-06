@@ -240,7 +240,7 @@ body {
 
 .content-layout {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     flex-direction: column;
 }
 
@@ -314,7 +314,7 @@ body {
 
 .header-actions {
     display: flex;
-    gap: 12px;
+    gap: 0.75rem;
 }
 
 .header-btn {
@@ -323,7 +323,7 @@ body {
     justify-content: center;
     font-size: 1rem;
     font-weight: 500;
-    padding: 6px;
+    padding: 0.375rem;
     border-radius: var(--radius-lg);
     border: none;
     text-decoration: none;
@@ -342,7 +342,7 @@ body {
 }
 
 .github-btn svg {
-    margin-right: 6px;
+    margin-right: 0.375rem;
 }
 
 .support-btn {
@@ -358,32 +358,27 @@ body {
    4. SEARCH SECTION
    ========================================= */
 .header-search-container {
-    display: none;
     flex: 1;
     max-width: 32rem;
     margin: 0 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
+    .header-container {
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 0.75rem;
+    }
+
+    .header-brand {
+        min-height: 4rem;
+    }
+
     .header-search-container {
-        display: block;
-    }
-
-    .search-section {
-        display: none !important;
-    }
-}
-
-.search-section {
-    margin-bottom: 1rem;
-    position: sticky;
-    top: 10px;
-    z-index: 100;
-}
-
-@media (max-width: 768px) {
-    .search-section {
-        top: 4.75rem;
+        order: 1;
+        flex-basis: 100%;
+        max-width: none;
+        margin: 0;
     }
 }
 
@@ -430,7 +425,7 @@ body {
     transform: translateY(-50%);
     background: none;
     border: none;
-    padding: 4px;
+    padding: 0.25rem;
     color: var(--text-tertiary);
     cursor: pointer;
     display: none;
@@ -445,7 +440,7 @@ body {
     color: var(--text-primary);
 }
 
-.search-clear-btn.visible {
+.search-input:not(:placeholder-shown) ~ .search-clear-btn {
     display: flex;
     animation: fadeIn 0.2s ease;
 }
@@ -527,7 +522,7 @@ body {
 .filters {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .filter-section {
@@ -548,7 +543,7 @@ body {
 @media (max-width: 480px) {
     .filters {
         grid-template-columns: 1fr;
-        gap: 0.75rem;
+        gap: 1rem;
     }
 
     .year-filter-section,
@@ -575,7 +570,7 @@ body {
 @media (min-width: 768px) and (max-width: 1023px) {
     .filters {
         grid-template-columns: repeat(4, 1fr);
-        gap: 0.75rem;
+        gap: 1rem;
     }
 
     .year-filter-section,
@@ -614,7 +609,7 @@ body {
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-secondary);
-    margin-bottom: .75rem
+    margin-bottom: 0.5rem;
 }
 
 .filter-buttons {
@@ -635,7 +630,7 @@ body {
     color: var(--btn-text);
     border: 1px solid;
     border-color: var(--btn-border);
-    transition: all 0.2s ease;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, filter 0.15s ease;
     border-radius: var(--radius-lg);
     padding: 0.375rem 0.75rem;
     cursor: pointer;
@@ -646,7 +641,6 @@ body {
 .filter-btn:hover:not(.active) {
     background: var(--btn-hover-bg);
     border-color: var(--btn-active);
-    transform: translateY(-1px);
     filter: brightness(1.2);
 }
 
@@ -722,24 +716,9 @@ body {
     --btn-active: var(--lang-jsphp-active);
 }
 
-.filter-btn[data-filter="language"][data-value="JS/PHP"],
-.exam-badge[data-filter="language"][data-value="JS/PHP"] {
-    --btn-bg: var(--lang-jsorphp-bg);
-    --btn-text: var(--lang-jsorphp-text);
-    --btn-border: var(--lang-jsorphp-border);
-    --btn-active: var(--lang-jsorphp-active);
-}
-
 .filter-btn[data-filter="language"][data-value="JS+PHP"].active {
     background: var(--btn-active);
     border-color: var(--lang-php-active);
-}
-
-.filter-btn[data-filter="language"][data-value="JS/PHP"].active {
-    background: var(--btn-active);
-    border-color: var(--lang-php-active);
-    color: #ffffff;
-    font-weight: 700;
 }
 
 .filter-btn[data-filter="session"][data-value="1"] {
@@ -842,6 +821,26 @@ body {
     overflow: hidden;
 }
 
+.custom-select-search-container {
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-primary);
+    z-index: 10;
+}
+
+#tag-search-input {
+    width: 100%;
+    padding: 0.375rem 0.625rem;
+    border: 1px solid var(--border-secondary);
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 0.8rem;
+    outline: none;
+}
+
 .custom-select-options-container {
     max-height: 250px;
     overflow-y: auto;
@@ -880,18 +879,18 @@ body {
 }
 
 .custom-select-group-header {
-    padding: 8px 12px 4px 12px;
+    padding: 0.5rem 0.75rem 0.25rem;
     font-weight: 700;
     font-size: 0.75em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     opacity: 0.5;
     border-top: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
-    margin-top: 4px;
+    margin-top: 0.25rem;
 }
 
 .custom-select-option-indented {
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 .custom-select-tag-count {
@@ -1050,12 +1049,12 @@ body {
     border-radius: var(--radius-xl);
     border: 1px solid var(--border-primary);
     overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
     display: flex;
     flex-direction: column;
     z-index: 1;
     position: relative;
-    animation: cardEntrance 0.5s cubic-bezier(0.25, 1, 0.5, 1) backwards;
+    animation: cardEntrance 0.25s ease backwards;
 }
 
 .exam-card.no-entrance {
@@ -1063,13 +1062,13 @@ body {
 }
 
 .exam-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.12);
     border-color: var(--accent-primary);
 }
 
 [data-theme="dark"] .exam-card:hover {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.45);
     background-color: rgba(255, 255, 255, 0.03);
 }
 
@@ -1077,7 +1076,7 @@ body {
 .exam-card.completed .exam-thumbnail img {
     opacity: 0.8;
     filter: grayscale(0.3);
-    transition: all 0.3s ease;
+    transition: opacity 0.2s ease, filter 0.2s ease;
 }
 
 .exam-card.completed:hover .exam-content>*,
@@ -1102,7 +1101,7 @@ body {
 }
 
 .exam-thumbnail:hover img {
-    transform: scale(1.05)
+    transform: scale(1.02)
 }
 
 .no-thumbnail {
@@ -1123,6 +1122,10 @@ body {
 .thumbnail-overlay {
     position: absolute;
     inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
     background-color: rgba(0, 0, 0, 0);
     display: flex;
     align-items: center;
@@ -1131,7 +1134,8 @@ body {
     opacity: 0
 }
 
-.thumbnail-overlay:hover {
+.thumbnail-overlay:hover,
+.thumbnail-overlay:focus-visible {
     background-color: rgba(0, 0, 0, .1);
     opacity: 1
 }
@@ -1154,7 +1158,7 @@ body {
     justify-content: center;
     cursor: pointer;
     z-index: 10;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid rgba(255, 255, 255, 0.5);
     color: transparent;
@@ -1169,45 +1173,29 @@ body {
 .completion-checkbox.completed {
     background-color: var(--success);
     border-color: #fff;
-    transform: scale(1.2);
+    transform: scale(1.05);
     color: #fff;
-    animation: checkbox-pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-@keyframes checkbox-pop {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.3);
-    }
-
-    100% {
-        transform: scale(1);
-    }
 }
 
 .exam-content {
-    padding: 1.25rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
+    gap: 0.75rem;
     flex: 1;
 }
 
 .exam-header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: .75rem
+    gap: 0.5rem;
 }
 
 .exam-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: .5rem;
-    margin-bottom: .75rem
+    gap: 0.5rem;
 }
 
 .exam-title h3 {
@@ -1231,12 +1219,11 @@ body {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: filter 0.15s ease;
 }
 
 .exam-code:hover {
     filter: brightness(var(--hover-brightness));
-    transform: translateY(-1px);
 }
 
 .exam-code svg {
@@ -1250,7 +1237,6 @@ body {
     gap: 1rem;
     font-size: .875rem;
     color: var(--text-secondary);
-    margin-bottom: 0.75rem;
     flex-wrap: wrap
 }
 
@@ -1277,14 +1263,13 @@ body {
     border-radius: var(--radius-lg);
     font-size: 0.75rem;
     font-weight: 500;
-    transition: all 0.2s ease;
+    transition: background-color 0.15s ease, border-color 0.15s ease, filter 0.15s ease;
     cursor: default;
 }
 
 .exam-badge:hover {
     background: var(--btn-hover-bg);
     border-color: var(--btn-active);
-    transform: translateY(-1px);
     filter: brightness(var(--hover-brightness));
 }
 
@@ -1292,7 +1277,6 @@ body {
     display: flex;
     align-items: flex-start;
     gap: .5rem;
-    margin-bottom: 0.75rem
 }
 
 .exam-tags svg {
@@ -1329,13 +1313,11 @@ body {
     border: 1px solid var(--link-exam-border);
     cursor: pointer;
     font-weight: 700;
-    transition: all 0.2s ease;
+    transition: filter 0.15s ease;
 }
 
 .exam-tag-more:hover {
     filter: brightness(var(--hover-brightness)) saturate(1.1);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.2);
 }
 
 .exam-links {
@@ -1384,14 +1366,11 @@ body {
     font-weight: 500;
     text-decoration: none;
     border: 1px solid transparent;
-    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
-        box-shadow 0.4s ease,
-        border-color 0.2s ease;
+    transition: filter 0.15s ease, border-color 0.15s ease;
 }
 
 .exam-link:hover {
     filter: brightness(var(--hover-brightness)) saturate(1.1);
-    transform: translateY(-2px);
 }
 
 .exam-link.disabled {
@@ -1485,7 +1464,7 @@ body {
     overflow: hidden;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    animation: modalEntrance 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+    animation: modalEntrance 0.2s ease backwards;
     margin: auto;
 }
 
@@ -1524,11 +1503,7 @@ body {
 
 #modal-dynamic-content {
     width: 100%;
-    padding: 1.25rem;
-}
-
-#modal-dynamic-content .exam-header {
-    margin-bottom: 0;
+    padding: 1rem;
 }
 
 .modal-close-high {
@@ -1554,7 +1529,6 @@ body {
 }
 
 .modal-links {
-    margin-top: 0.5rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -1585,39 +1559,27 @@ body {
     }
 }
 
-@keyframes zoomIn {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
 @keyframes cardEntrance {
     from {
         opacity: 0;
-        transform: translateY(24px) scale(0.96);
+        transform: translateY(8px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        transform: translateY(0);
     }
 }
 
 @keyframes modalEntrance {
     from {
         opacity: 0;
-        transform: scale(0.9) translateY(20px);
+        transform: translateY(8px);
     }
 
     to {
         opacity: 1;
-        transform: scale(1) translateY(0);
+        transform: translateY(0);
     }
 }
 
@@ -1685,16 +1647,18 @@ body {
     border-radius: var(--radius-lg);
 }
 
-@media (prefers-reduced-motion: reduce) {
-
-    .exam-card,
-    .slide-up {
-        animation: none;
-    }
-}
-
 .exam-card.no-entrance {
     animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 /* =========================================
@@ -1715,7 +1679,7 @@ body {
     justify-content: center;
     cursor: pointer;
     z-index: 90;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease, background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
@@ -1732,12 +1696,12 @@ body {
     transform: translateY(0) scale(1);
 }
 
-.back-to-top:hover,
-.toggle-theme-btn:hover {
+.toggle-theme-btn:hover,
+.back-to-top.visible:hover {
     background: var(--bg-tertiary);
     color: var(--accent-primary);
     border-color: var(--accent-primary);
-    transform: translateY(-5px);
+    transform: translateY(-2px);
 }
 
 .back-to-top svg,
@@ -1747,17 +1711,28 @@ body {
 }
 
 .toggle-theme-btn {
-    left: 2rem;
+    right: 2rem;
+    left: auto;
+    bottom: 6.25rem;
 }
 
 @media (max-width: 640px) {
 
     .back-to-top,
     .toggle-theme-btn {
-        bottom: 1.5rem;
-        right: 1.5rem;
         width: 3rem;
         height: 3rem;
+    }
+
+    .back-to-top {
+        right: 1.5rem;
+        bottom: 1.5rem;
+    }
+
+    .toggle-theme-btn {
+        right: 1.5rem;
+        left: auto;
+        bottom: 5.25rem;
     }
 }
 
@@ -1974,7 +1949,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-bottom: 0.75rem;
     padding: 1rem;
     background-color: var(--bg-secondary);
     border: 1px solid var(--border-primary);

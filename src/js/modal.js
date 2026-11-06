@@ -1,4 +1,7 @@
-function bindModalEvents() {
+import { copyToClipboard, getThumbnailUrl } from './utils.js';
+import { createModalContent } from './components.js';
+
+export function bindModalEvents() {
     const modal = document.getElementById('exam-modal');
     if (!modal) return;
 
@@ -14,21 +17,20 @@ function bindModalEvents() {
         }
 
         const copyBtn = e.target.closest('[data-action="copy-code"]');
-        if (copyBtn) {
-            window.appUtils.copyToClipboard(copyBtn.dataset.code, copyBtn);
-        }
+        if (copyBtn) copyToClipboard(copyBtn.dataset.code, copyBtn);
     });
 
     modal.addEventListener('close', () => {
         document.body.style.overflow = '';
     });
 }
-function openModal(exam) {
+
+export function openModal(exam) {
     if (!exam) return;
     const modal = document.getElementById('exam-modal');
     
     const imgContainer = modal.querySelector('.modal-image');
-    imgContainer.innerHTML = ''; // Wyczyść stare zdjęcie oraz komunikaty o braku podglądu
+    imgContainer.innerHTML = '';
     
     const img = document.createElement('img');
     img.id = 'modal-image';
@@ -47,15 +49,14 @@ function openModal(exam) {
     };
 
     imgContainer.appendChild(img);
-    img.src = window.appUtils.getThumbnailUrl(exam, true);
+    img.src = getThumbnailUrl(exam, true);
     
-    modal.querySelector('#modal-dynamic-content').innerHTML = window.uiComponents.createModalContent(exam);
+    modal.querySelector('#modal-dynamic-content').innerHTML = createModalContent(exam);
     modal.showModal();
     document.body.style.overflow = 'hidden';
 }
+
 function closeModal() {
     const modal = document.getElementById('exam-modal');
     if (modal) modal.close();
 }
-
-bindModalEvents();
