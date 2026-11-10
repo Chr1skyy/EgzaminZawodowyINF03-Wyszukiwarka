@@ -26,6 +26,7 @@ function renderResults(skipAnimation = false) {
     if (app.filtered.length === 0) {
         grid.style.display = 'none';
         noResults.style.display = 'block';
+        removeLoadMoreBtn();
         return;
     }
 
@@ -110,6 +111,13 @@ function setupThemeToggle() {
         const nextTheme = current === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', nextTheme);
         localStorage.setItem('theme', nextTheme);
+    });
+}
+
+function setupNewVersionBar() {
+    document.getElementById('new-version-bar-close').addEventListener('click', () => {
+        document.documentElement.classList.add('new-version-bar-closed');
+        localStorage.setItem('newVersionBarClosed', '1');
     });
 }
 
@@ -739,6 +747,7 @@ function renderDynamicFilters() {
 
 async function initApp() {
     setupThemeToggle();
+    setupNewVersionBar();
     bindModalEvents();
     renderSkeletons();
 

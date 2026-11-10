@@ -264,6 +264,43 @@ body {
 /* =========================================
    3. HEADER
    ========================================= */
+.new-version-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    background: #2563eb;
+    color: #fff;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.new-version-bar a {
+    color: #fff;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.new-version-bar-close {
+    display: flex;
+    flex-shrink: 0;
+    padding: 0.25rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.new-version-bar-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.new-version-bar-closed .new-version-bar {
+    display: none;
+}
+
 .header {
     position: sticky;
     top: 0;
