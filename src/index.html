@@ -4,6 +4,7 @@
 <head>
     <script>
         document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+        if (localStorage.getItem('newVersionBarClosed')) document.documentElement.classList.add('new-version-bar-closed');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,6 +67,19 @@
 <body>
     <a href="#results-grid" class="skip-link">Przejdź do listy arkuszy</a>
     <div id="app">
+        <div class="new-version-bar">
+            <p>
+                Jest nowa wersja EZINF.it: SQL w przeglądarce, samoocena według kryteriów CKE i zapis postępów.
+                <a href="https://app.ezinf.it/" data-umami-event="New version link">Przejdź do app.ezinf.it</a>
+            </p>
+            <button id="new-version-bar-close" class="new-version-bar-close" aria-label="Zamknij informację o nowej wersji" data-umami-event="New version bar close">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
         <header class="header">
             <div class="header-container">
                 <div class="header-brand">

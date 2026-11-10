@@ -113,6 +113,13 @@ function setupThemeToggle() {
     });
 }
 
+function setupNewVersionBar() {
+    document.getElementById('new-version-bar-close').addEventListener('click', () => {
+        document.documentElement.classList.add('new-version-bar-closed');
+        localStorage.setItem('newVersionBarClosed', '1');
+    });
+}
+
 function setupResultsGridHandlers() {
     const grid = document.getElementById('results-grid');
     if (!grid) return;
@@ -739,6 +746,7 @@ function renderDynamicFilters() {
 
 async function initApp() {
     setupThemeToggle();
+    setupNewVersionBar();
     bindModalEvents();
     renderSkeletons();
 

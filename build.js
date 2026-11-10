@@ -5,6 +5,7 @@ const path = require('path');
 
 const DIST = path.join(__dirname, 'dist');
 const SRC = path.join(__dirname, 'src');
+const ESBUILD = 'npx -y esbuild@0.28.2';
 
 const runBuild = () => {
     // 1. Przygotowanie czystego folderu DIST
@@ -14,37 +15,24 @@ const runBuild = () => {
     // 2. Łączenie modułów i minifikacja JS
     console.log('📦 Bundling JS...');
     const jsBundle = path.join(DIST, 'app.min.js');
-    execSync(`npx -y esbuild "${path.join(SRC, 'js/app.js')}" --bundle --minify --format=iife --outfile="${jsBundle}"`, { stdio: 'inherit' });
+    execSync(`${ESBUILD} "${path.join(SRC, 'js/app.js')}" --bundle --minify --format=iife --outfile="${jsBundle}"`, { stdio: 'inherit' });
     const jsHash = crypto.createHash('md5').update(fs.readFileSync(jsBundle)).digest('hex').slice(0, 8);
     const jsDestFile = `app.${jsHash}.min.js`;
     fs.renameSync(jsBundle, path.join(DIST, jsDestFile));
     console.log(`✅ JS bundled to ${jsDestFile}`);
 
     // 3. Minifikacja CSS
-    let cssDestFile = 'styles.min.css';
-    try {
-        console.log('🎨 Minifying CSS...');
-        const cssContent = fs.readFileSync(path.join(SRC, 'css/styles.css'), 'utf-8');
-        const cssHash = crypto.createHash('md5').update(cssContent).digest('hex').slice(0, 8);
-        cssDestFile = `styles.${cssHash}.min.css`;
-        execSync(`npx -y esbuild "${path.join(SRC, 'css/styles.css')}" --minify --outfile="${path.join(DIST, cssDestFile)}"`, { stdio: 'inherit' });
-        console.log(`✅ CSS minified to ${cssDestFile}`);
-    } catch (e) {
-        console.log('⚠️ esbuild CSS error:', e.message);
-    }
+    console.log('🎨 Minifying CSS...');
+    const cssContent = fs.readFileSync(path.join(SRC, 'css/styles.css'), 'utf-8');
+    const cssHash = crypto.createHash('md5').update(cssContent).digest('hex').slice(0, 8);
+    const cssDestFile = `styles.${cssHash}.min.css`;
+    execSync(`${ESBUILD} "${path.join(SRC, 'css/styles.css')}" --minify --outfile="${path.join(DIST, cssDestFile)}"`, { stdio: 'inherit' });
+    console.log(`✅ CSS minified to ${cssDestFile}`);
 
     // 4. Minifikacja JSON
-    try {
-        const dataPath = path.join(SRC, 'data.json');
-        if (fs.existsSync(dataPath)) {
-            const rawData = fs.readFileSync(dataPath, 'utf-8');
-            const minifiedJson = JSON.stringify(JSON.parse(rawData));
-            fs.writeFileSync(path.join(DIST, 'data.json'), minifiedJson, 'utf-8');
-            console.log(`✅ JSON minified`);
-        }
-    } catch (e) {
-        console.log('⚠️ JSON minify error:', e.message);
-    }
+    const rawData = fs.readFileSync(path.join(SRC, 'data.json'), 'utf-8');
+    fs.writeFileSync(path.join(DIST, 'data.json'), JSON.stringify(JSON.parse(rawData)), 'utf-8');
+    console.log(`✅ JSON minified`);
 
     // 5. Kopiowanie statycznych assetów oraz katalogu z ikonami
     const assetsToCopy = [
@@ -78,19 +66,17 @@ const runBuild = () => {
     }
 
     // 6. Przepisywanie index.html pod wydanie produkcyjne
-    try {
-        let html = fs.readFileSync(path.join(SRC, 'index.html'), 'utf-8');
-
-        // Zmiana łączy CSS z hashem
-        html = html.replace('<link rel="stylesheet" href="css/styles.css">', `<link rel="stylesheet" href="${cssDestFile}">`);
-
-        html = html.replace('<script type="module" src="js/app.js"></script>', `<script defer src="${jsDestFile}"></script>`);
-
-        fs.writeFileSync(path.join(DIST, 'index.html'), html, 'utf-8');
-        console.log('✅ HTML rewritten perfectly for /dist');
-    } catch (e) {
-        console.log('⚠️ HTML rewrite error:', e.message);
-    }
+    const replaceOnce = (html, from, to) => {
+        if (!html.includes(from)) {
+            throw new Error(`index.html: nie znaleziono "${from}"`);
+        }
+        return html.replace(from, to);
+    };
+    let html = fs.readFileSync(path.join(SRC, 'index.html'), 'utf-8');
+    html = replaceOnce(html, '<link rel="stylesheet" href="css/styles.css">', `<link rel="stylesheet" href="${cssDestFile}">`);
+    html = replaceOnce(html, '<script type="module" src="js/app.js"></script>', `<script defer src="${jsDestFile}"></script>`);
+    fs.writeFileSync(path.join(DIST, 'index.html'), html, 'utf-8');
+    console.log('✅ HTML rewritten perfectly for /dist');
 
     console.log('\n🏁 Full Production Build complete! Entire application is ready to deploy from /dist folder.');
 };
